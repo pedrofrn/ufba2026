@@ -249,7 +249,7 @@
     const paceOk = telemetry.avgSecondsPerQuestion === 0 || telemetry.avgSecondsPerQuestion <= EDITAL_CONFIG.targetSecondsPerQuestion;
 
     return `
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
+      <div class="quick-telemetry grid grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
         <div class="paper-card rounded-lg px-4 py-3">
           <div class="text-[11px] uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Nota Projetada (Tabela 10.1)</div>
           <div class="mt-1 flex items-baseline gap-2">
@@ -344,7 +344,7 @@
     ];
 
     const modeStripHtml = `
-      <div class="paper-card rounded-xl p-3 sm:p-4 mb-4">
+      <div class="mode-strip paper-card rounded-xl p-3 sm:p-4 mb-4">
         <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
           <div class="flex items-center gap-2">
             <span class="inline-flex h-2 w-2 rounded-full bg-teal-500"></span>
@@ -439,7 +439,7 @@
       : formatDuration(sessionTimer.elapsedSeconds);
 
     const sessionBarHtml = `
-      <div class="paper-card rounded-xl px-4 py-3 mb-5 flex flex-wrap items-center justify-between gap-3">
+      <div class="session-bar paper-card rounded-xl px-4 py-3 mb-5 flex flex-wrap items-center justify-between gap-3">
         <div class="flex flex-wrap items-center gap-2.5">
           <div class="flex items-center gap-1.5">
             <span class="text-[11px] font-bold uppercase tracking-wider opacity-70">Sessão:</span>
@@ -523,7 +523,7 @@
 
     // Mapa de Questões do Caderno Atual (navegação rápida tipo folha de rosto/caderno)
     const navigatorHtml = `
-      <div class="max-w-4xl mx-auto mb-4">
+      <div class="question-navigator max-w-4xl mx-auto mb-4">
         <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
           <div class="text-xs font-semibold opacity-80">
             Caderno Ativo: <span class="font-mono-tabular font-bold">${currentIndex + 1}</span> de <span class="font-mono-tabular font-bold">${deck.length}</span> questões
@@ -712,9 +712,9 @@
       ${navigatorHtml}
 
       <!-- Caderno de Prova Real -->
-      <article class="paper-card rounded-2xl max-w-4xl mx-auto overflow-hidden">
+      <article class="question-card paper-card rounded-2xl max-w-4xl mx-auto overflow-hidden">
         <!-- Cabeçalho Técnico da Questão -->
-        <header class="px-5 sm:px-7 py-4 border-b hairline-divider subtle-surface flex flex-wrap items-center justify-between gap-3">
+        <header class="question-card-header px-5 sm:px-7 py-4 border-b hairline-divider subtle-surface flex flex-wrap items-center justify-between gap-3">
           <div class="flex flex-wrap items-center gap-2">
             <span class="font-mono-tabular text-xs font-bold px-2.5 py-1 rounded bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900">
               QUESTÃO ${String(currentIndex + 1).padStart(2, '0')}
@@ -752,13 +752,13 @@
         </header>
 
         <!-- Submeta: Tópico do Edital + Perfil de Cobrança -->
-        <div class="px-5 sm:px-7 py-2.5 border-b hairline-divider flex flex-wrap items-center justify-between gap-2 text-xs opacity-80">
+        <div class="question-submeta px-5 sm:px-7 py-2.5 border-b hairline-divider flex flex-wrap items-center justify-between gap-2 text-xs opacity-80">
           <span><strong>Tópico:</strong> ${escapeHtml(currentQ.topico_edital)}</span>
           <span><strong>Perfil:</strong> ${escapeHtml(currentQ.perfil_cobranca)}</span>
         </div>
 
         <!-- Corpo Editorial da Questão -->
-        <div class="px-5 sm:px-7 py-6">
+        <div class="question-content px-5 sm:px-7 py-6">
           ${currentQ.texto_apoio ? `
             <blockquote class="mb-5 p-4 rounded-xl border-l-4 border-slate-400 dark:border-slate-500 subtle-surface font-exam-serif text-[15.5px] leading-relaxed">
               <div class="font-sans text-[10px] font-bold uppercase tracking-widest opacity-60 mb-1.5">Texto de Apoio</div>
