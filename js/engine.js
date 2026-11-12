@@ -199,20 +199,20 @@
    * Modo "Simulado Padrão Edital (60 Questões / 4h)":
    * Respeita a Tabela 10.1 (12 LP + 6 INF + 12 AP + 30 CE).
    */
-  function buildSimulado60Deck(allQuestions, answers = {}) {
+  function buildSimulado60Deck(allQuestions, sessionHistory = []) {
     const selected = [];
-    const usedIds = new Set();
+    const recentlyUsed = new Set(
+      sessionHistory.slice(0, 2).flatMap((session) => Array.isArray(session.questionIds) ? session.questionIds : [])
+    );
 
     for (const area of EDITAL_CONFIG.areaOrder) {
       const target = EDITAL_CONFIG.areas[area].questoes;
-      const pool = prioritizeQuestions(
-        allQuestions.filter((q) => q.area === area),
-        answers
-      );
-      for (const q of pool.slice(0, target)) {
-        selected.push(q);
-        usedIds.add(q.id);
-      }
+      const pool = allQuestions.filter((q) => q.area === area);
+      const fresh = shuffleArray(pool.filter((q) => !recentlyUsed.has(q.id)));
+      const selectedFresh = fresh.slice(0, target);
+      const selectedIds = new Set(selectedFresh.map((q) => q.id));
+      const fill = shuffleArray(pool.filter((q) => !selectedIds.has(q.id))).slice(0, target - selectedFresh.length);
+      selected.push(...selectedFresh, ...fill);
     }
 
     return selected;
@@ -255,6 +255,83 @@
 
       return true;
     });
+  }
+
+  function buildDueReviewDeck(allQuestions, reviewSchedule = {}, now = new Date()) {
+    const nowMs = now.getTime();
+    return allQuestions
+      .filter((q) => reviewSchedule[q.id]?.dueAt && new Date(reviewSchedule[q.id].dueAt).getTime() <= nowMs)
+      .sort((a, b) => new Date(reviewSchedule[a.id].dueAt) - new Date(reviewSchedule[b.id].dueAt));
+  }
+
+  function updateReviewSchedule(previous, isCorrect, now = new Date()) {
+    const nowDate = now instanceof Date ? now : new Date(now);
+    const prior = previous && typeof previous === 'object' ? previous : {};
+    const wasDue = !prior.dueAt || new Date(prior.dueAt).getTime() <= nowDate.getTime();
+    const sameDay = prior.lastReviewedAt && new Date(prior.lastReviewedAt).toDateString() === nowDate.toDateString();
+    let intervalDays = Number(prior.intervalDays) || 0;
+    let repetitions = Number(prior.repetitions) || 0;
+
+    if (!isCorrect) {
+      intervalDays = 1;
+      repetitions = 0;
+    } else if (!prior.lastReviewedAt) {
+      intervalDays = 3;
+      repetitions = 1;
+    } else if (wasDue && !sameDay) {
+      intervalDays = intervalDays <= 1 ? 3 : intervalDays <= 3 ? 7 : intervalDays <= 7 ? 14 : 21;
+      repetitions += 1;
+    }
+
+    const due = new Date(nowDate);
+    due.setDate(due.getDate() + intervalDays);
+    return {
+      intervalDays,
+      repetitions,
+      dueAt: due.toISOString(),
+      lastReviewedAt: nowDate.toISOString(),
+      lastResult: isCorrect ? 'correct' : 'wrong'
+    };
+  }
+
+  function getLearningStats(allQuestions, state = {}, now = new Date()) {
+    const answers = state.answers || {};
+    const schedule = state.reviewSchedule || {};
+    let uniqueSeen = 0;
+    let firstTryCorrect = 0;
+    let firstTryWrong = 0;
+    let repeatAttempts = 0;
+    let repeatCorrect = 0;
+    let dueCount = 0;
+
+    for (const q of allQuestions) {
+      const rec = answers[q.id];
+      const history = Array.isArray(rec?.historico) && rec.historico.length
+        ? rec.historico
+        : rec ? [{ acertou: rec.acertou }] : [];
+      if (history.length) {
+        uniqueSeen += 1;
+        if (history[0].acertou) firstTryCorrect += 1;
+        else firstTryWrong += 1;
+        for (const attempt of history.slice(1)) {
+          repeatAttempts += 1;
+          if (attempt.acertou) repeatCorrect += 1;
+        }
+      }
+      if (schedule[q.id]?.dueAt && new Date(schedule[q.id].dueAt).getTime() <= now.getTime()) dueCount += 1;
+    }
+
+    return {
+      uniqueSeen,
+      unseenCount: Math.max(0, allQuestions.length - uniqueSeen),
+      firstTryCorrect,
+      firstTryWrong,
+      firstTryAccuracyPct: uniqueSeen ? Math.round((firstTryCorrect / uniqueSeen) * 100) : 0,
+      repeatAttempts,
+      repeatCorrect,
+      repeatAccuracyPct: repeatAttempts ? Math.round((repeatCorrect / repeatAttempts) * 100) : 0,
+      dueCount
+    };
   }
 
   /**
@@ -353,18 +430,22 @@
 
       const rec = answers[q.id];
       if (rec) {
+        const attempts = Array.isArray(rec.historico) && rec.historico.length
+          ? rec.historico
+          : [{ acertou: rec.acertou, tempoSegundos: rec.tempoSegundos }];
+        const firstAttempt = attempts[0];
         totalAnswered += 1;
         rawPointsPossibleAnswered += q.peso;
 
-        if (typeof rec.tempoSegundos === 'number' && rec.tempoSegundos > 0) {
-          totalTimeSeconds += rec.tempoSegundos;
+        if (typeof firstAttempt.tempoSegundos === 'number' && firstAttempt.tempoSegundos > 0) {
+          totalTimeSeconds += firstAttempt.tempoSegundos;
           timedCount += 1;
         }
 
         if (aStat) aStat.answered += 1;
         tStat.answered += 1;
 
-        if (rec.acertou) {
+        if (firstAttempt.acertou) {
           totalCorrect += 1;
           rawPointsEarned += q.peso;
           if (aStat) {
@@ -433,6 +514,7 @@
 
     const wrongCount = Object.values(answers).filter((a) => a && !a.acertou).length;
     const bookmarkCount = Object.values(bookmarks).filter(Boolean).length;
+    const learningStats = getLearningStats(allQuestions, state);
 
     return {
       totalBank: allQuestions.length,
@@ -446,6 +528,7 @@
       projectedScore90,
       paceProjected90,
       avgSecondsPerQuestion,
+      learningStats,
       zeroedAreas,
       unansweredAreas,
       barrierStatus,
@@ -503,6 +586,9 @@
     buildBasicosDeck,
     buildSimulado60Deck,
     filterQuestions,
+    buildDueReviewDeck,
+    updateReviewSchedule,
+    getLearningStats,
     getErrorNotebookQuestions,
     formatExamText,
     computeTelemetry,

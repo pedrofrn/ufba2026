@@ -132,39 +132,12 @@
 
     <!-- Navegação Principal por Abas -->
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center gap-1 overflow-x-auto border-t hairline-divider" role="tablist" aria-label="Áreas do simulador">
-      <button
-        type="button"
-        role="tab"
-        aria-selected="true"
-        data-tab-target="exam"
-        class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">
-        Caderno de Questões
-      </button>
-      <button
-        type="button"
-        role="tab"
-        aria-selected="false"
-        data-tab-target="telemetry"
-        class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">
-        Telemetria &amp; Linha de Corte (90 pts)
-      </button>
-      <button
-        type="button"
-        role="tab"
-        aria-selected="false"
-        data-tab-target="errors"
-        class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition inline-flex items-center gap-1.5">
-        <span>Caderno de Erros &amp; Revisão</span>
-        <span id="tab-errors-badge" class="hidden font-mono-tabular text-[11px] px-1.5 py-0.5 rounded-full bg-rose-600 text-white">0</span>
-      </button>
-      <button
-        type="button"
-        role="tab"
-        aria-selected="false"
-        data-tab-target="essay"
-        class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">
-        Guia de Redação Nota 60 (Tabela 13.2)
-      </button>
+      <button type="button" role="tab" aria-selected="true" data-tab-target="today" class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">Hoje</button>
+      <button type="button" role="tab" aria-selected="false" data-tab-target="exam" class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">Treino</button>
+      <button type="button" role="tab" aria-selected="false" data-tab-target="telemetry" class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">Desempenho (90 pts)</button>
+      <button type="button" role="tab" aria-selected="false" data-tab-target="errors" class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition inline-flex items-center gap-1.5"><span>Erros &amp; Revisão</span><span id="tab-errors-badge" class="hidden font-mono-tabular text-[11px] px-1.5 py-0.5 rounded-full bg-rose-600 text-white">0</span></button>
+      <button type="button" role="tab" aria-selected="false" data-tab-target="essay" class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">Redação</button>
+      <button type="button" role="tab" aria-selected="false" data-tab-target="guide" class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">Guia de Estudo</button>
     </nav>
   </header>
 

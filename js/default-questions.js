@@ -8,7 +8,7 @@ window.UFBA_DEFAULT_BANK = {
     "cargo": "201 - Assistente em Administração",
     "banca": "Instituto Avalia",
     "data_prova": "2026-12-20",
-    "versao_banco": "2.0.0"
+    "versao_banco": "2.1.0"
   },
   "questoes": [
     {
@@ -3849,6 +3849,1158 @@ window.UFBA_DEFAULT_BANK = {
         },
         "conexao_pratica_ifbaiano": "Quando você e sua equipe criam pequenos checklists de conferência no setor, revisam modelos de memorando/ofício no SEI ou ajustam etiquetas visuais para evitar devolução de processo, vocês estão praticando **Kaizen** puro — e garantindo +2 pontos na prova de Conhecimentos Específicos!",
         "pilula_fixacao": "Kaizen = melhoria CONTÍNUA e GRADUAL com TODOS da equipe + padronização + giro infinito do PDCA!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-061",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Estado e Administração Pública",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Em uma questão sobre os elementos constitutivos do Estado, considere território, povo e governo soberano. A Administração Pública, nesse contexto, corresponde: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "ao conjunto de órgãos, entidades e agentes que executam a função administrativa.",
+        "B": "ao território submetido à jurisdição estatal.",
+        "C": "à população considerada exclusivamente como conjunto de eleitores.",
+        "D": "ao conjunto dos Poderes Legislativo e Judiciário, sem o Executivo.",
+        "E": "à soberania popular exercida diretamente em todas as decisões administrativas."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "Administração Pública designa a estrutura e a atividade voltadas à execução concreta das funções administrativas do Estado.",
+        "fundamento_legal_ou_teorico": "Estado e Administração Pública: Administração Pública designa a estrutura e a atividade voltadas à execução concreta das funções administrativas do Estado.",
+        "analise_alternativas": {
+          "A": "CORRETA. Administração Pública designa a estrutura e a atividade voltadas à execução concreta das funções administrativas do Estado.",
+          "B": "INCORRETA. Território é elemento do Estado; não descreve a estrutura administrativa.",
+          "C": "INCORRETA. Povo é elemento do Estado e não se limita ao eleitorado.",
+          "D": "INCORRETA. O conceito de Administração Pública inclui a função administrativa do Executivo.",
+          "E": "INCORRETA. Democracia direta é participação política, não definição de Administração Pública."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Administração Pública designa a estrutura e a atividade voltadas à execução concreta das funções administrativas do Estado."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-062",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Princípios da Administração Pública",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Um setor publica os critérios de atendimento e aplica a mesma ordem de prioridade a todos os usuários. A conduta evidencia, principalmente, os princípios da: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "publicidade e continuidade.",
+        "B": "impessoalidade e isonomia.",
+        "C": "autotutela e hierarquia.",
+        "D": "especialidade e tutela.",
+        "E": "presunção de legitimidade e imperatividade."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A aplicação objetiva de critérios iguais afasta favorecimentos pessoais e concretiza a impessoalidade e a isonomia.",
+        "fundamento_legal_ou_teorico": "Princípios da Administração Pública: A aplicação objetiva de critérios iguais afasta favorecimentos pessoais e concretiza a impessoalidade e a isonomia.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Continuidade e publicidade são princípios diferentes; o caso destaca impessoalidade.",
+          "B": "CORRETA. A aplicação objetiva de critérios iguais afasta favorecimentos pessoais e concretiza a impessoalidade e a isonomia.",
+          "C": "INCORRETA. Autotutela e hierarquia não são os critérios de igualdade narrados.",
+          "D": "INCORRETA. Especialidade e tutela tratam da finalidade e supervisão de entidades.",
+          "E": "INCORRETA. Presunção e imperatividade são atributos de atos, não regras de atendimento."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A aplicação objetiva de critérios iguais afasta favorecimentos pessoais e concretiza a impessoalidade e a isonomia."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-063",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Administração direta e indireta",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Para executar atividade administrativa com personalidade jurídica própria, criada por lei para finalidade específica, a União institui uma autarquia. Essa entidade integra a: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Administração direta, por ser criada pelo Poder Executivo.",
+        "B": "Administração indireta, com personalidade jurídica de direito público.",
+        "C": "Administração indireta, necessariamente com personalidade de direito privado.",
+        "D": "estrutura de um ministério, sem autonomia administrativa.",
+        "E": "administração estadual, ainda que instituída pela União."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Autarquia é entidade da Administração indireta, criada por lei e dotada de personalidade jurídica de direito público.",
+        "fundamento_legal_ou_teorico": "Administração direta e indireta: Autarquia é entidade da Administração indireta, criada por lei e dotada de personalidade jurídica de direito público.",
+        "analise_alternativas": {
+          "A": "INCORRETA. A autarquia integra a Administração indireta, embora vinculada a um ministério.",
+          "B": "CORRETA. Autarquia é entidade da Administração indireta, criada por lei e dotada de personalidade jurídica de direito público.",
+          "C": "INCORRETA. Autarquia tem personalidade de direito público, não privado.",
+          "D": "INCORRETA. A autarquia tem personalidade própria e autonomia nos limites legais.",
+          "E": "INCORRETA. Entidade criada pela União integra a Administração indireta federal."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Autarquia é entidade da Administração indireta, criada por lei e dotada de personalidade jurídica de direito público."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-064",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Descentralização e desconcentração",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "A criação de departamentos dentro de um ministério, sem atribuição de personalidade jurídica própria, caracteriza: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "descentralização por serviços.",
+        "B": "delegação contratual de serviço público.",
+        "C": "desconcentração administrativa.",
+        "D": "concessão administrativa.",
+        "E": "privatização da atividade estatal."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Desconcentração distribui competências entre órgãos da mesma pessoa jurídica; descentralização envolve outra pessoa jurídica.",
+        "fundamento_legal_ou_teorico": "Descentralização e desconcentração: Desconcentração distribui competências entre órgãos da mesma pessoa jurídica; descentralização envolve outra pessoa jurídica.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Descentralização envolve outra pessoa; divisão interna é desconcentração.",
+          "B": "INCORRETA. Delegação contratual atribui execução a outra pessoa, não cria departamentos.",
+          "C": "CORRETA. Desconcentração distribui competências entre órgãos da mesma pessoa jurídica; descentralização envolve outra pessoa jurídica.",
+          "D": "INCORRETA. Concessão é delegação de serviço, não divisão interna de competências.",
+          "E": "INCORRETA. Reorganização interna não privatiza atividade nem cria empresa privada."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Desconcentração distribui competências entre órgãos da mesma pessoa jurídica; descentralização envolve outra pessoa jurídica."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-065",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Agentes públicos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Uma pessoa é convocada temporariamente para atender necessidade de excepcional interesse público, nos termos legais. Para fins amplos de Direito Administrativo, ela é: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "agente público, embora não ocupe necessariamente cargo efetivo.",
+        "B": "servidora efetiva após a primeira convocação.",
+        "C": "empregada pública de empresa estatal.",
+        "D": "particular em colaboração apenas se atuar sem remuneração.",
+        "E": "agente político por exercer atividade temporária."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "Agente público é expressão ampla para quem exerce função pública, ainda que temporariamente e sem cargo efetivo.",
+        "fundamento_legal_ou_teorico": "Agentes públicos: Agente público é expressão ampla para quem exerce função pública, ainda que temporariamente e sem cargo efetivo.",
+        "analise_alternativas": {
+          "A": "CORRETA. Agente público é expressão ampla para quem exerce função pública, ainda que temporariamente e sem cargo efetivo.",
+          "B": "INCORRETA. Vínculo temporário não torna a pessoa servidora efetiva.",
+          "C": "INCORRETA. Emprego público é vínculo trabalhista com empresa estatal.",
+          "D": "INCORRETA. Agente público pode atuar com ou sem remuneração.",
+          "E": "INCORRETA. Temporariedade, por si só, não caracteriza agente político."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Agente público é expressão ampla para quem exerce função pública, ainda que temporariamente e sem cargo efetivo."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-066",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Poder hierárquico",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "No exercício do poder hierárquico, uma chefia pode distribuir tarefas e rever atos de subordinados. Essa competência permite: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "editar lei em sentido formal para disciplinar o setor.",
+        "B": "delegar ou avocar atribuições nos limites legais, sem afastar competências exclusivas.",
+        "C": "aplicar qualquer sanção penal ao subordinado.",
+        "D": "revogar decisões judiciais que afetem a unidade.",
+        "E": "transferir definitivamente a titularidade do serviço a outra entidade."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O poder hierárquico organiza e coordena a atuação interna, inclusive por delegação e avocação quando a lei permitir.",
+        "fundamento_legal_ou_teorico": "Poder hierárquico: O poder hierárquico organiza e coordena a atuação interna, inclusive por delegação e avocação quando a lei permitir.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Chefias não editam leis formais; podem expedir atos internos.",
+          "B": "CORRETA. O poder hierárquico organiza e coordena a atuação interna, inclusive por delegação e avocação quando a lei permitir.",
+          "C": "INCORRETA. Poder hierárquico não confere competência para aplicar sanção penal.",
+          "D": "INCORRETA. Revisão hierárquica não alcança decisões judiciais.",
+          "E": "INCORRETA. Delegação transfere exercício de competência, não titularidade do serviço."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O poder hierárquico organiza e coordena a atuação interna, inclusive por delegação e avocação quando a lei permitir."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-067",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Estruturas organizacionais",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Em uma estrutura funcional, os setores são agrupados predominantemente: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "por produtos ou serviços finais.",
+        "B": "por regiões geográficas.",
+        "C": "segundo funções semelhantes, como orçamento, pessoas e materiais.",
+        "D": "em equipes temporárias sem cadeia de autoridade.",
+        "E": "por projetos independentes, com dissolução automática das unidades."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A departamentalização funcional reúne atividades de mesma especialidade, favorecendo especialização e padronização.",
+        "fundamento_legal_ou_teorico": "Estruturas organizacionais: A departamentalização funcional reúne atividades de mesma especialidade, favorecendo especialização e padronização.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Agrupamento por produto é departamentalização divisional.",
+          "B": "INCORRETA. Agrupamento por região é critério geográfico.",
+          "C": "CORRETA. A departamentalização funcional reúne atividades de mesma especialidade, favorecendo especialização e padronização.",
+          "D": "INCORRETA. A estrutura funcional reúne atividades da mesma especialidade.",
+          "E": "INCORRETA. Equipes temporárias não definem o critério funcional."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A departamentalização funcional reúne atividades de mesma especialidade, favorecendo especialização e padronização."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-068",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Departamentalização",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Uma universidade organiza unidades administrativas por campus, para aproximar decisões e serviços das necessidades locais. O critério predominante é: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "funcional.",
+        "B": "por clientela.",
+        "C": "geográfico.",
+        "D": "por processo.",
+        "E": "matricial."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A divisão por campus utiliza critério geográfico, pois considera a localização das unidades atendidas.",
+        "fundamento_legal_ou_teorico": "Departamentalização: A divisão por campus utiliza critério geográfico, pois considera a localização das unidades atendidas.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Funções semelhantes caracterizam critério funcional, não divisão por campus.",
+          "B": "INCORRETA. Clientela agrupa usuários; campus identifica localização.",
+          "C": "CORRETA. A divisão por campus utiliza critério geográfico, pois considera a localização das unidades atendidas.",
+          "D": "INCORRETA. Organizar unidades por campus usa critério geográfico.",
+          "E": "INCORRETA. Processos agrupam etapas do trabalho, não localidades."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A divisão por campus utiliza critério geográfico, pois considera a localização das unidades atendidas."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-069",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Processo organizacional: planejamento",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Ao definir objetivos, escolher cursos de ação e prever recursos antes de iniciar uma atividade, a equipe realiza a função administrativa de: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "direção.",
+        "B": "controle.",
+        "C": "planejamento.",
+        "D": "avaliação posterior.",
+        "E": "coordenação informal."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Planejar envolve estabelecer objetivos e antecipar ações e recursos para alcançá-los.",
+        "fundamento_legal_ou_teorico": "Processo organizacional: planejamento: Planejar envolve estabelecer objetivos e antecipar ações e recursos para alcançá-los.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Direção conduz pessoas; escolher objetivos antes de agir é planejamento.",
+          "B": "INCORRETA. Controle compara resultados com padrões após a execução.",
+          "C": "CORRETA. Planejar envolve estabelecer objetivos e antecipar ações e recursos para alcançá-los.",
+          "D": "INCORRETA. Planejamento estabelece objetivos e antecipa ações e recursos.",
+          "E": "INCORRETA. Avaliação posterior examina resultados já obtidos."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Planejar envolve estabelecer objetivos e antecipar ações e recursos para alcançá-los."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-070",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Processo organizacional: controle",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Após implantar um novo fluxo de atendimento, a unidade compara o tempo médio realizado com a meta e corrige os desvios. Trata-se de: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "planejamento estratégico.",
+        "B": "controle administrativo.",
+        "C": "descentralização funcional.",
+        "D": "delegação de autoridade.",
+        "E": "recrutamento interno."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O controle mede resultados em relação a padrões e promove ajustes quando há desvios.",
+        "fundamento_legal_ou_teorico": "Processo organizacional: controle: O controle mede resultados em relação a padrões e promove ajustes quando há desvios.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Planejamento define metas; comparar resultado e corrigir desvios é controle.",
+          "B": "CORRETA. O controle mede resultados em relação a padrões e promove ajustes quando há desvios.",
+          "C": "INCORRETA. Controle mede resultados e promove ajustes diante de desvios.",
+          "D": "INCORRETA. Descentralização redistribui competências, não mede resultados.",
+          "E": "INCORRETA. Delegação atribui exercício de competência, não verifica metas."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O controle mede resultados em relação a padrões e promove ajustes quando há desvios."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-071",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Gestão de processos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "No mapeamento de um processo, a equipe registra como o trabalho ocorre atualmente, incluindo etapas, responsáveis e esperas. Esse retrato corresponde ao modelo: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "TO-BE, que representa o estado futuro desejado.",
+        "B": "AS-IS, que representa a situação atual.",
+        "C": "BPMN, que define sozinho a estrutura organizacional.",
+        "D": "PDCA, que substitui o levantamento de atividades.",
+        "E": "organograma, que detalha entradas e saídas do processo."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "AS-IS descreve o processo como ele é executado no presente; TO-BE representa a situação futura proposta.",
+        "fundamento_legal_ou_teorico": "Gestão de processos: AS-IS descreve o processo como ele é executado no presente; TO-BE representa a situação futura proposta.",
+        "analise_alternativas": {
+          "A": "INCORRETA. TO-BE representa o estado futuro, não o processo atual.",
+          "B": "CORRETA. AS-IS descreve o processo como ele é executado no presente; TO-BE representa a situação futura proposta.",
+          "C": "INCORRETA. AS-IS registra como o processo funciona hoje.",
+          "D": "INCORRETA. BPMN é notação de processos, não estrutura organizacional.",
+          "E": "INCORRETA. PDCA melhora processos; não substitui seu mapeamento."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "AS-IS descreve o processo como ele é executado no presente; TO-BE representa a situação futura proposta."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-072",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Gestão da qualidade",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Uma equipe identifica a causa recorrente de devoluções, testa uma mudança, mede os resultados e padroniza a solução quando ela funciona. A sequência está alinhada ao ciclo: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "PDCA.",
+        "B": "5W2H, que é um ciclo de auditoria financeira.",
+        "C": "organograma funcional.",
+        "D": "inventário rotativo.",
+        "E": "método numérico cronológico."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "O PDCA organiza planejamento, execução, verificação e ação corretiva ou padronização em ciclos de melhoria.",
+        "fundamento_legal_ou_teorico": "Gestão da qualidade: O PDCA organiza planejamento, execução, verificação e ação corretiva ou padronização em ciclos de melhoria.",
+        "analise_alternativas": {
+          "A": "CORRETA. O PDCA organiza planejamento, execução, verificação e ação corretiva ou padronização em ciclos de melhoria.",
+          "B": "INCORRETA. PDCA significa Planejar, Executar, Verificar e Agir.",
+          "C": "INCORRETA. 5W2H estrutura plano de ação, não auditoria financeira.",
+          "D": "INCORRETA. Organograma representa unidades e autoridade, não melhoria contínua.",
+          "E": "INCORRETA. Inventário controla bens ou estoque, não processos de qualidade."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O PDCA organiza planejamento, execução, verificação e ação corretiva ou padronização em ciclos de melhoria."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-073",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Gestão de pessoas",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Em uma organização, a área de gestão de pessoas planeja capacitações com base nas necessidades das unidades e acompanha seus resultados. Essa atuação: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "é incompatível com a gestão de pessoas, cuja função se limita à folha de pagamento.",
+        "B": "integra as atividades de apoio estratégico e desenvolvimento de pessoas.",
+        "C": "substitui a responsabilidade das chefias por equipes.",
+        "D": "elimina a necessidade de políticas e sistemas de informação.",
+        "E": "transforma automaticamente os participantes em ocupantes de cargos superiores."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A gestão de pessoas abrange políticas e ações de desenvolvimento alinhadas às necessidades da organização.",
+        "fundamento_legal_ou_teorico": "Gestão de pessoas: A gestão de pessoas abrange políticas e ações de desenvolvimento alinhadas às necessidades da organização.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Gestão de pessoas também atua em desenvolvimento e planejamento.",
+          "B": "CORRETA. A gestão de pessoas abrange políticas e ações de desenvolvimento alinhadas às necessidades da organização.",
+          "C": "INCORRETA. Chefias seguem responsáveis por suas equipes; a área oferece apoio.",
+          "D": "INCORRETA. Capacitação não elimina políticas nem informações gerenciais.",
+          "E": "INCORRETA. Participar de capacitação não altera automaticamente o cargo."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A gestão de pessoas abrange políticas e ações de desenvolvimento alinhadas às necessidades da organização."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-074",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Motivação no trabalho",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Uma chefia oferece metas claras, recursos adequados e retorno sobre o desempenho. Essas medidas podem favorecer a motivação porque: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "eliminam todas as diferenças individuais de necessidades.",
+        "B": "relacionam esforço, condições de trabalho e percepção de resultados.",
+        "C": "substituem a remuneração por reconhecimento em qualquer situação.",
+        "D": "garantem que todo servidor prefira tarefas idênticas.",
+        "E": "tornam desnecessário o acompanhamento do trabalho."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A motivação é influenciada por fatores individuais e organizacionais; clareza, condições e feedback podem apoiar o engajamento.",
+        "fundamento_legal_ou_teorico": "Motivação no trabalho: A motivação é influenciada por fatores individuais e organizacionais; clareza, condições e feedback podem apoiar o engajamento.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Necessidades variam entre pessoas; nenhuma medida elimina diferenças.",
+          "B": "CORRETA. A motivação é influenciada por fatores individuais e organizacionais; clareza, condições e feedback podem apoiar o engajamento.",
+          "C": "INCORRETA. Uma intervenção pode ajudar, mas não garante motivação.",
+          "D": "INCORRETA. Reconhecimento não substitui universalmente remuneração e condições de trabalho.",
+          "E": "INCORRETA. Metas não tornam idênticas as preferências individuais."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A motivação é influenciada por fatores individuais e organizacionais; clareza, condições e feedback podem apoiar o engajamento."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-075",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Liderança",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Diante de uma equipe experiente e de uma tarefa rotineira, a chefia ouve os servidores, combina prioridades e acompanha os resultados. Essa atuação demonstra que a liderança: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "deve adotar sempre o mesmo estilo, independentemente da equipe e da tarefa.",
+        "B": "pode ajustar a forma de condução ao contexto e às necessidades do trabalho.",
+        "C": "depende exclusivamente de autoridade formal.",
+        "D": "exige evitar comunicação com os subordinados.",
+        "E": "impede a participação da equipe em decisões operacionais."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A condução eficaz considera a situação, as características da equipe e a natureza da tarefa.",
+        "fundamento_legal_ou_teorico": "Liderança: A condução eficaz considera a situação, as características da equipe e a natureza da tarefa.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Um estilo único ignora diferenças de tarefa, equipe e contexto.",
+          "B": "CORRETA. A condução eficaz considera a situação, as características da equipe e a natureza da tarefa.",
+          "C": "INCORRETA. A liderança pode se ajustar à experiência da equipe e ao trabalho.",
+          "D": "INCORRETA. Autoridade formal não é a única fonte de liderança.",
+          "E": "INCORRETA. Comunicação é essencial para alinhar prioridades e resultados."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A condução eficaz considera a situação, as características da equipe e a natureza da tarefa."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-076",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Comportamento organizacional",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Um servidor compreende as metas da unidade, mas percebe conflito entre suas expectativas e as práticas adotadas. A análise da relação indivíduo-organização deve considerar: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "somente a estrutura física do local de trabalho.",
+        "B": "expectativas, valores, papéis e condições organizacionais.",
+        "C": "apenas a antiguidade do servidor.",
+        "D": "exclusivamente a remuneração individual.",
+        "E": "que conflitos são sempre prova de insubordinação."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O comportamento organizacional examina a interação entre pessoas, grupos e características da organização.",
+        "fundamento_legal_ou_teorico": "Comportamento organizacional: O comportamento organizacional examina a interação entre pessoas, grupos e características da organização.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Comportamento também envolve relações e papéis, não só espaço físico.",
+          "B": "CORRETA. O comportamento organizacional examina a interação entre pessoas, grupos e características da organização.",
+          "C": "INCORRETA. A relação considera expectativas, valores, papéis e condições de trabalho.",
+          "D": "INCORRETA. Antiguidade isolada não explica conflito entre expectativas e práticas.",
+          "E": "INCORRETA. Remuneração é um fator, não a relação inteira."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O comportamento organizacional examina a interação entre pessoas, grupos e características da organização."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-077",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Comunicação organizacional",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Uma instrução enviada por e-mail foi interpretada de maneiras diferentes por setores distintos. Para reduzir ruídos, é adequado: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "presumir que o canal escrito elimina qualquer ambiguidade.",
+        "B": "usar linguagem clara, indicar responsáveis e prazos e confirmar o entendimento.",
+        "C": "evitar registrar decisões para preservar a informalidade.",
+        "D": "repassar a mensagem apenas por intermediários.",
+        "E": "substituir toda comunicação por comunicados genéricos."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Clareza, contexto, indicação de responsabilidades e confirmação de entendimento reduzem falhas de comunicação.",
+        "fundamento_legal_ou_teorico": "Comunicação organizacional: Clareza, contexto, indicação de responsabilidades e confirmação de entendimento reduzem falhas de comunicação.",
+        "analise_alternativas": {
+          "A": "INCORRETA. A escrita também pode ser ambígua; o canal não garante compreensão.",
+          "B": "CORRETA. Clareza, contexto, indicação de responsabilidades e confirmação de entendimento reduzem falhas de comunicação.",
+          "C": "INCORRETA. Clareza, responsáveis, prazos e confirmação reduzem ruídos.",
+          "D": "INCORRETA. Registrar decisões facilita consulta e responsabilização.",
+          "E": "INCORRETA. Intermediários podem acrescentar ruído à comunicação."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Clareza, contexto, indicação de responsabilidades e confirmação de entendimento reduzem falhas de comunicação."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-078",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Trabalho em equipe",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Durante um atendimento, um colega discorda da proposta de outro e apresenta dados do procedimento aplicável, mantendo o respeito. Essa conduta favorece: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "comportamento defensivo e competição pessoal.",
+        "B": "comunicação assertiva e solução cooperativa de problemas.",
+        "C": "a supressão de divergências relevantes.",
+        "D": "a transferência automática da decisão ao usuário.",
+        "E": "a quebra do dever de urbanidade."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Discordar com respeito e fundamentação permite tratar o problema sem personalizar o conflito.",
+        "fundamento_legal_ou_teorico": "Trabalho em equipe: Discordar com respeito e fundamentação permite tratar o problema sem personalizar o conflito.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Discordar com respeito e dados é cooperação, não competição pessoal.",
+          "B": "CORRETA. Discordar com respeito e fundamentação permite tratar o problema sem personalizar o conflito.",
+          "C": "INCORRETA. Comunicação assertiva expõe divergências com respeito.",
+          "D": "INCORRETA. A equipe deve tratar divergências relevantes, não suprimi-las.",
+          "E": "INCORRETA. Divergência interna não transfere decisão administrativa ao usuário."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Discordar com respeito e fundamentação permite tratar o problema sem personalizar o conflito."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-079",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Classificação de materiais",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Uma unidade agrupa materiais por semelhança de características e aplicação para facilitar identificação e controle. Essa atividade corresponde à: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "codificação contábil.",
+        "B": "classificação de materiais.",
+        "C": "alienação patrimonial.",
+        "D": "depreciação de bens.",
+        "E": "gestão de contratos."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A classificação reúne itens segundo critérios comuns; a codificação atribui identificadores aos itens classificados.",
+        "fundamento_legal_ou_teorico": "Classificação de materiais: A classificação reúne itens segundo critérios comuns; a codificação atribui identificadores aos itens classificados.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Codificação atribui identificadores; classificar agrupa por critérios.",
+          "B": "CORRETA. A classificação reúne itens segundo critérios comuns; a codificação atribui identificadores aos itens classificados.",
+          "C": "INCORRETA. Classificação reúne itens por características e aplicação.",
+          "D": "INCORRETA. Alienação é destinação ou transferência de bens.",
+          "E": "INCORRETA. Depreciação reconhece perda de valor ao longo do tempo."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A classificação reúne itens segundo critérios comuns; a codificação atribui identificadores aos itens classificados."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-080",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Gestão de estoques",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "O estoque de segurança tem como finalidade principal: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "substituir o estoque máximo em qualquer sistema.",
+        "B": "absorver variações de demanda ou prazo de reposição e reduzir risco de falta.",
+        "C": "impedir a realização de inventários.",
+        "D": "manter materiais sem consumo por prazo indeterminado.",
+        "E": "eliminar a necessidade de acompanhamento do consumo."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O estoque de segurança funciona como proteção contra incertezas de demanda e de reposição.",
+        "fundamento_legal_ou_teorico": "Gestão de estoques: O estoque de segurança funciona como proteção contra incertezas de demanda e de reposição.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Estoque de segurança não substitui o estoque máximo.",
+          "B": "CORRETA. O estoque de segurança funciona como proteção contra incertezas de demanda e de reposição.",
+          "C": "INCORRETA. A reserva protege contra variações de demanda e atrasos.",
+          "D": "INCORRETA. Inventários continuam necessários para conferir saldos.",
+          "E": "INCORRETA. Material sem consumo pode indicar excesso, não segurança."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O estoque de segurança funciona como proteção contra incertezas de demanda e de reposição."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-081",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Ponto de pedido",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "O ponto de pedido indica, em regra, o nível de estoque em que se deve: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "cancelar as compras já autorizadas.",
+        "B": "iniciar a reposição para que o material chegue antes do esgotamento.",
+        "C": "realizar a baixa patrimonial de todos os itens.",
+        "D": "encerrar o inventário anual.",
+        "E": "substituir o cadastro de fornecedores."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O ponto de pedido considera o consumo durante o prazo de reposição e, conforme o modelo, o estoque de segurança.",
+        "fundamento_legal_ou_teorico": "Ponto de pedido: O ponto de pedido considera o consumo durante o prazo de reposição e, conforme o modelo, o estoque de segurança.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Ponto de pedido inicia reposição; não cancela compras autorizadas.",
+          "B": "CORRETA. O ponto de pedido considera o consumo durante o prazo de reposição e, conforme o modelo, o estoque de segurança.",
+          "C": "INCORRETA. O nível considera consumo no prazo de entrega e estoque de segurança.",
+          "D": "INCORRETA. Baixa patrimonial trata de bens, não do gatilho de reposição.",
+          "E": "INCORRETA. Inventário verifica existência e registros, mas não determina compra."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O ponto de pedido considera o consumo durante o prazo de reposição e, conforme o modelo, o estoque de segurança."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-082",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Recebimento de materiais",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "No recebimento de um material, a conferência quantitativa verifica se: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "as especificações técnicas são adequadas ao uso.",
+        "B": "a quantidade entregue corresponde à quantidade indicada no documento e na autorização.",
+        "C": "o fornecedor possui o menor preço do mercado.",
+        "D": "o item deve ser alienado ao final do exercício.",
+        "E": "a armazenagem será feita pelo setor requisitante."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A conferência quantitativa compara unidades, volumes ou quantidades recebidas com os documentos da entrega.",
+        "fundamento_legal_ou_teorico": "Recebimento de materiais: A conferência quantitativa compara unidades, volumes ou quantidades recebidas com os documentos da entrega.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Conformidade técnica é conferência qualitativa; quantidade é quantitativa.",
+          "B": "CORRETA. A conferência quantitativa compara unidades, volumes ou quantidades recebidas com os documentos da entrega.",
+          "C": "INCORRETA. A conferência compara a quantidade recebida com a documentada.",
+          "D": "INCORRETA. Escolher fornecedor antecede o recebimento do material.",
+          "E": "INCORRETA. O setor responsável por armazenar não muda a conferência quantitativa."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A conferência quantitativa compara unidades, volumes ou quantidades recebidas com os documentos da entrega."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-083",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Armazenagem",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Ao organizar o almoxarifado, a equipe mantém itens identificados, acessíveis e protegidos contra umidade e calor excessivo. O procedimento busca: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "facilitar localização e conservação dos materiais.",
+        "B": "aumentar o tempo de espera para distribuição.",
+        "C": "dispensar registros de entrada e saída.",
+        "D": "misturar materiais incompatíveis para otimizar espaço.",
+        "E": "substituir a conferência no recebimento."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "Identificação, acessibilidade e condições adequadas de conservação reduzem perdas e agilizam a movimentação.",
+        "fundamento_legal_ou_teorico": "Armazenagem: Identificação, acessibilidade e condições adequadas de conservação reduzem perdas e agilizam a movimentação.",
+        "analise_alternativas": {
+          "A": "CORRETA. Identificação, acessibilidade e condições adequadas de conservação reduzem perdas e agilizam a movimentação.",
+          "B": "INCORRETA. Luz direta acelera danos e descoloração do papel.",
+          "C": "INCORRETA. Alimentos e bebidas aumentam riscos de manchas e pragas.",
+          "D": "INCORRETA. Controle ambiental e acondicionamento ajudam a conservar documentos.",
+          "E": "INCORRETA. Fita adesiva comum pode deteriorar o papel."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Identificação, acessibilidade e condições adequadas de conservação reduzem perdas e agilizam a movimentação."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-084",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Cadastro de fornecedores",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "O cadastro de fornecedores serve principalmente para: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "registrar e organizar informações necessárias à identificação e consulta de fornecedores.",
+        "B": "garantir contratação automática do fornecedor cadastrado.",
+        "C": "dispensar a verificação de habilitação em cada procedimento.",
+        "D": "substituir a pesquisa de preços e o planejamento da compra.",
+        "E": "impedir a participação de novos fornecedores."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "O cadastro organiza dados e documentos dos fornecedores, mas não assegura contratação nem elimina as exigências do procedimento.",
+        "fundamento_legal_ou_teorico": "Cadastro de fornecedores: O cadastro organiza dados e documentos dos fornecedores, mas não assegura contratação nem elimina as exigências do procedimento.",
+        "analise_alternativas": {
+          "A": "CORRETA. O cadastro organiza dados e documentos dos fornecedores, mas não assegura contratação nem elimina as exigências do procedimento.",
+          "B": "INCORRETA. Inventar resposta prejudica precisão e confiança.",
+          "C": "INCORRETA. Encaminhar ao setor competente mantém o atendimento útil e correto.",
+          "D": "INCORRETA. Encerrar sem explicação não orienta o usuário.",
+          "E": "INCORRETA. Presteza não autoriza revelar informação restrita."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O cadastro organiza dados e documentos dos fornecedores, mas não assegura contratação nem elimina as exigências do procedimento."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-085",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Gestão de documentos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Um documento frequentemente consultado pela unidade que o produziu, necessário às atividades em curso, pertence tipicamente ao arquivo: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "permanente.",
+        "B": "corrente.",
+        "C": "intermediário, ainda sem uso administrativo.",
+        "D": "especial, por definição.",
+        "E": "eliminado, após digitalização."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O arquivo corrente reúne documentos em uso frequente e ligados às atividades imediatas do órgão produtor.",
+        "fundamento_legal_ou_teorico": "Gestão de documentos: O arquivo corrente reúne documentos em uso frequente e ligados às atividades imediatas do órgão produtor.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O atendente deve falar diretamente com a pessoa, não só com acompanhante.",
+          "B": "CORRETA. O arquivo corrente reúne documentos em uso frequente e ligados às atividades imediatas do órgão produtor.",
+          "C": "INCORRETA. Perguntar qual apoio é necessário respeita autonomia.",
+          "D": "INCORRETA. Deficiência não implica incapacidade para decidir ou responder.",
+          "E": "INCORRETA. Adaptações razoáveis promovem acesso efetivo ao serviço."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O arquivo corrente reúne documentos em uso frequente e ligados às atividades imediatas do órgão produtor."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-086",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Teoria das três idades",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Um processo deixou de ser consultado com frequência, mas ainda deve ser mantido por prazo administrativo antes de sua destinação final. Ele se encontra, em regra, na fase: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "corrente.",
+        "B": "intermediária.",
+        "C": "permanente.",
+        "D": "de protocolo externo.",
+        "E": "de restauração."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Documentos intermediários aguardam cumprimento de prazo ou destinação, com uso menos frequente.",
+        "fundamento_legal_ou_teorico": "Teoria das três idades: Documentos intermediários aguardam cumprimento de prazo ou destinação, com uso menos frequente.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Urgência alegada não afasta as regras de acesso e proteção.",
+          "B": "CORRETA. Documentos intermediários aguardam cumprimento de prazo ou destinação, com uso menos frequente.",
+          "C": "INCORRETA. Acesso considera finalidade, classificação e dados pessoais.",
+          "D": "INCORRETA. Um endereço informado não comprova autorização para receber o documento.",
+          "E": "INCORRETA. Publicar documento restrito amplia indevidamente o acesso."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Documentos intermediários aguardam cumprimento de prazo ou destinação, com uso menos frequente."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-087",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Protocolo",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Entre as atividades normalmente associadas ao protocolo está: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "avaliar definitivamente o valor histórico de todo documento recebido.",
+        "B": "receber, registrar, classificar e encaminhar documentos conforme os procedimentos do órgão.",
+        "C": "autorizar sozinho a eliminação de documentos permanentes.",
+        "D": "substituir a unidade responsável pela decisão de mérito.",
+        "E": "alterar o conteúdo do documento para adequá-lo ao processo."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O protocolo controla o recebimento e a tramitação documental; avaliação e destinação seguem regras e competências próprias.",
+        "fundamento_legal_ou_teorico": "Protocolo: O protocolo controla o recebimento e a tramitação documental; avaliação e destinação seguem regras e competências próprias.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Continuidade admite interrupções justificadas ou previstas em lei.",
+          "B": "CORRETA. O protocolo controla o recebimento e a tramitação documental; avaliação e destinação seguem regras e competências próprias.",
+          "C": "INCORRETA. O princípio evita paralisações indevidas, não qualquer pausa.",
+          "D": "INCORRETA. Trocar prestador depende do regime jurídico aplicável.",
+          "E": "INCORRETA. A Administração pode organizar horários de atendimento."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O protocolo controla o recebimento e a tramitação documental; avaliação e destinação seguem regras e competências próprias."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-088",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Avaliação documental",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "A tabela de temporalidade documental é instrumento utilizado para: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "definir prazos de guarda e destinação dos documentos, conforme valores e normas aplicáveis.",
+        "B": "organizar documentos exclusivamente pelo nome do interessado.",
+        "C": "substituir o plano de classificação em todas as fases.",
+        "D": "autorizar a eliminação imediata de qualquer documento digital.",
+        "E": "registrar apenas empréstimos de documentos permanentes."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "A tabela de temporalidade estabelece prazos de guarda e destinação, considerando a avaliação documental.",
+        "fundamento_legal_ou_teorico": "Avaliação documental: A tabela de temporalidade estabelece prazos de guarda e destinação, considerando a avaliação documental.",
+        "analise_alternativas": {
+          "A": "CORRETA. A tabela de temporalidade estabelece prazos de guarda e destinação, considerando a avaliação documental.",
+          "B": "INCORRETA. Concessão é contratual e precedida de licitação.",
+          "C": "INCORRETA. A concessão tem contrato, licitação e prazo determinado.",
+          "D": "INCORRETA. A delegação transfere execução, não titularidade do serviço.",
+          "E": "INCORRETA. A delegação cabe ao poder concedente segundo a lei."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A tabela de temporalidade estabelece prazos de guarda e destinação, considerando a avaliação documental."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-089",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Arquivos permanentes",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Documentos de valor histórico, probatório ou informativo que justificam guarda definitiva devem ser recolhidos ao arquivo: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "corrente.",
+        "B": "intermediário.",
+        "C": "permanente.",
+        "D": "setorial de protocolo, obrigatoriamente.",
+        "E": "temporário de descarte."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "O arquivo permanente conserva documentos de guarda definitiva por seu valor secundário.",
+        "fundamento_legal_ou_teorico": "Arquivos permanentes: O arquivo permanente conserva documentos de guarda definitiva por seu valor secundário.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Escuta ativa é receptiva e empática, não defensiva.",
+          "B": "INCORRETA. Confirmar entendimento e explicar passos promove compreensão mútua.",
+          "C": "CORRETA. O arquivo permanente conserva documentos de guarda definitiva por seu valor secundário.",
+          "D": "INCORRETA. Atendimento respeitoso e claro não é privilégio.",
+          "E": "INCORRETA. O atendente continua responsável por encaminhar corretamente."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O arquivo permanente conserva documentos de guarda definitiva por seu valor secundário."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-090",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Preservação documental",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Para reduzir danos a documentos em papel, é recomendável: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "armazená-los sob luz solar direta para evitar fungos.",
+        "B": "manuseá-los com alimentos e bebidas por perto.",
+        "C": "controlar umidade, temperatura, limpeza e acondicionamento.",
+        "D": "usar fitas adesivas comuns em rasgos como rotina de conservação.",
+        "E": "dobrar documentos grandes para que caibam em pastas menores."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Condições ambientais estáveis e acondicionamento adequado são medidas preventivas de conservação.",
+        "fundamento_legal_ou_teorico": "Preservação documental: Condições ambientais estáveis e acondicionamento adequado são medidas preventivas de conservação.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Luz solar direta acelera danos e descoloração do papel.",
+          "B": "INCORRETA. Alimentos e bebidas aumentam riscos de manchas e pragas.",
+          "C": "CORRETA. Condições ambientais estáveis e acondicionamento adequado são medidas preventivas de conservação.",
+          "D": "INCORRETA. Controle ambiental e acondicionamento ajudam a conservar documentos.",
+          "E": "INCORRETA. Fita adesiva comum pode deteriorar o papel."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Condições ambientais estáveis e acondicionamento adequado são medidas preventivas de conservação."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-091",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Qualidade no atendimento",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Uma pessoa procura informação que o atendente não tem autorização para fornecer. A conduta mais adequada é: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "inventar uma resposta provável para evitar demora.",
+        "B": "explicar o limite, indicar o canal ou setor competente e orientar o encaminhamento.",
+        "C": "encerrar o atendimento sem explicação.",
+        "D": "compartilhar informação restrita para demonstrar presteza.",
+        "E": "transferir a pessoa sem informar o motivo ou o destino."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Atendimento eficiente combina clareza e presteza com respeito às normas e encaminhamento correto.",
+        "fundamento_legal_ou_teorico": "Qualidade no atendimento: Atendimento eficiente combina clareza e presteza com respeito às normas e encaminhamento correto.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Inventar resposta prejudica precisão e confiança.",
+          "B": "CORRETA. Atendimento eficiente combina clareza e presteza com respeito às normas e encaminhamento correto.",
+          "C": "INCORRETA. Encaminhar ao setor competente mantém o atendimento útil e correto.",
+          "D": "INCORRETA. Encerrar sem explicação não orienta o usuário.",
+          "E": "INCORRETA. Presteza não autoriza revelar informação restrita."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Atendimento eficiente combina clareza e presteza com respeito às normas e encaminhamento correto."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-092",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Acessibilidade no atendimento",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Ao atender uma pessoa com deficiência, o servidor deve: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "dirigir-se exclusivamente ao acompanhante, mesmo quando a pessoa pode responder.",
+        "B": "oferecer atendimento respeitoso, perguntar se há necessidade de apoio e observar as formas de comunicação da pessoa.",
+        "C": "presumir incapacidade para tomar decisões.",
+        "D": "negar adaptações por tratar todos exatamente da mesma maneira.",
+        "E": "elevar a voz em qualquer situação, independentemente da necessidade."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O atendimento deve respeitar autonomia e necessidades individuais, oferecendo apoio sem presumir incapacidade.",
+        "fundamento_legal_ou_teorico": "Acessibilidade no atendimento: O atendimento deve respeitar autonomia e necessidades individuais, oferecendo apoio sem presumir incapacidade.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O atendente deve falar diretamente com a pessoa, não só com acompanhante.",
+          "B": "CORRETA. O atendimento deve respeitar autonomia e necessidades individuais, oferecendo apoio sem presumir incapacidade.",
+          "C": "INCORRETA. Perguntar qual apoio é necessário respeita autonomia.",
+          "D": "INCORRETA. Deficiência não implica incapacidade para decidir ou responder.",
+          "E": "INCORRETA. Adaptações razoáveis promovem acesso efetivo ao serviço."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O atendimento deve respeitar autonomia e necessidades individuais, oferecendo apoio sem presumir incapacidade."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-093",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Ética e discrição",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Ao receber pedido de informação sobre documento funcional de terceiro, o servidor deve: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "fornecer o conteúdo integral sempre que o solicitante alegar urgência.",
+        "B": "verificar as regras de acesso e proteger informações restritas ou pessoais.",
+        "C": "enviar o documento a qualquer endereço eletrônico informado.",
+        "D": "fotografar o documento e publicar em grupo de mensagens.",
+        "E": "confirmar dados pessoais para qualquer pessoa que telefone."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A prestação de informação deve respeitar as regras de acesso, a finalidade e os deveres de sigilo e proteção aplicáveis.",
+        "fundamento_legal_ou_teorico": "Ética e discrição: A prestação de informação deve respeitar as regras de acesso, a finalidade e os deveres de sigilo e proteção aplicáveis.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Urgência alegada não afasta as regras de acesso e proteção.",
+          "B": "CORRETA. A prestação de informação deve respeitar as regras de acesso, a finalidade e os deveres de sigilo e proteção aplicáveis.",
+          "C": "INCORRETA. Acesso considera finalidade, classificação e dados pessoais.",
+          "D": "INCORRETA. Um endereço informado não comprova autorização para receber o documento.",
+          "E": "INCORRETA. Publicar documento restrito amplia indevidamente o acesso."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A prestação de informação deve respeitar as regras de acesso, a finalidade e os deveres de sigilo e proteção aplicáveis."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-094",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Serviços públicos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "A continuidade do serviço público significa, em termos gerais, que: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "todo serviço deve funcionar sem qualquer interrupção, inclusive em situações legalmente justificadas.",
+        "B": "a prestação deve evitar paralisações indevidas, observadas as hipóteses e garantias previstas em lei.",
+        "C": "o usuário pode substituir o prestador a qualquer momento sem procedimento.",
+        "D": "a Administração não pode organizar horários de atendimento.",
+        "E": "a prestação deve ser gratuita em todas as modalidades."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O princípio busca evitar interrupções indevidas, sem excluir hipóteses de suspensão admitidas pelo ordenamento.",
+        "fundamento_legal_ou_teorico": "Serviços públicos: O princípio busca evitar interrupções indevidas, sem excluir hipóteses de suspensão admitidas pelo ordenamento.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Continuidade admite interrupções justificadas ou previstas em lei.",
+          "B": "CORRETA. O princípio busca evitar interrupções indevidas, sem excluir hipóteses de suspensão admitidas pelo ordenamento.",
+          "C": "INCORRETA. O princípio evita paralisações indevidas, não qualquer pausa.",
+          "D": "INCORRETA. Trocar prestador depende do regime jurídico aplicável.",
+          "E": "INCORRETA. A Administração pode organizar horários de atendimento."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "O princípio busca evitar interrupções indevidas, sem excluir hipóteses de suspensão admitidas pelo ordenamento."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-095",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Delegação de serviços públicos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Na concessão de serviço público, a delegação é formalizada, em regra, por: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "ato verbal precário, sem licitação.",
+        "B": "contrato, precedido de licitação, por prazo determinado.",
+        "C": "lei que transfere a titularidade do serviço ao particular.",
+        "D": "autorização judicial sem participação do poder concedente.",
+        "E": "convênio que torna o concessionário órgão da Administração direta."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A concessão é delegação contratual precedida de licitação; a titularidade permanece com o poder público.",
+        "fundamento_legal_ou_teorico": "Delegação de serviços públicos: A concessão é delegação contratual precedida de licitação; a titularidade permanece com o poder público.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Concessão é contratual e precedida de licitação.",
+          "B": "CORRETA. A concessão é delegação contratual precedida de licitação; a titularidade permanece com o poder público.",
+          "C": "INCORRETA. A concessão tem contrato, licitação e prazo determinado.",
+          "D": "INCORRETA. A delegação transfere execução, não titularidade do serviço.",
+          "E": "INCORRETA. A delegação cabe ao poder concedente segundo a lei."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "A concessão é delegação contratual precedida de licitação; a titularidade permanece com o poder público."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-096",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Empatia e comunicação",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Conceito aplicado a situação de rotina administrativa; assinale a alternativa correta.",
+      "texto_apoio": null,
+      "enunciado": "Durante uma reclamação, o atendente ouve sem interromper, confirma o que entendeu e explica os próximos passos. A conduta demonstra: Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "empatia, escuta ativa e comunicação clara.",
+        "B": "comportamento defensivo e omissão.",
+        "C": "tratamento privilegiado incompatível com a isonomia.",
+        "D": "transferência da responsabilidade ao usuário.",
+        "E": "desvio de finalidade no atendimento."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "Ouvir, confirmar o entendimento e explicar providências favorece compreensão mútua e atendimento respeitoso.",
+        "fundamento_legal_ou_teorico": "Empatia e comunicação: Ouvir, confirmar o entendimento e explicar providências favorece compreensão mútua e atendimento respeitoso.",
+        "analise_alternativas": {
+          "A": "CORRETA. Ouvir, confirmar o entendimento e explicar providências favorece compreensão mútua e atendimento respeitoso.",
+          "B": "INCORRETA. Escuta ativa é receptiva e empática, não defensiva.",
+          "C": "INCORRETA. Confirmar entendimento e explicar passos promove compreensão mútua.",
+          "D": "INCORRETA. Atendimento respeitoso e claro não é privilégio.",
+          "E": "INCORRETA. O atendente continua responsável por encaminhar corretamente."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de uma universidade federal, identifique a finalidade do procedimento e aplique o conceito correspondente ao caso apresentado.",
+        "pilula_fixacao": "Ouvir, confirmar o entendimento e explicar providências favorece compreensão mútua e atendimento respeitoso."
       }
     }
   ]

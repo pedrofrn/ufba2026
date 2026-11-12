@@ -66,9 +66,13 @@
         rate: 1
       },
       answers: {},
+      reviewSchedule: {},
       eliminated: {},
       bookmarks: {},
       notes: {},
+      examSessions: [],
+      essaySessions: [],
+      studyPlan: { dailyMinutes: 60 },
       essayState: {
         selectedThemeId: 'tema-1',
         checklist: {},
@@ -92,9 +96,16 @@
         ...parsed,
         audioPreferences: normalizeAudioPreferences(parsed.audioPreferences),
         answers: parsed.answers && typeof parsed.answers === 'object' ? parsed.answers : {},
+        reviewSchedule: parsed.reviewSchedule && typeof parsed.reviewSchedule === 'object' ? parsed.reviewSchedule : {},
         eliminated: parsed.eliminated && typeof parsed.eliminated === 'object' ? parsed.eliminated : {},
         bookmarks: parsed.bookmarks && typeof parsed.bookmarks === 'object' ? parsed.bookmarks : {},
         notes: parsed.notes && typeof parsed.notes === 'object' ? parsed.notes : {},
+        examSessions: Array.isArray(parsed.examSessions) ? parsed.examSessions : [],
+        essaySessions: Array.isArray(parsed.essaySessions) ? parsed.essaySessions : [],
+        studyPlan: {
+          ...fallback.studyPlan,
+          ...(parsed.studyPlan && typeof parsed.studyPlan === 'object' ? parsed.studyPlan : {})
+        },
         essayState: {
           ...fallback.essayState,
           ...(parsed.essayState && typeof parsed.essayState === 'object' ? parsed.essayState : {}),
@@ -362,9 +373,16 @@
       ...ps,
       audioPreferences: normalizeAudioPreferences(ps.audioPreferences),
       answers: ps.answers && typeof ps.answers === 'object' ? ps.answers : {},
+      reviewSchedule: ps.reviewSchedule && typeof ps.reviewSchedule === 'object' ? ps.reviewSchedule : {},
       eliminated: ps.eliminated && typeof ps.eliminated === 'object' ? ps.eliminated : {},
       bookmarks: ps.bookmarks && typeof ps.bookmarks === 'object' ? ps.bookmarks : {},
       notes: ps.notes && typeof ps.notes === 'object' ? ps.notes : {},
+      examSessions: Array.isArray(ps.examSessions) ? ps.examSessions : [],
+      essaySessions: Array.isArray(ps.essaySessions) ? ps.essaySessions : [],
+      studyPlan: {
+        ...base.studyPlan,
+        ...(ps.studyPlan && typeof ps.studyPlan === 'object' ? ps.studyPlan : {})
+      },
       essayState: {
         ...base.essayState,
         ...(ps.essayState && typeof ps.essayState === 'object' ? ps.essayState : {})

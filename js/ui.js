@@ -251,7 +251,7 @@
     return `
       <div class="quick-telemetry grid grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
         <div class="paper-card rounded-lg px-4 py-3">
-          <div class="text-[11px] uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Nota Projetada (Tabela 10.1)</div>
+          <div class="text-[11px] uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Estimativa pela 1ª tentativa</div>
           <div class="mt-1 flex items-baseline gap-2">
             <span class="font-mono-tabular text-xl font-bold ${telemetry.projectedScore90 >= EDITAL_CONFIG.metaSeguraTop338 ? 'text-emerald-600 dark:text-emerald-400' : telemetry.projectedScore90 >= EDITAL_CONFIG.minimoEliminatorioObjetiva ? 'text-amber-600 dark:text-amber-400' : 'text-rose-600 dark:text-rose-400'}">
               ${telemetry.projectedScore90.toFixed(2).replace('.', ',')}
@@ -264,7 +264,7 @@
         </div>
 
         <div class="paper-card rounded-lg px-4 py-3">
-          <div class="text-[11px] uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Aproveitamento no Banco</div>
+          <div class="text-[11px] uppercase tracking-wider font-semibold text-slate-500 dark:text-slate-400">Acerto em questões inéditas</div>
           <div class="mt-1 flex items-baseline gap-2">
             <span class="font-mono-tabular text-xl font-bold">${telemetry.overallAccuracyPct.toFixed(1).replace('.', ',')}%</span>
             <span class="text-xs opacity-70">${telemetry.totalCorrect}/${telemetry.totalAnswered} acertos</span>
@@ -314,6 +314,10 @@
     const audioBarHtml = renderAudioPlayerBar(audioSnapshot, deck);
 
     const currentQ = deck[currentIndex] || null;
+    const currentAttempts = currentQ && Array.isArray(state.answers?.[currentQ.id]?.historico)
+      ? state.answers[currentQ.id].historico.length
+      : currentQ && state.answers?.[currentQ.id] ? 1 : 0;
+    const nextReviewAt = currentQ ? state.reviewSchedule?.[currentQ.id]?.dueAt : null;
     const topics = Array.from(new Set(
       allQuestions
         .filter((q) => !filters.area || filters.area === 'ALL' || q.area === filters.area)
@@ -340,7 +344,12 @@
         id: 'filtrado',
         label: 'Caderno Filtrado',
         sub: 'Filtro por área, tópico e status'
-      }
+      },
+      ...(activeMode === 'revisao' ? [{
+        id: 'revisao',
+        label: 'Revisões Programadas',
+        sub: `${deck.length} questões vencidas • sequência de recuperação`
+      }] : [])
     ];
 
     const modeStripHtml = `
@@ -615,6 +624,7 @@
               </div>
             </div>
             <p class="mt-2.5 text-sm leading-relaxed">${formatExamText(cc.resumo_direto, false)}</p>
+            ${nextReviewAt ? `<p class="mt-2 text-[11px] font-semibold opacity-75">Próxima revisão programada: ${new Date(nextReviewAt).toLocaleDateString('pt-BR')}</p>` : ''}
           </div>
 
           <!-- Fundamento Legal / Teórico Direto -->
@@ -736,6 +746,9 @@
 
           <div class="flex items-center gap-2">
             <span class="font-mono-tabular text-[11px] opacity-65">${escapeHtml(currentQ.id)}</span>
+            <span class="text-[10px] font-bold px-2 py-1 rounded ${currentAttempts ? 'bg-amber-100 text-amber-900 dark:bg-amber-950/50 dark:text-amber-200' : 'bg-emerald-100 text-emerald-900 dark:bg-emerald-950/50 dark:text-emerald-200'}">
+              ${currentAttempts === 0 ? 'Inédita neste aparelho' : retakingIds.has(currentQ.id) ? `Revisão • tentativa ${currentAttempts + 1}` : `Tentativa registrada (${currentAttempts})`}
+            </span>
             <button
               type="button"
               data-action="toggle-bookmark"
@@ -901,6 +914,181 @@
     `;
   }
 
+  function renderTodayView({ allQuestions, state, telemetry, now = new Date() }) {
+    const learning = telemetry.learningStats;
+    const dailyMinutes = Number(state.studyPlan?.dailyMinutes) || 60;
+    const weakTopic = telemetry.topicBreakdown
+      .filter((topic) => topic.answered >= 2)
+      .sort((a, b) => a.accuracyPct - b.accuracyPct || b.answered - a.answered)[0];
+    const schedule = state.reviewSchedule || {};
+    const reviewQuestions = allQuestions
+      .filter((q) => schedule[q.id]?.dueAt && new Date(schedule[q.id].dueAt).getTime() <= now.getTime())
+      .sort((a, b) => new Date(schedule[a.id].dueAt) - new Date(schedule[b.id].dueAt));
+    const sessions = (state.examSessions || []).slice(0, 5);
+    const pointsFor = (session) => session.respostas.reduce((sum, response) => sum + (response.acertou ? Number(response.peso || 0) : 0), 0);
+    const examDate = new Date(EDITAL_CONFIG.examDateIso);
+    const daysLeft = Math.max(0, Math.ceil((examDate.getTime() - now.getTime()) / 86400000));
+    const blocks = dailyMinutes <= 30
+      ? [{ label: 'Revisões vencidas', minutes: 10 }, { label: 'Questões de Conhecimentos Específicos', minutes: 15 }, { label: 'Anotar um erro ou conceito', minutes: 5 }]
+      : dailyMinutes <= 60
+        ? [{ label: 'Revisões vencidas', minutes: 15 }, { label: 'Questões de Conhecimentos Específicos', minutes: 25 }, { label: 'Conhecimentos básicos', minutes: 10 }, { label: 'Redação ou análise de erros', minutes: 10 }]
+        : [{ label: 'Revisões vencidas', minutes: 20 }, { label: 'Questões de Conhecimentos Específicos', minutes: 35 }, { label: 'Conhecimentos básicos', minutes: 15 }, { label: 'Redação ou análise de erros', minutes: dailyMinutes - 70 }];
+
+    return `
+      <div class="max-w-6xl mx-auto space-y-5">
+        <section class="paper-card rounded-2xl p-5 sm:p-6">
+          <div class="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <div class="text-[11px] font-bold uppercase tracking-wider text-teal-700 dark:text-teal-300">Plano de preparação • ${daysLeft} dias para a prova</div>
+              <h2 class="font-exam-serif text-2xl font-bold mt-1">Seu treino de hoje</h2>
+              <p class="text-sm opacity-75 mt-1">Comece pelas revisões vencidas e use o desempenho da primeira tentativa para medir o que já sabe.</p>
+            </div>
+            <label class="text-xs font-semibold">Tempo disponível hoje
+              <select data-action="set-study-minutes" class="themed-input block mt-1 rounded-lg px-3 py-2">
+                ${[30, 60, 90, 120].map((n) => `<option value="${n}" ${dailyMinutes === n ? 'selected' : ''}>${n} min</option>`).join('')}
+              </select>
+            </label>
+          </div>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-5">
+            ${[
+              ['Questões inéditas', `${learning.unseenCount}`, 'ainda não respondidas neste aparelho'],
+              ['Acerto na 1ª tentativa', `${learning.firstTryAccuracyPct}%`, `${learning.firstTryCorrect} certas • ${learning.firstTryWrong} erradas`],
+              ['Revisões vencidas', `${learning.dueCount}`, 'questões prontas para rever'],
+              ['Questões repetidas', `${learning.repeatAttempts}`, `${learning.repeatAccuracyPct}% de acerto nas repetições`]
+            ].map(([label, value, note]) => `
+              <div class="subtle-surface rounded-xl p-3.5">
+                <div class="text-[11px] font-semibold uppercase tracking-wide opacity-70">${label}</div>
+                <div class="font-mono-tabular text-2xl font-bold mt-1">${value}</div>
+                <div class="text-[11px] opacity-70 mt-1">${note}</div>
+              </div>
+            `).join('')}
+          </div>
+          <p class="text-[11px] opacity-65 mt-3">Esses números usam apenas o histórico salvo neste aparelho. Repetições aparecem separadas e não aumentam o acerto de primeira tentativa.</p>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <section class="paper-card rounded-2xl p-5">
+            <div class="flex items-center justify-between gap-3">
+              <div><h3 class="font-bold">Plano sugerido</h3><p class="text-xs opacity-70 mt-1">Ajustado para ${dailyMinutes} minutos.</p></div>
+              <button data-action="open-tab" data-tab="guide" class="text-xs font-bold text-teal-700 dark:text-teal-300">Ver guia</button>
+            </div>
+            <ol class="mt-4 space-y-2">
+              ${blocks.map((block, index) => `
+                <li class="subtle-surface rounded-lg px-3 py-2.5 flex items-center justify-between gap-3 text-sm">
+                  <span><span class="font-mono-tabular opacity-60 mr-2">${index + 1}.</span>${block.label}</span>
+                  <strong class="font-mono-tabular whitespace-nowrap">${block.minutes} min</strong>
+                </li>
+              `).join('')}
+            </ol>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <button data-action="start-due-reviews" class="px-3.5 py-2 rounded-lg text-xs font-bold bg-teal-700 text-white hover:bg-teal-800">Revisar agora (${reviewQuestions.length})</button>
+              <button data-action="select-mode" data-mode="tiro_curto" class="px-3.5 py-2 rounded-lg text-xs font-bold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800">Começar Tiro Curto</button>
+              <button data-action="open-tab" data-tab="essay" class="px-3.5 py-2 rounded-lg text-xs font-bold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800">Treinar redação</button>
+            </div>
+          </section>
+
+          <section class="paper-card rounded-2xl p-5">
+            <h3 class="font-bold">Próximo foco</h3>
+            ${weakTopic ? `
+              <div class="subtle-surface rounded-xl p-4 mt-3">
+                <div class="text-[11px] uppercase font-bold tracking-wide opacity-65">Menor acerto entre tópicos com pelo menos 2 respostas</div>
+                <div class="font-semibold mt-1">${escapeHtml(weakTopic.topico)}</div>
+                <div class="text-sm mt-1">${weakTopic.correct}/${weakTopic.answered} na primeira tentativa (${weakTopic.accuracyPct}%)</div>
+                <button data-action="start-topic-training" data-topic="${escapeHtml(weakTopic.topico)}" class="mt-3 px-3.5 py-2 rounded-lg text-xs font-bold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800">Treinar este tópico</button>
+              </div>
+            ` : `
+              <p class="subtle-surface rounded-xl p-4 mt-3 text-sm opacity-80">Responda algumas questões inéditas. Depois, a aplicação aponta os tópicos que merecem mais atenção com base na primeira tentativa.</p>
+              <button data-action="select-mode" data-mode="tiro_curto" class="mt-3 px-3.5 py-2 rounded-lg text-xs font-bold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800">Iniciar questões</button>
+            `}
+            <div class="mt-4 p-3 rounded-lg border border-amber-500/30 bg-amber-50/60 dark:bg-amber-950/25 text-xs leading-relaxed">
+              <strong>Revisão:</strong> após errar, a questão volta amanhã. Acertos em revisões espaçadas avançam para 3, 7, 14 e 21 dias.
+            </div>
+          </section>
+        </div>
+
+        <section class="paper-card rounded-2xl p-5">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+            <div><h3 class="font-bold">Simulados recentes</h3><p class="text-xs opacity-70 mt-1">Cada simulado fica registrado como uma tentativa independente.</p></div>
+            <button data-action="select-mode" data-mode="simulado_60" class="px-3.5 py-2 rounded-lg text-xs font-bold bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900">Iniciar simulado completo</button>
+          </div>
+          ${sessions.length ? `
+            <div class="overflow-x-auto"><table class="w-full text-xs text-left"><thead><tr class="border-b hairline-divider opacity-65"><th class="py-2 pr-3">Data</th><th class="py-2 pr-3">Situação</th><th class="py-2 pr-3">Respondidas</th><th class="py-2 pr-3">Pontos</th><th class="py-2">Tempo</th></tr></thead><tbody>
+              ${sessions.map((session) => {
+                const areas = EDITAL_CONFIG.areaOrder.map((area) => {
+                  const responses = session.respostas.filter((item) => item.area === area);
+                  const correct = responses.filter((item) => item.acertou).length;
+                  const points = responses.reduce((sum, item) => sum + (item.acertou ? Number(item.peso || 0) : 0), 0);
+                  return responses.length ? `${area}: ${correct}/${responses.length}, ${points.toFixed(1).replace('.', ',')} pts` : null;
+                }).filter(Boolean);
+                const statusLabel = session.status === 'concluido' ? 'Conclu\u00eddo'
+                  : session.status === 'em_andamento' ? 'Em andamento'
+                    : session.status === 'tempo_esgotado' ? 'Tempo esgotado' : 'Interrompido';
+                return `
+                  <tr class="border-b hairline-divider"><td class="py-2.5 pr-3">${new Date(session.startedAt).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' })}</td><td class="py-2.5 pr-3">${statusLabel}</td><td class="py-2.5 pr-3">${session.respostas.length}/${session.questionIds.length}</td><td class="py-2.5 pr-3">${pointsFor(session).toFixed(1).replace('.', ',')} ${session.status === 'concluido' ? '/ 90' : 'at\u00e9 agora'}</td><td class="py-2.5">${formatDuration(session.elapsedSeconds || 0)}</td></tr>
+                  <tr class="border-b hairline-divider"><td colspan="5" class="pb-2.5 text-[10px] opacity-70">${areas.length ? areas.map(escapeHtml).join(' | ') : 'Sem respostas por area registradas.'}</td></tr>
+                `;
+              }).join('')}
+            </tbody></table></div>
+          ` : `<p class="subtle-surface rounded-lg p-3 text-xs opacity-75">Nenhum simulado registrado ainda.</p>`}
+        </section>
+      </div>
+    `;
+  }
+
+  function renderStudyGuideView() {
+    const sections = [
+      {
+        title: '1. Como organizar uma sessão',
+        body: 'Comece pelas revisões vencidas. Depois responda questões sem consultar o comentário. Ao errar, registre a causa: conteúdo desconhecido, confusão entre conceitos, leitura apressada ou gestão do tempo. Termine explicando o conceito correto com suas próprias palavras.',
+        action: 'open-tab', target: 'today', label: 'Ver plano de hoje'
+      },
+      {
+        title: '2. Como usar as questões',
+        body: 'Trate questões inéditas e revisões como medidas diferentes. Leia o comando até o fim, marque termos restritivos como “exceto” e “incorreta”, elimine alternativas e só então confirme. Leia a análise de cada distrator, especialmente quando sua resposta estiver errada.',
+        action: 'select-mode', target: 'tiro_curto', label: 'Abrir Tiro Curto'
+      },
+      {
+        title: '3. Distribuição da prova objetiva',
+        body: 'A prova tem 60 questões e 90 pontos: 12 de Língua Portuguesa (12 pts), 6 de Informática (6 pts), 12 de Administração Pública (12 pts) e 30 de Conhecimentos Específicos (60 pts). Priorize os específicos sem abandonar nenhuma disciplina básica.',
+        action: 'select-mode', target: 'simulado_60', label: 'Fazer simulado de 60 questões'
+      },
+      {
+        title: '4. Como revisar ao longo da semana',
+        body: 'Revise erros no dia seguinte. Quando acertar uma revisão, aumente o intervalo e retorne em 3, 7, 14 e 21 dias. Alterne assuntos diferentes entre blocos e reserve um simulado cronometrado para praticar ritmo e concentração.',
+        action: 'start-due-reviews', target: '', label: 'Fazer revisões vencidas'
+      },
+      {
+        title: '5. Redação',
+        body: 'Pratique textos dissertativo-argumentativos completos de 20 a 30 linhas. Faça uma tese explícita, desenvolva dois argumentos e conclua sem fugir do tema. Use a autoavaliação do edital como checklist; ela é uma estimativa pessoal, não uma nota oficial da banca.',
+        action: 'open-tab', target: 'essay', label: 'Abrir treino de redação'
+      },
+      {
+        title: '6. Semana da prova',
+        body: 'Reduza o volume de conteúdo novo. Refaça revisões vencidas, leia seus registros de erros e faça uma última simulação sem sacrificar descanso. Confira com antecedência local, horário, documentos e materiais autorizados no edital e nas convocações oficiais.',
+        action: 'open-tab', target: 'telemetry', label: 'Ver desempenho por área'
+      }
+    ];
+    return `
+      <div class="max-w-5xl mx-auto space-y-5">
+        <section class="paper-card rounded-2xl p-6">
+          <div class="text-[11px] uppercase tracking-wider font-bold text-teal-700 dark:text-teal-300">Centro de Treinamento • Assistente em Administração</div>
+          <h2 class="font-exam-serif text-2xl font-bold mt-1">Guia prático de estudo</h2>
+          <p class="text-sm opacity-75 mt-2 max-w-3xl">Orientações para transformar cada sessão em prática de recuperação, correção de erros e preparo para as condições da prova.</p>
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          ${sections.map((section) => `
+            <section class="paper-card rounded-xl p-5 flex flex-col items-start">
+              <h3 class="text-sm font-bold">${section.title}</h3>
+              <p class="text-xs leading-relaxed opacity-80 mt-2 flex-1">${section.body}</p>
+              <button data-action="${section.action}" ${section.target ? `data-${section.action === 'open-tab' ? 'tab' : 'mode'}="${section.target}"` : ''} class="mt-4 px-3.5 py-2 rounded-lg text-xs font-bold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800">${section.label}</button>
+            </section>
+          `).join('')}
+        </div>
+        <p class="text-[11px] opacity-60 px-1">O plano é uma orientação de treino. A pontuação projetada e a autoavaliação da redação não garantem o resultado real da prova.</p>
+      </div>
+    `;
+  }
+
   function renderTelemetryView(telemetry) {
     const score = telemetry.projectedScore90;
     const minPct = (EDITAL_CONFIG.minimoEliminatorioObjetiva / EDITAL_CONFIG.totalPontosObjetiva) * 100; // 50%
@@ -960,6 +1148,8 @@
           </div>
         </div>
 
+        <p class="-mt-4 text-[11px] opacity-65 px-1">Os alertas e a nota são estimativas a partir das primeiras tentativas registradas neste aparelho; indicam pontos de atenção do treino, não o resultado oficial da prova.</p>
+
         <!-- Termômetro da Linha de Corte (90,00 pontos) -->
         <section class="paper-card rounded-2xl p-6">
           <div class="flex flex-wrap items-end justify-between gap-4 mb-5">
@@ -968,7 +1158,7 @@
                 Termômetro da Linha de Corte — Edital UFBA nº 007/2026 (Tabelas 10.1 e 13.1)
               </h3>
               <p class="text-sm opacity-75 mt-1">
-                Projeção calculada pelo aproveitamento real multiplicado pelo peso e total de questões de cada disciplina na prova oficial (60 questões = 90,00 pts).
+                Estimativa baseada na primeira tentativa de cada questão, ponderada pelo peso e pela distribuição oficial (60 questões = 90,00 pts). Repetições não elevam este indicador.
               </p>
             </div>
             <div class="text-right">
@@ -1178,7 +1368,7 @@
     `;
   }
 
-  function renderEssayGuideView(essayState) {
+  function renderEssayGuideView(essayState, essaySessions = []) {
     const selectedTheme = PROBABLE_THEMES.find((t) => t.id === essayState.selectedThemeId) || PROBABLE_THEMES[0];
     const checklist = essayState.checklist || {};
     const scores = essayState.selfScores || { c1: 12, c2: 12, c3: 12, c4: 12 };
@@ -1355,6 +1545,26 @@
             rows="12"
             placeholder="Digite aqui seu treino de redação dissertativo-argumentativa (4 parágrafos, sem título obrigatório)..."
             class="themed-input essay-ruled-textarea w-full rounded-xl px-4 text-sm font-exam-serif resize-y">${escapeHtml(essayState.draftText || '')}</textarea>
+          <div class="flex flex-wrap items-center justify-between gap-3 mt-3">
+            <p class="text-[11px] opacity-65">Registre uma cópia da redação e da autoavaliação para acompanhar a evolução sem apagar o rascunho atual.</p>
+            <button data-action="save-essay-session" class="px-4 py-2 rounded-lg text-xs font-bold bg-teal-700 text-white hover:bg-teal-800">Registrar redação</button>
+          </div>
+        </section>
+
+        <section class="paper-card rounded-2xl p-5">
+          <h3 class="font-bold">Histórico de redações (${essaySessions.length})</h3>
+          <p class="text-xs opacity-70 mt-1 mb-3">Cada registro guarda uma cópia do texto, do tema e das notas atribuídas por você.</p>
+          ${essaySessions.length ? `<div class="space-y-2">
+            ${essaySessions.map((essay) => `
+              <details class="subtle-surface rounded-lg px-3.5 py-3">
+                <summary class="cursor-pointer flex flex-wrap items-center justify-between gap-2 text-xs font-semibold">
+                  <span>${new Date(essay.createdAt).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' })} • ${essay.metrics?.estimatedLines || 0} linhas estimadas</span>
+                  <span class="font-mono-tabular">${Number(essay.totalScore || 0).toFixed(1).replace('.', ',')} / 60</span>
+                </summary>
+                <p class="mt-3 text-xs leading-relaxed whitespace-pre-wrap">${escapeHtml(essay.text)}</p>
+              </details>
+            `).join('')}
+          </div>` : `<p class="subtle-surface rounded-lg p-3 text-xs opacity-75">Depois de escrever, clique em “Registrar redação” para criar o primeiro registro.</p>`}
         </section>
       </div>
     `;
@@ -1397,6 +1607,8 @@
   window.AvaliaUI = {
     renderCountdown,
     renderExamView,
+    renderTodayView,
+    renderStudyGuideView,
     renderTelemetryView,
     renderErrorNotebookView,
     renderEssayGuideView,

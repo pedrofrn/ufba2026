@@ -26,6 +26,8 @@
     filterQuestions,
     getErrorNotebookQuestions,
     computeTelemetry,
+    buildDueReviewDeck,
+    updateReviewSchedule,
     formatDuration,
     getExamCountdown
   } = window.AvaliaEngine;
@@ -37,6 +39,8 @@
   const {
     renderCountdown,
     renderExamView,
+    renderTodayView,
+    renderStudyGuideView,
     renderTelemetryView,
     renderErrorNotebookView,
     renderEssayGuideView,
@@ -59,7 +63,7 @@
 
     state: loadProgressState(),
 
-    activeTab: 'exam', // 'exam' | 'telemetry' | 'errors' | 'essay'
+    activeTab: 'today', // 'today' | 'exam' | 'telemetry' | 'errors' | 'essay' | 'guide'
     activeMode: 'tiro_curto', // 'tiro_curto' | 'basicos' | 'simulado_60' | 'filtrado'
     showFilters: false,
     filters: {
@@ -74,6 +78,7 @@
     currentIndex: 0,
     pendingSelections: {},
     retakingIds: new Set(),
+    activeExamSessionId: null,
 
     sessionTimer: {
       presetMinutes: 30,
@@ -270,6 +275,67 @@
   // =========================================================================
   // Construção de Cadernos e Navegação de Questões
   // =========================================================================
+  function createLocalId(prefix) {
+    const randomPart = window.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    return `${prefix}-${randomPart}`;
+  }
+
+  function closeActiveExamSession(status = 'interrompido') {
+    if (!app.activeExamSessionId) return;
+    const session = app.state.examSessions.find((item) => item.id === app.activeExamSessionId);
+    if (session && session.status === 'em_andamento') {
+      session.status = status;
+      session.finishedAt = new Date().toISOString();
+      session.elapsedSeconds = app.sessionTimer.elapsedSeconds;
+      saveProgressState(app.state);
+    }
+    app.activeExamSessionId = null;
+  }
+
+  function startExamSession() {
+    const session = {
+      id: createLocalId('simulado'),
+      startedAt: new Date().toISOString(),
+      finishedAt: null,
+      status: 'em_andamento',
+      elapsedSeconds: 0,
+      questionIds: app.deck.map((q) => q.id),
+      respostas: []
+    };
+    if (!Array.isArray(app.state.examSessions)) app.state.examSessions = [];
+    app.state.examSessions.unshift(session);
+    app.state.examSessions = app.state.examSessions.slice(0, 30);
+    app.activeExamSessionId = session.id;
+    saveProgressState(app.state);
+  }
+
+  function recordExamSessionAnswer(question, chosen, isCorrect, spent) {
+    if (!app.activeExamSessionId) return;
+    const session = app.state.examSessions.find((item) => item.id === app.activeExamSessionId);
+    if (!session || session.status !== 'em_andamento') return;
+    const response = {
+      questionId: question.id,
+      area: question.area,
+      peso: question.peso,
+      alternativa: chosen,
+      acertou: isCorrect,
+      tempoSegundos: spent,
+      respondidaEm: new Date().toISOString()
+    };
+    const existingIndex = session.respostas.findIndex((item) => item.questionId === question.id);
+    if (existingIndex >= 0) session.respostas[existingIndex] = response;
+    else session.respostas.push(response);
+    session.elapsedSeconds = app.sessionTimer.elapsedSeconds;
+    if (session.respostas.length >= session.questionIds.length) {
+      session.status = 'concluido';
+      session.finishedAt = new Date().toISOString();
+      app.activeExamSessionId = null;
+      app.sessionTimer.running = false;
+      showToast('Simulado concluído. Resultado salvo em Hoje.', 'success');
+    }
+    saveProgressState(app.state);
+  }
+
   function rebuildDeck({ preserveCurrentId = false, targetQid = null } = {}) {
     const previousQid = targetQid || (preserveCurrentId && app.deck[app.currentIndex]?.id) || null;
     let nextDeck = [];
@@ -279,7 +345,9 @@
     } else if (app.activeMode === 'basicos') {
       nextDeck = buildBasicosDeck(app.allQuestions, app.state.answers);
     } else if (app.activeMode === 'simulado_60') {
-      nextDeck = buildSimulado60Deck(app.allQuestions, app.state.answers);
+      nextDeck = buildSimulado60Deck(app.allQuestions, app.state.examSessions || []);
+    } else if (app.activeMode === 'revisao') {
+      nextDeck = buildDueReviewDeck(app.allQuestions, app.state.reviewSchedule || {}, new Date());
     } else {
       nextDeck = filterQuestions(app.allQuestions, app.filters, app.state);
     }
@@ -296,6 +364,8 @@
 
   function switchMode(mode) {
     app.audioController?.stop();
+    if (mode !== app.activeMode || mode === 'simulado_60') closeActiveExamSession();
+    app.retakingIds.clear();
     app.activeTab = 'exam';
     app.activeMode = mode;
     if (mode === 'filtrado') {
@@ -304,9 +374,17 @@
       configureTimerPreset(30, false);
     } else if (mode === 'simulado_60') {
       configureTimerPreset(240, false);
+    } else if (mode === 'revisao') {
+      configureTimerPreset(30, false);
     }
 
     rebuildDeck({ preserveCurrentId: false });
+    if (mode === 'simulado_60') {
+      app.retakingIds = new Set(app.deck.map((q) => q.id));
+      startExamSession();
+    } else if (mode === 'revisao') {
+      app.retakingIds = new Set(app.deck.map((q) => q.id));
+    }
     syncIdleAudioPlaylist();
     app.questionElapsedSeconds = 0;
     renderCurrentView();
@@ -417,6 +495,7 @@
           if (st.remainingSeconds === 0 && !st.expiredNotified) {
             st.expiredNotified = true;
             st.running = false;
+            closeActiveExamSession('tempo_esgotado');
             showToast('Tempo da sessão tática encerrado! Confira seu desempenho e revise os erros.', 'warning');
             renderCurrentView();
             return;
@@ -494,7 +573,8 @@
       alternativa: chosen,
       acertou: isCorrect,
       data: nowIso,
-      tempoSegundos: spent
+      tempoSegundos: spent,
+      primeiraTentativa: history.length === 0
     });
 
     app.state.answers[currentQ.id] = {
@@ -505,6 +585,13 @@
       tempoSegundos: spent,
       historico: history
     };
+    if (!app.state.reviewSchedule) app.state.reviewSchedule = {};
+    app.state.reviewSchedule[currentQ.id] = updateReviewSchedule(
+      app.state.reviewSchedule[currentQ.id],
+      isCorrect,
+      new Date(nowIso)
+    );
+    recordExamSessionAnswer(currentQ, chosen, isCorrect, spent);
 
     delete app.pendingSelections[currentQ.id];
     app.retakingIds.delete(currentQ.id);
@@ -726,7 +813,14 @@
     const telemetry = computeTelemetry(app.allQuestions, app.state);
     const audioSnapshot = getAudioUiState();
 
-    if (app.activeTab === 'exam') {
+    if (app.activeTab === 'today') {
+      dom.mainWorkspace.innerHTML = renderTodayView({
+        allQuestions: app.allQuestions,
+        state: app.state,
+        telemetry,
+        now: new Date()
+      });
+    } else if (app.activeTab === 'exam') {
       const currentQ = app.deck[app.currentIndex] || null;
       const pendingSelection = currentQ ? (app.pendingSelections[currentQ.id] || null) : null;
 
@@ -750,16 +844,37 @@
     } else if (app.activeTab === 'errors') {
       dom.mainWorkspace.innerHTML = renderErrorNotebookView(app.allQuestions, app.state, audioSnapshot);
     } else if (app.activeTab === 'essay') {
-      dom.mainWorkspace.innerHTML = renderEssayGuideView(app.state.essayState);
+      dom.mainWorkspace.innerHTML = renderEssayGuideView(app.state.essayState, app.state.essaySessions || []);
+    } else if (app.activeTab === 'guide') {
+      dom.mainWorkspace.innerHTML = renderStudyGuideView();
     }
   }
 
   function switchTab(tabName) {
-    if (!['exam', 'telemetry', 'errors', 'essay'].includes(tabName)) return;
+    if (!['today', 'exam', 'telemetry', 'errors', 'essay', 'guide'].includes(tabName)) return;
     app.activeTab = tabName;
     syncIdleAudioPlaylist();
     renderCurrentView();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function startDueReviews() {
+    const dueQuestions = buildDueReviewDeck(app.allQuestions, app.state.reviewSchedule || {}, new Date());
+    if (!dueQuestions.length) {
+      showToast('Você não tem revisões vencidas. Faça questões novas ou volte na próxima data indicada.', 'info');
+      return;
+    }
+    app.audioController?.stop();
+    closeActiveExamSession();
+    app.activeTab = 'exam';
+    app.activeMode = 'revisao';
+    app.deck = dueQuestions;
+    app.currentIndex = 0;
+    app.retakingIds = new Set(dueQuestions.map((q) => q.id));
+    app.questionElapsedSeconds = 0;
+    configureTimerPreset(Math.min(30, Math.max(10, Math.ceil(dueQuestions.length * 2.5))), false);
+    syncIdleAudioPlaylist();
+    renderCurrentView();
   }
 
   // =========================================================================
@@ -1125,6 +1240,26 @@
         renderCurrentView();
       } else if (action === 'select-mode') {
         switchMode(actionEl.dataset.mode);
+      } else if (action === 'open-tab') {
+        switchTab(actionEl.dataset.tab);
+      } else if (action === 'start-due-reviews') {
+        startDueReviews();
+      } else if (action === 'start-topic-training') {
+        closeActiveExamSession();
+        app.retakingIds.clear();
+        app.filters = {
+          area: 'ALL',
+          topico: actionEl.dataset.topic || 'ALL',
+          dificuldade: 'ALL',
+          status: 'ALL',
+          search: ''
+        };
+        app.activeMode = 'filtrado';
+        app.activeTab = 'exam';
+        app.showFilters = true;
+        rebuildDeck({ preserveCurrentId: false });
+        syncIdleAudioPlaylist();
+        renderCurrentView();
       } else if (action === 'reset-filters') {
         app.audioController?.stop();
         app.filters = { area: 'ALL', topico: 'ALL', dificuldade: 'ALL', status: 'ALL', search: '' };
@@ -1173,6 +1308,8 @@
         toggleBookmark(actionEl.dataset.qid);
       } else if (action === 'train-errors') {
         app.audioController?.stop();
+        closeActiveExamSession();
+        app.retakingIds.clear();
         app.activeTab = 'exam';
         app.activeMode = 'filtrado';
         app.showFilters = true;
@@ -1184,6 +1321,8 @@
         showToast(`Caderno de Erros & Favoritas carregado (${app.deck.length} questões).`, 'info');
       } else if (action === 'open-question-from-notebook') {
         app.audioController?.stop();
+        closeActiveExamSession();
+        app.retakingIds.clear();
         const qid = actionEl.dataset.qid;
         app.activeTab = 'exam';
         app.activeMode = 'filtrado';
@@ -1236,6 +1375,37 @@
         if (targetQ && app.audioController) {
           app.audioController.playFeedback(targetQ);
         }
+      } else if (action === 'save-essay-session') {
+        const text = String(app.state.essayState.draftText || '').trim();
+        if (!text) {
+          showToast('Escreva a redação antes de registrá-la.', 'warning');
+          return;
+        }
+        const essayScores = { ...(app.state.essayState.selfScores || { c1: 12, c2: 12, c3: 12, c4: 12 }) };
+        const metrics = estimateEssayLines(text);
+        if (!Array.isArray(app.state.essaySessions)) app.state.essaySessions = [];
+        app.state.essaySessions.unshift({
+          id: createLocalId('redacao'),
+          createdAt: new Date().toISOString(),
+          themeId: app.state.essayState.selectedThemeId,
+          text,
+          scores: essayScores,
+          totalScore: Number(Object.values(essayScores).reduce((sum, score) => sum + Number(score || 0), 0).toFixed(1)),
+          metrics
+        });
+        app.state.essaySessions = app.state.essaySessions.slice(0, 30);
+        saveProgressState(app.state);
+        renderCurrentView();
+        showToast('Redação registrada no seu histórico local.', 'success');
+      } else if (action === 'open-essay-session') {
+        const essay = app.state.essaySessions?.find((item) => item.id === actionEl.dataset.essayId);
+        if (essay) {
+          app.state.essayState.draftText = essay.text || '';
+          app.state.essayState.selectedThemeId = essay.themeId || app.state.essayState.selectedThemeId;
+          app.state.essayState.selfScores = { ...essay.scores };
+          saveProgressState(app.state);
+          renderCurrentView();
+        }
       }
     });
 
@@ -1271,6 +1441,10 @@
       const action = target.dataset.action;
       if (action === 'set-timer-duration') {
         configureTimerPreset(target.value, true);
+        renderCurrentView();
+      } else if (action === 'set-study-minutes') {
+        app.state.studyPlan = { ...(app.state.studyPlan || {}), dailyMinutes: Number(target.value) || 60 };
+        saveProgressState(app.state);
         renderCurrentView();
       } else if (action === 'toggle-essay-check') {
         const checkId = target.dataset.checkId;
@@ -1502,6 +1676,30 @@
     configureTimerPreset(app.state.sessionDurationMinutes || 30, false);
 
     rebuildQuestionBank();
+    if (!app.state.reviewSchedule) app.state.reviewSchedule = {};
+    for (const [qid, record] of Object.entries(app.state.answers || {})) {
+      if (app.state.reviewSchedule[qid]) continue;
+      const history = Array.isArray(record?.historico) && record.historico.length ? record.historico : [record];
+      const last = history[history.length - 1];
+      const reviewedAt = new Date(last?.data || record?.dataResposta || Date.now());
+      const intervalDays = last?.acertou ? 3 : 1;
+      const dueAt = new Date(reviewedAt);
+      dueAt.setDate(dueAt.getDate() + intervalDays);
+      app.state.reviewSchedule[qid] = {
+        intervalDays,
+        repetitions: 0,
+        dueAt: dueAt.toISOString(),
+        lastReviewedAt: reviewedAt.toISOString(),
+        lastResult: last?.acertou ? 'correct' : 'wrong'
+      };
+    }
+    for (const session of app.state.examSessions || []) {
+      if (session.status === 'em_andamento') {
+        session.status = 'interrompido';
+        session.finishedAt = new Date().toISOString();
+      }
+    }
+    saveProgressState(app.state);
     rebuildDeck({ preserveCurrentId: false });
     syncIdleAudioPlaylist();
 
