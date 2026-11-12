@@ -1,0 +1,217 @@
+/* ==========================================================================
+   Caderno Tático UFBA 2026 — Instituto Avalia
+   Estética: Caderno de Prova Real + Painel de Telemetria Tática
+   ========================================================================== */
+
+:root {
+  --bg-page: #F8F9FA;
+  --bg-paper: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+  --bg-hover: #E2E8F0;
+  --border-hairline: #CBD5E1;
+  --border-strong: #94A3B8;
+  --ink-primary: #0F172A;
+  --ink-secondary: #475569;
+  --ink-muted: #64748B;
+  --accent-navy: #1E3A5F;
+  --accent-teal: #0D9488;
+  --accent-teal-soft: #CCFBF1;
+  --highlight-bg: rgba(253, 224, 71, 0.55);
+  --highlight-border: rgba(202, 138, 4, 0.45);
+  --highlight-ink: #713F12;
+  --number-highlight-bg: rgba(14, 165, 233, 0.14);
+  --number-highlight-ink: #0369A1;
+  --shadow-paper: 0 1px 3px rgba(15, 23, 42, 0.06), 0 4px 16px rgba(15, 23, 42, 0.04);
+  --ruled-line: #E2E8F0;
+}
+
+body[data-theme="dark"] {
+  --bg-page: #0F172A;
+  --bg-paper: #1E293B;
+  --bg-subtle: #162032;
+  --bg-hover: #283548;
+  --border-hairline: #334155;
+  --border-strong: #475569;
+  --ink-primary: #F1F5F9;
+  --ink-secondary: #CBD5E1;
+  --ink-muted: #94A3B8;
+  --accent-navy: #38BDF8;
+  --accent-teal: #2DD4BF;
+  --accent-teal-soft: rgba(45, 212, 191, 0.14);
+  --highlight-bg: rgba(245, 158, 11, 0.24);
+  --highlight-border: rgba(251, 191, 36, 0.48);
+  --highlight-ink: #FDE68A;
+  --number-highlight-bg: rgba(56, 189, 248, 0.2);
+  --number-highlight-ink: #BAE6FD;
+  --shadow-paper: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --ruled-line: #293548;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--ink-primary);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tipografia Editorial de Caderno de Provas */
+.font-exam-serif {
+  font-family: 'Merriweather', Georgia, Cambria, 'Times New Roman', serif;
+  line-height: 1.68;
+  letter-spacing: -0.004em;
+}
+
+.font-mono-tabular {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.paper-card {
+  background-color: var(--bg-paper);
+  border: 1px solid var(--border-hairline);
+  box-shadow: var(--shadow-paper);
+}
+
+.subtle-surface {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-hairline);
+}
+
+.hairline-divider {
+  border-color: var(--border-hairline);
+}
+
+/* Raio-X da Banca (Destaques no Enunciado) */
+.xray-trap {
+  background-color: var(--highlight-bg);
+  color: var(--highlight-ink);
+  border-bottom: 2px solid var(--highlight-border);
+  padding: 0.05rem 0.28rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+}
+
+.xray-metric {
+  background-color: var(--number-highlight-bg);
+  color: var(--number-highlight-ink);
+  padding: 0.04rem 0.25rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+/* Riscador de Alternativa (Eliminação Tática) */
+.option-row {
+  transition: background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.option-row.is-eliminated .option-text,
+.option-row.is-eliminated .option-letter {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.option-row.is-eliminated {
+  opacity: 0.65;
+}
+
+/* Papel Pautado para Simulador de Redação (20-30 linhas) */
+.essay-ruled-textarea {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 31px,
+    var(--ruled-line) 31px,
+    var(--ruled-line) 32px
+  );
+  line-height: 32px;
+  padding-top: 2px;
+}
+
+/* Animação discreta para o Painel de Correção */
+@keyframes panelReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-panel-reveal {
+  animation: panelReveal 0.22s ease-out forwards;
+}
+
+/* Scrollbar limpa */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 9999px;
+}
+
+/* Ajustes para inputs/selects no modo escuro e claro */
+.themed-input {
+  background-color: var(--bg-paper);
+  color: var(--ink-primary);
+  border: 1px solid var(--border-hairline);
+}
+
+.themed-input:focus {
+  outline: none;
+  border-color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.16);
+}
+
+/* Código inline nas alternativas/enunciados */
+.inline-exam-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875em;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-hairline);
+  padding: 0.08rem 0.32rem;
+  border-radius: 0.25rem;
+}
+
+/* Barra Flutuante Modo Áudio-Estudo (Hands-Free / Podcast Tático) */
+.audio-player-dock {
+  background-color: rgba(255, 255, 255, 0.94);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+body[data-theme="dark"] .audio-player-dock {
+  background-color: rgba(30, 41, 59, 0.94);
+  border-color: var(--border-strong);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.55);
+}
+
+.audio-playing-card {
+  border-color: var(--accent-teal) !important;
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.24), var(--shadow-paper);
+}
+
+@keyframes audioPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.85); }
+}
+
+.audio-pulse-dot {
+  animation: audioPulse 1.4s ease-in-out infinite;
+}
+

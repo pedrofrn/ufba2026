@@ -1,0 +1,3855 @@
+/**
+ * Banco de questoes padrao embutido (fallback imediato para execucao offline ou via file://).
+ * Sincronizado com ./questions.json — Edital UFBA no 007/2026 (Cargo 201).
+ */
+window.UFBA_DEFAULT_BANK = {
+  "metadata": {
+    "concurso": "UFBA - Edital nº 007/2026",
+    "cargo": "201 - Assistente em Administração",
+    "banca": "Instituto Avalia",
+    "data_prova": "2026-12-20",
+    "versao_banco": "2.0.0"
+  },
+  "questoes": [
+    {
+      "id": "AVALIA-UFBA2026-LP-001",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "1. Compreensão, Interpretação e Coesão Referencial",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 140,
+      "perfil_cobranca": "Interpretação Textual + Mecanismos de Coesão (Anáfora/Catáfora)",
+      "texto_apoio": "A modernização administrativa nas universidades federais exige mais do que a simples substituição do papel por processos eletrônicos. Quando uma instituição adota fluxos digitais sem revisar gargalos burocráticos, ela apenas acelera rotinas ineficientes. Entretanto, quando essa transição tecnológica é acompanhada de capacitação contínua e clareza normativa, observa-se ganho real de transparência e celeridade no atendimento à comunidade acadêmica.",
+      "enunciado": "Com base na leitura do texto de apoio e nos mecanismos de coesão empregados, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O pronome 'ela', em 'ela apenas acelera rotinas ineficientes', retoma o termo 'transição tecnológica', estabelecendo relação catafórica.",
+        "B": "A conjunção 'Entretanto' pode ser substituída por 'Portanto', mantendo integralmente o sentido de conclusão pretendido pelo autor.",
+        "C": "O texto defende que a digitalização de processos é condição suficiente, por si só, para eliminar gargalos burocráticos nas universidades.",
+        "D": "A expressão 'essa transição tecnológica' atua como elemento coesivo anafórico, retomando a ideia de substituição do papel por processos eletrônicos com foco digital.",
+        "E": "O vocábulo 'celeridade', no contexto apresentado, equivale semanticamente a 'complexidade'."
+      },
+      "gabarito": "D",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa D está correta porque 'essa transição tecnológica' retoma um referente já apresentado anteriormente no texto (anáfora).",
+        "fundamento_legal_ou_teorico": "Coesão referencial anafórica (retomada de termo antecedente com pronome demonstrativo 'esse/essa/isso') e semântica contextual.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O pronome 'ela' retoma 'uma instituição' (anáfora), e não 'transição tecnológica'; além disso, retomada de termo anterior é anáfora, jamais catáfora.",
+          "B": "INCORRETA. 'Entretanto' tem valor adversativo (oposição/contraste), enquanto 'Portanto' é conclusivo; a troca altera o nexo lógico do período.",
+          "C": "INCORRETA. Extrapolação/contradição textual: o texto afirma exatamente o oposto ('exige mais do que a simples substituição do papel').",
+          "D": "CORRETA. O demonstrativo 'essa' em 'essa transição tecnológica' encapsula e retoma a adoção de fluxos digitais mencionada no período anterior (coesão anafórica).",
+          "E": "INCORRETA. 'Celeridade' significa rapidez, agilidade, presteza — o oposto de morosidade ou complexidade."
+        },
+        "conexao_pratica_ifbaiano": "Você vê isso na prática da Reitoria com a migração para o SEI/SUAP: digitalizar um fluxo mal desenhado só gera retrabalho digital. Nas questões do Instituto Avalia, fique atento aos pronomes demonstrativos ('esse/essa' para retomar o que já foi dito = anáfora; 'este/esta' para anunciar o que virá = catáfora).",
+        "pilula_fixacao": "ANÁfora olha para ATRÁS (esse/essa); CATÁfora anuncia o que CAI depois (este/esta)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-002",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "7. Regência, Crase e Colocação Pronominal",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Emprego do Sinal Indicativo de Crase",
+      "texto_apoio": null,
+      "enunciado": "Em relação às normas de regência e ao emprego do sinal indicativo de crase, assinale a alternativa em que a frase está inteiramente CORRETA.",
+      "alternativas": {
+        "A": "A comissão encaminhou o processo eletrônico à partir das orientações recebidas da Pró-Reitoria.",
+        "B": "O atendimento presencial aos candidatos será realizado das 8h às 12h, obedecendo rigorosamente à ordem de chegada.",
+        "C": "O servidor assistiu à todos os treinamentos sobre a nova plataforma antes de assumir a chefia.",
+        "D": "Entregaram à ela o relatório consolidado referente à última contratação emergencial.",
+        "E": "O edital refere-se à vagas destinadas exclusivamente à ampla concorrência."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: usa corretamente o paralelismo 'das 8h às 12h' e o verbo 'obedecer' (transitivo indireto com preposição 'a') antes do substantivo feminino determinado 'ordem'.",
+        "fundamento_legal_ou_teorico": "Crase é a fusão da preposição 'a' com o artigo definido feminino 'a(s)'. O verbo 'obedecer' exige preposição 'a'. Não ocorre crase antes de verbo, pronome indefinido, pronome pessoal ou substantivo plural sem artigo.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Não se usa crase antes de verbo ('partir'). A forma correta é 'a partir'.",
+          "B": "CORRETA. Em 'das 8h às 12h' há paralelismo ('de + as' exige 'a + as'); e 'obedecendo à ordem' une preposição 'a' (regida por obedecer) + artigo 'a' (de 'ordem').",
+          "C": "INCORRETA. Proibida a crase antes de pronome indefinido ('todos'); além disso, 'todos' está no masculino plural.",
+          "D": "INCORRETA. Não ocorre crase antes de pronome pessoal do caso reto ('ela'). O correto é 'a ela'.",
+          "E": "INCORRETA. 'A' no singular antes de palavra feminina no plural ('vagas') jamais recebe crase ('a vagas' ou 'às vagas')."
+        },
+        "conexao_pratica_ifbaiano": "Na redação de ofícios e memorandos institucionais no SEI, o erro mais frequente é 'à partir de' e 'à vossa senhoria'. A banca Avalia explora exatamente esses vícios cotidianos de escrita administrativa.",
+        "pilula_fixacao": "Diante de verbo, pronome pessoal/indefinido e 'a' singular + plural, crase passa MAL."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-003",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "7. Concordância Verbal e Nominal",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Concordância com Verbos Impessoais e Partícula 'SE'",
+      "texto_apoio": null,
+      "enunciado": "Assinale a alternativa que apresenta erro de concordância verbal ou nominal, estando, portanto, INCORRETA segundo a norma-padrão.",
+      "alternativas": {
+        "A": "Faz dois meses que os protocolos de compra direta foram padronizados na unidade.",
+        "B": "Tratam-se de processos administrativos sigilosos que exigem controle de acesso restrito.",
+        "C": "Houve diversas solicitações de esclarecimento após a publicação do edital.",
+        "D": "Devem existir critérios objetivos para a distribuição de vagas entre os campi.",
+        "E": "É proibida a entrada de candidatos portando aparelhos eletrônicos ligados na sala de aplicação."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está incorreta (logo, é o gabarito pedido pelo enunciado 'INCORRETA'): 'Tratar-se de' é verbo transitivo indireto com índice de indeterminação do sujeito, devendo ficar obrigatoriamente na 3ª pessoa do singular ('Trata-se de processos').",
+        "fundamento_legal_ou_teorico": "VTI + 'se' = Índice de Indeterminação do Sujeito (verbo permanece invariável na 3ª pessoa do singular). Verbos 'haver' (existir) e 'fazer' (tempo decorrido) são impessoais e ficam no singular, contaminando o auxiliar.",
+        "analise_alternativas": {
+          "A": "CORRETA na norma-padrão (não é o gabarito). 'Fazer' indicando tempo decorrido é impessoal: fica no singular ('Faz dois meses').",
+          "B": "INCORRETA na norma-padrão (GABARITO). 'Trata-se de processos' nunca vai ao plural porque 'se' é índice de indeterminação do sujeito e há preposição 'de'.",
+          "C": "CORRETA na norma-padrão. 'Haver' no sentido de existir é impessoal e não se flexiona ('Houve diversas solicitações').",
+          "D": "CORRETA na norma-padrão. 'Existir' é verbo pessoal (tem sujeito: 'critérios objetivos'), por isso o auxiliar 'dever' concorda no plural ('Devem existir').",
+          "E": "CORRETA na norma-padrão. Como 'a entrada' está determinada pelo artigo 'a', o adjetivo concorda no feminino ('É proibida a entrada')."
+        },
+        "conexao_pratica_ifbaiano": "Atenção ao comando negativo ('INCORRETA')! No dia a dia administrativo, muitos despachos trazem 'Tratam-se dos autos...'. Para a prova da Avalia, memorize: VTI + SE nunca vai para o plural!",
+        "pilula_fixacao": "VTD + SE = Apassivador (concorda!). VTI/VI + SE = Indeterminador (sempre singular: Trata-se de...)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-004",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "9. Reescrita de Frases e Vozes Verbais",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 135,
+      "perfil_cobranca": "Transposição de Voz Ativa para Voz Passiva",
+      "texto_apoio": null,
+      "enunciado": "Considere o período: 'A Pró-Reitoria de Desenvolvimento de Pessoas homologará os resultados preliminares na próxima semana.' Assinale a alternativa que apresenta a transposição CORRETA dessa frase para a voz passiva analítica, mantendo o tempo verbal e o sentido originais.",
+      "alternativas": {
+        "A": "Os resultados preliminares foram homologados pela Pró-Reitoria de Desenvolvimento de Pessoas na próxima semana.",
+        "B": "Os resultados preliminares serão homologados pela Pró-Reitoria de Desenvolvimento de Pessoas na próxima semana.",
+        "C": "Homologar-se-ão os resultados preliminares na próxima semana pela Pró-Reitoria de Desenvolvimento de Pessoas.",
+        "D": "Os resultados preliminares seriam homologados pela Pró-Reitoria de Desenvolvimento de Pessoas na próxima semana.",
+        "E": "Os resultados preliminares têm sido homologados pela Pró-Reitoria de Desenvolvimento de Pessoas na próxima semana."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B preserva exatamente o tempo e o modo verbais (futuro do presente do indicativo: 'homologará' -> 'serão homologados') na voz passiva analítica.",
+        "fundamento_legal_ou_teorico": "Na transposição para a voz passiva analítica, o objeto direto passa a sujeito paciente, o sujeito agente vira agente da passiva ('por/pela'), e o verbo principal é substituído por 'ser' (no mesmo tempo/modo do verbo original) + particípio.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Altera o tempo verbal para pretérito perfeito ('foram homologados'), incoerente com 'na próxima semana'.",
+          "B": "CORRETA. Futuro do presente ('serão') + particípio ('homologados') mantendo o sentido e o agente da passiva.",
+          "C": "INCORRETA. Embora gramaticalmente possível em parte, trata-se de voz passiva sintética (pronome 'se'), e não passiva analítica, como exige o enunciado.",
+          "D": "INCORRETA. Altera para futuro do pretérito ('seriam homologados'), mudando a certeza para hipótese.",
+          "E": "INCORRETA. Usa locução de pretérito perfeito composto ('têm sido homologados'), alterando o aspecto temporal."
+        },
+        "conexao_pratica_ifbaiano": "A banca Avalia costuma cobrar reescrita pedindo especificamente passiva ANALÍTICA ('verbo ser + particípio') para confundir o candidato com a passiva SINTÉTICA ('verbo + se'). Leia o tipo pedido no comando com lupa!",
+        "pilula_fixacao": "Passiva Analítica = SER (no mesmo tempo do verbo original) + Particípio; Passiva Sintética = VTD + SE."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-005",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "7. Pontuação e Efeitos de Sentido",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Oração Subordinada Adjetiva Restritiva vs Explicativa",
+      "texto_apoio": null,
+      "enunciado": "Observe os dois enunciados:\nI. Os servidores que concluíram a capacitação receberam progressão funcional.\nII. Os servidores, que concluíram a capacitação, receberam progressão funcional.\n\nSobre a alteração da pontuação entre os enunciados I e II, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Não há alteração de sentido entre I e II, tratando-se apenas de vírgula facultativa por ênfase estilística.",
+        "B": "Em I, afirma-se que todos os servidores concluíram a capacitação e receberam progressão funcional.",
+        "C": "Em II, a oração isolada por vírgulas tem valor restritivo, limitando o benefício apenas a um subgrupo.",
+        "D": "A inserção das vírgulas em II transforma a oração adjetiva de restritiva para explicativa, passando a indicar que a totalidade dos servidores mencionada concluiu a capacitação.",
+        "E": "O enunciado I está gramaticalmente incorreto porque não se pode separar o sujeito do verbo nem mesmo quando há oração intercalada."
+      },
+      "gabarito": "D",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa D explica com precisão que as vírgulas transformam a oração adjetiva restritiva (subgrupo) em explicativa (generalização para todo o conjunto mencionado).",
+        "fundamento_legal_ou_teorico": "Oração subordinada adjetiva restritiva (sem vírgulas) delimita/restringe o antecedente; oração subordinada adjetiva explicativa (entre vírgulas) generaliza ou acrescenta característica inerente a todos os elementos do conjunto.",
+        "analise_alternativas": {
+          "A": "INCORRETA. As vírgulas nunca são facultativas nesse caso, pois alteram radicalmente o sentido lógico da frase.",
+          "B": "INCORRETA. Em I (sem vírgulas = restritiva), apenas parte dos servidores concluiu a capacitação — somente esses receberam a progressão.",
+          "C": "INCORRETA. O raciocínio está invertido: com vírgulas (II) a oração é explicativa, e não restritiva.",
+          "D": "CORRETA. Restritiva (I) = subgrupo; Explicativa (II) = todos os servidores referidos no contexto concluíram a capacitação.",
+          "E": "INCORRETA. O enunciado I está perfeitamente correto; em II também é lícito isolar por duas vírgulas a oração explicativa intercalada."
+        },
+        "conexao_pratica_ifbaiano": "Em editais, portarias e resoluções do CONSUNI/CONSEPE, uma vírgula mal colocada antes de 'que' muda quem tem direito a uma gratificação ou auxílio! É um clássico absoluto da banca Avalia.",
+        "pilula_fixacao": "Sem vírgula = RESTRINGE (só alguns). Entre vírgulas = EXPLICA (todos!)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-006",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "11. Redação Oficial (MRPR 3ª Edição)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Manual de Redação da Presidência da República (3ª ed.)",
+      "texto_apoio": null,
+      "enunciado": "Considerando as normas vigentes da 3ª edição do Manual de Redação da Presidência da República (MRPR), assinale a alternativa CORRETA sobre a padronização dos documentos oficiais e comunicações administrativas.",
+      "alternativas": {
+        "A": "O memorando e o aviso continuam existindo como tipos documentais distintos do ofício, devendo o aviso ser utilizado apenas entre chefias de mesmo nível dentro do mesmo órgão.",
+        "B": "Para autoridades de mesma hierarquia ou de hierarquia inferior à do signatário, deve-se utilizar o fecho 'Respeitosamente,'.",
+        "C": "O padrão ofício passou a abranger os antigos aviso, ofício e memorando sob a denominação única de 'ofício', e aboliu o uso de expressões como 'Ilustríssimo Senhor' e 'Digníssimo'.",
+        "D": "Na redação oficial, a utilização de jargões técnicos e regionalismos é recomendada para aproximar o texto administrativo da linguagem cotidiana do cidadão.",
+        "E": "Os despachos e ofícios devem conter, obrigatoriamente, o pronome 'Vossa Excelência' seguido de verbo na segunda pessoa do plural ('vós')."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C reflete fielmente a 3ª edição do MRPR (2018): a unificação dos expedientes no Padrão Ofício e a abolição dos tratamentos 'Ilustríssimo' e 'Digníssimo'.",
+        "fundamento_legal_ou_teorico": "MRPR (3ª ed.): Unificou Aviso, Ofício e Memorando no Padrão Ofício; fechos são apenas 'Respeitosamente,' (para autoridades superiores) e 'Atenciosamente,' (mesma hierarquia ou inferior); verbos concordam na 3ª pessoa.",
+        "analise_alternativas": {
+          "A": "INCORRETA. A 3ª edição do MRPR extinguiu a distinção formal entre aviso, memorando e ofício, unificando-os no documento 'Ofício'.",
+          "B": "INCORRETA. Pegadinha de inversão: 'Respeitosamente,' é para autoridades SUPERIORES; para mesma hierarquia ou inferior, usa-se 'Atenciosamente,'.",
+          "C": "CORRETA. Sintetiza duas grandes atualizações da 3ª ed. do MRPR: unificação no Padrão Ofício e fim de 'Ilmo./DD.'.",
+          "D": "INCORRETA. Viola os princípios da clareza, impessoalidade e padrão culto da linguagem (deve-se evitar jargão técnico excessivo e regionalismo).",
+          "E": "INCORRETA. Embora os pronomes de tratamento se refiram à 2ª pessoa gramaticalmente no sentido, a concordância verbal se faz obrigatoriamente na 3ª pessoa ('Vossa Excelência encaminhou')."
+        },
+        "conexao_pratica_ifbaiano": "Atenção máxima! No SUAP/SEI de várias instituições ainda existe o modelo com nome 'Memorando' ou cabeçalho antigo legado. Na prova da UFBA, vale EXCLUSIVAMENTE a 3ª edição do MRPR: só existe Padrão Ofício e nada de 'Ilustríssimo'!",
+        "pilula_fixacao": "MRPR 3ª ed.: Tudo virou OFÍCIO; Superior = Respeitosamente; Igual/Inferior = Atenciosamente; Verbo = 3ª pessoa."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-007",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "6. Morfossintaxe: Funções do 'Que' e do 'Se' e Orações",
+      "dificuldade": "Alta",
+      "tempo_estimado_segundos": 140,
+      "perfil_cobranca": "Classificação Morfossintática de 'Que' e 'Se'",
+      "texto_apoio": null,
+      "enunciado": "Analise a frase: 'É imprescindível que o assistente em administração confira os documentos antes de arquivá-los.' A palavra 'que' destacada na estrutura exerce a função morfossintática de:",
+      "alternativas": {
+        "A": "Pronome relativo, retomando o substantivo 'imprescindível' e introduzindo oração adjetiva.",
+        "B": "Conjunção integrante, introduzindo oração subordinada substantiva subjetiva.",
+        "C": "Conjunção integrante, introduzindo oração subordinada substantiva objetiva direta.",
+        "D": "Partícula expletiva ou de realce, podendo ser removida sem prejuízo gramatical.",
+        "E": "Conjunção subordinativa consecutiva, indicando consequência do adjetivo 'imprescindível'."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: 'que' liga a oração principal ('É imprescindível') à oração subordinada que funciona como sujeito dela ('ISSO é imprescindível').",
+        "fundamento_legal_ou_teorico": "Teste clássico: substitua toda a oração iniciada por 'que' pelo pronome 'ISSO'. Se couber 'ISSO', 'que' é conjunção integrante (oração substantiva). Em 'É + adjetivo + que...', a oração substantiva é o sujeito (Subjetiva).",
+        "analise_alternativas": {
+          "A": "INCORRETA. 'Imprescindível' é adjetivo (não substantivo), e 'que' não equivale a 'o qual', logo não é pronome relativo.",
+          "B": "CORRETA. 'É imprescindível ISSO' -> 'ISSO é imprescindível'. Estrutura típica de verbo de ligação + predicativo ('É imprescindível') com sujeito oracional (Subjetiva).",
+          "C": "INCORRETA. O verbo 'ser' é de ligação, não transitivo direto; portanto, não existe objeto direto.",
+          "D": "INCORRETA. A remoção do 'que' tornaria o período agramatical ('É imprescindível o assistente confira...').",
+          "E": "INCORRETA. Para ser consecutiva, deveria estar vinculada a intensificador ('tão imprescindível que...')."
+        },
+        "conexao_pratica_ifbaiano": "Bancas como o Instituto Avalia adoram frases começadas por 'É necessário que...', 'Convém que...', 'Consta que...'. Sempre aplique o teste do ISSO invertendo a ordem para confirmar se é sujeito (subjetiva) ou complemento!",
+        "pilula_fixacao": "Substituiu por ISSO = Conjunção Integrante; 'Verbo de ligação + predicativo + que...' = Oração Subjetiva."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-001",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "10 e 11. Segurança da Informação e Ameaças Cibernéticas",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Classificação de Malwares e Engenharia Social",
+      "texto_apoio": null,
+      "enunciado": "Um servidor técnico-administrativo recebeu um e-mail aparentemente enviado pelo setor de TI da universidade solicitando que clicasse em um link para atualizar sua senha do sistema de processos eletrônicos. Após o clique e o download de um anexo malicioso, todos os arquivos compartilhados na estação de trabalho foram criptografados e uma mensagem passou a exigir pagamento em criptomoedas para devolução do acesso. Essa sequência de eventos combina, respectivamente:",
+      "alternativas": {
+        "A": "Spam e Firewall.",
+        "B": "Phishing e Ransomware.",
+        "C": "Pharming e Spyware.",
+        "D": "DoS e Keylogger.",
+        "E": "Rootkit e Adware."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B identifica exatamente os dois conceitos na ordem solicitada ('respectivamente'): e-mail falso simulando instituição confiável para enganar a vítima (Phishing) e malware que sequestra dados por criptografia exigindo resgate (Ransomware).",
+        "fundamento_legal_ou_teorico": "Cartilha de Segurança CERT.br: Phishing = fraude eletrônica que usa engenharia social via mensagem fraudulenta; Ransomware = código malicioso que torna inacessíveis os dados armazenados (geralmente por criptografia) e exige pagamento de resgate.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Spam é apenas mensagem eletrônica não solicitada em massa; Firewall é ferramenta de defesa/filtragem de tráfego, não ameaça.",
+          "B": "CORRETA. 1º ataque = engodo via e-mail falso (Phishing); 2º ataque = sequestro criptográfico com pedido de resgate (Ransomware).",
+          "C": "INCORRETA. Pharming envenena DNS/hosts para redirecionar URLs digitadas corretamente; Spyware apenas monitora/espiona sem criptografar exigindo resgate.",
+          "D": "INCORRETA. DoS é ataque de negação de serviço (indisponibilidade por sobrecarga); Keylogger apenas registra teclas digitadas.",
+          "E": "INCORRETA. Rootkit oculta presença de invasor/processos no sistema; Adware exibe propagandas indesejadas."
+        },
+        "conexao_pratica_ifbaiano": "Nos setores de Comunicação e Reitoria das IFES, campanhas internas de segurança sempre alertam sobre falsos chamados de TI/SUAP/SEI. Na prova, lembre-se da palavra 'RESPECTIVAMENTE': cheque a ordem exata dos eventos no enunciado.",
+        "pilula_fixacao": "Phishing = Isca falsa (engenharia social). Ransomware = Sequestro com criptografia e resgate."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-002",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "4. Planilhas Eletrônicas (Microsoft Excel / Office 365)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 135,
+      "perfil_cobranca": "Fórmulas e Referência Absoluta em Planilhas",
+      "texto_apoio": null,
+      "enunciado": "Em uma planilha do Microsoft Excel utilizada para controle de compras de materiais, a célula B1 contém o percentual de reajuste de 10% (0,10). Na célula C2 foi inserida a fórmula `=B2*(1+$B$1)` para calcular o valor reajustado do item listado na linha 2. Caso o usuário utilize a alça de preenchimento para arrastar a fórmula da célula C2 até a célula C5, qual será a fórmula resultante na célula C5?",
+      "alternativas": {
+        "A": "`=B5*(1+$B$4)`",
+        "B": "`=E5*(1+$B$1)`",
+        "C": "`=B5*(1+$B$1)`",
+        "D": "`=B2*(1+$B$1)`",
+        "E": "`=C5*(1+$B$5)`"
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C está correta: ao arrastar verticalmente de C2 para C5 (+3 linhas), a referência relativa `B2` avança 3 linhas para `B5`, enquanto a referência absoluta `$B$1` permanece travada.",
+        "fundamento_legal_ou_teorico": "O cifrão (`$`) fixa coluna (`$B`) e linha (`$1`). Ao copiar/arrastar para baixo na mesma coluna, apenas o número das linhas sem `$` é incrementado.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O `$` antes do 1 trava a linha 1; ela não muda para `$B$4`.",
+          "B": "INCORRETA. A coluna B só mudaria para E se o arraste fosse horizontal (para a direita), não vertical.",
+          "C": "CORRETA. C2 -> C5 desloca 0 colunas e +3 linhas: `B2` vira `B5`; `$B$1` fica idêntica.",
+          "D": "INCORRETA. `B2` não tem cifrão, portanto não fica estática.",
+          "E": "INCORRETA. Altera indevidamente a coluna B para C e a linha travada `$1` para `$5`."
+        },
+        "conexao_pratica_ifbaiano": "Você usa planilhas para orçamentos de impressão, diagramação e compras de eventos na Reitoria: a banca Avalia sempre testa se você sabe que `$` antes da letra trava a COLUNA e `$` antes do número trava a LINHA.",
+        "pilula_fixacao": "Cifrão (`$`) é cadeado: antes da letra trava a coluna; antes do número trava a linha."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-003",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "6 e 9. Internet, Intranet, Protocolos e Navegadores",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Conceitos de Navegação Anônima, Cookies e Intranet",
+      "texto_apoio": null,
+      "enunciado": "Sobre o uso de navegadores web (como Google Chrome e Mozilla Firefox) em modo de navegação anônima/privativa e conceitos de Internet e Intranet, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A navegação anônima torna o usuário completamente invisível na rede, impedindo que o provedor de internet e os servidores da instituição identifiquem os acessos realizados.",
+        "B": "Ao fechar todas as janelas de navegação anônima, o navegador apaga o histórico de navegação e os cookies da sessão, mas os arquivos baixados (downloads) e os favoritos adicionados permanecem salvos.",
+        "C": "Uma intranet utiliza exclusivamente protocolos incompatíveis com os da internet, razão pela qual não pode ser acessada por navegadores convencionais.",
+        "D": "O protocolo HTTPS difere do HTTP apenas por permitir o envio de anexos maiores, sem empregar mecanismos de criptografia.",
+        "E": "O atalho padrão `Ctrl + Shift + T` no Google Chrome abre uma nova janela de navegação anônima."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: o modo anônimo não guarda histórico local, cookies e dados de formulário após fechar a janela, porém downloads efetuados e favoritos criados são mantidos.",
+        "fundamento_legal_ou_teorico": "Modo Anônimo (Chrome: Ctrl+Shift+N; Firefox: Ctrl+Shift+P) protege apenas a privacidade local no dispositivo. Intranet usa a mesma suíte TCP/IP (HTTP/HTTPS) que a Internet, mas com acesso restrito.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Pegadinha clássica: o provedor de internet, o administrador da rede da UFBA e os sites visitados ainda conseguem enxergar seu acesso e endereço IP.",
+          "B": "CORRETA. Exatamente o comportamento oficial do Chrome/Firefox/Edge: apaga histórico/cookies locais da sessão, mas mantém downloads e favoritos.",
+          "C": "INCORRETA. Intranet e Internet utilizam os mesmos protocolos (TCP/IP, HTTP/HTTPS); a diferença é o acesso restrito ao público interno.",
+          "D": "INCORRETA. HTTPS acrescenta camada criptográfica (SSL/TLS) garantindo confidencialidade e integridade na comunicação.",
+          "E": "INCORRETA. `Ctrl + Shift + T` reabre a última aba fechada; nova janela anônima no Chrome é `Ctrl + Shift + N`."
+        },
+        "conexao_pratica_ifbaiano": "No trabalho em computadores compartilhados de setores administrativos, a navegação anônima evita deixar sua sessão do SEI/Gov.br logada, mas não substitui VPN nem oculta o tráfego da rede da autarquia.",
+        "pilula_fixacao": "Anônima esconde da MÁQUINA local (mas mantém downloads/favoritos); NÃO esconde do provedor nem do chefe de TI!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-004",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "2, 3 e 12. Windows 10/11, Arquivos e Backup",
+      "dificuldade": "Fácil",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Gerenciamento de Arquivos no Windows e Tipos de Backup",
+      "texto_apoio": null,
+      "enunciado": "Um usuário do Windows 10 precisa excluir definitivamente um arquivo armazenado no disco rígido local (`C:\\Documentos\\rascunho.docx`), sem enviá-lo para a Lixeira, e deseja garantir que futuras rotinas de cópia de segurança (backup) registrem apenas os arquivos alterados desde o último backup completo, desmarcando o atributo de arquivamento. Assinale a alternativa que indica, respectivamente, o atalho para exclusão definitiva e o tipo de backup descrito.",
+      "alternativas": {
+        "A": "`Ctrl + Delete` e Backup Incremental.",
+        "B": "`Shift + Delete` e Backup Diferencial.",
+        "C": "`Shift + Delete` e Backup Incremental.",
+        "D": "`Alt + Delete` e Backup Completo (Normal).",
+        "E": "`Ctrl + Shift + Delete` e Backup Diário."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C está correta: `Shift + Delete` exclui sem passar pela Lixeira, e o Backup Incremental copia apenas arquivos alterados/criados desde o último backup (completo ou incremental) e desmarca o atributo de arquivamento.",
+        "fundamento_legal_ou_teorico": "Windows Explorer: `Delete` move para a Lixeira; `Shift + Delete` exclui permanentemente (bypass Lixeira). Backup Incremental = copia alterados + limpa bit/atributo de arquivo; Diferencial = copia alterados desde o último completo e NÃO limpa o bit.",
+        "analise_alternativas": {
+          "A": "INCORRETA. `Ctrl + Delete` em editores de texto apaga a próxima palavra; no Explorador de Arquivos não realiza exclusão definitiva sem Lixeira.",
+          "B": "INCORRETA. O Backup Diferencial NÃO desmarca o atributo de arquivamento e copia tudo desde o último backup completo.",
+          "C": "CORRETA. `Shift + Delete` pula a Lixeira; Backup Incremental copia apenas modificados desde o último backup e limpa o bit de arquivamento.",
+          "D": "INCORRETA. `Alt + Delete` não exclui definitivamente, e Backup Completo copia todos os arquivos selecionados, modificados ou não.",
+          "E": "INCORRETA. `Ctrl + Shift + Delete` abre a limpeza de dados de navegação nos navegadores web; Backup Diário copia apenas o modificado no dia sem limpar o marcador."
+        },
+        "conexao_pratica_ifbaiano": "Em estações de trabalho de design/comunicação lidando com arquivos pesados, o hábito de usar `Shift + Del` ou limpar pastas de rede exige cautela redobrada porque não passa pela Lixeira (e em unidades de rede mapeadas, mesmo o `Delete` simples costuma excluir direto!).",
+        "pilula_fixacao": "Incremental = Inclui só novos e LIMPA o marcador (rápido p/ gravar, lento p/ restaurar). Diferencial = NÃO limpa o marcador."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-005",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "5 e 8. Correio Eletrônico e Computação em Nuvem",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Campos de E-mail (Para/CC/CCO) e Protocolos de Correio",
+      "texto_apoio": null,
+      "enunciado": "Um servidor enviou um comunicado oficial por e-mail utilizando o Microsoft Outlook: colocou a Chefia no campo `Para:`, a Diretoria no campo `Cc:` e dez fornecedores externos no campo `Cco:`. Ao receber a mensagem, a Chefia decidiu clicar em 'Responder a Todos'. Considerando o funcionamento padrão do correio eletrônico, quem receberá essa resposta e qual protocolo é o padrão para o ENVIO das mensagens do cliente até o servidor?",
+      "alternativas": {
+        "A": "O remetente original e a Diretoria receberão a resposta, mas os dez fornecedores em `Cco:` não a receberão; protocolo de envio: SMTP.",
+        "B": "Apenas o remetente original receberá a resposta; protocolo de envio: IMAP.",
+        "C": "Todos os destinatários, incluindo os dez fornecedores em `Cco:`, receberão a resposta; protocolo de envio: SMTP.",
+        "D": "O remetente original e a Diretoria receberão a resposta, mas os fornecedores em `Cco:` não a receberão; protocolo de envio: POP3.",
+        "E": "Apenas a Diretoria receberá a resposta; protocolo de envio: HTTP."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa A está correta: destinatários em `Cco:` (Cópia Oculta) ficam ocultos para os demais e nunca são incluídos quando alguém clica em 'Responder a Todos'; o envio de e-mails usa o protocolo SMTP.",
+        "fundamento_legal_ou_teorico": "Cco (Bcc) oculta os endereços dos demais destinatários, preservando a privacidade (muito útil para LGPD em envios coletivos). Protocolos: SMTP (envio — 'Sua Mensagem Tá Partindo'), POP3 e IMAP (recebimento).",
+        "analise_alternativas": {
+          "A": "CORRETA. 'Responder a Todos' inclui remetente, 'Para:' e 'Cc:', excluindo totalmente 'Cco:'; envio é SMTP.",
+          "B": "INCORRETA. 'Responder a Todos' inclui a Diretoria que estava em 'Cc:'; além disso, IMAP é protocolo de recebimento/sincronização, não de envio.",
+          "C": "INCORRETA. Os destinatários em `Cco:` nunca recebem mensagens de 'Responder a Todos' geradas por outros destinatários.",
+          "D": "INCORRETA. POP3 é protocolo de recebimento (que por padrão baixa e pode apagar do servidor), não de envio.",
+          "E": "INCORRETA. A resposta vai também para o remetente original; HTTP é protocolo de transferência de páginas web."
+        },
+        "conexao_pratica_ifbaiano": "Na Comunicação da Reitoria, disparar convites para externos sempre exige `Cco:` para evitar vazamento de e-mails pessoais (LGPD!). E na prova, diferencie: `Responder` vai só ao remetente; `Responder a Todos` alcança `Para` + `Cc`, nunca `Cco`.",
+        "pilula_fixacao": "SMTP = Envia ('Sua Mensagem Tá Partindo'). POP3/IMAP = Recebe. Cco = invisível até no 'Responder a Todos'."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-001",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "1. Administração Pública na Constituição Federal de 1988 (Título III, Cap. VII)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Art. 37 da CF/88 - Acumulação de Cargos e Estabilidade",
+      "texto_apoio": null,
+      "enunciado": "Nos termos do artigo 37 da Constituição Federal de 1988, havendo compatibilidade de horários, é permitida a acumulação remunerada de cargos públicos em todas as hipóteses abaixo, EXCETO:",
+      "alternativas": {
+        "A": "Dois cargos de professor.",
+        "B": "Um cargo de professor com outro técnico ou científico.",
+        "C": "Dois cargos ou empregos privativos de profissionais de saúde, com profissões regulamentadas.",
+        "D": "Dois cargos públicos administrativos de nível médio, desde que em autarquias federais distintas.",
+        "E": "Um cargo de professor em universidade federal com outro técnico em instituto federal, respeitado o teto constitucional."
+      },
+      "gabarito": "D",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa D é a EXCEÇÃO (gabarito): a Constituição proíbe acumular dois cargos meramente administrativos/burocráticos, ainda que em autarquias ou esferas diferentes e com compatibilidade de horários.",
+        "fundamento_legal_ou_teorico": "CF/88, Art. 37, inciso XVI: É vedada a acumulação remunerada de cargos públicos, exceto, quando houver compatibilidade de horários: a) dois de professor; b) um de professor com outro técnico ou científico; c) dois privativos de profissionais de saúde, com profissões regulamentadas.",
+        "analise_alternativas": {
+          "A": "PERMITIDA pela CF/88 (art. 37, XVI, 'a'). Como o enunciado pede o EXCETO, não é o gabarito.",
+          "B": "PERMITIDA pela CF/88 (art. 37, XVI, 'b'). Atenção: o cargo técnico aqui exige conhecimento específico/habilitação técnica, não mero cargo burocrático de nível médio sem exigência técnica.",
+          "C": "PERMITIDA pela CF/88 (art. 37, XVI, 'c').",
+          "D": "VEDADA pela CF/88 (GABARITO). Não existe exceção constitucional para acumular dois cargos de Assistente em Administração, mesmo em autarquias diferentes (ex.: IF Baiano + UFBA).",
+          "E": "PERMITIDA pela CF/88 (art. 37, XVI, 'b' combinado com o inciso XI sobre o teto)."
+        },
+        "conexao_pratica_ifbaiano": "Atenção direta ao seu caso concreto, Pedro! Se você já ocupa cargo administrativo no IF Baiano, ao tomar posse na UFBA como Assistente em Administração deverá solicitar vacância por posse em outro cargo inacumulável (art. 33, VIII, Lei 8.112/90) ou exoneração, pois dois cargos administrativos não são acumuláveis pela CF/88!",
+        "pilula_fixacao": "CF/88 Art. 37, XVI só acumula: 2 Prof | 1 Prof + 1 Técnico/Científico | 2 Saúde regulamentada."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-002",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "4. Regime Jurídico Único — Lei nº 8.112/1990 (Provimento e Vacância)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Lei Seca Literal: Prazos e Institutos da Lei 8.112/1990",
+      "texto_apoio": null,
+      "enunciado": "Sobre o provimento, a posse, o exercício e a movimentação de servidores públicos federais regidos pela Lei nº 8.112/1990, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A posse ocorrerá no prazo de quinze dias contados da publicação do ato de provimento, improrrogável.",
+        "B": "É de trinta dias o prazo para o servidor empossado em cargo público entrar em exercício, contados da data da posse.",
+        "C": "A remoção é o deslocamento de cargo de provimento efetivo, ocupado ou vago no âmbito do quadro geral de pessoal, para outro órgão ou entidade do mesmo Poder.",
+        "D": "A posse em cargo público poderá dar-se mediante procuração específica.",
+        "E": "A readaptação e a reversão são formas de vacância previstas taxativamente no artigo 33 da Lei nº 8.112/1990."
+      },
+      "gabarito": "D",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa D reproduz literalmente o art. 13, § 3º, da Lei nº 8.112/1990: 'A posse poderá dar-se mediante procuração específica.'",
+        "fundamento_legal_ou_teorico": "Lei nº 8.112/1990: Posse = 30 dias da publicação do ato de provimento (Art. 13, § 1º); Exercício = 15 dias da posse (Art. 15, § 1º); Posse por procuração específica = Art. 13, § 3º; Remoção = deslocamento do servidor no mesmo quadro (Art. 36); Redistribuição = deslocamento do cargo entre órgãos/entidades (Art. 37).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Pegadinha clássica de inversão de prazos: a POSSE ocorre em 30 dias (não 15!).",
+          "B": "INCORRETA. Inversão de prazos: o EXERCÍCIO ocorre em 15 dias contados da posse (não 30!).",
+          "C": "INCORRETA. A definição apresentada é de REDISTRIBUIÇÃO (deslocamento do CARGO para outro órgão/entidade do mesmo Poder — art. 37), e não de remoção (deslocamento do SERVIDOR dentro do mesmo quadro — art. 36).",
+          "D": "CORRETA. Previsão literal do Art. 13, § 3º da Lei nº 8.112/1990 (note que o exercício é personalíssimo e não aceita procuração, mas a posse aceita!).",
+          "E": "INCORRETA. Readaptação é simultaneamente provimento e vacância (consta no Art. 8º e Art. 33), mas REVERSÃO (retorno do aposentado) é apenas forma de PROVIMENTO (Art. 8º), não de vacância."
+        },
+        "conexao_pratica_ifbaiano": "Nos editais das autarquias federais, o Instituto Avalia troca frequentemente Remoção (vai o servidor entre campi da mesma UFBA/IF) por Redistribuição (vai o código de vaga/cargo entre a UFBA e o IF Baiano!). Além disso, o item 21.3 do próprio Edital UFBA 007/2026 cita expressamente o art. 13, § 6º (30 dias para posse).",
+        "pilula_fixacao": "Posse = 30 dias (cabe procuração específica). Exercício = 15 dias. Remoção = Servidor; Redistribuição = Cargo."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-003",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "4. Lei nº 8.112/1990 — Regime Disciplinar e PAD",
+      "dificuldade": "Alta",
+      "tempo_estimado_segundos": 140,
+      "perfil_cobranca": "Prazos, Penalidades e Prescrição na Lei 8.112/1990",
+      "texto_apoio": null,
+      "enunciado": "De acordo com o Título IV (Do Regime Disciplinar) e o Título V (Do Processo Administrativo Disciplinar) da Lei nº 8.112/1990, analise as afirmativas e assinale a opção CORRETA.",
+      "alternativas": {
+        "A": "A penalidade de suspensão não poderá exceder 60 (sessenta) dias e nunca pode ser convertida em multa.",
+        "B": "As penalidades de advertência e de suspensão terão seus registros cancelados após o decurso de 3 (três) e 5 (cinco) anos de efetivo exercício, respectivamente, se o servidor não houver, nesse período, praticado nova infração disciplinar.",
+        "C": "A ação disciplinar prescreve em 5 (cinco) anos quanto às infrações puníveis com suspensão e em 2 (dois) anos quanto à demissão.",
+        "D": "Da sindicância poderá resultar a aplicação direta de penalidade de suspensão por até 60 dias, sem necessidade de instauração de processo disciplinar.",
+        "E": "O prazo para a conclusão do processo disciplinar ordinário não excederá 30 (trinta) dias, contados da data de publicação do ato que constituir a comissão, admitida a sua prorrogação por igual prazo."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz literalmente o art. 131 da Lei nº 8.112/1990: cancelamento do registro de advertência em 3 anos e de suspensão em 5 anos de efetivo exercício sem nova infração.",
+        "fundamento_legal_ou_teorico": "Lei nº 8.112/1990: Suspensão = até 90 dias, conversível em multa de 50%/dia de vencimento (Art. 130); Cancelamento = 3 anos advertência / 5 anos suspensão (Art. 131); Prescrição = 5 anos demissão/cassação/destituição, 2 anos suspensão, 180 dias advertência (Art. 142); Sindicância aplica suspensão até 30 dias (Art. 145, II); PAD = 60 + 60 dias (Art. 152).",
+        "analise_alternativas": {
+          "A": "INCORRETA. O teto da suspensão é 90 dias (não 60), e quando houver conveniência para o serviço poderá ser convertida em multa de 50% por dia de vencimento/remuneração.",
+          "B": "CORRETA. Literalidade perfeita do art. 131 (lembre-se que o cancelamento não surte efeitos retroativos).",
+          "C": "INCORRETA. Prazos invertidos: demissão/cassação/destituição prescrevem em 5 anos; suspensão em 2 anos; advertência em 180 dias.",
+          "D": "INCORRETA. A sindicância só aplica advertência ou suspensão de até 30 dias! Acima de 30 dias é obrigatório instaurar PAD.",
+          "E": "INCORRETA. O prazo do PAD ordinário é de 60 dias prorrogáveis por mais 60 dias (quem tem prazo de 30 + 30 dias é a sindicância, ou o PAD sumário de 30 + 15 dias!)."
+        },
+        "conexao_pratica_ifbaiano": "Bancas adoram cruzar os números da Lei 8.112/90: Sindicância (30+30 dias, pune até 30 dias de suspensão) vs PAD (60+60 dias, pune >30 dias até 90 ou demissão). Memorize a escadinha de prescrição: 180d / 2a / 5a.",
+        "pilula_fixacao": "Cancelamento = 3 anos (Adv) / 5 anos (Susp). Prescrição = 180d (Adv) / 2a (Susp) / 5a (Dem). Sindicância = até 30d."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-004",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "5. Ética no Serviço Público (Decretos nº 1.171/1994 e nº 6.029/2007)",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Código de Ética do Poder Executivo Federal",
+      "texto_apoio": null,
+      "enunciado": "Segundo o Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal (Decreto nº 1.171/1994), constitui regra ou sanção prevista expressamente na norma:",
+      "alternativas": {
+        "A": "A pena aplicável ao servidor público pela Comissão de Ética é a de advertência escrita ou suspensão de até 15 dias, conforme a gravidade da conduta.",
+        "B": "A publicidade de qualquer ato administrativo constitui requisito de eficácia e moralidade, ensejando sua omissão comprometimento ético contra o bem comum, imputável a quem a negar, ressalvadas apenas as exceções de interesse da segurança nacional, investigações policiais ou interesse superior da Administração.",
+        "C": "A função pública deve ser tida como exercício profissional e, portanto, integra-se na vida particular de cada servidor público, exceto fora do horário de expediente.",
+        "D": "Deixar o servidor público qualquer pessoa à espera de solução que compete ao setor em que exerça suas funções, permitindo a formação de longas filas, configura mera falha operacional, sem repercussão ética.",
+        "E": "É permitido ao servidor apresentar-se embriagado no serviço de forma esporádica, desde que isso não comprometa a meta mensal de produtividade do setor."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz o inciso VII das Regras Deontológicas do Decreto nº 1.171/1994: publicidade como requisito de eficácia e moralidade, com ressalvas expressas.",
+        "fundamento_legal_ou_teorico": "Decreto nº 1.171/1994: Única pena da Comissão de Ética = Censura (item XXII); Função pública integra-se na vida particular (inclusive fora do expediente — item VI); Deixar cidadão em espera/fila = grave dano moral (item X); Embriaguez habitual ou no serviço = vedada (item XV, 'n').",
+        "analise_alternativas": {
+          "A": "INCORRETA. Pegadinha clássica: Comissão de Ética NÃO aplica advertência nem suspensão — a ÚNICA penalidade que ela aplica é a CENSURA, fundamentada em parecer assinado por todos os integrantes.",
+          "B": "CORRETA. Texto literal do Capítulo I, Seção I, inciso VII do Decreto nº 1.171/1994.",
+          "C": "INCORRETA. Os fatos e atos verificados na conduta do dia a dia em sua vida privada poderão acrescer ou diminuir o seu bom conceito na vida funcional (não há essa exceção 'fora do horário').",
+          "D": "INCORRETA. O Código diz expressamente que deixar o usuário à espera formando longas filas caracteriza atitude contra a ética ou ato de desumanidade e grave dano moral aos usuários.",
+          "E": "INCORRETA. É expressamente vedado apresentar-se embriagado no serviço ou fora dele habitualmente."
+        },
+        "conexao_pratica_ifbaiano": "Toda autarquia federal (IF Baiano, UFBA) tem sua Comissão de Ética vinculada à CEP (Decreto 6.029/2007). Lembre-se sempre da diferença de competência: Comissão de Ética aplica apenas CENSURA; PAD/Corregedoria aplica advertência, suspensão e demissão!",
+        "pilula_fixacao": "Comissão de Ética = SÓ CENSURA (jamais advertência, suspensão ou demissão)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-005",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "7. Processo Administrativo Federal (Lei nº 9.784/1999)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 130,
+      "perfil_cobranca": "Impedimento vs Suspeição, Prazos e Decadência (Lei 9.784/99)",
+      "texto_apoio": null,
+      "enunciado": "Com base na Lei nº 9.784/1999, que regula o processo administrativo no âmbito da Administração Pública Federal, assinale a alternativa INCORRETA.",
+      "alternativas": {
+        "A": "É impedido de atuar em processo administrativo o servidor ou autoridade que tenha interesse direto ou indireto na matéria.",
+        "B": "Pode ser arguida a suspeição de autoridade ou servidor que tenha amizade íntima ou inimizade notória com algum dos interessados ou com os respectivos cônjuges, companheiros, parentes e afins até o terceiro grau.",
+        "C": "Salvo disposição legal específica, é de 10 (dez) dias o prazo para interposição de recurso administrativo, contado a partir da ciência ou divulgação oficial da decisão recorrida.",
+        "D": "O direito da Administração de anular os atos administrativos de que decorram efeitos favoráveis para os destinatários decai em 5 (cinco) anos, contados da data em que foram praticados, salvo comprovada má-fé.",
+        "E": "A Administração deve anular seus próprios atos por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos, e revogá-los quando eivados de vício de legalidade."
+      },
+      "gabarito": "E",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa E está incorreta (gabarito do pedido 'INCORRETA'): houve inversão total entre anulação e revogação.",
+        "fundamento_legal_ou_teorico": "Lei nº 9.784/1999: Art. 53 ('A Administração deve anular seus próprios atos, quando eivados de vício de legalidade, e pode revogá-los por motivo de conveniência ou oportunidade, respeitados os direitos adquiridos'); Art. 18 (Impedimento); Art. 20 (Suspeição); Art. 54 (Decadência 5 anos); Art. 59 (Recurso 10 dias).",
+        "analise_alternativas": {
+          "A": "CORRETA segundo a lei (Art. 18, I) — não é o gabarito.",
+          "B": "CORRETA segundo a lei (Art. 20) — note que amizade íntima/inimizade notória é SUSPEIÇÃO, enquanto parentesco/participação como perito/testemunha/litígio é IMPEDIMENTO.",
+          "C": "CORRETA segundo a lei (Art. 59). Recurso administrativo = 10 dias (e dirigido à autoridade que proferiu a decisão, que tem 5 dias para reconsiderar antes de subir!).",
+          "D": "CORRETA segundo a lei (Art. 54). Prazo decadencial de 5 anos para anulação de atos favoráveis, salvo má-fé.",
+          "E": "INCORRETA segundo a lei (GABARITO). Anula-se por ILEGALIDADE (dever) e revoga-se por CONVENIÊNCIA ou OPORTUNIDADE (discricionariedade)."
+        },
+        "conexao_pratica_ifbaiano": "Nos processos do SEI, é comum ouvir 'vamos anular esse edital de evento porque mudou a data'. Tecnicamente, se não há ilegalidade e só mudou o interesse administrativo, trata-se de REVOGAÇÃO (conveniência/oportunidade), nunca anulação!",
+        "pilula_fixacao": "ANULA = vício de ILEGALIDADE (ex tunc). REVOGA = CONVENIÊNCIA e OPORTUNIDADE (ex nunc)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-006",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "8 e 9. Transparência (LAI) e Proteção de Dados (LGPD)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 130,
+      "perfil_cobranca": "Prazos da LAI (Lei 12.527/11) e Classificação de Sigilo + LGPD",
+      "texto_apoio": null,
+      "enunciado": "Considerando as disposições da Lei de Acesso à Informação (Lei nº 12.527/2011) e sua compatibilização com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Não sendo possível conceder acesso imediato à informação solicitada via e-SIC/Fala.BR, o órgão público deverá disponibilizá-la em prazo não superior a 30 (trinta) dias, improrrogáveis.",
+        "B": "Os prazos máximos de restrição de acesso à informação classificada como ultrassecreta, secreta e reservada são, respectivamente, de 25 (vinte e cinco) anos, 15 (quinze) anos e 5 (cinco) anos.",
+        "C": "As informações relativas à intimidade, vida privada, honra e imagem das pessoas terão seu acesso restrito pelo prazo máximo de 50 (cinquenta) anos, independentemente de classificação.",
+        "D": "Pela LGPD, os dados pessoais relativos à convicção religiosa, opinião política ou dado referente à saúde não são considerados dados pessoais sensíveis quando tratados por universidades públicas.",
+        "E": "Em razão da LGPD, a Administração Pública passou a ser proibida de divulgar nominalmente os salários e subsídios de seus servidores em portais de transparência ativa."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: traz os prazos exatos do art. 24, § 1º da Lei nº 12.527/2011 (Ultrassecreta: 25 anos; Secreta: 15 anos; Reservada: 5 anos).",
+        "fundamento_legal_ou_teorico": "LAI (Lei nº 12.527/2011): Resposta imediata ou em até 20 dias, prorrogáveis por mais 10 dias mediante justificativa (Art. 11); Sigilo = 25/15/5 anos (Art. 24); Informações pessoais (intimidade/vida privada) = até 100 anos (Art. 31, § 1º, I). LGPD (Art. 5º, II + Art. 23): mantém transparência ativa de remunerações públicas.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O prazo inicial é de até 20 dias, prorrogável por mais 10 dias (totalizando 30, e não 30 improrrogáveis).",
+          "B": "CORRETA. Escala oficial de sigilo da LAI: Ultrassecreta (25), Secreta (15), Reservada (5).",
+          "C": "INCORRETA. Informações pessoais relativas à intimidade/vida privada/honra/imagem têm acesso restrito pelo prazo máximo de 100 (cem) anos a contar da sua data de produção.",
+          "D": "INCORRETA. São dados pessoais sensíveis independentemente de quem os trata (órgão público ou privado) — Art. 5º, II da LGPD.",
+          "E": "INCORRETA. O STF e a própria compatibilização LAI + LGPD asseguram a transparência ativa da remuneração individualizada dos agentes públicos (interesse público prevalente)."
+        },
+        "conexao_pratica_ifbaiano": "Na Comunicação/Ouvidoria/e-SIC de autarquias de ensino, responder pedidos da LAI dentro dos 20 dias (+10 justificados) e ocultar CPFs/dados bancários/saúde em processos públicos do SEI garante compliance simultâneo com LAI e LGPD!",
+        "pilula_fixacao": "LAI: Resposta = 20+10 dias | Sigilo = U-25 / S-15 / R-5 | Intimidade = 100 anos."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-007",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "6. Improbidade Administrativa (Lei nº 8.429/1992 atualizada pela Lei nº 14.230/2021)",
+      "dificuldade": "Alta",
+      "tempo_estimado_segundos": 135,
+      "perfil_cobranca": "Exigência de Dolo Específico e Prescrição na Nova LIA",
+      "texto_apoio": null,
+      "enunciado": "Considerando as profundas alterações promovidas pela Lei nº 14.230/2021 na Lei de Improbidade Administrativa (Lei nº 8.429/1992), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Permanece punível por improbidade administrativa a conduta meramente culposa do agente público que causar dano ao erário por negligência leve.",
+        "B": "O mero exercício da função ou desempenho de competências públicas, sem comprovação de ato doloso com fim ilícito, afasta a responsabilidade por ato de improbidade administrativa.",
+        "C": "O rol de atos que atentam contra os princípios da Administração Pública (art. 11) permanece meramente exemplificativo.",
+        "D": "A ação para a aplicação das sanções previstas na Lei de Improbidade Administrativa prescreve em 5 (cinco) anos, contados do término do exercício do mandato ou cargo.",
+        "E": "A perda da função pública e a suspensão dos direitos políticos somente podem ser aplicadas cumulativamente na modalidade de lesão ao erário."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz literalmente o art. 1º, § 3º, da Lei nº 8.429/1992 (redação da Lei nº 14.230/2021): é indispensável a comprovação do dolo específico (vontade livre e consciente com fim ilícito).",
+        "fundamento_legal_ou_teorico": "Lei nº 8.429/1992 (após Lei nº 14.230/2021): Extinta a modalidade culposa (exige-se dolo em todos os tipos); Art. 11 passou a ter rol TAXATIVO; Prescrição unificada = 8 anos contados da ocorrência do fato (ou do dia em que cessar a permanência) — Art. 23.",
+        "analise_alternativas": {
+          "A": "INCORRETA. A reforma de 2021 extinguiu totalmente a improbidade culposa (inclusive no art. 10 - dano ao erário).",
+          "B": "CORRETA. Literalidade do art. 1º, § 3º (dolo específico exige comprovação do fim ilícito).",
+          "C": "INCORRETA. O art. 11 ('atos que atentam contra os princípios') passou a ter rol TAXATIVO ('caracterizada por uma das seguintes condutas:'). Já arts. 9º e 10 mantiveram caráter exemplificativo.",
+          "D": "INCORRETA. O prazo prescricional atual é de 8 (oito) anos contados da ocorrência do fato (não mais 5 anos do fim do mandato/cargo!).",
+          "E": "INCORRETA. Perda da função e suspensão dos direitos políticos aplicam-se tanto ao enriquecimento ilícito (até 14 anos) quanto à lesão ao erário (até 12 anos); no art. 11 não há mais perda da função nem suspensão de direitos políticos."
+        },
+        "conexao_pratica_ifbaiano": "Atenção redobrada se você estudou por apostilas antigas pré-2021! A antiga regra de 'dano ao erário culposo' e 'prescrição em 5 anos após saída do cargo' caiu. Agora só há improbidade com DOLO ESPECÍFICO e prescrição de 8 anos do fato.",
+        "pilula_fixacao": "Nova LIA (14.230/21): SEM culpa (só DOLO específico) | Art. 11 = TAXATIVO | Prescrição = 8 anos do fato."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-008",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "12, 15, 19 e 20. Governo Digital, A3P, IFES e Estatuto/Regimento UFBA",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Autonomia Universitária, Governo Digital e Estrutura da UFBA",
+      "texto_apoio": null,
+      "enunciado": "Sobre a organização das Instituições Federais de Ensino Superior (IFES), o Estatuto da UFBA e as diretrizes do Governo Digital (Lei nº 14.129/2021), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A autonomia didático-científica, administrativa e de gestão financeira e patrimonial assegurada às universidades pelo art. 207 da Constituição Federal desobriga a UFBA de observar a legislação federal sobre licitações e regime jurídico dos servidores.",
+        "B": "Nos termos da Lei nº 14.129/2021 (Governo Digital), é vedada a exigência ao cidadão de apresentação física de documentos que já constem em bases de dados oficiais da Administração Pública federal interoperáveis, salvo exceções legais.",
+        "C": "No âmbito da UFBA, o Conselho Universitário (CONSUNI) é órgão meramente consultivo sem competência normativa, cabendo exclusivamente ao Reitor aprovar o Estatuto da Universidade.",
+        "D": "A Agenda Ambiental na Administração Pública (A3P) tem caráter punitivo obrigatório, aplicando multa pecuniária direta aos servidores que imprimirem documentos sem modo frente e verso.",
+        "E": "Pelo Decreto nº 9.830/2019, o agente público responde pessoalmente por qualquer interpretação jurídica diversa da adotada pelos órgãos de controle, mesmo na ausência de dolo ou erro grosseiro."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está em conformidade com os princípios e regras da Lei do Governo Digital (Lei nº 14.129/2021): interoperabilidade e vedação de exigir documentos que a própria Administração já possui em base oficial.",
+        "fundamento_legal_ou_teorico": "Lei nº 14.129/2021 (Art. 3º e Art. 28); CF/88 Art. 207 (autonomia não é soberania); Estatuto da UFBA (CONSUNI = órgão máximo deliberativo, normativo e consultivo); Decreto nº 9.830/2019 Art. 12 (responsabilização só por dolo ou erro grosseiro); A3P = programa de adesão voluntária e boas práticas socioambientais.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Autonomia universitária não significa soberania nem imunidade à lei; a UFBA submete-se à Lei 8.112/90, Lei 14.133/21 e controle do TCU/CGU.",
+          "B": "CORRETA. Princípio central da transformação digital e desburocratização previsto na Lei nº 14.129/2021.",
+          "C": "INCORRETA. O CONSUNI é o órgão máximo normativo, deliberativo e de planejamento da UFBA (assim como no IF Baiano o CONSUP cumpre papel equivalente).",
+          "D": "INCORRETA. A A3P é um programa de adesão voluntária voltado à sensibilização, gestão de resíduos, licitações sustentáveis e uso racional de recursos.",
+          "E": "INCORRETA. O Decreto nº 9.830/2019 (regulamento da LINDB) exige expressamente DOLO ou ERRO GROSSEIRO para responsabilização pessoal do agente."
+        },
+        "conexao_pratica_ifbaiano": "A estrutura de órgãos colegiados da UFBA (CONSUNI, CONSEPE, CAP e Reitoria) é muito semelhante à governança dos Institutos Federais (CONSUP/Colégio de Dirigentes). Use seu conhecimento institucional, mas lembre: autonomia (Art. 207) nunca afasta a lei federal!",
+        "pilula_fixacao": "Autonomia universitária != Soberania. Governo Digital = dado já está na base pública? Não peça de novo!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-001",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "2. Organização Administrativa da União (Direta e Indireta)",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Autarquias Federais, Descentralização e Desconcentração",
+      "texto_apoio": null,
+      "enunciado": "A Universidade Federal da Bahia (UFBA) possui personalidade jurídica própria de direito público, patrimônio e receita próprios, criada por lei para exercer atividade típica da Administração Pública com autonomia administrativa e financeira. Considerando a organização administrativa da União, é CORRETO afirmar que:",
+      "alternativas": {
+        "A": "A criação de uma autarquia como a UFBA decorre do fenômeno da desconcentração administrativa, existindo subordinação hierárquica direta entre o Ministério da Educação (MEC) e a Universidade.",
+        "B": "Entre o Ministério da Educação (Administração Direta) e a UFBA (autarquia da Administração Indireta) existe vinculação administrativa (tutela/supervisão ministerial), e não relação de subordinação hierárquica.",
+        "C": "Por ser autarquia de regime especial, os bens imóveis afetados às atividades acadêmicas da UFBA submetem-se à penhora judicial comum, exatamente como os bens das empresas públicas exploradoras de atividade econômica.",
+        "D": "O pessoal técnico-administrativo da UFBA é contratado obrigatoriamente pelo regime da Consolidação das Leis do Trabalho (CLT), por integrar a Administração Indireta.",
+        "E": "A divisão interna da UFBA em Pró-Reitorias, Superintendências e Departamentos caracteriza o fenômeno da descentralização por outorga legal."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: entre a Administração Direta (MEC) e as autarquias (UFBA, IF Baiano) não existe subordinação hierárquica, mas sim controle finalístico / supervisão ministerial (vinculação).",
+        "fundamento_legal_ou_teorico": "Decreto-Lei nº 200/1967 e Direito Administrativo: Descentralização = cria nova pessoa jurídica (Administração Indireta: Autarquias, Fundações, EP, SEM); há vinculação/tutela, sem hierarquia. Desconcentração = divisão interna em órgãos sem personalidade jurídica (Pró-Reitorias, Secretarias); há hierarquia.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Duplo erro: criação de nova pessoa jurídica (autarquia) é DESCENTRALIZAÇÃO (não desconcentração), e não há subordinação hierárquica com o MEC.",
+          "B": "CORRETA. Distinção clássica de ouro do Instituto Avalia: Direta -> Indireta = Vinculação/Supervisão (controle finalístico), jamais hierarquia.",
+          "C": "INCORRETA. Bens das autarquias são bens públicos e gozam de impenhorabilidade, inalienabilidade condicionada e imprescritibilidade.",
+          "D": "INCORRETA. Autarquias e fundações públicas de direito público adotam regime estatutário (Lei nº 8.112/1990), diferentemente de EP e SEM (CLT).",
+          "E": "INCORRETA. A criação de setores/órgãos internos dentro da mesma pessoa jurídica (Pró-Reitorias, Diretorias) é DESCONCENTRAÇÃO (com 'O' de Órgãos!)."
+        },
+        "conexao_pratica_ifbaiano": "Como servidor atuante na Reitoria de uma autarquia federal (IF Baiano), você sabe que o MEC não manda hierarquicamente em atos rotineiros de gestão interna, apenas supervisiona o cumprimento das finalidades educacionais; e as Pró-Reitorias/Campi são fruto de desconcentração interna!",
+        "pilula_fixacao": "DesCOncentração = cria Órgãos internos (mesma PJ, TEM hierarquia). DesCEntralização = cria Entidades (nova PJ, SEM hierarquia, apenas vinculação)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-002",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "4. Poderes Administrativos e Abuso de Poder",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Distinção entre Poder Hierárquico, Disciplinar, de Polícia e Abuso",
+      "texto_apoio": null,
+      "enunciado": "Um gestor universitário, alegando falta de espaço físico no setor, removeu determinado servidor efetivo para uma unidade distante exclusivamente com o propósito oculto de puni-lo por divergências políticas pessoais, sem instauração de procedimento disciplinar. À luz da teoria dos Poderes Administrativos, a conduta do gestor caracteriza:",
+      "alternativas": {
+        "A": "Uso regular do poder disciplinar, visto que a remoção por interesse do serviço dispensa motivação.",
+        "B": "Exercício legítimo do poder de polícia administrativa interna, dotado de autoexecutoriedade.",
+        "C": "Abuso de poder na modalidade excesso de poder, pois o gestor não tinha competência para remover servidores.",
+        "D": "Abuso de poder na modalidade desvio de poder (desvio de finalidade), pois o ato foi praticado dentro da competência formal, mas visando finalidade diversa da prevista em lei.",
+        "E": "Exercício regular do poder regulamentar, convalidado pela presunção de legitimidade dos atos."
+      },
+      "gabarito": "D",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa D está correta: o agente atuou dentro da sua competência formal (remoção de ofício), mas deturpou a finalidade pública usando o ato para punição pessoal = Desvio de Poder (vício de finalidade).",
+        "fundamento_legal_ou_teorico": "Abuso de poder é gênero com 2 espécies: 1) Excesso de poder = vício de COMPETÊNCIA (o agente vai além dos limites de sua competência legal); 2) Desvio de poder / finalidade = vício de FINALIDADE (o agente é competente, mas busca fim diverso do interesse público).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Remoção não é sanção disciplinar, e atos que restringem direitos ou movem servidores exigem motivação verdadeira.",
+          "B": "INCORRETA. Poder de polícia incide sobre particulares externos (supremacia geral), não sobre servidores internos (supremacia especial -> poder hierárquico/disciplinar).",
+          "C": "INCORRETA. O excesso de poder ocorre quando falta competência ou extrapola os limites da atribuição. Aqui o problema é o motivo/finalidade oculta.",
+          "D": "CORRETA. Remoção usada como castigo disfarçado é o exemplo acadêmico mais clássico de desvio de finalidade/desvio de poder.",
+          "E": "INCORRETA. Poder regulamentar é a edição de normas gerais pelo Chefe do Executivo (decretos) para fiel execução da lei."
+        },
+        "conexao_pratica_ifbaiano": "Na prova do Instituto Avalia, não confunda: multa de trânsito ou interdição de cantina irregular no campus por vigilância sanitária = Poder de Polícia. Multa contratual em empresa terceirizada ou PAD em servidor = Poder Disciplinar. Remover para punir = Desvio de Poder!",
+        "pilula_fixacao": "Excesso = extrapola COMPETÊNCIA. Desvio = deturpa FINALIDADE. Poder de Polícia = particulares; Disciplinar = vínculo especial."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-003",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "5 e 6. Serviços Públicos e Responsabilidade Civil do Estado",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 130,
+      "perfil_cobranca": "Art. 37, § 6º da CF/88 - Responsabilidade Objetiva vs Regressiva",
+      "texto_apoio": null,
+      "enunciado": "Durante o deslocamento oficial em viatura da UFBA para entrega de equipamentos entre campi, um motorista estatutário da universidade avançou o sinal vermelho por imprudência e colidiu com o veículo de um cidadão particular, causando danos materiais comprovados. Conforme o § 6º do artigo 37 da Constituição Federal e a jurisprudência consolidada:",
+      "alternativas": {
+        "A": "O cidadão particular deverá comprovar o dolo ou a culpa do motorista para que a UFBA seja obrigada a indenizá-lo.",
+        "B": "A responsabilidade civil da UFBA é objetiva, baseada na teoria do risco integral, não admitindo nenhuma excludente de responsabilidade.",
+        "C": "A responsabilidade civil da UFBA perante o cidadão é objetiva (teoria do risco administrativo), independendo da prova de culpa do agente, assegurado o direito de regresso contra o motorista nos casos de dolo ou culpa.",
+        "D": "A responsabilidade civil da UFBA e a responsabilidade regressiva contra o servidor são ambas objetivas.",
+        "E": "O cidadão deve processar diretamente e exclusivamente o motorista, visto que a autarquia goza de imunidade estatal por atos de trânsito."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C reproduz com perfeição a regra constitucional do art. 37, § 6º: responsabilidade objetiva do Estado (risco administrativo) + responsabilidade subjetiva em regresso contra o agente (dolo ou culpa).",
+        "fundamento_legal_ou_teorico": "CF/88, Art. 37, § 6º: As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos responderão pelos danos que seus agentes, nessa qualidade, causarem a terceiros, assegurado o direito de regresso contra o responsável nos casos de dolo ou culpa.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Para responsabilizar a autarquia por ato comissivo, basta comprovar conduta, dano e nexo causal — NÃO precisa provar dolo ou culpa.",
+          "B": "INCORRETA. A regra no Brasil é a teoria do RISCO ADMINISTRATIVO (admite excludentes: culpa exclusiva da vítima, caso fortuito/força maior), e não risco integral.",
+          "C": "CORRETA. Vítima -> Estado (Objetiva / Risco Administrativo). Estado -> Servidor em regresso (Subjetiva / exige dolo ou culpa).",
+          "D": "INCORRETA. A ação regressiva contra o servidor é SUBJETIVA (depende de dolo ou culpa).",
+          "E": "INCORRETA. Pela tese da dupla garantia (STF), a vítima deve acionar a pessoa jurídica estatal (UFBA), e não diretamente o agente público."
+        },
+        "conexao_pratica_ifbaiano": "Aplica-se a qualquer motorista, técnico ou gestor da UFBA/IF Baiano em missão oficial! Atenção à palavra-chave do Avalia: Risco ADMINISTRATIVO (admite excludentes) versus Risco INTEGRAL (não admite excludentes, exceção raríssima como dano nuclear).",
+        "pilula_fixacao": "Estado -> Vítima: OBJETIVA (Risco Administrativo). Estado -> Agente (regresso): SUBJETIVA (Dolo ou Culpa)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-004",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021 — Modalidades e Critérios de Julgamento",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Modalidades da Nova Lei de Licitações",
+      "texto_apoio": null,
+      "enunciado": "De acordo com o artigo 28 da Lei nº 14.133/2021 (Nova Lei de Licitações e Contratos Administrativos), são modalidades de licitação vigentes, EXCETO:",
+      "alternativas": {
+        "A": "Pregão.",
+        "B": "Concorrência.",
+        "C": "Concurso.",
+        "D": "Diálogo competitivo.",
+        "E": "Tomada de preços."
+      },
+      "gabarito": "E",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa E ('Tomada de preços') é a exceção correta: tanto a Tomada de Preços quanto o Convite foram extintos pela Lei nº 14.133/2021.",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021, Art. 28: São modalidades de licitação: I - pregão; II - concorrência; III - concurso; IV - leilão; V - diálogo competitivo. § 2º: É vedada a criação de outras modalidades de licitação ou, ainda, a combinação daquelas referidas no caput.",
+        "analise_alternativas": {
+          "A": "MODALIDADE VIGENTE (Art. 28, I) — obrigatória para bens e serviços comuns (critério menor preço ou maior desconto).",
+          "B": "MODALIDADE VIGENTE (Art. 28, II) — para bens e serviços especiais e obras/serviços comuns e especiais de engenharia.",
+          "C": "MODALIDADE VIGENTE (Art. 28, III) — escolha de trabalho técnico, científico ou artístico, com prêmio ou remuneração.",
+          "D": "MODALIDADE VIGENTE (Art. 28, V) — grande inovação da Lei 14.133/2021 para soluções inovadoras/complexas.",
+          "E": "EXTINTA (GABARITO). Convite e Tomada de Preços pertenciam à revogada Lei nº 8.666/1993 e não existem na Lei nº 14.133/2021."
+        },
+        "conexao_pratica_ifbaiano": "Nos arquivos antigos do setor de compras ou processos antigos de legado pré-2024 no SUAP/SEI, você certamente já viu pastas de 'Tomada de Preços' ou 'Carta-Convite'. Na prova da UFBA, a Lei 8.666/93 foi integralmente revogada: só existem as 5 modalidades do Art. 28!",
+        "pilula_fixacao": "5 modalidades da 14.133: Pregão, Concorrência, Concurso, Leilão, Diálogo Competitivo (P-C-C-L-D). Adeus Convite e Tomada!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-005",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021 — Contratação Direta (Dispensa e Inexigibilidade)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 135,
+      "perfil_cobranca": "Lei Seca Literal + Caso Prático de Autarquia",
+      "texto_apoio": null,
+      "enunciado": "No âmbito da Universidade Federal da Bahia (UFBA), autarquia federal, o setor de compras recebeu demanda de aquisição de um equipamento laboratorial altamente específico produzido por um único fabricante exclusivo no mercado, sem concorrentes viáveis, e outra demanda de compra de material de expediente de pequeno valor abaixo do teto legal. Nos termos dos arts. 74 e 75 da Lei nº 14.133/2021, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Ambas as contratações configuram dispensa de licitação, visto que o rol do art. 75 é meramente exemplificativo.",
+        "B": "A compra junto a produtor exclusivo configura inexigibilidade de licitação (art. 74), enquanto a compra de pequeno valor configura dispensa em razão do valor (art. 75), sendo exigida divulgação prévia de aviso em sítio eletrônico oficial pelo prazo mínimo de 3 (três) dias úteis, preferencialmente, para busca de propostas adicionais na dispensa por valor.",
+        "C": "A aquisição do equipamento de fornecedor exclusivo é hipótese de dispensa de licitação com prazo mínimo de 5 (cinco) dias corridos de divulgação no PNCP.",
+        "D": "Na inexigibilidade de licitação (art. 74), a legislação permite a contratação direta de serviços de publicidade e divulgação por notória especialização.",
+        "E": "Em toda contratação direta por dispensa em razão do valor, a Administração fica proibida de exigir certidão de regularidade fiscal e trabalhista do contratado."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B diferencia corretamente Inexigibilidade (art. 74 - fornecedor exclusivo, inviabilidade de competição) e Dispensa por valor (art. 75, II e § 3º - prazo de 3 dias úteis para obtenção de propostas adicionais).",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021: Art. 74 (Inexigibilidade — rol exemplificativo, inviabilidade de competição; inciso I: produtor/empresa/representante comercial exclusivo; inciso III: veda expressamente publicidade e divulgação!); Art. 75 (Dispensa — rol taxativo; § 3º: dispensa por valor dos incisos I e II será preferencialmente precedida de divulgação em sítio eletrônico oficial por no mínimo 3 dias úteis).",
+        "analise_alternativas": {
+          "A": "INCORRETA. O rol do art. 75 (dispensa) é TAXATIVO (numerus clausus); o exemplificativo é o do art. 74 (inexigibilidade).",
+          "B": "CORRETA. Combina perfeitamente o art. 74, I (exclusividade), o art. 75, II (pequeno valor) e o art. 75, § 3º (aviso prévio de 3 dias úteis).",
+          "C": "INCORRETA. Pegadinha dupla do Instituto Avalia: troca inexigibilidade por dispensa e altera o prazo legal de 3 dias úteis para 5 dias corridos.",
+          "D": "INCORRETA. O art. 74, III, proíbe expressamente inexigibilidade por notória especialização para serviços de publicidade e divulgação!",
+          "E": "INCORRETA. A regularidade fiscal/trabalhista e habilitação mínima aplicam-se normalmente conforme Art. 72, V."
+        },
+        "conexao_pratica_ifbaiano": "Você lida direto com a Comunicação da Reitoria: atenção máxima à vedação do art. 74, III — serviços de PUBLICIDADE E DIVULGAÇÃO NÃO podem ser contratados por inexigibilidade com base em notória especialização! E no SEI/Compras.gov, nunca chame compra exclusiva de 'dispensa': sem competição = inexigibilidade.",
+        "pilula_fixacao": "Art. 74 = Inexigibilidade (sem competição / exemplificativo / VEDA publicidade). Art. 75 = Dispensa (taxativo / aviso 3 dias úteis)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-006",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021 — Fases, Agente de Contratação e Controle",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 135,
+      "perfil_cobranca": "Fases da Licitação e Ordem Procedimental (Art. 17)",
+      "texto_apoio": null,
+      "enunciado": "Sobre as fases do processo licitatório previstas no artigo 17 da Lei nº 14.133/2021 e as disposições sobre revogação e anulação (art. 71), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Na Lei nº 14.133/2021, a fase de habilitação antecede obrigatoriamente a fase de apresentação de propostas e lances em todas as modalidades.",
+        "B": "A sequência ordinária das fases da licitação segue a ordem: preparatória; divulgação do edital; apresentação de propostas e lances; julgamento; habilitação; recursal; e homologação.",
+        "C": "O agente de contratação designado pela autoridade competente poderá ser servidor terceirizado sem vínculo efetivo, desde que possua curso de pós-graduação.",
+        "D": "A autoridade superior poderá revogar a licitação por motivo de ilegalidade insanável e anulá-la por motivo de conveniência e oportunidade.",
+        "E": "A fase recursal na Lei nº 14.133/2021 ocorre em duas oportunidades independentes com prazos automáticos de 15 dias úteis para razões."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B apresenta exatamente a sequência literal das 7 fases do art. 17 da Lei nº 14.133/2021.",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021, Art. 17: I - preparatória; II - divulgação do edital; III - apresentação de propostas e lances; IV - julgamento; V - habilitação; VI - recursal; VII - homologação. (Habilitação antes de propostas tornou-se EXCEÇÃO mediante ato motivado — § 1º).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Regra invertida: na 14.133, o julgamento vem ANTES da habilitação como regra geral (só se inverte excepcionalmente com motivação).",
+          "B": "CORRETA. Ordem exata dos incisos I a VII do art. 17 da Lei nº 14.133/2021.",
+          "C": "INCORRETA. O art. 8º exige expressamente que o agente de contratação seja designado entre servidores EFETIVOS ou empregados públicos dos quadros permanentes da Administração Pública.",
+          "D": "INCORRETA. Trocou os conceitos: revoga-se por conveniência/oportunidade (fato superveniente); anula-se por ilegalidade (art. 71, II e III).",
+          "E": "INCORRETA. A fase recursal é única (art. 165 — 3 dias úteis), concentrando os recursos relativos ao julgamento e à habilitação."
+        },
+        "conexao_pratica_ifbaiano": "Nos processos licitatórios modernos no Compras.gov/SEI, verifica-se primeiro o menor preço (julgamento) e só depois a habilitação do vencedor — exatamente a sequência que a Lei 14.133 adotou como regra geral para todas as modalidades.",
+        "pilula_fixacao": "14.133 Art. 17: Prepara -> Divulga -> Propostas -> Julga -> Habilita -> Recurso -> Homologa (Agente = EFETIVO!)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-007",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Estrutura Organizacional e PODC",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Tipos de Estrutura Organizacional e Departamentalização",
+      "texto_apoio": null,
+      "enunciado": "Em uma universidade pública, um servidor subordinado administrativamente à Pró-Reitoria de Administração passa a integrar, temporariamente, uma equipe multidisciplinar de implantação de novo sistema acadêmico sob coordenação de um gerente de projeto, mantendo dupla subordinação durante o projeto. Esse arranjo descreve a estrutura organizacional:",
+      "alternativas": {
+        "A": "Linear, baseada exclusivamente na unidade de comando.",
+        "B": "Funcional, caracterizada pela ausência total de chefias especializadas.",
+        "C": "Matricial, pois combina a departamentalização funcional com a estrutura por projetos, gerando dupla subordinação.",
+        "D": "Linha-staff, em que os órgãos de assessoria possuem autoridade de comando direto sobre a linha de execução.",
+        "E": "Simples ou informal, definida apenas pelas relações afetivas no organograma."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C identifica perfeitamente a estrutura matricial: combinação entre linha funcional (vertical) e projetos/produtos (horizontal), quebrando a unidade de comando (dupla subordinação).",
+        "fundamento_legal_ou_teorico": "Teoria das Organizações (Chiavenato / Maximiano): Linear = autoridade única e escalar; Funcional = especialização/autoridade funcional dividida; Linha-Staff = linha executa + staff apenas assessora (sem mando direto); Matricial = grade funcional × projeto, dupla subordinação.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Na estrutura linear há unidade de comando absoluta (cada subordinado tem apenas um chefe).",
+          "B": "INCORRETA. A estrutura funcional justamente se baseia em chefias especializadas por função.",
+          "C": "CORRETA. Dupla subordinação (chefe funcional + gerente de projeto) é a assinatura clássica da estrutura matricial.",
+          "D": "INCORRETA. Órgãos de staff (ex.: Assessoria de Comunicação, Procuradoria, Auditoria) têm poder de assessoramento/aconselhamento, NÃO de comando direto sobre a linha.",
+          "E": "INCORRETA. Estrutura matricial é estrutura formal projetada no organograma; estrutura informal nasce espontaneamente das relações sociais."
+        },
+        "conexao_pratica_ifbaiano": "Você conhece bem a dinâmica de staff na Reitoria (a Comunicação assessora o Reitor e demais setores, sem mandar na linha acadêmica), e quando participa de comissões de eventos/sistemas sob outro coordenador sem sair do seu setor, vive exatamente uma estrutura matricial!",
+        "pilula_fixacao": "Linear = 1 chefe (unidade de comando). Staff = assessora (sem mando). Matricial = 2 chefes (funcional + projeto)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-008",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Gestão da Qualidade, Processos e Projetos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Ferramentas da Qualidade (PDCA, GUT, Ishikawa, 5W2H)",
+      "texto_apoio": null,
+      "enunciado": "Para priorizar os problemas administrativos de atendimento no protocolo central da universidade com base em critérios objetivos de impacto, prazo e risco de agravamento caso não sejam resolvidos, um assistente em administração aplicou uma ferramenta que pontua cada problema de 1 a 5 em três dimensões e multiplica os escores obtidos. Essa ferramenta é conhecida como:",
+      "alternativas": {
+        "A": "Diagrama de Ishikawa (Espinha de Peixe).",
+        "B": "Matriz GUT (Gravidade, Urgência e Tendência).",
+        "C": "Folha de Verificação 5W2H.",
+        "D": "Gráfico de Controle de Shewhart.",
+        "E": "Ciclo PDCA (Plan, Do, Check, Act)."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: a Matriz GUT avalia Gravidade (impacto), Urgência (prazo/pressão de tempo) e Tendência (propensão a piorar sem intervenção), multiplicando G × U × T (1 a 5).",
+        "fundamento_legal_ou_teorico": "Ferramentas de Qualidade: Matriz GUT = priorização (G×U×T); Ishikawa = causa e efeito (6Ms); 5W2H = plano de ação (What, Why, Where, When, Who, How, How much); Pareto = regra 80/20; PDCA = melhoria contínua (Planejar, Executar, Verificar, Agir).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Diagrama de Ishikawa identifica causas-raízes de um problema (efeito), não prioriza problemas multiplicando notas de impacto/prazo/agravamento.",
+          "B": "CORRETA. Impacto = Gravidade; Prazo = Urgência; Risco de agravamento = Tendência.",
+          "C": "INCORRETA. 5W2H é uma ferramenta de plano de ação (o quê, por quê, onde, quando, quem, como, quanto custa), não de priorização numérica.",
+          "D": "INCORRETA. Cartas/gráficos de controle monitoram estabilidade estatística e variação de processos ao longo do tempo.",
+          "E": "INCORRETA. O PDCA é um ciclo contínuo de gerenciamento/melhoria de processos em 4 etapas."
+        },
+        "conexao_pratica_ifbaiano": "A banca Avalia adora descrever os 3 critérios com sinônimos ('impacto, prazo, risco de piorar') para ver se você identifica a Matriz GUT sem citar as letras G, U e T. Lembre-se também: na GUT os três valores são MULTIPLICADOS (não somados!).",
+        "pilula_fixacao": "GUT = PRIORIZA (G × U × T). Ishikawa = CAUSA E EFEITO. 5W2H = PLANO DE AÇÃO. Pareto = 80/20."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-009",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Gestão de Pessoas: Comportamento, Motivação e Liderança",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Teoria dos Dois Fatores de Herzberg vs Maslow",
+      "texto_apoio": null,
+      "enunciado": "Segundo a Teoria dos Dois Fatores de Frederick Herzberg aplicada ao comportamento organizacional, assinale a alternativa CORRETA sobre os fatores higiênicos e motivacionais no ambiente de trabalho.",
+      "alternativas": {
+        "A": "O salário, as condições físicas de trabalho e o relacionamento com a chefia são fatores motivacionais que, por si sós, geram satisfação plena e duradoura.",
+        "B": "O enriquecimento do cargo, o reconhecimento, a responsabilidade e a oportunidade de crescimento profissional são exemplos de fatores higiênicos.",
+        "C": "Os fatores higiênicos, quando ótimos, apenas evitam a insatisfação no trabalho, não sendo capazes de elevar substancialmente a satisfação por longo prazo.",
+        "D": "Os fatores motivacionais estão ligados exclusivamente ao contexto extrínseco ao cargo (ambiente externo), enquanto os higiênicos dependem do conteúdo intrínseco da tarefa.",
+        "E": "A ausência dos fatores motivacionais provoca extrema insatisfação aguda, enquanto a ausência dos fatores higiênicos é neutra."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C expressa o núcleo da Teoria Bifatorial de Herzberg: fatores higiênicos (extrínsecos) previnem a insatisfação (levam da insatisfação para a não-insatisfação), enquanto fatores motivacionais (intrínsecos) geram satisfação.",
+        "fundamento_legal_ou_teorico": "Herzberg: 1) Fatores Higiênicos (extrínsecos / contexto do cargo: salário, benefícios, condições físicas, políticas, clima/supervisão) -> evitam insatisfação, não motivam; 2) Fatores Motivacionais (intrínsecos / conteúdo do cargo: realização, reconhecimento, responsabilidade, crescimento) -> produzem satisfação.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Salário, condições físicas e relacionamento com a chefia são fatores HIGIÊNICOS (extrínsecos).",
+          "B": "INCORRETA. Realização, reconhecimento, responsabilidade e crescimento pertencem ao conteúdo da tarefa — são fatores MOTIVACIONAIS.",
+          "C": "CORRETA. Fator higiênico ótimo = não-insatisfação (ponto neutro); só o fator motivacional gera satisfação real.",
+          "D": "INCORRETA. Os conceitos estão invertidos: higiênico = contexto (extrínseco); motivacional = conteúdo da tarefa (intrínseco).",
+          "E": "INCORRETA. É o contrário: a ausência dos fatores HIGIÊNICOS gera insatisfação; a ausência dos motivacionais gera não-satisfação."
+        },
+        "conexao_pratica_ifbaiano": "Pegadinha clássica nas provas administrativas! A maioria acha que 'salário' é fator motivacional. Para Herzberg, salário e ar-condicionado/mobiliário da sala são HIGIÊNICOS — se forem ruins geram revolta, mas se forem bons apenas evitam reclamação.",
+        "pilula_fixacao": "Herzberg: Higiênico = CONTEXTO/Salário (evita insatisfação). Motivacional = CONTEÚDO/Cargo (gera satisfação)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-010",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais: Classificação e Estoques",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 130,
+      "perfil_cobranca": "Classificação ABC vs XYZ e Avaliação de Estoques (PEPS/UEPS)",
+      "texto_apoio": null,
+      "enunciado": "No almoxarifado central de uma instituição pública federal, o assistente em administração precisa classificar os materiais em estoque considerando, em um primeiro levantamento, o valor de consumo anual de cada item (concentração financeira) e, em um segundo levantamento, o grau de criticidade ou imprescindibilidade do item para não paralisar as atividades laboratoriais. Assinale a alternativa que aponta CORRETAMENTE as classificações aplicadas e o método contábil aceito pela legislação brasileira para avaliação de estoques.",
+      "alternativas": {
+        "A": "Respectivamente, Classificação XYZ e Classificação ABC; método aceito: UEPS (LIFO).",
+        "B": "Respectivamente, Classificação ABC e Classificação XYZ; método aceito: PEPS (FIFO) ou Custo Médio Ponderado.",
+        "C": "Respectivamente, Classificação PQR e Classificação ABC; método aceito: apenas UEPS (LIFO).",
+        "D": "Respectivamente, Classificação ABC e Classificação SDE; método aceito: Custo de Reposição Futuro exclusivamente.",
+        "E": "Respectivamente, Classificação XYZ e Classificação FSN; método aceito: PEPS (FIFO)."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B associa corretamente: valor de consumo financeiro (Curva/Classificação ABC - Princípio de Pareto) e criticidade operacional (Classificação XYZ); quanto ao método contábil no Brasil, usa-se PEPS ou Custo Médio (UEPS é proibido fiscalmente no Brasil).",
+        "fundamento_legal_ou_teorico": "Administração de Materiais: ABC = valor de consumo (Classe A: ~20% dos itens = ~80% do valor); XYZ = criticidade operacional (X = baixa criticidade/substituível; Z = imprescindível/sem substituto); PQR = popularidade/frequência de requisição; SDE = escassez/dificuldade de obtenção. Avaliação: PEPS (primeiro que entra, primeiro que sai) e Média Ponderada são aceitos; UEPS não é aceito pela legislação fiscal/CPC 16.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Trocou ABC com XYZ e apontou UEPS (método vedado pela contabilidade/legislação fiscal brasileira por subavaliar estoques e reduzir artificialmente o lucro).",
+          "B": "CORRETA. ABC = valor financeiro; XYZ = criticidade; PEPS/Média = aceitos no Brasil.",
+          "C": "INCORRETA. PQR refere-se à popularidade (número de requisições/saídas), não ao valor de consumo anual; e UEPS não é aceito.",
+          "D": "INCORRETA. SDE refere-se à dificuldade de aquisição no mercado (Escasso, Difícil, Fácil), não à criticidade para paralisar a operação interna.",
+          "E": "INCORRETA. Trocou ABC por XYZ."
+        },
+        "conexao_pratica_ifbaiano": "No recebimento e conferência de materiais de almoxarifado (inclusive perecíveis, insumos de limpeza/impressão ou reagentes), o PEPS também evita vencimento no estoque — lembre que UEPS (LIFO) é proibido no Brasil pelo fisco e pelas normas contábeis!",
+        "pilula_fixacao": "ABC = Valor ($). XYZ = Criticidade (Z = zero substituto/para tudo). UEPS = Proibido no Brasil; vale PEPS ou Custo Médio."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-011",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Teoria das Três Idades, Protocolo e Avaliação",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Ciclo Vital dos Documentos, Princípio da Proveniência e Eliminação",
+      "texto_apoio": null,
+      "enunciado": "Conforme os princípios fundamentais da Arquivologia e a Lei nº 8.159/1991 (Política Nacional de Arquivos Públicos e Privados), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Os arquivos intermediários reúnem documentos com valor exclusivamente histórico e probatório definitivo, sendo vedada sua eliminação após o prazo de guarda.",
+        "B": "O Princípio da Proveniência determina que os arquivos originários de uma instituição ou pessoa devem ser agrupados por assunto temático, mesclando-se com documentos de outros órgãos para facilitar a pesquisa.",
+        "C": "A eliminação de documentos produzidos por instituições públicas será realizada mediante autorização da instituição arquivística pública na sua específica esfera de competência, segundo a Tabela de Temporalidade.",
+        "D": "O valor primário do documento surge apenas quando ele perde totalmente sua utilidade administrativa e passa a interessar à pesquisa científica e histórica.",
+        "E": "Documentos digitais de arquivo permanente devem ser eliminados imediatamente após a digitalização de seus equivalentes em papel, para economia de armazenamento."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C reproduz literalmente o art. 9º da Lei nº 8.159/1991: a eliminação de documentos públicos exige autorização da instituição arquivística competente (no âmbito federal, o Arquivo Nacional / CONARQ via CPAD e Tabela de Temporalidade).",
+        "fundamento_legal_ou_teorico": "Lei nº 8.159/1991: 3 Idades = Corrente (uso frequente/vigente), Intermediário (aguarda destinação: eliminação ou guarda permanente, uso pouco frequente), Permanente (valor secundário: histórico/probatório/informativo, INALIENÁVEL E IMPRESCRITÍVEL); Proveniência = não misturar fundos de produtores distintos.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Essa é a definição dos arquivos PERMANENTES (3ª idade). Nos arquivos intermediários (2ª idade), os documentos ainda possuem valor primário/administrativo eventual e aguardam destinação final (podendo ser eliminados!).",
+          "B": "INCORRETA. O Princípio da Proveniência (Respeito aos Fundos) determina exatamente o OPOSTO: NÃO misturar documentos de instituições/produtores diferentes!",
+          "C": "CORRETA. Previsão literal do Art. 9º da Lei nº 8.159/1991.",
+          "D": "INCORRETA. Valor PRIMÁRIO é o valor administrativo/fiscal/legal imediato (razão pela qual o documento foi criado); quando passa ao histórico/cultural, chama-se valor SECUNDÁRIO.",
+          "E": "INCORRETA. Documentos de guarda permanente (valor histórico/secundário) NÃO podem ser eliminados mesmo após digitalização ou microfilmagem!"
+        },
+        "conexao_pratica_ifbaiano": "Na rotina de protocolo/SEI das IFES, nunca descarte caixas antigas por conta própria por falta de espaço! Mesmo no arquivo intermediário, a eliminação só pode ocorrer conforme a Tabela de Temporalidade da IFES/CONARQ e autorização formal (CPAD).",
+        "pilula_fixacao": "Proveniência = NÃO misturar fundos. Primário = Adm (Corrente/Interm). Secundário = Histórico (Permanente, nunca se elimina!)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-012",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Atendimento ao Público e Relações Interpessoais",
+      "dificuldade": "Fácil",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Qualidade no Atendimento, Comportamento Receptivo vs Defensivo",
+      "texto_apoio": null,
+      "enunciado": "No atendimento presencial e eletrônico aos estudantes, docentes e cidadãos que procuram a Administração da UFBA, qual postura do Assistente em Administração evidencia comportamento RECEPTIVO, cortesia e eficácia na comunicação interpessoal?",
+      "alternativas": {
+        "A": "Interromper o usuário logo na primeira frase para agilizar o atendimento e impor a norma institucional antes de ouvir a demanda.",
+        "B": "Utilizar jargões burocráticos e siglas internas do sistema sem explicação, demonstrando superioridade técnica do setor.",
+        "C": "Praticar escuta ativa com empatia, manter linguagem clara e objetiva, prestar informações precisas com presteza e encaminhar adequadamente demandas fora de sua alçada sem transferir a responsabilidade ao cidadão de forma ríspida.",
+        "D": "Transferir o cidadão sucessivamente entre ramais sem verificar previamente qual setor tem competência, justificando que 'não é atribuição da nossa mesa'.",
+        "E": "Tratar informações pessoais de processos disciplinares em voz alta no balcão de atendimento como forma de dar publicidade irrestrita aos atos."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C reúne os atributos do atendimento de qualidade previstos no edital: empatia, comunicabilidade, clareza, presteza, objetividade e comportamento receptivo.",
+        "fundamento_legal_ou_teorico": "Edital 007/2026 (Atendimento ao Público) + Lei nº 13.460/2017 (Código de Defesa do Usuário de Serviços Públicos): presteza, cortesia, discrição, acessibilidade, clareza e vedação à exigência burocrática abusiva.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Interromper e impor sem ouvir caracteriza comportamento defensivo/autoritário e falha na escuta ativa.",
+          "B": "INCORRETA. O uso de jargões e siglas inacessíveis viola o princípio da comunicabilidade e clareza no atendimento público.",
+          "C": "CORRETA. Demonstra comportamento receptivo, empatia, presteza e resolutividade institucional.",
+          "D": "INCORRETA. O 'jogo de empurra' fere a eficiência, a cortesia e a presteza no serviço público.",
+          "E": "INCORRETA. Viola diretamente o atributo da DISCRIÇÃO, o sigilo funcional e a proteção de dados pessoais (LGPD)."
+        },
+        "conexao_pratica_ifbaiano": "Nos guichês de atendimento e canais da Reitoria, a 'discrição' é um dos itens expressos do edital do Cargo 201: ouvir com empatia e jamais expor dados ou situações pessoais do usuário em voz alta no balcão.",
+        "pilula_fixacao": "Bom atendimento = Escuta ativa + Empatia + Clareza (zero jargão) + Discrição + Presteza."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-008",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "4 e 8. Ortografia Oficial, Paronímia e Homonímia",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Emprego Correto de Parônimos/Homônimos e Novo Acordo Ortográfico",
+      "texto_apoio": null,
+      "enunciado": "Assinale a alternativa em que todas as palavras e expressões destacadas estão empregadas com precisão ortográfica e semântica de acordo com a norma-padrão vigente.",
+      "alternativas": {
+        "A": "O assistente administrativo agiu com **discrição** durante a **seção** extraordinária de julgamento das propostas.",
+        "B": "O parecer jurídico **ratificou** integralmente a decisão da comissão, confirmando sua validade legal.",
+        "C": "Havia **bastantes** motivos para **retificar** o edital, confirmando e mantendo todas as datas anteriormente publicadas.",
+        "D": "A **cessão** de abertura dos trabalhos ocorrerá às 9h, **a fim de que** todos os servidores participem.",
+        "E": "O candidato solicitou a emissão de documento para comprovar que estava **quite** com a Justiça, evitando **infringir** multa pecuniária ao erário."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: 'ratificar' significa confirmar, validar — exatamente compatível com 'confirmando sua validade legal'.",
+        "fundamento_legal_ou_teorico": "Parônimos/Homônimos clássicos: Ratificar (confirmar) vs Retificar (corrigir/alterar); Sessão (reunião/tempo) vs Seção/Secção (setor/divisão) vs Cessão (ato de ceder); Descrição (ato de descrever) vs Discrição (reserva); Infligir (aplicar pena/multa) vs Infringir (violar/desrespeitar).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Reunião de julgamento é 'sessão' (com dois 's'), não 'seção' (que significa departamento/divisão).",
+          "B": "CORRETA. 'Ratificou' = confirmou (diferente de retificou = corrigiu).",
+          "C": "INCORRETA. Se confirmou e manteve as datas, houve RATIFICAÇÃO (confirmar), e não 'retificar' (que significa corrigir/alterar!). Nota: 'bastantes motivos' estaria correto, mas o verbo está trocado.",
+          "D": "INCORRETA. Reunião de abertura é 'sessão', não 'cessão' (que vem do verbo ceder).",
+          "E": "INCORRETA. Multa se INFLIGE (aplica), enquanto a lei se INFRINGE (viola). O verbo certo seria 'infligir'."
+        },
+        "conexao_pratica_ifbaiano": "Na Comunicação da Reitoria, editais retificadores são rotina: 'Retificação' = correção/alteração; 'Ratificação' = confirmação (muito usado no ato de ratificação de inexigibilidade/dispensa no SEI!).",
+        "pilula_fixacao": "RaTificar = confirmar (aTivo). ReTificar = corrigir (reTo/erro). Sessão = tempo/reunião; Seção = setor; Cessão = ceder."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-009",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "4. Lei nº 8.112/1990 — Licenças, Afastamentos e Direitos",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Licenças e Concessões da Lei 8.112/1990",
+      "texto_apoio": null,
+      "enunciado": "À luz da Lei nº 8.112/1990, no que concerne às licenças e concessões do servidor público federal, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O servidor em estágio probatório não pode usufruir, em nenhuma hipótese, de licença para capacitação nem de licença por motivo de doença em pessoa da família.",
+        "B": "Sem qualquer prejuízo, poderá o servidor ausentar-se do serviço por 1 (um) dia, para doação de sangue, e por 8 (oito) dias consecutivos em razão de casamento ou falecimento de cônjuge, companheiro, pais ou filhos.",
+        "C": "A licença para tratar de interesses particulares pode ser concedida ao servidor estável, a critério da Administração, pelo prazo de até 3 (três) anos consecutivos, com remuneração.",
+        "D": "A licença para capacitação permite ao servidor, após cada quinquênio de efetivo exercício, afastar-se por até 6 (seis) meses com a respectiva remuneração.",
+        "E": "O servidor terá direito a licença com remuneração para o desempenho de mandato classista em confederação ou sindicato representativo da categoria."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz fielmente o art. 97 da Lei nº 8.112/1990: 1 dia para doação de sangue e 8 dias consecutivos por casamento (gala) ou falecimento (nojo) dos familiares previstos.",
+        "fundamento_legal_ou_teorico": "Lei nº 8.112/1990: Art. 97 (Ausências: 1 dia sangue; até 2 dias alistamento/recadastramento eleitoral; 8 dias casamento/falecimento); Art. 20, § 4º (Estágio probatório: PODE ter licença por doença em pessoa da família, serviço militar, atividade política e afastamento p/ mandato eletivo — NÃO pode capacitação, interesses particulares nem mandato classista); Art. 87 (Capacitação = 3 meses após 5 anos); Art. 91 (Interesses particulares = até 3 anos SEM remuneração).",
+        "analise_alternativas": {
+          "A": "INCORRETA. O servidor em estágio probatório PODE sim usufruir de licença por motivo de doença em pessoa da família (art. 20, § 4º); o que ele não pode ter é licença para capacitação ou interesses particulares.",
+          "B": "CORRETA. Prazos literais do Art. 97, incisos I e III da Lei nº 8.112/1990.",
+          "C": "INCORRETA. Licença para tratar de interesses particulares é sempre SEM remuneração (art. 91).",
+          "D": "INCORRETA. A licença para capacitação (art. 87) é de até 3 (três) meses a cada quinquênio, não 6 meses.",
+          "E": "INCORRETA. A licença para desempenho de mandato classista é SEM remuneração (art. 92)."
+        },
+        "conexao_pratica_ifbaiano": "Nos boletins de gestão de pessoas (PRODEP/PROGEP), a confusão mais comum é achar que estágio probatório impede licença para doença em família ou que capacitação dura 6 meses. Guarde os números exatos da Lei 8.112/90!",
+        "pilula_fixacao": "Art. 97: 1d sangue | 2d eleitor | 8d casamento/luto. Capacitação = 3 meses. Interesses particulares e Mandato Classista = SEM remuneração."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-013",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "1 e 3. Estado, Governo, Administração Pública e Agentes Públicos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Sentido Formal vs Material da Administração Pública e Agentes",
+      "texto_apoio": null,
+      "enunciado": "Na doutrina de Direito Administrativo aplicada à organização do Estado, a expressão 'Administração Pública' pode ser analisada sob os critérios formal (subjetivo/orgânico) e material (objetivo/funcional). Sobre esses conceitos e a classificação dos agentes públicos, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Em sentido objetivo (material), a Administração Pública designa o conjunto de órgãos, entidades e agentes públicos que integram a estrutura administrativa.",
+        "B": "Em sentido subjetivo (formal), a Administração Pública é escrita em letra minúscula e refere-se exclusivamente à atividade concreta e imediata de prestação de serviços públicos e fomento.",
+        "C": "Os ocupantes de cargos em comissão são agentes públicos investidos mediante concurso público prévio de provas ou de provas e títulos, adquirindo estabilidade após três anos.",
+        "D": "Os servidores públicos estatutários são titulares de cargo público criado por lei, com denominação própria e vencimento pago pelos cofres públicos, integrando o grupo dos agentes administrativos.",
+        "E": "O estagiário remunerado de órgão público federal e o mesário eleitoral convocado enquadram-se como servidores estatutários efetivos."
+      },
+      "gabarito": "D",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa D define corretamente os servidores públicos estatutários (espécie de agentes administrativos) como titulares de cargo público (art. 3º da Lei 8.112/90).",
+        "fundamento_legal_ou_teorico": "Sentido Subjetivo/Formal/Orgânico = QUEM faz (órgãos, entidades, agentes — letra maiúscula); Sentido Objetivo/Material/Funcional = O QUE faz (atividade administrativa: serviço público, polícia, fomento, intervenção — letra minúscula). Agentes honoríficos (mesários/jurados) colaboram transitoriamente sem vínculo estatutário.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Órgãos, entidades e agentes formam o sentido SUBJETIVO (formal/orgânico), não o objetivo.",
+          "B": "INCORRETA. Inverteu: atividade concreta é o sentido OBJETIVO (material/funcional).",
+          "C": "INCORRETA. Cargos em comissão são de livre nomeação e exoneração (dispensam concurso e não geram estabilidade) — art. 37, II e V da CF/88.",
+          "D": "CORRETA. Reproduz o conceito clássico de servidor público titular de cargo (Lei 8.112/90, art. 3º).",
+          "E": "INCORRETA. Mesário é agente honorífico (particular em colaboração); estagiário não ocupa cargo nem emprego público (Lei nº 11.788/2008)."
+        },
+        "conexao_pratica_ifbaiano": "Bancas adoram o jogo de palavras Subjetivo vs Objetivo. Macete visual de designer: Subjetivo = Sujeito (Quem: órgãos/pessoas); Objetivo = Objeto (O quê: atividade).",
+        "pilula_fixacao": "Subjetivo (Formal/Orgânico) = QUEM (Sujeito/Órgão). Objetivo (Material/Funcional) = O QUÊ (Atividade)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-014",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021 — Critérios de Julgamento e Instrumentos Auxiliares",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 130,
+      "perfil_cobranca": "Critérios de Julgamento (Art. 33) e Sistema de Registro de Preços",
+      "texto_apoio": null,
+      "enunciado": "No planejamento das compras da UFBA segundo a Lei nº 14.133/2021, assinale a alternativa CORRETA sobre os critérios de julgamento (art. 33) e o Sistema de Registro de Preços (SRP).",
+      "alternativas": {
+        "A": "Na modalidade pregão, podem ser utilizados os critérios de menor preço, maior desconto ou melhor técnica.",
+        "B": "O prazo de vigência da ata de registro de preços será de 1 (um) ano e poderá ser prorrogado, por igual período, desde que comprovado o preço vantajoso.",
+        "C": "São critérios de julgamento previstos no art. 33 da Lei nº 14.133/2021: menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance e maior retorno econômico, além de sorteio como critério principal.",
+        "D": "A adesão à ata de registro de preços ('carona') por órgão não participante prescinde da concordância prévia do órgão gerenciador e do fornecedor beneficiário.",
+        "E": "O critério de 'maior lance' é utilizado exclusivamente na modalidade concurso para projetos arquitetônicos."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz literalmente o art. 84 da Lei nº 14.133/2021: vigência da Ata de Registro de Preços = 1 ano, prorrogável por igual período (+1 ano, totalizando 2 anos), desde que comprovada a vantajosidade do preço.",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021: Art. 6º, XLI (Pregão só usa MENOR PREÇO ou MAIOR DESCONTO); Art. 33 (6 critérios de julgamento: menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance [leilão], maior retorno econômico); Art. 84 (Ata SRP = 1 ano + 1 ano); Art. 86, § 2º (Carona exige anuência do gerenciador e aceite do fornecedor).",
+        "analise_alternativas": {
+          "A": "INCORRETA. O Pregão admite APENAS menor preço ou maior desconto (jamais 'melhor técnica' ou 'técnica e preço').",
+          "B": "CORRETA. Literalidade exata do art. 84 (novidade importante em relação ao regime antigo, que limitava a 1 ano sem prorrogação!).",
+          "C": "INCORRETA. 'Sorteio' é critério residual de desempate (art. 60, III), e não critério principal de julgamento do art. 33.",
+          "D": "INCORRETA. A 'carona' exige justificativa da vantagem, anuência do órgão gerenciador e aceitação do fornecedor.",
+          "E": "INCORRETA. 'Maior lance' é o critério do LEILÃO (art. 6º, XL); no concurso utiliza-se 'melhor técnica ou conteúdo artístico'."
+        },
+        "conexao_pratica_ifbaiano": "No cotidiano das autarquias federais, o SRP é o carro-chefe das compras de papelaria, mobiliário e equipamentos de TI. Lembre da grande mudança da Lei 14.133: agora a Ata de Registro de Preços dura 1 ano e pode prorrogar por mais 1 ano (com renovação das quantidades, conforme entendimento consolidado/decreto federal regulamentador)!",
+        "pilula_fixacao": "Pregão = só Menor Preço ou Maior Desconto. Ata SRP = 1 ano (+ 1 ano se vantajoso). Leilão = Maior Lance."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-015",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Protocolo, Microfilmagem e Preservação",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Rotinas de Protocolo e Métodos de Arquivamento",
+      "texto_apoio": null,
+      "enunciado": "Sobre as atividades do setor de protocolo e os métodos de arquivamento e preservação de documentos em instituições públicas, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Cabe ao protocolo receber, registrar, classificar, distribuir, controlar a movimentação e expedir os documentos correntes da instituição.",
+        "B": "A restauração é uma ação preventiva cotidiana realizada diretamente pelo usuário no balcão, como higienização simples e acondicionamento em caixas-arquivo.",
+        "C": "No método de arquivamento alfabético (enciclopédico ou dicionário), os documentos são ordenados exclusivamente pelo número sequencial de protocolo de entrada.",
+        "D": "A microfilmagem de documentos públicos oficiais perde totalmente o valor legal de prova em juízo se o original em papel tiver sido eliminado após autorização.",
+        "E": "O diagnóstico arquivístico deve ser realizado apenas no arquivo permanente, sendo dispensável nos arquivos correntes."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa A descreve com exatidão todas as funções típicas das atividades de Protocolo na gestão de documentos correntes.",
+        "fundamento_legal_ou_teorico": "Arquivologia (Paes / Schellenberg): Protocolo = recebimento, registro, autuação, classificação, expedição, distribuição e controle da tramitação; Preservação/Conservação = medidas preventivas (higienização, climatização, acondicionamento); Restauração = intervenção curativa/especializada em documentos já danificados; Lei nº 5.433/1968 = microfilme tem valor legal em juízo (documentos permanentes não se eliminam, mas correntes/intermediários microfilmados sim).",
+        "analise_alternativas": {
+          "A": "CORRETA. Rol clássico das atribuições do protocolo em arquivos correntes.",
+          "B": "INCORRETA. Higienização e acondicionamento são medidas de CONSERVAÇÃO (preventiva); RESTAURAÇÃO é medida curativa especializada para recuperar documento já danificado.",
+          "C": "INCORRETA. Ordenação por número sequencial de entrada é método NUMÉRICO SIMPLES, não alfabético.",
+          "D": "INCORRETA. Microfilmes produzidos segundo a Lei nº 5.433/1968 têm pleno valor probatório em juízo e na Administração (salvo guarda permanente, que não pode ser eliminada).",
+          "E": "INCORRETA. O diagnóstico arquivístico mapeia toda a massa documental acumulada, começando justamente pelos arquivos correntes e intermediários."
+        },
+        "conexao_pratica_ifbaiano": "Mesmo com o SEI digital, você interage com o protocolo físico de processos legados e correspondências oficiais na Reitoria. Diferencie na prova: Conservação = previne danos (pasta/caixa/higienização); Restauração = repara o documento já deteriorado.",
+        "pilula_fixacao": "Protocolo = recebe, registra, classifica, distribui, controla e expede. Conservação = previne; Restauração = cura."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-016",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais: Recebimento e Armazenagem",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Etapas do Recebimento (Entrada, Conferência Quantitativa vs Qualitativa)",
+      "texto_apoio": null,
+      "enunciado": "Na rotina de recebimento de materiais adquiridos pela UFBA no almoxarifado central, o procedimento que consiste em confrontar a quantidade física descarregada pelo fornecedor com a Nota Fiscal e o pedido/empenho, bem como a etapa subsequente destinada a verificar se o objeto entregue atende exatamente às especificações técnicas do Termo de Referência (marca, dimensões, integridade), denominam-se, respectivamente:",
+      "alternativas": {
+        "A": "Conferência qualitativa e regularização contábil.",
+        "B": "Conferência quantitativa e conferência qualitativa (inspeção técnica).",
+        "C": "Recebimento definitivo e entrada provisória.",
+        "D": "Tombamento patrimonial e inventário rotativo.",
+        "E": "Endereçamento e curva ABC."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B distingue perfeitamente as duas etapas de conferência na ordem solicitada: quantitativa (contar/pesar/medir versus Nota Fiscal) e qualitativa (verificar conformidade técnica com o edital/TR).",
+        "fundamento_legal_ou_teorico": "Administração de Materiais (Dias / Viana): Fases do Recebimento = 1) Entrada de materiais (portaria/descarga, exame de NF); 2) Conferência Quantitativa (volumes/unidades); 3) Conferência Qualitativa (inspeção técnica de qualidade/especificação); 4) Regularização (aceite definitivo/devolução/registro em estoque).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Inverte a ordem e substitui a segunda etapa.",
+          "B": "CORRETA. Contagem física = Conferência Quantitativa; Verificação de especificação técnica/TR = Conferência Qualitativa.",
+          "C": "INCORRETA. Na verdade o recebimento provisório precede o definitivo (e não o contrário).",
+          "D": "INCORRETA. Tombamento é o registro e emplaquetamento de bens PERMANENTES (patrimônio), não etapa do recebimento de material de consumo.",
+          "E": "INCORRETA. Endereçamento é critério de armazenagem após o aceite/regularização."
+        },
+        "conexao_pratica_ifbaiano": "Para quem acompanha compras de materiais gráficos, mobiliário ou equipamentos na Reitoria, o recebimento provisório costuma ser feito na entrega (quantitativo) e o definitivo só após atesto técnico/qualitativo pelo demandante antes de liquidar a nota fiscal!",
+        "pilula_fixacao": "1º Entra (NF) -> 2º Quantitativa (conta) -> 3º Qualitativa (testa qualidade/TR) -> 4º Regulariza (atesta e guarda)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-010",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "14 e 16. Patrimônio Público e Carta de Serviços ao Usuário",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Material de Consumo vs Permanente e Lei 13.460/2017",
+      "texto_apoio": null,
+      "enunciado": "Sobre a gestão de bens patrimoniais na Administração Pública Federal e a Carta de Serviços ao Usuário (Lei nº 13.460/2017), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Um equipamento de informática cuja durabilidade prevista é superior a 2 (dois) anos e que não perde sua identidade física no uso corrente é classificado contabilmente como material de consumo.",
+        "B": "A Carta de Serviços ao Usuário tem por objetivo informar o usuário sobre os serviços prestados pelo órgão, as formas de acesso, os compromissos e os padrões de qualidade de atendimento ao público.",
+        "C": "A realização de inventário anual de bens patrimoniais é facultativa nas autarquias federais, devendo ocorrer apenas quando há troca de Reitor.",
+        "D": "Na gestão de materiais públicos, bem móvel inservível classificado como 'ocioso' não pode ser transferido para outro órgão público, devendo ser imediatamente incinerado.",
+        "E": "Pela Lei nº 13.460/2017, o usuário do serviço público somente pode apresentar manifestação na Ouvidoria mediante reconhecimento de firma em cartório."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz o art. 7º, § 1º da Lei nº 13.460/2017 sobre a finalidade da Carta de Serviços ao Usuário.",
+        "fundamento_legal_ou_teorico": "Lei nº 4.320/1964 (Art. 15, § 2º): Material Permanente = duração superior a 2 anos; Decreto nº 9.373/2018: Bem ocioso = em perfeitas condições de uso, mas sem aproveitamento no órgão (pode ser cedido/transferido); Lei nº 13.460/2017: Carta de Serviços informa serviços, prazos, canais e padrões de qualidade, vedando exigência de reconhecimento de firma salvo dúvida fundada.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Duração superior a 2 anos sem perder identidade física caracteriza MATERIAL PERMANENTE (tombável no patrimônio), e não material de consumo.",
+          "B": "CORRETA. Definição legal precisa da Carta de Serviços ao Usuário (Lei nº 13.460/2017).",
+          "C": "INCORRETA. O inventário anual de bens móveis e almoxarifado é obrigatório para prestação de contas (CGU/TCU).",
+          "D": "INCORRETA. Bem ocioso está em plenas condições de uso! Deve ser reaproveitado internamente ou doado/transferido via sistema (Reuse.gov), jamais destruído.",
+          "E": "INCORRETA. A Lei nº 13.460/2017 veda expressamente exigências burocráticas excessivas e assegura manifestação simplificada (inclusive anônima para denúncia, com proteção ao denunciante)."
+        },
+        "conexao_pratica_ifbaiano": "Você provavelmente já diagramou ou divulgou a Carta de Serviços ao Usuário no portal institucional! Lembre do corte temporal para material permanente (Lei 4.320/64): durabilidade > 2 anos (além dos critérios da Portaria STN 448/2002: fragilidade, perecibilidade, incorporabilidade, transformabilidade).",
+        "pilula_fixacao": "Material Permanente > 2 anos de vida útil. Carta de Serviços = serviços + acesso + prazos + qualidade."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-017",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Gestão de Pessoas: Motivação, Liderança e Avaliação",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Estilos de Liderança e Pirâmide de Maslow",
+      "texto_apoio": null,
+      "enunciado": "De acordo com os estudos clássicos de liderança situacional (Hersey e Blanchard) e a hierarquia das necessidades de Abraham Maslow, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Na liderança situacional, o estilo ideal do líder é fixo e imutável, devendo adotar sempre o perfil diretivo ('determinar'), independentemente do nível de maturidade da equipe.",
+        "B": "Na pirâmide de Maslow, as necessidades de estima e autorrealização situam-se na base da hierarquia, devendo ser satisfeitas antes das necessidades fisiológicas e de segurança.",
+        "C": "Na liderança situacional, o estilo eficaz varia conforme a maturidade (capacidade e disposição) do liderado para determinada tarefa, transitando entre determinar, persuadir, compartilhar e delegar.",
+        "D": "O estilo democrático de liderança (White e Lippitt) caracteriza-se pela total ausência de participação do líder nas decisões e pela passividade extrema diante do grupo.",
+        "E": "Na teoria das necessidades adquiridas de McClelland, a motivação humana limita-se exclusivamente ao impulso por remuneração financeira."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C descreve com precisão a Liderança Situacional de Hersey e Blanchard: o comportamento do líder (tarefa × relacionamento) adapta-se à maturidade do subordinado (E1 Determinar -> E2 Persuadir -> E3 Compartilhar -> E4 Delegar).",
+        "fundamento_legal_ou_teorico": "Hersey & Blanchard: Maturidade baixa = Determinar; Moderada/baixa = Persuadir; Moderada/alta = Compartilhar; Alta = Delegar. Maslow (base para topo): Fisiológicas -> Segurança -> Sociais -> Estima -> Autorrealização. White & Lippitt: Autocrática, Democrática, Liberal (Laissez-faire). McClelland: Realização, Poder e Afiliação.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O próprio nome 'situacional' indica que o estilo muda conforme a maturidade técnica e psicológica do liderado.",
+          "B": "INCORRETA. Estima e autorrealização ficam no TOPO da pirâmide (necessidades secundárias); fisiológicas e segurança ficam na BASE (primárias).",
+          "C": "CORRETA. Os 4 estilos exatos de Hersey e Blanchard em função da maturidade da equipe.",
+          "D": "INCORRETA. A descrição refere-se à liderança LIBERAL (laissez-faire), e não à democrática (que envolve debate participativo com orientação ativa do líder).",
+          "E": "INCORRETA. McClelland postula 3 necessidades aprendidas: Realização (nAch), Poder (nPow) e Afiliação (nAff)."
+        },
+        "conexao_pratica_ifbaiano": "Questões de Gestão de Pessoas no Instituto Avalia têm enunciados limpos e conceituais: nunca confunda liderança DEMOCRÁTICA (participativa com guia) com LIBERAL (laissez-faire, omissão do líder)!",
+        "pilula_fixacao": "Maslow (base->topo): Fi-Se-So-Es-Au. Hersey/Blanchard = adapta à MATURIDADE (Determinar, Persuadir, Compartilhar, Delegar)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-009",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "6 e 10. Colocação Pronominal e Variação Linguística",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Próclise, Mesóclise e Ênclise na Norma-Padrão",
+      "texto_apoio": null,
+      "enunciado": "Assinale a alternativa em que a colocação do pronome oblíquo átono atende INTEGRALMENTE às exigências da norma-padrão da Língua Portuguesa.",
+      "alternativas": {
+        "A": "Me encaminharam ontem todos os memorandos referentes ao evento institucional.",
+        "B": "Não entregou-se ao desânimo diante do volume de processos acumulados.",
+        "C": "Em se tratando de contratações diretas, exige-se instrução processual rigorosa.",
+        "D": "Tinha enviado-lhe os arquivos gráficos antes do fechamento da gráfica.",
+        "E": "Diria-se que a reforma administrativa trouxe novos parâmetros de eficiência."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C está correta: a construção 'em + se + gerúndio' ('Em se tratando de...') exige obrigatoriamente a próclise.",
+        "fundamento_legal_ou_teorico": "Regras de ouro da colocação pronominal: 1) Não iniciar frase com pronome átono; 2) Palavras atrativas (negação, advérbios, pronomes relativos/indefinidos, conjunções subordinativas) exigem PRÓCLISE; 3) 'Em + gerúndio' exige PRÓCLISE; 4) Futuro do presente/pretérito sem atração não aceita ênclise (exige mesóclise: 'Dir-se-ia'); 5) Particípio nunca recebe ênclise ('Tinha-lhe enviado' ou 'Tinha lhe enviado', nunca 'enviado-lhe').",
+        "analise_alternativas": {
+          "A": "INCORRETA. É proibido iniciar oração/período com pronome oblíquo átono na norma-padrão ('Encaminharam-me ontem...').",
+          "B": "INCORRETA. O advérbio de negação 'Não' é fator obrigatório de próclise ('Não se entregou...').",
+          "C": "CORRETA. Preposição 'em' + gerúndio atrai o pronome ('Em se tratando...'), além de 'exige-se' iniciar adequadamente a oração principal.",
+          "D": "INCORRETA. Jamais se coloca pronome átono após particípio ('enviado-lhe'). Correto: 'Tinha-lhe enviado' / 'Havia lhe enviado'.",
+          "E": "INCORRETA. Verbo no futuro do pretérito ('diria') sem palavra atrativa exige mesóclise ('Dir-se-ia'), nunca ênclise."
+        },
+        "conexao_pratica_ifbaiano": "Em textos jornalísticos ou ofícios institucionais, a expressão 'Em se tratando de...' aparece com frequência e é adorada por bancas porque parece 'estranha' para quem decorou apenas 'não começar com pronome', mas é uma regra clássica obrigatória!",
+        "pilula_fixacao": "Proibido ênclise em: FUTURO ('diria-se') e PARTICÍPIO ('enviado-lhe'). 'Em + se + gerúndio' é regra de ouro (CORRETO)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-011",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "2 e 11. Governança Pública, Integridade e Gestão de Riscos (Decreto 9.203/2017 e 9.830/2019)",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Mecanismos de Governança, Accountability e Controles Internos",
+      "texto_apoio": null,
+      "enunciado": "No âmbito da governança no setor público federal, três mecanismos estruturantes orientam a atuação das instituições públicas para geração de valor público e prestação de contas transparente à sociedade. Esses três mecanismos básicos de governança pública são:",
+      "alternativas": {
+        "A": "Centralização, sigilo absoluto e hierarquia rígida.",
+        "B": "Liderança, estratégia e controle.",
+        "C": "Burocracia, patrimonialismo e delegação irrestrita.",
+        "D": "Punição disciplinar, contingenciamento e terceirização.",
+        "E": "Planejamento, execução orçamentária e licitação exclusiva."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B aponta exatamente os três mecanismos de governança pública consagrados pelo Decreto nº 9.203/2017 (art. 5º) e pelo Referencial Básico de Governança do TCU: Liderança, Estratégia e Controle.",
+        "fundamento_legal_ou_teorico": "Decreto nº 9.203/2017, Art. 5º: São mecanismos para o exercício da governança pública: I - liderança; II - estratégia; III - controle. Accountability refere-se ao dever de prestar contas de forma transparente e responsabilizar-se pelos resultados.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Oposto aos princípios da governança pública (transparência, integridade, responsividade).",
+          "B": "CORRETA. Mecanismos literais do Art. 5º do Decreto nº 9.203/2017 e da metodologia do TCU.",
+          "C": "INCORRETA. Patrimonialismo é confusão entre patrimônio público e privado (modelo pré-burocrático superado).",
+          "D": "INCORRETA. Não correspondem aos mecanismos estruturantes de governança.",
+          "E": "INCORRETA. São processos/rotinas administrativas específicas, não os três mecanismos centrais de governança."
+        },
+        "conexao_pratica_ifbaiano": "Todo Plano de Integridade e PDI das universidades e institutos federais segue o tripé do TCU/Decreto 9.203: Liderança, Estratégia e Controle (e nunca confunda com os 4 princípios ou 4 funções PODC!).",
+        "pilula_fixacao": "3 Mecanismos da Governança Pública (Dec. 9.203/17 e TCU): LIDERANÇA, ESTRATÉGIA e CONTROLE (LEC)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-018",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "6. Controle da Administração Pública (Administrativo, Judicial e Legislativo)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Autotutela, Controle Externo (TCU) e Controle Judicial",
+      "texto_apoio": null,
+      "enunciado": "Sobre os sistemas de controle da Administração Pública no ordenamento jurídico brasileiro, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O controle judicial incide tanto sobre a legalidade quanto sobre o mérito administrativo (conveniência e oportunidade) dos atos discricionários regularmente praticados pelo gestor.",
+        "B": "O controle externo da Administração Pública Federal é exercido pelo Congresso Nacional com o auxílio do Tribunal de Contas da União (TCU), abrangendo fiscalização contábil, financeira, orçamentária, operacional e patrimonial.",
+        "C": "Pelo princípio da autotutela, a Administração Pública depende de prévia autorização judicial para anular seus próprios atos ilegais.",
+        "D": "A Controladoria-Geral da União (CGU) integra o Poder Legislativo e exerce controle externo exclusivo sobre as universidades federais.",
+        "E": "O controle legislativo permite ao Congresso Nacional aplicar diretamente multa pecuniária a assistentes administrativos sem atuação do TCU."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz fielmente os artigos 70 e 71 da Constituição Federal sobre o controle externo (Congresso Nacional + TCU) e suas cinco dimensões de fiscalização.",
+        "fundamento_legal_ou_teorico": "CF/88 Art. 70 e 71: Controle externo = Poder Legislativo (Congresso Nacional) com auxílio do TCU; Súmula 473 STF (Autotutela): Administração anula ilegais e revoga inoportunos sem depender do Judiciário; Controle Judicial = analisa apenas legalidade/legitimidade (inclui razoabilidade/proporcionalidade), nunca substitui o mérito discricionário; CGU = controle INTERNO do Poder Executivo Federal.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O Poder Judiciário não invade o mérito administrativo (conveniência e oportunidade) de atos discricionários legítimos, sob pena de violar a separação dos poderes.",
+          "B": "CORRETA. Literalidade exata dos arts. 70 e 71 da Constituição Federal.",
+          "C": "INCORRETA. A autotutela é o poder-dever de a própria Administração rever seus atos DE OFÍCIO ou por provocação, independentemente de ir ao Judiciário.",
+          "D": "INCORRETA. A CGU é órgão de controle INTERNO do Poder Executivo Federal (art. 74 CF), não externo do Legislativo.",
+          "E": "INCORRETA. A aplicação de sanções e imputação de débito nas contas compete constitucionalmente ao TCU (art. 71, VIII)."
+        },
+        "conexao_pratica_ifbaiano": "Você provavelmente já respondeu demandas de auditoria interna (AUDIN), CGU ou acórdãos do TCU na Reitoria. Lembre sempre da divisão constitucional: CGU/AUDIN = Controle Interno (Executivo); Congresso + TCU = Controle Externo (Legislativo); Judiciário = só Legalidade (nunca Mérito).",
+        "pilula_fixacao": "Controle Externo = Congresso + TCU. Controle Interno = CGU/AUDIN. Judiciário = só Legalidade (nunca Mérito)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-010",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "5 e 8. Figuras de Linguagem, Semântica e Operadores Argumentativos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Identificação de Figuras de Linguagem e Relações Lógicas",
+      "texto_apoio": "Na gestão pública contemporânea, transformar a burocracia de pedra em ponte exige diálogo constante entre setores. Embora os recursos orçamentários sejam finitos, a criatividade institucional pode ampliar o alcance das ações universitárias.",
+      "enunciado": "Considerando as figuras de linguagem e os conectores presentes no texto de apoio, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A expressão 'transformar a burocracia de pedra em ponte' exemplifica uma metonímia, pois substitui o autor pela obra.",
+        "B": "O conector 'Embora' estabelece relação semântica de concessão entre as duas orações do segundo período.",
+        "C": "Caso se substituísse 'Embora' por 'Visto que', o sentido concessivo seria integralmente preservado.",
+        "D": "Há uma hipérbole evidente em 'os recursos orçamentários sejam finitos', por configurar exagero intencional.",
+        "E": "O termo 'contemporânea' funciona sintaticamente como advérbio de tempo."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: 'Embora' é a conjunção subordinativa concessiva prototípica, introduzindo ideia contrária que não impede a ocorrência da oração principal.",
+        "fundamento_legal_ou_teorico": "Conjunções concessivas: embora, ainda que, mesmo que, conquanto, posto que, apesar de que (exigem subjuntivo!). Metáfora = comparação implícita ('burocracia de pedra' -> 'ponte'); Metonímia = contiguidade (autor pela obra, parte pelo todo); 'Visto que' = causal.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Trata-se de METÁFORA (comparação implícita entre rigidez da burocracia/pedra e conexão/ponte), não metonímia.",
+          "B": "CORRETA. 'Embora' introduz oração subordinada adverbial concessiva.",
+          "C": "INCORRETA. 'Visto que' tem valor CAUSAL (= porque/já que), alterando a lógica concessiva.",
+          "D": "INCORRETA. Dizer que recursos orçamentários são finitos é afirmação literal/factual, sem exagero retórico (hipérbole).",
+          "E": "INCORRETA. 'Contemporânea' concorda em gênero e número com o substantivo 'gestão': é ADJETIVO (adjunto adnominal)."
+        },
+        "conexao_pratica_ifbaiano": "Dominar operadores argumentativos como 'embora/conquanto/não obstante' (concessivos) versus 'visto que/uma vez que' (causais) garante pontos tanto nas questões objetivas quanto na Coesão (Critério 3 — 15 pontos) da Redação!",
+        "pilula_fixacao": "Concessão = Embora, Ainda que, Conquanto (+ subjuntivo). Causa = Visto que, Já que, Uma vez que."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-019",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais: Gestão de Estoques e Lote Econômico",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 130,
+      "perfil_cobranca": "Estoque Mínimo, Ponto de Pedido e Tempo de Ressuprimento",
+      "texto_apoio": null,
+      "enunciado": "Um almoxarifado consome em média 50 resmas de papel A4 por dia útil. O tempo de ressuprimento (lead time) entre a solicitação de compra e a entrega efetiva pelo fornecedor é de 6 dias úteis, e a administração definiu um estoque mínimo (de segurança) de 100 resmas para evitar ruptura de estoque. Aplicando a fórmula clássica de Gestão de Estoques, qual deve ser o Ponto de Pedido (PP)?",
+      "alternativas": {
+        "A": "100 resmas.",
+        "B": "200 resmas.",
+        "C": "300 resmas.",
+        "D": "400 resmas.",
+        "E": "600 resmas."
+      },
+      "gabarito": "D",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa D está correta: PP = (Consumo médio × Tempo de ressuprimento) + Estoque mínimo = (50 × 6) + 100 = 300 + 100 = 400 resmas.",
+        "fundamento_legal_ou_teorico": "Fórmula do Ponto de Pedido (ou Ponto de Ressuprimento): PP = (C × TR) + EM, onde C = consumo médio por unidade de tempo, TR = tempo de reposição/ressuprimento, EM = estoque mínimo (de segurança).",
+        "analise_alternativas": {
+          "A": "INCORRETA. 100 resmas é apenas o estoque mínimo de segurança (EM).",
+          "B": "INCORRETA. Resultado obtido por erro de cálculo (subtraindo 100 de 300).",
+          "C": "INCORRETA. Pegadinha clássica: 300 é apenas (C × TR), esquecendo de somar o Estoque Mínimo (EM = 100)!",
+          "D": "CORRETA. (50 × 6) + 100 = 400 resmas. Ao atingir 400 unidades na prateleira, dispara-se o novo pedido para que a entrega chegue exatamente no limite do estoque de segurança.",
+          "E": "INCORRETA. Soma ou multiplicação arbitrária sem aderência à fórmula."
+        },
+        "conexao_pratica_ifbaiano": "Toda vez que cai cálculo simples de Recursos Materiais em prova de Assistente em Administração, a pegadinha nº 1 da banca é colocar como alternativa C exatamente o valor de (C × TR) sem somar o Estoque Mínimo!",
+        "pilula_fixacao": "Ponto de Pedido: PP = (Consumo × Tempo de Reposição) + Estoque Mínimo. Nunca esqueça de SOMAR a segurança!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-020",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Gestão de Projetos e Gestão de Processos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Distinção entre Projeto e Processo (Operação Contínua)",
+      "texto_apoio": null,
+      "enunciado": "Na Gestão Pública moderna, diferenciar projetos de processos operacionais é essencial para o planejamento institucional. Assinale a alternativa que apresenta APENAS características próprias de um PROJETO (e não de um processo rotineiro).",
+      "alternativas": {
+        "A": "Natureza repetitiva, contínua e permanente, visando manter o funcionamento ordinário do setor.",
+        "B": "Temporariedade (início e fim definidos), exclusividade do produto/serviço/resultado único e elaboração progressiva.",
+        "C": "Ausência de escopo definido e inexistência de restrições de custo ou prazo.",
+        "D": "Execução exclusiva por servidores terceirizados, sem envolvimento da alta administração.",
+        "E": "Padronização rígida de rotinas diárias que se repetem indefinidamente sem entrega singular."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz a definição canônica do PMBOK para Projeto: esforço temporário empreendido para criar um produto, serviço ou resultado único (exclusivo), com elaboração progressiva.",
+        "fundamento_legal_ou_teorico": "PMBOK / Gestão de Projetos vs Processos: Projeto = TEMPORÁRIO (início e término definidos) + RESULTADO ÚNICO/EXCLUSIVO + Elaboração Progressiva. Processo/Operação = CONTÍNUO e REPETITIVO.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Natureza repetitiva, contínua e permanente define PROCESSO / OPERAÇÃO (ex.: protocolar documentos diariamente).",
+          "B": "CORRETA. Temporariedade + Exclusividade (produto único) + Elaboração progressiva = tríade definidora de Projeto.",
+          "C": "INCORRETA. Todo projeto possui restrições clássicas (escopo, prazo, custo, qualidade, riscos).",
+          "D": "INCORRETA. Projetos institucionais podem ser geridos e executados por servidores efetivos com patrocínio da alta gestão.",
+          "E": "INCORRETA. Descreve processo operacional padronizado (POP), não projeto."
+        },
+        "conexao_pratica_ifbaiano": "Criar a nova identidade visual do congresso anual da universidade ou implantar um novo portal institucional = PROJETO (tem início, fim e entrega única). Publicar notícias semanais e despachar ofícios no SEI = PROCESSO contínuo!",
+        "pilula_fixacao": "Projeto = TEMPORÁRIO e ÚNICO (tem fim). Processo = CONTÍNUO e REPETITIVO (não para)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-021",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021 — Gestão, Fiscalização, Duração e Sanções Contratuais",
+      "dificuldade": "Alta",
+      "tempo_estimado_segundos": 140,
+      "perfil_cobranca": "Lei Seca: Prazos de Contratos Contínuos e Fiscalização (Lei 14.133/21)",
+      "texto_apoio": null,
+      "enunciado": "Quanto à duração, alteração e fiscalização dos contratos administrativos regidos pela Lei nº 14.133/2021, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Os contratos de serviços e fornecimentos contínuos poderão ser celebrados com prazo de até 5 (cinco) anos, sendo vedada qualquer prorrogação além desse limite.",
+        "B": "Os contratos de serviços e fornecimentos contínuos poderão ser celebrados com prazo de até 5 (cinco) anos e prorrogados sucessivamente, respeitada a vigência máxima decenal (10 anos), desde que haja previsão no edital e atestado de que as condições e os preços permanecem vantajosos para a Administração.",
+        "C": "A Administração Pública responde solidariamente, em qualquer hipótese, pelos encargos trabalhistas inadimplidos pela empresa terceirizada, independentemente de comprovação de falha na fiscalização.",
+        "D": "A aplicação da sanção de declaração de inidoneidade para licitar ou contratar impede o responsável de atuar apenas no órgão sancionador pelo prazo máximo de 1 (um) ano.",
+        "E": "O contratado é obrigado a aceitar, nas mesmas condições contratuais, acréscimos ou supressões de até 50% (cinquenta por cento) do valor inicial atualizado para quaisquer compras e serviços comuns."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz os arts. 106 e 107 da Lei nº 14.133/2021: prazo inicial de até 5 anos para serviços e fornecimentos contínuos, prorrogável até o limite decenal (10 anos).",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021: Art. 106/107 (contratos contínuos = até 5 anos, prorrogável até 10 anos); Art. 121, § 2º (encargos trabalhistas em serviços contínuos c/ dedicação exclusiva = responsabilidade SUBSIDIÁRIA da Adm. Pública SOMENTE se comprovada falha na fiscalização — STF Tema 246/1118); Art. 125 (acréscimo/supressão = até 25% compras/obras/serviços; 50% só para reforma de edifício/equipamento!); Art. 156, § 5º (inidoneidade = 3 a 6 anos em TODOS os entes federativos!).",
+        "analise_alternativas": {
+          "A": "INCORRETA. O limite de 5 anos é o prazo máximo INICIAL (art. 106), prorrogável até 10 anos (art. 107) — antiga Lei 8.666 era limitada a 60 meses!",
+          "B": "CORRETA. Grande mudança da Lei 14.133/21: até 5 anos iniciais, até 10 anos no total (vigência máxima decenal).",
+          "C": "INCORRETA. A responsabilidade trabalhista do ente público NÃO é solidária automática, e sim SUBSIDIÁRIA condicionada à comprovação de falha na fiscalização (culpa in vigilando) — quanto aos previdenciários, há solidariedade legal.",
+          "D": "INCORRETA. Declaração de inidoneidade vale de 3 a 6 anos em TODA a Administração Pública direta e indireta de todos os entes federativos (União, Estados, DF e Municípios). Quem vale só no ente é o impedimento (até 3 anos).",
+          "E": "INCORRETA. O teto de 50% vale apenas para ACRÉSCIMO em caso de REFORMA de edifício ou equipamento; a regra geral para compras, obras e serviços é até 25%."
+        },
+        "conexao_pratica_ifbaiano": "Atenção à terceirização (limpeza, vigilância, apoio administrativo nas IFES): na prova do Instituto Avalia, trabalhista = SUBSIDIÁRIA com prova de culpa na fiscalização; previdenciária = SOLIDÁRIA. E prorrogação contínua na 14.133 agora vai até 10 anos (não mais 60 meses!).",
+        "pilula_fixacao": "Contratos contínuos 14.133: até 5 anos -> prorroga até 10 anos! Acréscimo/Supressão = 25% (50% só acréscimo p/ reforma)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-011",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "7. Regência Verbal e Nominal",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Regência de Verbos Clássicos em Provas (Preferir, Visar, Implicar, Assistir)",
+      "texto_apoio": null,
+      "enunciado": "Considerando a regência verbal prescrita pela norma-padrão da Língua Portuguesa, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A diretoria prefere mais a tramitação digital do que o processo em papel.",
+        "B": "A medida adotada pela Pró-Reitoria visa o aperfeiçoamento contínuo do atendimento ao público.",
+        "C": "O atraso na entrega dos documentos implicará em desclassificação imediata do licitante.",
+        "D": "O servidor assistiu ao treinamento sobre a Lei nº 14.133/2021 na sala de reuniões.",
+        "E": "Esqueci-me o prazo final para o envio dos relatórios trimestrais no sistema."
+      },
+      "gabarito": "D",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa D está correta: o verbo 'assistir', no sentido de presenciar/ver, é transitivo indireto e exige a preposição 'a' ('assistiu ao treinamento').",
+        "fundamento_legal_ou_teorico": "Regência clássica: Assistir (ver/presenciar) = VTI com preposição 'a'; Preferir = 'preferir X a Y' (nunca 'mais X do que Y'); Visar (objetivar) = VTI com preposição 'a' ('visa ao aperfeiçoamento'); Implicar (acarretar) = VTD (sem 'em'!); Esquecer-se = pronominal exige 'de' ('Esqueci-me do prazo').",
+        "analise_alternativas": {
+          "A": "INCORRETA. O verbo 'preferir' já traz ideia de comparação/superioridade; repele 'mais' e 'do que'. Correto: 'prefere a tramitação digital ao processo em papel'.",
+          "B": "INCORRETA. Na norma culta cobrada em concursos, 'visar' no sentido de ter por objetivo é VTI ('visa ao aperfeiçoamento'). Sem preposição significa 'mirar' ou 'dar visto'.",
+          "C": "INCORRETA. 'Implicar' no sentido de acarretar/gerar consequência é transitivo direto ('implicará desclassificação', sem 'em'!).",
+          "D": "CORRETA. 'Assistir a' = presenciar/acompanhar.",
+          "E": "INCORRETA. Quando pronominal ('esquecer-se'), exige preposição 'de' ('Esqueci-me do prazo' ou 'Esqueci o prazo')."
+        },
+        "conexao_pratica_ifbaiano": "Nos textos do dia a dia falamos 'implicar em', 'preferir mais que', 'esqueci do prazo'. A banca Avalia testa exatamente essa distância entre o uso coloquial e a regência culta estrita!",
+        "pilula_fixacao": "Preferir X A Y | Implicar ALGO (sem 'em') | Assistir A (ver) | Visar A (objetivar) | Esquecer-SE DE."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-012",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "2 e 3. Tipologia Textual e Gêneros Textuais",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Identificação da Tipologia Predominante (Injunção, Exposição, Dissertação)",
+      "texto_apoio": "Para solicitar o cadastro no Sistema Eletrônico de Informações (SEI), acesse o portal da autarquia, preencha o formulário eletrônico com seus dados funcionais, anexe o termo de responsabilidade assinado e aguarde a validação pela unidade de protocolo em até dois dias úteis.",
+      "enunciado": "Considerando as características estruturais e a finalidade comunicativa predominante do trecho apresentado, classifica-se sua tipologia textual como:",
+      "alternativas": {
+        "A": "Dissertativo-argumentativa, pois defende uma tese com argumentos persuasivos.",
+        "B": "Narrativa, pois relata fatos sucessivos envolvendo personagens em conflito temporal.",
+        "C": "Injuntiva (ou instrucional), pois orienta e instrui o interlocutor por meio de verbos no modo imperativo.",
+        "D": "Descritiva, pois retrata estaticamente características físicas de um ambiente.",
+        "E": "Expositiva literária, pois emprega linguagem figurada e subjetividade poética."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C está correta: o trecho emprega sequência de verbos no imperativo ('acesse', 'preencha', 'anexe', 'aguarde') visando orientar/instruir passo a passo o usuário — marca típica da tipologia injuntiva.",
+        "fundamento_legal_ou_teorico": "Tipologias textuais (5 clássicas): Narração (fatos/tempo/personagens), Descrição (retrato/características), Dissertação-expositiva (informa/explica sem defender ponto de vista opinativo), Dissertação-argumentativa (defende tese/convence), Injunção (instrui/ordena/aconselha, uso de imperativo ou infinitivo/futuro com valor de ordem).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Não há defesa de ponto de vista opinativo nem tese controversa.",
+          "B": "INCORRETA. Apesar da sequência de passos, não há enredo narrativo com fatos ocorridos nem personagens.",
+          "C": "CORRETA. Manual de usuário, edital de instruções e roteiro de procedimento são gêneros tipicamente injuntivos.",
+          "D": "INCORRETA. Não descreve características estáticas; ordena ações sequenciais ao leitor.",
+          "E": "INCORRETA. O texto é técnico/objetivo, sem finalidade estética ou subjetividade."
+        },
+        "conexao_pratica_ifbaiano": "Manuais de SEI/SUAP, tutoriais para servidores e instruções de editais de concurso são exemplos perfeitos de texto injuntivo que você produz e lê diariamente na Comunicação da Reitoria!",
+        "pilula_fixacao": "Injunção = INSTRUÇÃO / ORDEM (verbos no imperativo: acesse, preencha, anexe)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-006",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "4, 8 e 12. Editores de Texto, Nuvem e Segurança de Redes",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Computação em Nuvem (IaaS/PaaS/SaaS) e Segurança de Rede",
+      "texto_apoio": null,
+      "enunciado": "Um servidor da UFBA utiliza diretamente pelo navegador o aplicativo Google Docs ou Microsoft 365 Web para redigir documentos compartilhados em tempo real, e conecta-se à rede interna da universidade a partir de casa utilizando um túnel criptografado seguro sobre a internet pública. Esses dois recursos ilustram, respectivamente:",
+      "alternativas": {
+        "A": "IaaS (Infraestrutura como Serviço) e Proxy aberto.",
+        "B": "SaaS (Software como Serviço) e VPN (Virtual Private Network).",
+        "C": "PaaS (Plataforma como Serviço) e Switch gerenciável.",
+        "D": "SaaS (Software como Serviço) e Adware corporativo.",
+        "E": "Backup diferencial e Phishing reverso."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: aplicativos prontos acessados via navegador na nuvem (Microsoft 365 Web / Google Docs) são exemplos clássicos de SaaS; túnel criptografado seguro sobre rede pública até a rede institucional é VPN.",
+        "fundamento_legal_ou_teorico": "Modelos de Nuvem: SaaS = software pronto para o usuário final (Gmail, Office 365, Google Drive); PaaS = plataforma para desenvolvedores criarem apps; IaaS = infraestrutura virtual (VMs, armazenamento bruto, rede). Segurança: VPN cria túnel criptografado entre ponto remoto e rede privada.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Editores prontos são SaaS (não IaaS); Proxy não cria por padrão túnel privado criptografado ponta a ponta como VPN.",
+          "B": "CORRETA. Usuário final usando app no navegador = SaaS; acesso remoto seguro tunelado = VPN.",
+          "C": "INCORRETA. PaaS é voltado para desenvolvimento/hospedagem de aplicações; Switch é equipamento de rede local (camada 2).",
+          "D": "INCORRETA. Adware é software indesejado de exibição de anúncios.",
+          "E": "INCORRETA. Conceitos completamente desconexos do enunciado."
+        },
+        "conexao_pratica_ifbaiano": "Em trabalho remoto ou acesso fora da Reitoria para acessar sistemas internos (como módulos administrativos restritos ou pastas de rede), a VPN institucional garante confidencialidade na rede pública.",
+        "pilula_fixacao": "SaaS = Software pronto p/ usuário. PaaS = Plataforma p/ dev. IaaS = Infraestrutura (máquinas). VPN = Túnel criptografado."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-012",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "13, 17, 18 e 20. Estatuto da UFBA, Gestão Documental e Segurança no Trabalho",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Estrutura Colegiada da UFBA e Boas Práticas Administrativas",
+      "texto_apoio": null,
+      "enunciado": "Considerando a organização institucional das Universidades Federais (Estatuto da UFBA) e as normas gerais sobre processo administrativo e gestão documental na Administração Pública Federal, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Na estrutura da UFBA, o Conselho Superior de Ensino, Pesquisa e Extensão (CONSEPE) é o órgão deliberativo exclusivamente patrimonial e orçamentário, não tendo atribuições acadêmicas.",
+        "B": "O compartilhamento de credenciais (login e senha) entre servidores do mesmo setor no SEI é permitido pelo Decreto de Segurança da Informação quando houver substituição temporária de férias.",
+        "C": "No processo administrativo federal (Lei nº 9.784/1999), os atos do processo não dependem de forma determinada senão quando a lei expressamente a exigir, devendo ser produzidos por escrito, em vernáculo, com a data e o local de sua realização e a assinatura da autoridade responsável.",
+        "D": "Na UFBA, as Unidades Universitárias e os Órgãos Suplementares não possuem vinculação à Administração Central, funcionando como empresas privadas independentes.",
+        "E": "A desistência do interessado no processo administrativo federal obriga automaticamente a Administração a extinguir o processo, mesmo que haja relevante interesse público no seu prosseguimento."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C reproduz literalmente o art. 22, caput e § 1º da Lei nº 9.784/1999 (princípio do informalismo/instrumentalidade das formas com exigência mínima de escrita em vernáculo, data, local e assinatura).",
+        "fundamento_legal_ou_teorico": "Lei nº 9.784/1999: Art. 22 (forma dos atos); Art. 51, § 2º (desistência do interessado não impede prosseguimento se o interesse público assim o exigir). Estatuto UFBA: CONSUNI = órgão máximo deliberativo/normativo; CONSEPE = ensino, pesquisa e extensão; CAP = Administração, Planejamento e Finanças. Segurança da Informação: credencial de acesso é pessoal e intransferível.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Trocou CONSEPE (ensino, pesquisa e extensão) com CAP (Conselho de Administração, Planejamento e Finanças).",
+          "B": "INCORRETA. Senha e assinatura eletrônica no SEI/SUAP são pessoais e intransferíveis; em férias designa-se substituto formal com perfil próprio.",
+          "C": "CORRETA. Literalidade perfeita do art. 22, caput e § 1º da Lei nº 9.784/1999.",
+          "D": "INCORRETA. Unidades Universitárias e Órgãos Suplementares integram a própria autarquia federal UFBA, sem personalidade jurídica privada autônoma.",
+          "E": "INCORRETA. Conforme art. 51, § 2º da Lei 9.784/99, a Administração PODE prosseguir com o processo se julgar que o interesse público assim exige!"
+        },
+        "conexao_pratica_ifbaiano": "Atenção ao trio de conselhos superiores da UFBA: CONSUNI (máximo geral), CONSEPE (acadêmico: ensino/pesquisa/extensão) e CAP (administração/orçamento/planejamento). E no SEI: jamais empreste sua senha nem assine com usuário alheio!",
+        "pilula_fixacao": "UFBA: CONSUNI (geral), CONSEPE (ensino/pesq/ext), CAP (adm/plan). Lei 9.784: desistência NÃO trava interesse público."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-022",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "1 e 4. Atos Administrativos — Elementos e Atributos",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Requisitos de Validade (CO-FI-FO-M-OB) e Atributos (PATI)",
+      "texto_apoio": null,
+      "enunciado": "Ao praticar um ato administrativo de interdição de cantina irregular por risco sanitário iminente dentro de um campus universitário, a Administração Pública executa diretamente a medida material sem precisar obter prévia autorização do Poder Judiciário. Essa prerrogativa refere-se a qual atributo do ato administrativo, e quais são os cinco requisitos (elementos) de validade do ato administrativo?",
+      "alternativas": {
+        "A": "Tipicidade; requisitos: competência, finalidade, forma, motivação e oportunidade.",
+        "B": "Imperatividade; requisitos: competência, finalidade, discricionariedade, motivo e objeto.",
+        "C": "Autoexecutoriedade; requisitos: competência, finalidade, forma, motivo e objeto.",
+        "D": "Presunção de veracidade; requisitos: legalidade, impessoalidade, moralidade, publicidade e eficiência.",
+        "E": "Autoexecutoriedade; requisitos: sujeito, motivo, conveniência, mérito e forma."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C identifica corretamente o atributo da Autoexecutoriedade (execução direta pela própria Administração sem depender de ordem judicial prévia) e os 5 elementos da Lei nº 4.717/1965 (CO-FI-FO-M-OB).",
+        "fundamento_legal_ou_teorico": "Atributos (PATI): Presunção de legitimidade/veracidade, Autoexecutoriedade (presente em atos de polícia urgentes ou previstos em lei; ausente na cobrança forçada de multa!), Tipicidade, Imperatividade. Requisitos/Elementos (Lei 4.717/65, Art. 2º): Competência, Finalidade, Forma, Motivo e Objeto.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Tipicidade significa que o ato deve corresponder a figura previamente definida em lei; e 'motivação'/'oportunidade' não substituem motivo/objeto na lista dos 5 requisitos clássicos.",
+          "B": "INCORRETA. Imperatividade é a imposição unilateral ao particular (poder extroverso), não a execução material direta sem juiz.",
+          "C": "CORRETA. Execução direta sem prévia tutela judicial = Autoexecutoriedade; 5 elementos = CO-FI-FO-M-OB.",
+          "D": "INCORRETA. LIMPE são os princípios constitucionais da Administração (Art. 37 CF), não os elementos do ato administrativo.",
+          "E": "INCORRETA. Conveniência e mérito não integram o rol dos 5 requisitos do ato (além de o mérito não existir nos atos vinculados)."
+        },
+        "conexao_pratica_ifbaiano": "A banca Avalia cobra muito a diferença entre MOTIVO (pressuposto fático e jurídico que justifica o ato — é requisito essencial) e MOTIVAÇÃO (exposição por escrito do motivo — ligada à forma). E lembre: multa NÃO é autoexecutória!",
+        "pilula_fixacao": "Elementos = CO-FI-FO-M-OB (Competência, Finalidade, Forma, Motivo, Objeto). Sem juiz = Autoexecutoriedade (menos multa!)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-023",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021 — Planejamento da Contratação (ETP, TR e Segregação)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 130,
+      "perfil_cobranca": "Fase Preparatória da Lei 14.133/2021 (Art. 7º e Art. 18)",
+      "texto_apoio": null,
+      "enunciado": "Na fase preparatória das licitações sob a égide da Lei nº 14.133/2021, o princípio que veda a designação do mesmo agente público para atuação simultânea em funções mais suscetíveis a riscos, de modo a reduzir a possibilidade de ocultação de erros e de ocorrência de fraudes na contratação, é o princípio da:",
+      "alternativas": {
+        "A": "Padronização de marca única.",
+        "B": "Segregação de funções.",
+        "C": "Inversão obrigatória do julgamento.",
+        "D": "Vinculação ao instrumento convocatório absoluto sem possibilidade de impugnação.",
+        "E": "Desconcentração orçamentária automática."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B corresponde literalmente à definição do princípio da Segregação de Funções previsto no art. 5º e detalhado no art. 7º, § 1º da Lei nº 14.133/2021.",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021, Art. 7º, § 1º: A autoridade máxima do órgão observará o princípio da segregação de funções, vedada a designação do mesmo agente público para atuação simultânea em funções mais suscetíveis a riscos, de modo a reduzir a possibilidade de ocultação de erros e de ocorrência de fraudes na respectiva contratação.",
+        "analise_alternativas": {
+          "A": "INCORRETA. A indicação de marca é exceção restrita (art. 41) e não tem relação com controle interno de atribuições.",
+          "B": "CORRETA. Definição literal do princípio da segregação de funções (ex.: quem elabora ETP/TR ou aprova/homologa não deve ser o mesmo que realiza a pesquisa de preços, conduz o pregão e fiscaliza/recebe sozinho).",
+          "C": "INCORRETA. Não existe princípio com essa denominação.",
+          "D": "INCORRETA. Qualquer pessoa é parte legítima para impugnar edital de licitação por irregularidade até 3 dias úteis antes da abertura do certame (art. 164).",
+          "E": "INCORRETA. Termo inventado sem previsão no art. 5º da Lei 14.133/2021."
+        },
+        "conexao_pratica_ifbaiano": "Nos fluxos de compras da Reitoria no SEI/PGC, o princípio da segregação de funções impede que o mesmo servidor que pediu a compra, cotou, adjudicou e atestou a nota fiscal concentre todas as etapas críticas de risco!",
+        "pilula_fixacao": "Segregação de Funções (Art. 7º, §1º) = NÃO concentrar etapas críticas de risco na mesma pessoa."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-024",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Processo Organizacional (Planejamento e Controle)",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Níveis de Planejamento (Estratégico, Tático, Operacional)",
+      "texto_apoio": null,
+      "enunciado": "Na Administração Pública, o Plano de Desenvolvimento Institucional (PDI) da universidade estabelece os rumos globais para os próximos cinco anos com foco no ambiente externo e na missão institucional; os planos anuais das Pró-Reitorias traduzem essas diretrizes para cada grande área; e os cronogramas semanais de atendimento do protocolo executam as tarefas diárias. Esses três níveis de planejamento correspondem, respectivamente, aos níveis:",
+      "alternativas": {
+        "A": "Operacional, Estratégico e Tático.",
+        "B": "Tático, Estratégico e Operacional.",
+        "C": "Estratégico, Tático e Operacional.",
+        "D": "Estratégico, Operacional e Tático.",
+        "E": "Normativo, Centralizado e Informal."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C relaciona perfeitamente na ordem pedida: institucional/longo prazo/macro (Estratégico) -> departamental/médio prazo/Pró-Reitorias (Tático) -> tarefas rotineiras/curto prazo/setor (Operacional).",
+        "fundamento_legal_ou_teorico": "Níveis Organizacionais (Chiavenato): 1) Estratégico (Institucional / Cúpula / Longo prazo / Amplitude global); 2) Tático (Intermediário / Gerencial / Médio prazo / Por unidade ou departamento); 3) Operacional (Técnico / Execução / Curto prazo / Tarefas e operações específicas).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Ordem invertida (Operacional é o nível da execução diária, não do PDI global).",
+          "B": "INCORRETA. Inverte Estratégico com Tático.",
+          "C": "CORRETA. PDI (global, 5 anos) = Estratégico; Pró-Reitorias (departamental, médio prazo) = Tático; Cronograma semanal de protocolo (tarefas) = Operacional.",
+          "D": "INCORRETA. Inverte Tático e Operacional.",
+          "E": "INCORRETA. Não são os três níveis clássicos do planejamento organizacional."
+        },
+        "conexao_pratica_ifbaiano": "Você conhece o PDI do IF Baiano! Na prova da UFBA, associe sempre: Reitoria/PDI (5 anos, missão, ambiente externo) = Estratégico; Pró-Reitorias/Campi = Tático; Protocolo/Comunicação/Almoxarifado (rotina diária) = Operacional.",
+        "pilula_fixacao": "Estratégico = Cúpula/Global/Longo prazo. Tático = Departamental/Médio prazo. Operacional = Tarefas/Curto prazo."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-025",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Gestão de Processos e Indicadores (3Es)",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Eficiência, Eficácia e Efetividade + Símbolos de Fluxograma",
+      "texto_apoio": null,
+      "enunciado": "Um programa universitário de digitalização administrativa conseguiu reduzir em 40% o gasto com papel e horas de tramitação por processo (otimizando recursos), cumpriu 100% da meta de implantação nos prazos previstos, mas após seis meses constatou-se que os estudantes continuaram enfrentando demora similar na emissão de diplomas porque a etapa final de assinatura não foi integrada. Considerando os conceitos clássicos dos '3 Es' do desempenho organizacional, conclui-se que o programa demonstrou:",
+      "alternativas": {
+        "A": "Alta efetividade e baixa eficácia.",
+        "B": "Eficiência (uso econômico dos meios) e eficácia (cumprimento da meta de entrega), porém baixa efetividade (impacto real percebido pelo público-alvo).",
+        "C": "Baixa eficiência e alta efetividade social.",
+        "D": "Exclusivamente economicidade sem nenhuma eficácia operacional.",
+        "E": "Eficácia nula, visto que reduziu gastos de papel e tempo de tramitação."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B distingue cirurgicamente os três indicadores: Eficiência (fazer certo com menos recursos/tempo), Eficácia (atingir as metas planejadas de implantação) e Efetividade (transformação/impacto real na ponta para o cidadão/estudante).",
+        "fundamento_legal_ou_teorico": "Indicadores de Desempenho (3Es): Eficiência = foco nos MEIOS/custos/produtividade ('fazer certo as coisas'); Eficácia = foco nos RESULTADOS/metas imediatas ('fazer as coisas certas'); Efetividade = foco no IMPACTO/benefício social duradouro na sociedade.",
+        "analise_alternativas": {
+          "A": "INCORRETA. É exatamente o inverso: cumpriu a meta (alta eficácia), mas falhou no impacto final percebido pelo estudante (baixa efetividade).",
+          "B": "CORRETA. Reduziu papel/horas = eficiência; cumpriu 100% da meta de implantação = eficácia; não melhorou a vida real do estudante na entrega do diploma = baixa efetividade.",
+          "C": "INCORRETA. Houve economia de recursos (alta eficiência) e falha no impacto real (baixa efetividade).",
+          "D": "INCORRETA. O cumprimento de 100% das metas no prazo demonstra eficácia.",
+          "E": "INCORRETA. Reduzir gasto e cumprir meta indicam eficiência e eficácia presentes."
+        },
+        "conexao_pratica_ifbaiano": "Na gestão por processos (BPM), otimizar apenas um setor intermediário sem resolver o gargalo final não gera valor público. Memorize a escada: Eficiência (meios) -> Eficácia (metas/entregas) -> Efetividade (impacto no cidadão).",
+        "pilula_fixacao": "EficiêNcia = Meios (menos custo/tempo). EficáCia = Metas (atingiu objetivo). EfetiVidade = Valor/Impacto real no usuário."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-026",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Gestão de Pessoas: Avaliação de Desempenho e Vieses",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Avaliação 360º e Distorções de Julgamento (Efeito Halo, Tendência Central)",
+      "texto_apoio": null,
+      "enunciado": "Durante a avaliação de desempenho de servidores técnico-administrativos, um avaliador atribui nota máxima em todos os quesitos (pontualidade, trabalho em equipe, iniciativa e domínio técnico) a um colaborador apenas porque ficou muito impressionado com a excelente apresentação visual de um único relatório entregue por ele recentemente. Esse viés perceptivo clássico na gestão de pessoas é denominado:",
+      "alternativas": {
+        "A": "Tendência central.",
+        "B": "Efeito Halo (ou Efeito de Halo).",
+        "C": "Avaliação 360 graus.",
+        "D": "Método da escolha forçada.",
+        "E": "Erro de leniência negativa (rigor excessivo)."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B está correta: o Efeito Halo ocorre quando uma única característica marcante (positiva ou negativa) 'contamina' e generaliza o julgamento do avaliador sobre todos os demais critérios de desempenho.",
+        "fundamento_legal_ou_teorico": "Vieses de Avaliação de Desempenho: Efeito Halo/Horn = generalização a partir de um único atributo positivo (Halo) ou negativo (Horn); Tendência Central = dar notas médias/neutras a todos para evitar conflito; Leniência/Complacência = notas excessivamente altas a todos; Severidade/Rigor = notas baixas a todos; Recência = avaliar só fatos mais recentes.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Tendência central ocorre quando o avaliador evita extremos e atribui notas medianas a todo mundo.",
+          "B": "CORRETA. Uma única qualidade marcante (design do relatório) cria uma 'auréola' positiva que ofusca a análise independente dos outros itens.",
+          "C": "INCORRETA. Avaliação 360 graus é um método participativo de avaliação com múltiplas fontes (chefia, pares, subordinados, autoavaliação e usuários), não um viés.",
+          "D": "INCORRETA. Escolha forçada é um método tradicional desenvolvido justamente para reduzir subjetividade e efeito halo através de blocos de frases descritivas.",
+          "E": "INCORRETA. Rigor excessivo é dar notas baixas sistematicamente."
+        },
+        "conexao_pratica_ifbaiano": "Na Comunicação, cuidado quando você entrega uma diagramação impecável e um setor presume que tudo o mais no processo está perfeito — em provas de Gestão de Pessoas, essa contaminação positiva de um traço sobre toda a avaliação é sempre o Efeito Halo!",
+        "pilula_fixacao": "Efeito Halo = 1 traço positivo 'ilumina' toda a nota. Tendência Central = todo mundo na média. 360º = todos avaliam."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-027",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais: Armazenagem e Inventário",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Critérios de Armazenagem (Giro, Peso, Volume) e Tipos de Inventário",
+      "texto_apoio": null,
+      "enunciado": "Para otimizar a movimentação interna e a ergonomia no almoxarifado de uma autarquia federal, o responsável pela armazenagem posiciona os itens de altíssima frequência de saída mais próximos da área de expedição e os itens mais pesados e volumosos nos níveis inferiores das estantes porta-paletes. Esses dois critérios técnicos de armazenagem correspondem, respectivamente, aos critérios de:",
+      "alternativas": {
+        "A": "Compatibilidade química e fragilidade.",
+        "B": "Frequência (popularidade/giro) e peso/volume.",
+        "C": "Perecibilidade (UEPS) e obsolescência.",
+        "D": "Sazonalidade e valor unitário decrescente.",
+        "E": "Criticidade Z e classificação fiscal."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B identifica exatamente os dois critérios descritos: itens de maior saída/giro próximos à saída/expedição (critério de frequência/popularidade) e cargas pesadas/volumosas embaixo (critério de peso/volume/tamanho).",
+        "fundamento_legal_ou_teorico": "Critérios clássicos de localização/armazenagem de materiais (Viana / Dias): 1) Popularidade ou Frequência/Giro (itens com maior movimentação ficam mais acessíveis/próximos da expedição); 2) Tamanho, Peso e Volume (pesados embaixo/próximos ao chão); 3) Similaridade/Compatibilidade (não misturar inflamáveis/alimentos/químicos incompatíveis); 4) Características específicas (perecíveis, climatizados).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Compatibilidade refere-se a não armazenar materiais que se contaminam ou reagem entre si (ex.: produtos de limpeza fortes junto a alimentos).",
+          "B": "CORRETA. Frequência (menor distância percorrida nos itens que mais saem) + Peso/Volume (segurança estrutural e ergonômica nos níveis inferiores).",
+          "C": "INCORRETA. Perecibilidade exige controle por validade/PEPS (não UEPS!).",
+          "D": "INCORRETA. Sazonalidade refere-se à variação de demanda em certas épocas do ano.",
+          "E": "INCORRETA. Criticidade Z (XYZ) diz respeito ao impacto da falta do item, não à ergonomia/distância física de estocagem por peso e giro."
+        },
+        "conexao_pratica_ifbaiano": "Lógica puramente ergonômica e de design espacial aplicada ao almoxarifado: o que sai toda hora fica perto da porta (giro/frequência); o que é pesado fica embaixo para não derrubar estante nem lesionar servidor!",
+        "pilula_fixacao": "Sai muito? Perto da porta (Frequência/Giro). É pesado? Embaixo (Peso/Volume). Perecível? PEPS/FEFO."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-028",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Tipologias Documentais, Gêneros e Avaliação",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Gêneros Documentais, Tipo vs Espécie e Instrumentos de Gestão",
+      "texto_apoio": null,
+      "enunciado": "Na Arquivologia, ao classificar o acervo fotográfico institucional da assessoria de comunicação, os mapas arquitetônicos de um novo pavilhão de aulas e os ofícios impressos em papel, observa-se a distinção entre gêneros documentais e entre espécie e tipo documental. Assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Fotografias e gravuras classificam-se como documentos cartográficos; mapas e plantas arquitetônicas classificam-se como documentos iconográficos.",
+        "B": "Os documentos que contêm imagens estáticas (como fotografias e cartazes) pertencem ao gênero iconográfico; mapas e plantas integram o gênero cartográfico.",
+        "C": "'Ofício de solicitação de diárias' é exemplo de gênero documental, enquanto 'papel A4' é exemplo de tipo documental.",
+        "D": "O Código de Classificação de Documentos define por quantos anos cada documento deve ficar guardado antes da eliminação, enquanto a Tabela de Temporalidade apenas organiza os assuntos sem indicar prazos.",
+        "E": "Espécie documental corresponde exatamente ao suporte físico (papel, filme ou disco óptico) em que a informação foi registrada."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B classifica corretamente os gêneros documentais segundo o Dicionário Brasileiro de Terminologia Arquivística (CONARQ): imagens estáticas = iconográfico; representações geográficas/arquitetônicas reduzidas = cartográfico.",
+        "fundamento_legal_ou_teorico": "Gêneros Arquivísticos: Textual (escritos), Iconográfico (imagens fixas: foto, cartaz, desenho), Cartográfico (mapas, plantas, perfis), Audiovisual/Filmográfico (vídeo/som em movimento), Sonoro (áudio), Micrográfico (microfilme), Informático/Digital. Espécie = forma/configuração (Ofício, Ata, Contrato); Tipo = Espécie + Função/Atividade ('Contrato de locação'); Suporte = base material (papel, HD, película).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Inverteu iconográfico (imagens estáticas) com cartográfico (mapas/plantas).",
+          "B": "CORRETA. Fotografias/cartazes = iconográfico; mapas/plantas = cartográfico.",
+          "C": "INCORRETA. 'Ofício de solicitação de diárias' é TIPO DOCUMENTAL (espécie 'ofício' + atividade 'solicitação de diárias'); 'papel A4' é SUPORTE físico.",
+          "D": "INCORRETA. Inverteu os dois instrumentos: o Código de Classificação organiza por funções/atividades/assuntos; a Tabela de Temporalidade determina os PRAZOS de guarda e destinação final!",
+          "E": "INCORRETA. Base física é SUPORTE; espécie é a configuração formal do documento conforme a natureza das informações."
+        },
+        "conexao_pratica_ifbaiano": "Para você que é Designer e trabalha com acervos fotográficos, cartazes de eventos e plantas/layouts na Comunicação do IF Baiano: foto/cartaz = ICONOGRÁFICO; planta/mapa = CARTOGRÁFICO; vídeo institucional = AUDIOVISUAL!",
+        "pilula_fixacao": "Iconográfico = foto/imagem fixa. Cartográfico = mapa/planta. Tipo = Espécie + Atividade. Temporalidade = PRAZOS."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-029",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Atendimento ao Público: Comunicação Organizacional e Acessibilidade",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Barreiras à Comunicação, Fluxos Comunicacionais e Inclusão",
+      "texto_apoio": null,
+      "enunciado": "No processo de comunicação institucional e atendimento ao público nas universidades federais, assinale a alternativa CORRETA sobre fluxos de comunicação, barreiras comunicativas e acessibilidade.",
+      "alternativas": {
+        "A": "O atendimento prioritário às pessoas com deficiência e às pessoas idosas nos guichês da Administração Pública depende de apresentação de laudo médico atualizado a cada comparecimento presencial.",
+        "B": "A comunicação descendente (ou vertical de cima para baixo) ocorre quando servidores da base operacional enviam sugestões e relatórios de retorno às chefias superiores.",
+        "C": "As barreiras semânticas na comunicação ocorrem quando há ruído ou falha decorrente de vocabulário ambíguo, jargões técnicos desconhecidos pelo receptor ou interpretações distintas dos símbolos e palavras.",
+        "D": "O ruído na comunicação administrativa refere-se exclusivamente a sons acústicos altos no ambiente de atendimento presencial.",
+        "E": "A empatia no atendimento ao público significa concordar obrigatoriamente com todas as exigências ilegais do usuário para evitar conflitos."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C define com exatidão o conceito de barreira semântica no processo de comunicação (decodificação prejudicada por jargões, ambiguidade ou significados divergentes).",
+        "fundamento_legal_ou_teorico": "Comunicação Organizacional: Fluxo Descendente = cúpula -> base (ordens/diretrizes); Ascendente = base -> cúpula (feedback/relatórios); Horizontal/Lateral = mesmo nível hierárquico (coordenação entre setores). Barreiras: Semânticas (sentido das palavras/jargões), Físicas (ruído ambiental, distância), Psicológicas/Pessoais (preconceitos, emoções, percepção seletiva). Lei nº 13.146/2015 (LBI) e Lei nº 10.048/2000: atendimento prioritário sem burocratização abusiva.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Exigir laudo atualizado a cada atendimento presencial fere os princípios de acessibilidade e desburocratização no serviço público.",
+          "B": "INCORRETA. Comunicação da base operacional para a chefia superior é fluxo ASCENDENTE (para cima), e não descendente.",
+          "C": "CORRETA. Falhas no significado de palavras, siglas ou jargões entre emissor e receptor = barreira semântica.",
+          "D": "INCORRETA. Na Teoria da Comunicação, 'ruído' é qualquer perturbação ou interferência que distorça a mensagem (pode ser acústico, técnico, semântico ou psicológico).",
+          "E": "INCORRETA. Empatia é compreender a perspectiva e necessidade do cidadão com respeito, mantendo a legalidade e impessoalidade."
+        },
+        "conexao_pratica_ifbaiano": "Na Comunicação Pública, traduzir o 'juridiquês' e siglas de portarias para linguagem simples (linguagem cidadã) elimina justamente a barreira semântica no atendimento aos estudantes e servidores!",
+        "pilula_fixacao": "Descendente = chefe -> base. Ascendente = base -> chefe. Barreira Semântica = sentido/jargão/ambiguidade."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-030",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "5. Serviços Públicos — Classificação, Princípios e Delegação",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Concessão vs Permissão vs Autorização e Serviços Uti Universi / Uti Singuli",
+      "texto_apoio": null,
+      "enunciado": "À luz da teoria dos Serviços Públicos e da Lei nº 8.987/1995, assinale a alternativa CORRETA sobre a classificação e as formas de delegação dos serviços públicos à iniciativa privada.",
+      "alternativas": {
+        "A": "Os serviços públicos gerais ('uti universi'), como segurança pública e iluminação pública, são prestados a usuários indeterminados e devem ser financiados obrigatoriamente mediante cobrança de taxa específica individualizada.",
+        "B": "A concessão de serviço público é formalizada por contrato administrativo, precedida obrigatoriamente de licitação na modalidade concorrência ou diálogo competitivo, não sendo delegada a pessoa física.",
+        "C": "A autorização de serviço público exige licitação prévia na modalidade pregão e gera direito adquirido irrevogável ao particular contra o Poder Público.",
+        "D": "O princípio da continuidade do serviço público impede em qualquer hipótese a interrupção do fornecimento de energia elétrica por inadimplemento do usuário, mesmo após prévio aviso.",
+        "E": "A permissão de serviço público é celebrada exclusivamente com consórcios de pessoas jurídicas e não possui caráter precário segundo o art. 2º, inciso IV da Lei nº 8.987/1995."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reproduz com rigor o art. 2º, inciso II da Lei nº 8.987/1995 (atualizado pela Lei nº 14.133/2021): concessão = delegação mediante licitação (concorrência ou diálogo competitivo), a pessoa jurídica ou consórcio de empresas (jamais pessoa física), por contrato administrativo.",
+        "fundamento_legal_ou_teorico": "Serviços Públicos: Uti Universi (gerais/indivisíveis -> impostos) vs Uti Singuli (individuais/mensuráveis -> taxa ou tarifa). Delegação (Lei 8.987/95): Concessão = licitação (concorrência ou diálogo competitivo), apenas PJ/consórcio, contrato; Permissão = licitação (qualquer modalidade pertinente), PF ou PJ, contrato de adesão a título PRECÁRIO; Autorização = ato administrativo unilateral, discricionário e precário (regra: sem licitação).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Serviços 'uti universi' (indivisíveis) são mantidos por IMPOSTOS, não por taxa (Súmula Vinculante 41 do STF veda taxa de iluminação pública).",
+          "B": "CORRETA. Reproduz a regra legal pós-14.133/2021 para concessão de serviço público (somente PJ ou consórcio, via concorrência ou diálogo competitivo).",
+          "C": "INCORRETA. Autorização é ato unilateral e precário (revogável a qualquer tempo sem direito adquirido indenizável em regra, e sem exigir pregão).",
+          "D": "INCORRETA. O art. 6º, § 3º da Lei nº 8.987/1995 admite interrupção em situação de emergência ou, após prévio aviso, por razões de ordem técnica/segurança ou por inadimplemento do usuário, considerado o interesse da coletividade.",
+          "E": "INCORRETA. A permissão admite pessoa FÍSICA ou jurídica e possui expressamente caráter PRECÁRIO (contrato de adesão — art. 2º, IV e art. 40)."
+        },
+        "conexao_pratica_ifbaiano": "A Lei nº 14.133/2021 atualizou a Lei nº 8.987/1995 para incluir o 'diálogo competitivo' ao lado da 'concorrência' na concessão! Guarde a diferença clássica: Concessão = só PJ/consórcio (não precária); Permissão = PF ou PJ (precária, contrato de adesão).",
+        "pilula_fixacao": "Uti Universi = Impostos (gerais). Uti Singuli = Taxa/Tarifa (individuais). Concessão = só PJ/consórcio. Permissão = PF/PJ + Precária."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-013",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "6. Morfossintaxe: Funções do 'Se' e Concordância Verbal",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Diferenciação entre Pronome Apassivador e Índice de Indeterminação do Sujeito",
+      "texto_apoio": null,
+      "enunciado": "No tocante às funções morfossintáticas da partícula \"se\" e às regras de concordância verbal da norma-padrão, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Na frase \"Protocolam-se processos eletrônicos diariamente na Reitoria\", o \"se\" atua como índice de indeterminação do sujeito, admitindo também a forma \"Protocola-se\".",
+        "B": "Em \"Precisam-se de novos assistentes em administração para os campi da UFBA\", a concordância plural está correta porque \"novos assistentes\" é o sujeito paciente.",
+        "C": "Na oração \"Trata-se de requerimentos urgentes de progressão funcional\", o verbo permanece obrigatoriamente na 3ª pessoa do singular porque o \"se\" funciona como índice de indeterminação do sujeito.",
+        "D": "Em \"Analisou-se cuidadosamente todas as propostas apresentadas no pregão\", o \"se\" é parte integrante do verbo, razão pela qual o verbo não varia.",
+        "E": "Na sentença \"Aluga-se salas administrativas próximas ao Campus de Ondina\", há voz passiva sintética corretamente empregada com sujeito posposto."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Em \"Trata-se de requerimentos urgentes\", o verbo \"tratar\" é transitivo indireto (regido pela preposição \"de\"), logo o \"se\" é índice de indeterminação do sujeito (IIS) e o verbo fica invariavelmente na 3ª pessoa do singular.",
+        "fundamento_legal_ou_teorico": "Gramática Normativa: VTD/VTDI + \"se\" = Pronome Apassivador (verbo concorda com o sujeito paciente). VTI/VI/VL + \"se\" = Índice de Indeterminação do Sujeito (verbo obrigatoriamente na 3ª pessoa do singular).",
+        "analise_alternativas": {
+          "A": "INCORRETA. \"Protocolar\" é verbo transitivo direto (\"protocolam-se processos\" = processos são protocolados). Logo, o \"se\" é pronome apassivador e NÃO admite o singular \"Protocola-se\".",
+          "B": "INCORRETA. \"Precisar de\" é VTI; \"de novos assistentes\" é objeto indireto preposicionado, nunca sujeito! O correto é \"Precisa-se de novos assistentes\" (IIS).",
+          "C": "CORRETA. \"Tratar de\" é VTI; portanto, o \"se\" é IIS e o verbo fica obrigatoriamente no singular (\"Trata-se\"), ainda que o complemento preposicionado esteja no plural.",
+          "D": "INCORRETA. \"Analisar\" é VTD (\"todas as propostas foram analisadas\"). O \"se\" é pronome apassivador, obrigando o plural: \"Analisaram-se todas as propostas\".",
+          "E": "INCORRETA. Clássico erro de placa: \"salas administrativas\" é sujeito paciente plural (\"salas são alugadas\"), exigindo \"Alugam-se salas\"."
+        },
+        "conexao_pratica_ifbaiano": "Em despachos no SEI e portarias de gabinete na Reitoria, erros como \"Tratam-se de processos...\" ou \"Precisam-se de assinaturas...\" são armadilhas cotidianas. Teste rápido para o Instituto Avalia: se houver preposição logo após o verbo (\"de\", \"em\", \"a\"), o verbo trava no singular!",
+        "pilula_fixacao": "Tem preposição (VTI/VI/VL + se)? É IIS e trava no SINGULAR. Sem preposição (VTD + se)? É Apassivador e concorda!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-014",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "6. Morfossintaxe: Funções Morfossintáticas da Partícula 'Se'",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Parte Integrante do Verbo (PIV), Reflexivo, Recíproco e Conjunção",
+      "texto_apoio": "I. Os servidores queixaram-se da instabilidade do sistema durante o fechamento da folha.\nII. A coordenadora olhou-se no espelho antes da cerimônia de posse.\nIII. Os dois setores responsabilizam-se mutuamente pelo atraso no protocolo.\nIV. Não sabemos se o edital será retificado ainda nesta semana.",
+      "enunciado": "Considerando as ocorrências destacadas da palavra \"se\" nos itens I a IV, assinale a alternativa que classifica CORRETA e RESPECTIVAMENTE suas funções morfossintáticas.",
+      "alternativas": {
+        "A": "I. Pronome apassivador; II. Parte integrante do verbo; III. Pronome reflexivo recíproco; IV. Conjunção condicional.",
+        "B": "I. Parte integrante do verbo; II. Pronome reflexivo; III. Pronome reflexivo recíproco; IV. Conjunção integrante.",
+        "C": "I. Pronome reflexivo; II. Pronome apassivador; III. Índice de indeterminação do sujeito; IV. Conjunção integrante.",
+        "D": "I. Parte integrante do verbo; II. Pronome reflexivo; III. Pronome apassivador; IV. Conjunção condicional.",
+        "E": "I. Índice de indeterminação do sujeito; II. Pronome reflexivo; III. Parte integrante do verbo; IV. Pronome apassivador."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Em I, \"queixar-se\" é verbo essencialmente pronominal (PIV); em II, o sujeito pratica e sofre a ação em si mesmo (reflexivo); em III, há troca mútua da ação entre os dois setores (recíproco); em IV, o \"se\" introduz oração subordinada substantiva objetiva direta (conjunção integrante).",
+        "fundamento_legal_ou_teorico": "Morfossintaxe das funções do \"se\": PIV acompanha verbos pronominais (queixar-se, arrepender-se, suicidar-se); Reflexivo equivale a \"a si mesmo\"; Recíproco equivale a \"um ao outro\"; Conjunção Integrante substitui-se por \"ISSO\" (\"Não sabemos ISSO\").",
+        "analise_alternativas": {
+          "A": "INCORRETA. Em I não há voz passiva (\"queixar-se\" é pronominal) e em IV o \"se\" não indica condição, mas dúvida/objeto direto (\"Não sabemos ISSO\").",
+          "B": "CORRETA. Todas as quatro classificações reproduzem exatamente a análise morfossintática padrão.",
+          "C": "INCORRETA. Em I o verbo é pronominal (ninguém queixa outra pessoa), em II não é passiva e em III há reciprocidade.",
+          "D": "INCORRETA. Em III \"responsabilizam-se mutuamente\" é recíproco (um ao outro), e em IV trata-se de conjunção integrante, não condicional.",
+          "E": "INCORRETA. Em I o sujeito está explícito (\"Os servidores\"), logo jamais poderia ser IIS."
+        },
+        "conexao_pratica_ifbaiano": "Na prova do Instituto Avalia com \"RESPECTIVAMENTE\", elimine pela última coluna ou pela mais evidente: \"Não sabemos se...\" testa fácil com \"ISSO\" -> conjunção integrante! Já risca A, D e E na hora.",
+        "pilula_fixacao": "\"Queixar-se/arrepender-se\" = Parte Integrante; troca por \"ISSO\" após verbo = Conjunção Integrante."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-015",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "9. Vozes Verbais: Transposição Sintética, Analítica e Ativa",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Manutenção do Tempo e Modo Verbal na Transposição de Vozes",
+      "texto_apoio": null,
+      "enunciado": "Assinale a alternativa em que a frase \"A comissão permanente de licitação deverá publicar o extrato do contrato no PNCP\" foi corretamente transposta para a voz passiva analítica, mantendo rigorosamente o tempo e o modo verbais originais.",
+      "alternativas": {
+        "A": "O extrato do contrato foi publicado no PNCP pela comissão permanente de licitação.",
+        "B": "O extrato do contrato deverá ser publicado no PNCP pela comissão permanente de licitação.",
+        "C": "Publicar-se-á o extrato do contrato no PNCP pela comissão permanente de licitação.",
+        "D": "O extrato do contrato deveria ser publicado no PNCP pela comissão permanente de licitação.",
+        "E": "O extrato do contrato será publicado no PNCP pela comissão permanente de licitação."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Na locução verbal ativa \"deverá publicar\" (auxiliar no futuro do presente + infinitivo), o auxiliar permanece no mesmo tempo/modo (\"deverá\") e o verbo principal desdobra-se em \"ser + particípio\" (\"ser publicado\").",
+        "fundamento_legal_ou_teorico": "Regra de ouro da transposição para voz passiva analítica: com 1 verbo, ganha-se o auxiliar SER no mesmo tempo/modo; com locução de 2 verbos, o auxiliar original conserva tempo/pessoa e o principal vira SER + particípio (totalizando 3 verbos).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Alterou a locução do futuro (\"deverá publicar\") para pretérito perfeito (\"foi publicado\").",
+          "B": "CORRETA. \"O extrato do contrato\" (objeto direto -> sujeito paciente) + \"deverá ser publicado\" (mesmo tempo futuro do presente) + agente da passiva (\"pela comissão...\").",
+          "C": "INCORRETA. Além de ser voz passiva sintética (e não analítica como pediu o enunciado), suprimiu o auxiliar modal \"deverá\" e misturou agente da passiva (\"pela comissão\"), algo condenado na passiva sintética.",
+          "D": "INCORRETA. Trocou futuro do presente (\"deverá\") por futuro do pretérito (\"deveria\"), mudando a certeza jurídica para hipótese.",
+          "E": "INCORRETA. Eliminou o verbo auxiliar modal \"deverá\", alterando o sentido de obrigação normativa."
+        },
+        "conexao_pratica_ifbaiano": "Na redação de minutas de despacho e pareceres administrativos, trocar \"deverá ser publicado\" por \"deveria ser publicado\" muda o comando de vinculante para mera sugestão. O Instituto Avalia sempre cobra locução verbal na transposição de voz!",
+        "pilula_fixacao": "Na voz passiva analítica: sempre entra 1 verbo a mais (SER no tempo do principal) e o particípio concorda com o sujeito!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-016",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "7. Crase: Casos Facultativos na Norma-Padrão",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Identificação Exclusiva de Crase Facultativa",
+      "texto_apoio": null,
+      "enunciado": "Segundo a norma-padrão da Língua Portuguesa, o emprego do acento indicativo de crase é FACULTATIVO em todas as expressões da alternativa:",
+      "alternativas": {
+        "A": "Entregou o ofício à coordenadora / Dirigiu-se à minha sala / Chegou à 1 hora.",
+        "B": "Referiu-se à nossa diretoria / Foi até à Reitoria / Escreveu à Mariana.",
+        "C": "Saiu às pressas / Assistiu à palestra / Deu atenção àquela servidora.",
+        "D": "Voltou à casa dos pais / Fez alusão à sua chefia / Foi à Bahia.",
+        "E": "Obedeceu à norma / Entregou à Vossa Senhoria / Foi até à secretaria."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa B reúne exatamente os três clássicos casos facultativos de crase: (1) antes de pronome possessivo feminino adjetivo no singular (\"à nossa diretoria\"); (2) após a preposição \"até\" (\"até à Reitoria\"); e (3) antes de nome próprio feminino de pessoa (\"à Mariana\").",
+        "fundamento_legal_ou_teorico": "Os 3 casos clássicos de crase facultativa: 1) Antes de nome próprio feminino de pessoa; 2) Antes de pronome possessivo feminino adjetivo (singular); 3) Após a preposição \"até\" antes de substantivo feminino determinado.",
+        "analise_alternativas": {
+          "A": "INCORRETA. \"À coordenadora\" e \"à 1 hora\" têm crase obrigatória (não facultativa).",
+          "B": "CORRETA. Os três exemplos correspondem integralmente aos três casos clássicos de crase facultativa.",
+          "C": "INCORRETA. \"Às pressas\" (locução adverbial feminina), \"à palestra\" e \"àquela servidora\" possuem crase obrigatória.",
+          "D": "INCORRETA. \"À casa dos pais\" (especificada) e \"à Bahia\" (quem volta da Bahia) têm crase obrigatória.",
+          "E": "INCORRETA. \"À norma\" tem crase obrigatória, e antes de \"Vossa Senhoria\" a crase é PROIBIDA (pronome de tratamento não admite artigo)."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina da Comunicação da Reitoria, redigir \"encaminho à sua apreciação\" ou \"encaminho a sua apreciação\" são ambas formas gramaticalmente aceitas (possessivo feminino singular). Atenção: se o possessivo estiver no plural (\"a/às suas demandas\") com \"a\" no singular, não ocorre crase!",
+        "pilula_fixacao": "Crase facultativa = \"ATÉ\" + \"NOSSA\" (possessivo fem. sing.) + \"MARIANA\" (nome próprio feminino)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-017",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "7. Crase: Casos Proibidos, Obrigatórios e Especiais (Casa / Terra / Distância)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Lacunas com Crase em Contexto Administrativo",
+      "texto_apoio": null,
+      "enunciado": "Assinale a alternativa que preenche CORRETA e RESPECTIVAMENTE as lacunas das frases abaixo:\nI. O parecer técnico foi enviado ___ Vossa Magnificência para ciência.\nII. Os servidores retornaram ___ casa logo após o término do inventário.\nIII. O curso presencial será ofertado ___ distância de 500 metros do prédio principal.\nIV. O processo refere-se ___ situações análogas às julgadas no trimestre anterior.",
+      "alternativas": {
+        "A": "a / a / à / a",
+        "B": "à / à / a / às",
+        "C": "a / à / à / às",
+        "D": "à / a / a / a",
+        "E": "a / a / a / às"
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "Todas as lacunas exigem \"a\" sem crase, EXCETO a terceira (\"à distância de 500 metros\", porque a distância está determinada).",
+        "fundamento_legal_ou_teorico": "1) Pronomes de tratamento (Vossa Magnificência/Senhoria) rejeitam artigo -> sem crase (\"a\"). 2) \"Casa\" no sentido de próprio lar, sem adjunto adnominal especificador -> sem crase (\"a casa\"). 3) \"À distância\" especificada leva crase obrigatória (\"à distância de 500 metros\"). 4) \"A\" singular antes de palavra plural (\"situações\") -> sem crase (preposição pura).",
+        "analise_alternativas": {
+          "A": "CORRETA. Sequência exata: a (sem artigo antes de Vossa Magnificência) / a (casa não especificada) / à (\"distância de...\" especificada) / a (singular antes de plural).",
+          "B": "INCORRETA. Erra ao colocar crase antes de pronome de tratamento, em \"casa\" sem especificador e \"às\" onde deveria ser singular.",
+          "C": "INCORRETA. \"Casa\" no sentido do próprio domicílio sem especificação não leva artigo (\"à\").",
+          "D": "INCORRETA. Erra a primeira (pronome de tratamento) e a terceira (distância determinada exige crase).",
+          "E": "INCORRETA. \"À distância\" determinada por \"de 500 metros\" exige crase; e antes de \"situações\" o plural \"às\" mudaria a generalização pretendida."
+        },
+        "conexao_pratica_ifbaiano": "Cuidado com \"ensino a distância\" (sem especificar = sem crase, embora alguns gramáticos aceitem pela clareza) versus \"à distância de X metros\" (sempre COM crase!). E lembre: \"a\" no singular + palavra no plural = crase nem pensar!",
+        "pilula_fixacao": "\"a\" singular + plural = crase ZERO! \"à distância DE...\" especificada = crase OBRIGATÓRIA!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-018",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "6 e 7. Colocação Pronominal em Locuções Verbais",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Próclise, Ênclise e Veto ao Particípio em Locuções Verbais",
+      "texto_apoio": null,
+      "enunciado": "Considerando as regras de colocação pronominal nas locuções verbais e tempos compostos, assinale a alternativa INCORRETA quanto à norma-padrão.",
+      "alternativas": {
+        "A": "O gestor havia-lhe encaminhado as notas técnicas ainda pela manhã.",
+        "B": "Não se devem arquivar documentos correntes sem prévia triagem no protocolo.",
+        "C": "O setor de compras tinha enviado-nos o mapa comparativo de preços fora do prazo.",
+        "D": "O chefe de gabinete quer entregar-te pessoalmente a portaria de designação.",
+        "E": "Os servidores vêm dedicando-se integralmente ao fechamento do relatório anual."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A alternativa C está INCORRETA porque traz o pronome oblíquo em ênclise ligado ao verbo no particípio (\"tinha enviado-nos\"), o que é terminantemente vedado pela gramática normativa.",
+        "fundamento_legal_ou_teorico": "Nos tempos compostos e locuções com particípio (ter/haver + particípio), o pronome NUNCA se liga ao particípio em ênclise. Sem palavra atrativa, fica ligado ao auxiliar (\"tinha-nos enviado\" ou, no português brasileiro culto, solto entre auxiliar e particípio sem hífen: \"tinha nos enviado\"). Com atrativo, ocorre próclise ao auxiliar (\"Não nos tinha enviado\").",
+        "analise_alternativas": {
+          "A": "CORRETA quanto à norma. Sem atrativo, o pronome pode ficar enclítico ao auxiliar (\"havia-lhe encaminhado\").",
+          "B": "CORRETA quanto à norma. O advérbio \"Não\" atrai o pronome para antes do verbo auxiliar (\"Não se devem arquivar\").",
+          "C": "INCORRETA (gabarito, pois o enunciado pede a incorreta). É proibida a ênclise ao particípio (\"enviado-nos\").",
+          "D": "CORRETA quanto à norma. Em auxiliar + infinitivo sem atrativo, admite-se tanto \"quer-te entregar\" quanto \"quer entregar-te\".",
+          "E": "CORRETA quanto à norma. Em auxiliar + gerúndio sem fator de atração, admite-se a ênclise ao verbo principal no gerúndio (\"vêm dedicando-se\")."
+        },
+        "conexao_pratica_ifbaiano": "Olhou para o particípio (-ado / -ido / -to / -so) com hífen e pronome depois? Pode marcar como ERRO sem piscar! A banca Instituto Avalia ama esconder \"tinha enviado-nos\" ou \"havia feito-o\" no meio de textos bonitos de ofício.",
+        "pilula_fixacao": "Particípio NUNCA aceita ênclise! (\"tinha enviado-lhe\" = ERRO FATAL)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-019",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "7. Colocação Pronominal: Fatores de Atração e Mesóclise",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Aplicação das Regras Gerais de Próclise, Mesóclise e Ênclise",
+      "texto_apoio": null,
+      "enunciado": "Assinale a alternativa em que a colocação do pronome átono atende INTEGRALMENTE às regras gramaticais vigentes.",
+      "alternativas": {
+        "A": "Me informe assim que o processo retornar da Procuradoria Federal.",
+        "B": "Quando apresentou-se o novo reitor, o auditório aplaudiu de pé.",
+        "C": "Encaminhar-se-ia o relatório ontem, caso o sistema não tivesse caído.",
+        "D": "Tudo esclareceu-se durante a reunião ordinária do Conselho Universitário.",
+        "E": "Em tratando-se de recurso administrativo, observa-se o prazo de 10 dias."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Em C, não há fator de próclise no início da oração e o verbo está no futuro do pretérito (\"encaminharia\"), impondo a mesóclise (\"Encaminhar-se-ia\").",
+        "fundamento_legal_ou_teorico": "1) Não se inicia frase com pronome oblíquo átono (A errada). 2) Conjunção subordinativa (\"Quando\") e pronome indefinido (\"Tudo\") exigem próclise (\"Quando se apresentou\", \"Tudo se esclareceu\"). 3) \"Em + gerúndio\" exige próclise (\"Em se tratando\"). 4) Futuro do presente/pretérito sem atrativo exige mesóclise.",
+        "analise_alternativas": {
+          "A": "INCORRETA. É proibido iniciar período com pronome oblíquo átono (\"Me informe\"); o padrão culto exige \"Informe-me\".",
+          "B": "INCORRETA. A conjunção subordinativa temporal \"Quando\" é fator obrigatório de próclise (\"Quando se apresentou\").",
+          "C": "CORRETA. Início de período com verbo no futuro do pretérito exige mesóclise: \"Encaminhar-se-ia\".",
+          "D": "INCORRETA. O pronome indefinido \"Tudo\" atrai o pronome (\"Tudo se esclareceu\").",
+          "E": "INCORRETA. Preposição \"Em\" + gerúndio é caso clássico de próclise obrigatória (\"Em se tratando\")."
+        },
+        "conexao_pratica_ifbaiano": "Na fala informal da equipe dizemos \"Me envia o número do processo\", mas na norma culta da UFBA e do Avalia, frase começada por pronome átono é erro certo. Fique também alerta à estrutura fixa \"Em se tratando de...\"!",
+        "pilula_fixacao": "\"Em + gerúndio\" = próclise (\"Em se tratando\"); início de frase + futuro = mesóclise!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-020",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "11. Redação Oficial (MRPR 3ª Edição): Pronomes de Tratamento e Vocativos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 105,
+      "perfil_cobranca": "Regras Atualizadas da 3ª Edição do Manual de Redação da Presidência",
+      "texto_apoio": null,
+      "enunciado": "De acordo com a 3ª edição do Manual de Redação da Presidência da República (MRPR), acerca dos pronomes de tratamento, endereçamentos e vocativos nas comunicações oficiais, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Nas comunicações dirigidas a Ministros de Estado, Governadores e Reitores de Universidades Federais, emprega-se o vocativo \"Excelentíssimo Senhor\" seguido do respectivo cargo.",
+        "B": "Ainda que \"Vossa Excelência\" faça referência à 2ª pessoa do discurso (com quem se fala), o verbo e os pronomes possessivos correspondentes devem ser flexionados na 3ª pessoa.",
+        "C": "O uso de \"Digníssimo (DD.)\" permanece obrigatório nos endereçamentos dirigidos aos membros do Poder Judiciário e ao Presidente da República.",
+        "D": "O adjetivo ou particípio que concorda com o pronome \"Vossa Senhoria\" deve ir invariavelmente para o masculino singular, independentemente do sexo da autoridade.",
+        "E": "Emprega-se \"Sua Excelência\" ao dirigir-se diretamente à autoridade no corpo de um ofício, reservando \"Vossa Excelência\" para quando se faz referência a ela em terceira pessoa."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Embora \"Vossa Excelência\" designe a pessoa com quem se fala (2ª pessoa pragmática), a concordância gramatical (verbos, pronomes possessivos e oblíquos) ocorre obrigatoriamente na 3ª pessoa.",
+        "fundamento_legal_ou_teorico": "MRPR 3ª edição (2018): 1) Concordância de \"Vossa...\" é sempre em 3ª pessoa (\"Vossa Excelência informou sua decisão\"). 2) Vocativo \"Excelentíssimo Senhor\" é EXCLUSIVO aos Chefes de Poder (Presidente da República, dos Tribunais Superiores/STF e do Congresso/Câmara/Senado). 3) Para demais autoridades: \"Senhor\" + cargo. 4) \"Digníssimo\" e \"Ilustríssimo\" foram abolidos.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Na 3ª edição do MRPR, \"Excelentíssimo Senhor\" restringe-se apenas aos Chefes de Poder; para Ministros, Governadores e Reitores usa-se apenas \"Senhor + cargo\" (\"Senhor Ministro\", \"Senhor Reitor\").",
+          "B": "CORRETA. Concordância gramatical em 3ª pessoa (\"Vossa Senhoria enviará seu parecer\", e não \"enviareis vosso parecer\").",
+          "C": "INCORRETA. O MRPR aboliu expressamente \"Digníssimo\" e \"Ilustríssimo\", pois a dignidade é pressuposta em qualquer cargo público.",
+          "D": "INCORRETA. A concordância de gênero acompanha o sexo da pessoa a quem se refere (\"Vossa Senhoria foi notificada\" se for mulher).",
+          "E": "INCORRETA. Inverteu os pronomes: VOSSA = com quem Você fala; SUA = Sobre quem você fala."
+        },
+        "conexao_pratica_ifbaiano": "Na Comunicação da Reitoria do IF Baiano você certamente revisa ofícios externos. Lembre o detalhe cirúrgico da 3ª edição do MRPR (2018): para o Reitor usa-se \"Ao Senhor Reitor\" no endereçamento e \"Senhor Reitor,\" no vocativo — nunca \"Ilustríssimo\" nem \"Digníssimo\"!",
+        "pilula_fixacao": "VOSSA = com Você; SUA = Sobre ela. \"Excelentíssimo\" = só Chefes de Poder; demais = \"Senhor + cargo\"."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-021",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "11. Redação Oficial (MRPR 3ª Edição): Fechos e Padrão Ofício",
+      "dificuldade": "Fácil-Média",
+      "tempo_estimado_segundos": 95,
+      "perfil_cobranca": "Fechos Regulamentares e Unificação do Padrão Ofício",
+      "texto_apoio": null,
+      "enunciado": "Conforme a 3ª edição do Manual de Redação da Presidência da República (MRPR), no tocante à simplificação dos expedientes e ao emprego dos fechos oficiais, é CORRETO afirmar que:",
+      "alternativas": {
+        "A": "Para saudar um colega técnico-administrativo de mesma hierarquia em um ofício interno da UFBA, o servidor deve empregar o fecho \"Respeitosamente,\". ",
+        "B": "A 3ª edição do MRPR manteve a distinção formal obrigatória entre três expedientes distintos: Aviso, Ofício e Memorando.",
+        "C": "O fecho \"Atenciosamente,\" é utilizado em comunicações endereçadas a autoridades de mesma hierarquia, de hierarquia inferior ou a particulares.",
+        "D": "O fecho \"Cordialmente,\" substituiu \"Atenciosamente,\" nas comunicações eletrônicas enviadas via sistema de processo eletrônico como o SEI.",
+        "E": "Em comunicações endereçadas a autoridades superiores, recomenda-se concluir o documento com a expressão \"Sem mais para o momento, subscrevo-me com elevada estima\"."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A 3ª edição do MRPR consolidou apenas dois fechos oficiais: \"Respeitosamente,\" (para autoridades de hierarquia superior) e \"Atenciosamente,\" (para mesma hierarquia, inferior ou particulares).",
+        "fundamento_legal_ou_teorico": "MRPR 3ª edição (2018): Capítulo III — Consolidação de Aviso, Memorando e Ofício em documento único denominado \"Padrão Ofício\". Fechos admitidos: apenas \"Respeitosamente,\" (autoridades superiores) e \"Atenciosamente,\" (mesma hierarquia, inferior ou particulares).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Para mesma hierarquia emprega-se \"Atenciosamente,\", nunca \"Respeitosamente,\".",
+          "B": "INCORRETA. A 3ª edição do MRPR extinguiu a distinção entre Aviso, Memorando e Ofício, unificando todos sob a nomenclatura de Padrão Ofício.",
+          "C": "CORRETA. Regra literal dos fechos oficiais do MRPR 3ª edição.",
+          "D": "INCORRETA. Expressões como \"Cordialmente\", \"Abraços\" ou \"Saudações\" não constituem fechos oficiais no MRPR.",
+          "E": "INCORRETA. Fórmulas prolixas e de cortesia exagerada (\"Sem mais para o momento...\") violam os princípios da concisão e impessoalidade."
+        },
+        "conexao_pratica_ifbaiano": "Você lida diariamente com \"Memorando\" no histórico de sistemas legados como o SUAP, mas atenção à prova: para o MRPR 3ª edição (atualizado em 2018), Aviso, Ofício e Memorando foram unificados no **Padrão Ofício**! E nada de \"Sem mais para o momento\".",
+        "pilula_fixacao": "Fechos do MRPR: Superior = Respeitosamente; Igual/Inferior/Particular = Atenciosamente. Aviso + Memo + Ofício = Padrão Ofício!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-022",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "3 e 9. Tipos de Discurso: Direto, Indireto e Indireto Livre",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Identificação Estilística e Gramatical dos Três Tipos de Discurso",
+      "texto_apoio": "\"Pedro revisou o processo de dispensa pela terceira vez naquela sexta-feira. Será que a certidão venceria antes do empenho? Aquele prazo curto estava deixando toda a equipe tensa, mas ele não deixaria escapar nenhuma exigência legal.\"",
+      "enunciado": "Considerando o fragmento apresentado no texto de apoio, assinale a alternativa que identifica e justifica CORRETAMENTE o tipo de discurso predominante no segundo período (\"Será que a certidão venceria antes do empenho?\").",
+      "alternativas": {
+        "A": "Discurso direto, pois apresenta travessão implícito e verbo dicendi introdutório.",
+        "B": "Discurso indireto, visto que há conjunção integrante \"que\" subordinando a fala do personagem ao verbo do narrador.",
+        "C": "Discurso indireto livre, uma vez que funde a voz do narrador em 3ª pessoa ao pensamento/inquietação íntima do personagem sem verbo de elocução nem conjunção subordinativa.",
+        "D": "Discurso metalinguístico, porque o narrador critica o funcionamento do sistema de compras públicas.",
+        "E": "Discurso direto livre puro, caracterizado exclusivamente pelo emprego de verbo na 1ª pessoa do presente do indicativo."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "No trecho destacado, o narrador mantém a 3ª pessoa e os tempos do passado típicos do relato indireto (\"venceria\"), mas insere diretamente a pergunta interior do personagem sem verbo dicendi (\"pensou\") nem aspas/travessão — marca típica do discurso indireto livre.",
+        "fundamento_legal_ou_teorico": "Discurso Direto: reprodução fiel da fala (1ª/2ª pessoa, aspas/travessão, verbo dicendi). Discurso Indireto: fala integrada por verbo dicendi + conjunção integrante (\"disse que...\", \"perguntou se...\"). Discurso Indireto Livre: fusão narrador (3ª pessoa/pretérito) + fluxo de pensamento/emoção do personagem sem conectivo subordinativo.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Não há verbo dicendi (\"perguntou\", \"disse\") nem marcas gráficas de discurso direto (aspas, dois-pontos ou travessão).",
+          "B": "INCORRETA. Para ser indireto clássico seria necessário: \"Ele se perguntou se a certidão venceria...\".",
+          "C": "CORRETA. Definição exata do discurso indireto livre, muito cobrado pelo Instituto Avalia em interpretação e tipologia narrativa.",
+          "D": "INCORRETA. Metalinguagem ocorre quando a linguagem explica a própria linguagem (ex.: dicionário ou gramática).",
+          "E": "INCORRETA. O verbo \"venceria\" está na 3ª pessoa do futuro do pretérito, não na 1ª do presente."
+        },
+        "conexao_pratica_ifbaiano": "Em provas de interpretação textual de nível médio do Instituto Avalia, distinguir o Discurso Indireto Livre garante questão fácil: procure uma pergunta ou exclamação solta no meio de um parágrafo em 3ª pessoa, sem \"disse que\" e sem travessão!",
+        "pilula_fixacao": "Discurso Indireto Livre = 3ª pessoa do narrador + pensamento vivo do personagem, SEM verbo dicendi e SEM travessão."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-023",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "9. Reescrita de Frases: Transposição do Discurso Direto para o Indireto",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Correspondência de Tempos Verbais, Pronomes e Advérbios na Transposição",
+      "texto_apoio": "A diretora administrativa afirmou aos técnicos:\n— Analisarei hoje estes autos que chegaram aqui ontem e amanhã emitirei meu parecer.",
+      "enunciado": "Transpondo a fala da diretora para o discurso indireto, preservando a rigor a correlação temporal, pronominal e adverbial exigida pela norma-padrão, tem-se:",
+      "alternativas": {
+        "A": "A diretora administrativa afirmou aos técnicos que analisará hoje aqueles autos que chegaram lá ontem e amanhã emitirá o seu parecer.",
+        "B": "A diretora administrativa afirmou aos técnicos que analisaria naquele dia aqueles autos que tinham chegado ali no dia anterior e no dia seguinte emitiria o seu parecer.",
+        "C": "A diretora administrativa afirmou aos técnicos que analisou naquele dia estes autos que chegaram aqui no dia anterior e no outro dia emitirá seu parecer.",
+        "D": "A diretora administrativa afirmou aos técnicos que analisaria hoje esses autos que chegaram ali no dia anterior e amanhã emitiria o parecer dela.",
+        "E": "A diretora administrativa afirmou aos técnicos se analisaria naquele dia aqueles autos que chegavam ali ontem e no dia seguinte emitira seu parecer."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Na passagem do discurso direto (verbo dicendi no pretérito perfeito: \"afirmou\") para o indireto: futuro do presente (\"analisarei\"/\"emitirei\") passa a futuro do pretérito (\"analisaria\"/\"emitiria\"); pretérito perfeito (\"chegaram\") passa a mais-que-perfeito (\"tinham chegado\"); \"hoje\" -> \"naquele dia\"; \"estes\" -> \"aqueles\"; \"aqui\" -> \"ali/lá\"; \"ontem\" -> \"no dia anterior\"; \"amanhã\" -> \"no dia seguinte\"; \"meu\" -> \"seu\".",
+        "fundamento_legal_ou_teorico": "Tabela clássica de transposição Direto -> Indireto (com verbo introdutor no passado): Presente -> Pretérito Imperfeito; Pretérito Perfeito -> Mais-que-perfeito; Futuro do Presente -> Futuro do Pretérito; \"este\" -> \"aquele\"; \"aqui\" -> \"ali/lá\"; \"hoje\" -> \"naquele dia\"; \"ontem\" -> \"no dia anterior\"; \"amanhã\" -> \"no dia seguinte\".",
+        "analise_alternativas": {
+          "A": "INCORRETA. Manteve indevidamente tempos do futuro do presente e advérbios dêiticos de proximidade (\"hoje\", \"ontem\", \"amanhã\").",
+          "B": "CORRETA. Aplicou perfeitamente todas as conversões verbais, pronominais e dêiticas.",
+          "C": "INCORRETA. Trocou futuro por passado (\"analisou\") e futuro do presente (\"emitirá\"), além de manter \"estes\" e \"aqui\".",
+          "D": "INCORRETA. Manteve advérbios do discurso direto (\"hoje\", \"amanhã\").",
+          "E": "INCORRETA. Empregou \"se\" (próprio de pergunta indireta) em frase declarativa e manteve \"ontem\"."
+        },
+        "conexao_pratica_ifbaiano": "Ao lavrar atas de reunião colegiada na instituição, sempre fazemos essa conversão da fala dos participantes para o texto corrido (\"O relator afirmou que analisaria naquela semana...\"). Na prova, basta conferir o trio: \"analisarei -> analisaria\", \"estes -> aqueles\" e \"amanhã -> no dia seguinte\".",
+        "pilula_fixacao": "Direto -> Indireto (no passado): futuro do presente vira futuro do pretérito (-ria); hoje/ontem/amanhã viram naquele dia/anterior/seguinte."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-LP-024",
+      "area": "Língua Portuguesa",
+      "peso": 1,
+      "topico_edital": "6 e 9. Vozes Verbais, Reflexividade e Reescrita Gramatical",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Diferenciação entre Voz Passiva e Voz Reflexiva/Recíproca",
+      "texto_apoio": null,
+      "enunciado": "Assinale a alternativa em que o período apresentado está na VOZ REFLEXIVA (ou reflexiva recíproca) e admite acréscimo de reforço semântico como \"a si mesmo\" ou \"mutuamente\", sem comprometer a estrutura original.",
+      "alternativas": {
+        "A": "Publicaram-se no Diário Oficial da União os resultados definitivos do certame.",
+        "B": "Os candidatos cumprimentaram-se com entusiasmo após a homologação do concurso.",
+        "C": "Necessita-se de agilidade na conferência documental dos aprovados na UFBA.",
+        "D": "Foram arquivados pela equipe de protocolo todos os processos encerrados em 2025.",
+        "E": "Precisa-se revisar todos os termos de referência antes da abertura do pregão."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Em \"Os candidatos cumprimentaram-se\", os sujeitos praticam e recebem simultaneamente a ação uns dos outros (\"mutuamente\"), caracterizando a voz reflexiva recíproca.",
+        "fundamento_legal_ou_teorico": "Voz Ativa: sujeito agente. Voz Passiva (Analítica ou Sintética): sujeito paciente sofre a ação. Voz Reflexiva: sujeito é simultaneamente agente e paciente (consigo mesmo ou reciprocamente entre dois ou mais elementos).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Voz passiva sintética (\"os resultados foram publicados\"); resultados não publicam a si mesmos.",
+          "B": "CORRETA. Sujeito plural pratica e recebe a ação reciprocamente (\"um cumprimentou o outro\").",
+          "C": "INCORRETA. Voz ativa com sujeito indeterminado (IIS em verbo transitivo indireto).",
+          "D": "INCORRETA. Voz passiva analítica (\"foram arquivados pela equipe\").",
+          "E": "INCORRETA. Voz ativa com índice de indeterminação do sujeito em locução/estrutura impessoal."
+        },
+        "conexao_pratica_ifbaiano": "Pergunta de ouro na dúvida entre passiva e reflexiva: \"o sujeito tem vida/vontade para fazer a ação em si próprio?\" (\"Os candidatos cumprimentaram-se\" -> SIM!). Documentos e resultados não praticam ações sobre si mesmos!",
+        "pilula_fixacao": "Reflexiva exige sujeito agente E paciente ao mesmo tempo (inanimado geralmente = Passiva, jamais Reflexiva)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-007",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "4. Planilhas Eletrônicas (Excel): Fórmulas Condicionais CONT.SE",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Sintaxe e Resultado da Função CONT.SE com Operadores e Coringas",
+      "texto_apoio": "Considere uma planilha do Microsoft Excel 365 usada no setor de compras da UFBA com os seguintes dados:\nA1: \"Concluído\" | A2: \"Em Análise\" | A3: \"Concluído\" | A4: \"Pendente\" | A5: \"Concluído Oficial\"\nB1: 15 | B2: 40 | B3: 25 | B4: 10 | B5: 30",
+      "enunciado": "Um Assistente em Administração digitou em células separadas as fórmulas:\nFórmula 1: `=CONT.SE(A1:A5;\"Concluído*\")`\nFórmula 2: `=CONT.SE(B1:B5;\">20\")`\nOs resultados exibidos respectivamente pelas Fórmulas 1 e 2 serão:",
+      "alternativas": {
+        "A": "2 e 2",
+        "B": "3 e 3",
+        "C": "2 e 3",
+        "D": "3 e 2",
+        "E": "3 e 95"
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Na Fórmula 1, o caractere coringa `*` após \"Concluído\" casa tanto \"Concluído\" (A1, A3) quanto \"Concluído Oficial\" (A5), totalizando 3 células. Na Fórmula 2, apenas valores estritamente maiores que 20 são contados (B2=40, B3=25, B5=30), resultando também em 3.",
+        "fundamento_legal_ou_teorico": "Função `CONT.SE(intervalo; critérios)` conta quantas células atendem a um critério. O asterisco (`*`) substitui qualquer sequência de zero ou mais caracteres; operadores relacionais como `\">20\"` devem ficar entre aspas duplas; `CONT.SE` retorna QUANTIDADE de células, e não a soma (que seria `SOMASE`).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Desconsiderou A5 (\"Concluído Oficial\") que casa com o curinga `*`, e B3=25 que é maior que 20.",
+          "B": "CORRETA. Fórmula 1 conta {A1, A3, A5} = 3; Fórmula 2 conta {40, 25, 30} = 3.",
+          "C": "INCORRETA. Ignorou o papel do coringa `*` em A5.",
+          "D": "INCORRETA. Contou apenas 2 na segunda fórmula, ignorando um valor acima de 20.",
+          "E": "INCORRETA. 95 é o resultado da função `=SOMASE(B1:B5;\">20\")`, pegadinha clássica confundindo `CONT.SE` com `SOMASE`."
+        },
+        "conexao_pratica_ifbaiano": "Na organização de planilhas de contratos ou processos SEI no setor, lembrar que `CONT.SE` CONTA quantos itens existem e `SOMASE` SOMA os valores evita relatórios errados — e é exatamente essa troca (`3` vs `95`) que o Avalia põe na letra E!",
+        "pilula_fixacao": "`CONT.SE` = QUANTIDADE de células; `SOMASE` = SOMA numérica. Curinga `*` = zero ou mais letras!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-008",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "4. Planilhas Eletrônicas (Excel): Pesquisa PROCV vs. PROCX",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Diferenças Estruturais entre PROCV e PROCX no Excel 365",
+      "texto_apoio": null,
+      "enunciado": "Sobre as funções de pesquisa `PROCV` e `PROCX` no Microsoft Excel (versões atuais/Microsoft 365), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A função `PROCV` permite buscar um código na coluna C e retornar naturalmente um nome localizado à esquerda, na coluna A, sem alterar a tabela.",
+        "B": "No `PROCV`, omitir o quarto argumento (`[procurar_intervalo]`) equivale a definir busca exata (`FALSO` ou `0`), protegendo contra retornos aproximados indevidos.",
+        "C": "A função `PROCX` supera limitações clássicas do `PROCV`, pois aceita busca em qualquer direção (esquerda ou direita), permite definir um texto personalizado quando não encontra o valor e usa correspondência exata como padrão.",
+        "D": "Tanto `PROCV` quanto `PROCX` realizam exclusivamente buscas verticais em colunas, sendo incapazes de pesquisar horizontalmente em linhas.",
+        "E": "Se o índice de coluna informado no `PROCV` for maior do que a quantidade de colunas da `matriz_tabela`, o Excel retorna automaticamente a última coluna existente da matriz."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A função `PROCX` (XLOOKUP) do Excel 365 busca em colunas ou linhas, pesquisa tanto à direita quanto à esquerda da coluna-chave, usa correspondência exata por padrão e possui o 4º parâmetro opcional `[se_não_encontrada]`.",
+        "fundamento_legal_ou_teorico": "`=PROCV(valor_procurado; matriz_tabela; núm_índice_coluna; [procurar_intervalo])`: só busca da 1ª coluna para a direita; padrão omitido é `VERDADEIRO` (aproximada). `=PROCX(pesquisa_valor; pesquisa_matriz; matriz_retorno; [se_não_encontrada]; [modo_correspondência]; [modo_pesquisa])`: padrão é `0` (correspondência exata), busca para qualquer lado e também funciona horizontalmente.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O `PROCV` exige que o valor procurado esteja obrigatoriamente na PRIMEIRA coluna da matriz e só retorna valores à direita.",
+          "B": "INCORRETA. Pegadinha clássica: no `PROCV`, omitir o último argumento assume `VERDADEIRO` (correspondência aproximada!), exigindo tabela ordenada.",
+          "C": "CORRETA. Resume exatamente as evoluções técnicas do `PROCX` sobre o `PROCV` e `PROCH`.",
+          "D": "INCORRETA. O `PROCX` substitui tanto o `PROCV` (vertical) quanto o `PROCH` (horizontal).",
+          "E": "INCORRETA. Quando o índice excede as colunas da matriz ou é menor que 1, o Excel retorna erro `#REF!` (ou `#VALOR!`)."
+        },
+        "conexao_pratica_ifbaiano": "Ao cruzar planilhas do SIAPE ou inventário patrimonial pelo código SIADS/patrimônio no Excel, nunca esqueça de colocar `;0)` ou `;FALSO)` no fim do `PROCV`, senão ele puxa o servidor errado por aproximação! Se usar Office 365, `PROCX` já vem seguro por padrão.",
+        "pilula_fixacao": "`PROCV`: só olha à DIREITA e padrão é APROXIMADO (`VERDADEIRO`). `PROCX`: olha para qualquer lado e padrão é EXATO!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-009",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "4. Planilhas Eletrônicas (Excel): Função Lógica SE Composta",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Interpretação de Fórmulas Condicionais SE Aninhada e com Operador E/OU",
+      "texto_apoio": "Em uma planilha de controle de diárias da UFBA, a célula A2 contém o cargo (\"Técnico\") e a célula B2 contém a quantidade de dias de afastamento (`6`). O servidor inseriu em C2 a fórmula:\n`=SE(E(A2=\"Técnico\";B2>5);\"Autorização Pró-Reitoria\";SE(B2<=5;\"Autorização Chefia\";\"Revisar\"))`",
+      "enunciado": "Considerando os valores informados em A2 e B2, qual resultado será exibido na célula C2 após pressionar Enter?",
+      "alternativas": {
+        "A": "Autorização Chefia",
+        "B": "Revisar",
+        "C": "Autorização Pró-Reitoria",
+        "D": "#VALOR!",
+        "E": "VERDADEIRO"
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A função `E(A2=\"Técnico\"; B2>5)` avalia duas condições simultaneamente: `A2=\"Técnico\"` é VERDADEIRO e `6 > 5` também é VERDADEIRO. Como ambas são verdadeiras, o operador `E` retorna VERDADEIRO e a função `SE` externa devolve imediatamente o primeiro resultado (\"Autorização Pró-Reitoria\").",
+        "fundamento_legal_ou_teorico": "`SE(teste_lógico; valor_se_verdadeiro; [valor_se_falso])`: avalia o teste e executa apenas um dos ramos. O operador `E(...)` exige que TODOS os argumentos internos sejam verdadeiros; já `OU(...)` exige apenas UM verdadeiro.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O segundo `SE` só é avaliado se a condição inicial resultar em FALSO.",
+          "B": "INCORRETA. Só cairia em \"Revisar\" se fosse outro cargo (ex.: \"Docente\") com `B2 > 5`.",
+          "C": "CORRETA. Ambas as condições dentro de `E(...)` são satisfeitas, retornando \"Autorização Pró-Reitoria\".",
+          "D": "INCORRETA. A sintaxe e os tipos entre aspas (\"Técnico\") estão integralmente válidos.",
+          "E": "INCORRETA. `VERDADEIRO` seria o resultado isolado de `=E(A2=\"Técnico\";B2>5)`, não da função `SE`."
+        },
+        "conexao_pratica_ifbaiano": "Fórmulas com `SE` + `E`/`OU` aparecem muito no controle de prazos de processos e férias de servidores no Excel. Leia de fora para dentro: se o `E(...)` deu verdadeiro no primeiro teste, você nem precisa calcular o segundo `SE`!",
+        "pilula_fixacao": "`E()` precisa de TUDO verdadeiro; `OU()` basta UM verdadeiro. No `SE` aninhado, achou o 1º verdadeiro, para ali!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-010",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "2. Sistema Operacional Windows 10/11: Teclas de Atalho Produtivas",
+      "dificuldade": "Fácil-Média",
+      "tempo_estimado_segundos": 95,
+      "perfil_cobranca": "Associação Exata entre Atalhos do Windows e Suas Funções",
+      "texto_apoio": null,
+      "enunciado": "Durante o expediente administrativo em uma estação com Windows 11, um servidor precisa realizar rapidamente cinco ações pelo teclado sem usar o mouse:\n1) Abrir o Explorador de Arquivos.\n2) Mostrar ou ocultar imediatamente a Área de Trabalho.\n3) Bloquear o computador ao se ausentar da mesa.\n4) Abrir o histórico da Área de Transferência para colar textos copiados anteriormente.\n5) Alternar entre os aplicativos abertos.\n\nA sequência CORRETA de atalhos para as ações 1 a 5 é:",
+      "alternativas": {
+        "A": "Win + E | Win + D | Win + L | Win + V | Alt + Tab",
+        "B": "Win + A | Win + M | Ctrl + Alt + L | Ctrl + Shift + V | Win + Tab",
+        "C": "Win + E | Win + M | Win + B | Win + C | Ctrl + Tab",
+        "D": "Win + F | Win + D | Alt + F4 | Win + V | Alt + Esc",
+        "E": "Win + E | Win + R | Win + L | Ctrl + V | Alt + Tab"
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "Os atalhos oficiais do Windows 10/11 são: `Win+E` (Explorer), `Win+D` (Desktop - mostra/oculta), `Win+L` (Lock - bloqueia sessão), `Win+V` (histórico da Área de Transferência) e `Alt+Tab` (alternância rápida de janelas).",
+        "fundamento_legal_ou_teorico": "Teclas de atalho oficiais do Windows 10 e 11 (Microsoft): E = Explorer; D = Desktop (minimiza e restaura tudo); L = Lock; V = Clipboard history; Alt+Tab = Task Switcher (diferente de Ctrl+Tab que alterna abas dentro de um mesmo programa/navegador).",
+        "analise_alternativas": {
+          "A": "CORRETA. Todas as cinco correspondências estão perfeitas.",
+          "B": "INCORRETA. `Win+A` abre Configurações Rápidas/Central de Ações; `Ctrl+Shift+V` cola sem formatação; `Ctrl+Alt+L` não bloqueia no Windows.",
+          "C": "INCORRETA. `Win+B` foca a área de notificação; `Win+C` abria Cortana/Copilot/Teams chat; `Ctrl+Tab` alterna guias internas, não programas.",
+          "D": "INCORRETA. `Win+F` abre o Hub de Comentários; `Alt+F4` fecha a janela ativa (não bloqueia a tela).",
+          "E": "INCORRETA. `Win+R` abre a caixa \"Executar\" (Run) e `Ctrl+V` cola apenas o último item copiado, sem abrir o histórico."
+        },
+        "conexao_pratica_ifbaiano": "Na segurança da informação na Reitoria, levantar da mesa exige `Win + L` para ninguém usar sua sessão aberta do SEI/SUAP! E o `Win + V` é ouro no dia a dia para recuperar vários trechos de texto ou números de protocolo copiados seguidamente.",
+        "pilula_fixacao": "Win+E (Explorer), Win+D (Desktop), Win+L (Lock), Win+V (Vários itens copiados), Alt+Tab (Alternar janelas)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-011",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "10 e 11. Segurança da Informação: Phishing, Spear Phishing e Códigos Maliciosos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Diferenciação Conceitual de Ameaças (CERT.br)",
+      "texto_apoio": "Um servidor da Pró-Reitoria de Finanças da UFBA recebeu um e-mail aparentemente enviado pelo setor de folha de pagamento, contendo seu nome completo, SIAPE real e referência a um processo recente seu, pedindo que clicasse em um link urgente para atualizar dados bancários. Paralelamente, a equipe de TI detectou na rede da unidade um código malicioso capaz de se propagar automaticamente pelas vulnerabilidades das estações, sem necessitar de execução de um programa hospedeiro ou interação humana.",
+      "enunciado": "Considerando a cartilha do CERT.br, o golpe direcionado enviado ao servidor e o código malicioso de propagação automática detectado na rede correspondem, RESPECTIVAMENTE, a:",
+      "alternativas": {
+        "A": "Ransomware e Cavalo de Troia (Trojan).",
+        "B": "Phishing genérico (spam) e Spyware (Keylogger).",
+        "C": "Spear Phishing e Worm (Verme).",
+        "D": "Pharming e Vírus de macro.",
+        "E": "Vishing e Rootkit."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Um ataque de phishing altamente personalizado e direcionado a um alvo específico com dados reais (SIAPE, processo) denomina-se **Spear Phishing**. Já o malware autônomo que se autorreplica pela rede explorando vulnerabilidades sem precisar de arquivo hospedeiro é o **Worm**.",
+        "fundamento_legal_ou_teorico": "Cartilha de Segurança CERT.br: Phishing = isca eletrônica genérica; Spear Phishing = phishing direcionado com engenharia social personalizada ao alvo (quando visa altos executivos/dirigentes, chama-se Whaling). Worm = não infecta arquivos nem precisa de execução manual, propaga-se autonomamente via rede. Trojan = programa aparentemente legítimo que traz ação maliciosa oculta e NÃO se autorreplica. Spyware = monitora atividades/digitação.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Ransomware sequestra dados por criptografia exigindo resgate; Trojan disfarça-se de software útil e não se propaga sozinho pela rede.",
+          "B": "INCORRETA. O e-mail trouxe personalização específica do alvo (Spear Phishing), e Spyware coleta informações furtivamente em vez de focar em autorreplicação autônoma em rede.",
+          "C": "CORRETA. Ambos os conceitos reproduzem com exatidão as definições do CERT.br.",
+          "D": "INCORRETA. Pharming envenena DNS redirecionando sites; Vírus sempre necessita de um arquivo/programa hospedeiro e ação humana para se espalhar.",
+          "E": "INCORRETA. Vishing é phishing por ligação telefônica (voz); Rootkit oculta presença e mantém acesso privilegiado."
+        },
+        "conexao_pratica_ifbaiano": "Na Reitoria, servidores administrativos são alvos constantes de *Spear Phishing* citando número de processo real ou nome do Reitor para pedir transferência ou clique urgente. Sempre cheque o domínio exato do remetente antes de clicar!",
+        "pilula_fixacao": "Spear Phishing = Phishing direcionado/personalizado; Worm = propaga SOZINHO na rede; Vírus = precisa de HOSPEDEIRO; Trojan = disfarce SEM autorreplicação."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-INF-012",
+      "area": "Noções de Informática",
+      "peso": 1,
+      "topico_edital": "8 e 12. Computação em Nuvem e Ferramentas de Colaboração Online",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 105,
+      "perfil_cobranca": "Recursos Colaborativos (Coautoria, Versionamento, Permissões e Videoconferência)",
+      "texto_apoio": null,
+      "enunciado": "No trabalho híbrido com plataformas de colaboração em nuvem (como Microsoft Teams/SharePoint/OneDrive e Google Workspace) adotadas em instituições públicas de ensino, assinale a alternativa CORRETA sobre compartilhamento e edição colaborativa.",
+      "alternativas": {
+        "A": "Quando um documento do Word Online ou Google Docs é compartilhado em coautoria simultânea, cada alteração apaga permanentemente o conteúdo anterior, impossibilitando restaurar versões passadas sem backup em pen drive.",
+        "B": "Conceder permissão de \"Leitor\" ou \"Apenas visualização\" permite que membros externos comentem no texto e alterem as permissões de acesso de outros usuários.",
+        "C": "O recurso de Histórico de Versões permite rastrear quem realizou cada modificação, com data e hora, possibilitando restaurar uma versão íntegra anterior em caso de exclusão acidental de conteúdo.",
+        "D": "Em videoconferências corporativas no Microsoft Teams ou Google Meet, gravar a reunião substitui a necessidade de observar normas de privacidade ou informar os participantes, por tratar-se de armazenamento em nuvem.",
+        "E": "Arquivos mantidos em pastas sincronizadas pelo OneDrive ou Google Drive só podem ser abertos se o usuário exportar primeiro uma cópia em PDF para sua área de trabalho local."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Plataformas colaborativas em nuvem mantêm automaticamente um **Histórico de Versões**, registrando autoria, carimbo de data/hora e permitindo reverter edições indesejadas sem depender de mídia removível.",
+        "fundamento_legal_ou_teorico": "Recursos essenciais de colaboração em nuvem (Microsoft 365 / Google Workspace): 1) Coautoria em tempo real; 2) Histórico de versões imutável/auditável; 3) Níveis granulares de permissão (Leitor/Visualização < Comentarista < Editor < Proprietário).",
+        "analise_alternativas": {
+          "A": "INCORRETA. O histórico de versões nativo salva revisões cronológicas por autor, permitindo restauração instantânea.",
+          "B": "INCORRETA. Permissão de leitura/visualização restringe o usuário a ler/baixar (se permitido), sem editar texto nem gerenciar acessos de terceiros.",
+          "C": "CORRETA. Descreve com fidelidade o versionamento automático e a auditabilidade das ferramentas colaborativas online.",
+          "D": "INCORRETA. A LGPD e as políticas institucionais exigem transparência e aviso prévio aos participantes sobre qualquer gravação.",
+          "E": "INCORRETA. Os arquivos sincronizam localmente ou abrem diretamente no navegador sem necessidade de conversão prévia em PDF."
+        },
+        "conexao_pratica_ifbaiano": "Na elaboração conjunta de editais ou relatórios de gestão no Google Docs/OneDrive entre campi, o Histórico de Versões salva vidas quando alguém apaga um parágrafo sem querer — basta restaurar a revisão de horas antes!",
+        "pilula_fixacao": "Nuvem colaborativa = coautoria simultânea + Histórico de Versões auditável + níveis de permissão (Ver < Comentar < Editar)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-013",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "20. Estatuto e Regimento Geral da UFBA: Reitoria e CONSUNI",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Competências Executivas da Reitoria e Deliberação Máxima do CONSUNI",
+      "texto_apoio": null,
+      "enunciado": "Nos termos do Estatuto e do Regimento Geral da Universidade Federal da Bahia (UFBA), sobre a administração superior e a competência de seus órgãos de cúpula, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A Reitoria é o órgão normativo máximo da Universidade, competindo-lhe aprovar modificações no Estatuto sem necessidade de submissão a qualquer conselho colegiado.",
+        "B": "O Conselho Universitário (CONSUNI) é o órgão máximo de deliberação política, normativa, administrativa e financeira da UFBA, sendo presidido pelo Reitor.",
+        "C": "O Reitor e o Vice-Reitor da UFBA são eleitos diretamente pelo CONSUNI sem envio de lista tríplice ao Ministério da Educação/Presidência da República.",
+        "D": "O mandato do Conselho de Curadores substitui integralmente as atribuições executivas do Reitor durante os períodos de recesso letivo acadêmico.",
+        "E": "As Pró-Reitorias integram os órgãos colegiados de base das Unidades Universitárias, respondendo hierarquicamente apenas às respectivas Congregações."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O CONSUNI é o órgão máximo de deliberação superior da UFBA em matéria política, normativa, administrativa, financeira e patrimonial, tendo o Reitor como presidente.",
+        "fundamento_legal_ou_teorico": "Estatuto da UFBA + Lei nº 5.540/1968 / Lei nº 9.192/1995: Reitoria = órgão executivo central da administração superior (chefiada pelo Reitor, auxiliado pelo Vice-Reitor e Pró-Reitores); CONSUNI = órgão superior deliberativo e normativo máximo (elabora Estatuto/Regimento, orçamento, PDI e, em colégio conjunto com CONSEPE, organiza a lista tríplice para escolha do Reitor/Vice-Reitor).",
+        "analise_alternativas": {
+          "A": "INCORRETA. A Reitoria é órgão EXECUTIVO (não normativo máximo). Quem aprova modificações estatutárias/regimentais é o CONSUNI.",
+          "B": "CORRETA. Descreve fielmente a natureza máxima e a presidência do CONSUNI conforme o Estatuto da UFBA.",
+          "C": "INCORRETA. A nomeação do Reitor e Vice-Reitor nas IFES decorre de escolha presidencial a partir de lista tríplice organizada pelo colegiado competente.",
+          "D": "INCORRETA. O Conselho de Curadores tem função fiscalizadora econômico-financeira, jamais substituindo a função executiva da Reitoria.",
+          "E": "INCORRETA. As Pró-Reitorias são órgãos executivos da Administração Central vinculados diretamente à Reitoria."
+        },
+        "conexao_pratica_ifbaiano": "Como você trabalha na Reitoria do IF Baiano, associe rapidamente: Reitoria = Poder Executivo (faz acontecer, coordena Pró-Reitorias e executa atos); CONSUNI (equivalente ao CONSUP no IF) = Órgão Colegiado Máximo que aprova orçamento, PDI e o próprio Estatuto!",
+        "pilula_fixacao": "UFBA: Reitoria = Executivo Central; CONSUNI = Deliberação Máxima Geral (presidido pelo Reitor)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-014",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "20. Estatuto da UFBA: CONSEPE, Conselhos Acadêmicos (CAE/CAPEX), Curadores e Gestão Administrativa",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Diferenciação de Competências entre os Órgãos Superiores Colegiados da UFBA",
+      "texto_apoio": null,
+      "enunciado": "Considerando a repartição de atribuições prevista no Estatuto e Regimento Geral da UFBA entre os órgãos colegiados superiores, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Compete ao Conselho Superior de Ensino, Pesquisa e Extensão (CONSEPE) coordenar e deliberar sobre a política estritamente acadêmica da UFBA, atuando de forma articulada com os Conselhos Acadêmicos (CAE e CAPEX).",
+        "B": "O Conselho de Curadores tem como competência primordial definir currículos de graduação e aprovar o calendário letivo anual da Universidade.",
+        "C": "Os Conselhos Acadêmicos (CAE e CAPEX) sobrepõem-se hierarquicamente ao CONSUNI para alterar o Estatuto da UFBA em matérias de extensão.",
+        "D": "Às câmaras administrativas ou pró-reitorias de planejamento e administração (PROPLAN/PROAD) compete julgar em última instância recursal os processos disciplinares acadêmicos contra decisões das Congregações.",
+        "E": "O CONSEPE possui competência exclusiva para julgar recursos contra atos administrativos e financeiros expedidos pelo CONSUNI."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "O CONSEPE é o órgão superior colegiado voltado à formulação, coordenação e deliberação em matéria acadêmica (ensino, pesquisa e extensão), em articulação com os Conselhos Acadêmicos (CAE e CAPEX).",
+        "fundamento_legal_ou_teorico": "Estatuto da UFBA: CONSUNI = deliberação política, administrativa e financeira máxima (inclui julgar recursos contra decisões do CONSEPE e Conselhos Acadêmicos); CONSEPE = política superior acadêmica (ensino, pesquisa e extensão); CAE e CAPEX = Conselhos Acadêmicos específicos de Ensino e de Pesquisa/Extensão; Conselho de Curadores = fiscalização econômico-financeira e patrimonial; PROPLAN/PROAD = execução administrativa/orçamentária.",
+        "analise_alternativas": {
+          "A": "CORRETA. Reflete exatamente a repartição acadêmica entre CONSEPE, CAE e CAPEX no Estatuto da UFBA.",
+          "B": "INCORRETA. O Conselho de Curadores é órgão de controle e fiscalização econômico-financeira e patrimonial, não acadêmica.",
+          "C": "INCORRETA. O CONSUNI é o órgão máximo e instância superior de recurso em relação ao CONSEPE e Conselhos Acadêmicos.",
+          "D": "INCORRETA. Pró-reitorias (PROPLAN/PROAD) são órgãos executivos/técnicos, não instância recursal máxima sobre Congregações (que cabe aos Conselhos Superiores).",
+          "E": "INCORRETA. Inversão de hierarquia: o CONSUNI julga recursos do CONSEPE, jamais o contrário."
+        },
+        "conexao_pratica_ifbaiano": "Cuidado com siglas em provas: na UFBA existem CONSUNI (geral máximo), CONSEPE (acadêmico superior), CAE (ensino), CAPEX (pesquisa e extensão) e Conselho de Curadores (controle financeiro). Quando aparecer referência a câmaras/conselhos de administração e planejamento (como CAP/PROPLAN/PROAD), lembre que o controle econômico-financeiro formal compete aos Curadores e ao CONSUNI!",
+        "pilula_fixacao": "UFBA: CONSEPE/CAE/CAPEX = Acadêmico; Curadores = Fiscalização Financeira; CONSUNI = Cúpula Geral e Recursos."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-015",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "20. Estatuto e Regimento Geral da UFBA: Unidades Universitárias e Congregação",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Natureza e Competências da Congregação nas Faculdades, Escolas e Institutos",
+      "texto_apoio": null,
+      "enunciado": "No modelo organizacional estabelecido pelo Estatuto e Regimento Geral da UFBA para as Unidades Universitárias (Faculdades, Escolas e Institutos), assinale a alternativa CORRETA sobre a Congregação.",
+      "alternativas": {
+        "A": "A Congregação é órgão executivo unipessoal chefiado exclusivamente pelos coordenadores de curso, vedada a participação de servidores técnico-administrativos e discentes.",
+        "B": "Compete à Congregação aprovar diretamente em definitivo o Regimento Interno da Unidade Universitária sem qualquer apreciação ou homologação pelo CONSUNI.",
+        "C": "A Congregação constitui o órgão deliberativo e normativo máximo no âmbito de cada Unidade Universitária, contando com representação docente, técnico-administrativa e discente, além de direção da Unidade.",
+        "D": "Os Colegiados de Curso são órgãos hierarquicamente superiores à Congregação e à Diretoria da Unidade Universitária em matéria orçamentária.",
+        "E": "Na UFBA, as Unidades Universitárias gozam de personalidade jurídica de autarquias independentes da Reitoria, podendo criar seus próprios cargos públicos."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A Congregação é o órgão colegiado deliberativo e normativo máximo dentro de cada Unidade Universitária da UFBA (Faculdades, Escolas e Institutos), com representação dos segmentos da comunidade (docentes, técnicos, discentes) e direção.",
+        "fundamento_legal_ou_teorico": "Estatuto e Regimento Geral da UFBA: Unidades Universitárias possuem como órgãos a Congregação (deliberativo superior local), a Diretoria (executivo local), Departamentos e Colegiados de Curso. A Congregação elabora o Regimento Interno da Unidade e o submete à aprovação do CONSUNI.",
+        "analise_alternativas": {
+          "A": "INCORRETA. É órgão colegiado (não unipessoal) e assegura representação dos técnico-administrativos e discentes (CF Art. 206 gestão democrática + LDB Art. 56).",
+          "B": "INCORRETA. O Regimento Interno da Unidade elaborado pela Congregação deve ser submetido ao CONSUNI para aprovação/homologação.",
+          "C": "CORRETA. Define exatamente a função, o alcance local e a representatividade da Congregação na UFBA.",
+          "D": "INCORRETA. Colegiados de Curso cuidam da gestão pedagógica específica dos cursos, subordinados às diretrizes da Unidade e Conselhos Superiores.",
+          "E": "INCORRETA. A autarquia é a UFBA como um todo; suas unidades não têm personalidade jurídica própria nem competência para criar cargos públicos (que depende de lei)."
+        },
+        "conexao_pratica_ifbaiano": "No IF Baiano você lida com os Conselhos de Campus; na UFBA, a autoridade colegiada máxima dentro de cada Faculdade/Instituto chama-se **Congregação** — nome clássico que o Avalia cobra para testar conhecimento do Estatuto baiano!",
+        "pilula_fixacao": "Congregação = \"CONSUNI local\" da Faculdade/Instituto/Escola (deliberativa máxima da Unidade; regimento vai ao CONSUNI)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-016",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "20. Regimento Geral da UFBA: Ouvidoria Geral e SisOuv",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Vinculação, Autonomia, Escolha e Mandato na Ouvidoria da UFBA",
+      "texto_apoio": null,
+      "enunciado": "Com base nas disposições regimentais sobre a Ouvidoria Geral da Universidade Federal da Bahia (UFBA), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A Ouvidoria integra a estrutura das unidades privadas terceirizadas e não possui qualquer vinculação administrativa com a Reitoria nem integração com o Sistema de Ouvidoria do Poder Executivo Federal (SisOuv).",
+        "B": "Vinculada administrativamente à Reitoria e dotada de autonomia e independência funcional, a Ouvidoria tem seu titular indicado pelo Reitor e aprovado pelo CONSUNI para mandato de 2 anos, permitida uma recondução.",
+        "C": "O cargo de Ouvidor da UFBA é de livre escolha dos diretórios estudantis sem participação do Reitor nem do CONSUNI, com mandato vitalício.",
+        "D": "Compete à Ouvidoria aplicar diretamente sanções disciplinares de demissão e suspensão aos servidores denunciados por usuários externos.",
+        "E": "As manifestações recebidas pela Ouvidoria restringem-se exclusivamente a denúncias anônimas contra terceirizados, sendo vedado o recebimento de elogios ou sugestões."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "A Ouvidoria da UFBA vincula-se administrativamente à Reitoria, porém atua com autonomia/independência funcional, integra o SisOuv, e seu Ouvidor é indicado pelo Reitor e aprovado pelo CONSUNI para mandato de 2 anos (permitida 1 recondução).",
+        "fundamento_legal_ou_teorico": "Regimento Geral da UFBA + Decreto nº 9.492/2018 (SisOuv) + Lei nº 13.460/2017: Ouvidoria media conflitos e recebe reclamações, denúncias, solicitações, sugestões e elogios; NÃO possui competência correcional/punitiva direta (encaminha indícios para apuração pela corregedoria/autoridade competente).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Integra a estrutura da UFBA vinculada administrativamente à Reitoria e participa do SisOuv (rede federal de ouvidorias).",
+          "B": "CORRETA. Reproduz com exatidão vinculação, autonomia, forma de escolha (indicação do Reitor + aprovação CONSUNI) e mandato de 2 anos com 1 recondução.",
+          "C": "INCORRETA. Não há mandato vitalício no serviço público nem escolha isolada fora do rito Reitor/CONSUNI.",
+          "D": "INCORRETA. Ouvidoria NÃO pune nem instaura PAD diretamente; recebe, analisa, orienta e encaminha às autoridades competentes.",
+          "E": "INCORRETA. Conforme a Lei nº 13.460/2017, ouvidorias recebem denúncias, reclamações, solicitações, sugestões e elogios de qualquer usuário/cidadão."
+        },
+        "conexao_pratica_ifbaiano": "Na Reitoria do IF Baiano você vê a Ouvidoria atuando pelo Fala.BR / SisOuv: o macete de prova é nunca atribuir poder PUNITIVO ou de julgar PAD à Ouvidoria — ela media, encaminha e acompanha prazos!",
+        "pilula_fixacao": "Ouvidoria UFBA: vinculada à Reitoria + independência funcional + Reitor indica / CONSUNI aprova + 2 anos (+1 recondução). NÃO pune!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-017",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "19. Lei nº 11.091/2005 (PCCTAE): Incentivo à Qualificação e Atualizações (Lei nº 15.141/2025)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 125,
+      "perfil_cobranca": "Natureza, Percentuais Vigentes e Não Cumulatividade do Incentivo à Qualificação",
+      "texto_apoio": "Pedro ingressará na UFBA no cargo de Assistente em Administração (Nível de Classificação D — exigência de escolaridade de nível médio). Graduado em Desenho Industrial pela UNEB, ele consulta as regras do Incentivo à Qualificação (IQ) da Lei nº 11.091/2005 (PCCTAE), consideradas as alterações vigentes a partir de janeiro de 2025 (MP nº 1.286/2024 / Lei nº 15.141/2025).",
+      "enunciado": "Considerando o regime jurídico do Incentivo à Qualificação na carreira dos Técnico-Administrativos em Educação (PCCTAE), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O Incentivo à Qualificação não pode ser pago a ocupantes de cargo de Nível D que apresentem diploma de graduação, pois a gratificação restringe-se exclusivamente a mestrados e doutorados.",
+        "B": "Caso o servidor possua diploma de Graduação e posteriormente conclua Especialização lato sensu, poderá acumular simultaneamente os dois percentuais (25% + 30% = 55%) sobre seu vencimento básico.",
+        "C": "O Incentivo à Qualificação é devido ao servidor que possui educação formal superior à exigida para ingresso no cargo, adotando percentuais únicos por nível de titulação sobre o padrão de vencimento (ex.: 25% para graduação, 30% para especialização, 52% para mestrado e 75% para doutorado), sem cumulatividade.",
+        "D": "Pela redação vigente desde 2025, manteve-se a redução do percentual de 25% para 15% na graduação sempre que o curso não possuir relação direta com o ambiente organizacional.",
+        "E": "O Incentivo à Qualificação confunde-se com a Progressão por Mérito Profissional, sendo concedido automaticamente a cada 12 meses de efetivo exercício mediante avaliação de desempenho."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "O Incentivo à Qualificação remunera a escolaridade formal superior à exigida para o cargo (no caso de Nível D, graduação já gera 25%), sendo regido atualmente por percentual único sem distinção de área direta/indireta (extinta em 2025 pela Lei nº 15.141/2025) e sem acumulação de títulos.",
+        "fundamento_legal_ou_teorico": "Lei nº 11.091/2005, Arts. 11 e 12 e Anexo IV (com a redação da MP nº 1.286/2024 / Lei nº 15.141/2025): Graduação = 25%; Especialização (>=360h) = 30%; Mestrado = 52%; Doutorado = 75% sobre o padrão de vencimento percebido, não acumuláveis e sem a antiga redução por relação indireta a partir de 01/01/2025.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Como a exigência do cargo de Assistente em Administração (Nível D) é o Ensino Médio, a Graduação (25%), a Especialização (30%), o Mestrado (52%) e o Doutorado (75%) já geram direito ao IQ!",
+          "B": "INCORRETA. Os percentuais de Incentivo à Qualificação NÃO são cumulativos: ao apresentar título superior, substitui-se o percentual menor pelo maior.",
+          "C": "CORRETA. Alinhadíssima com a situação real de Pedro e com a legislação atualizada do PCCTAE em 2025/2026.",
+          "D": "INCORRETA. A diferenciação entre relação direta (25%/30%/52%/75%) e relação indireta (15%/20%/35%/50%) foi extinta a partir de 1º/01/2025 (Lei nº 15.141/2025), unificando no percentual cheio.",
+          "E": "INCORRETA. Progressão por Mérito Profissional decorre da avaliação de desempenho (interstício reduzido para 12 meses), não de diploma formal."
+        },
+        "conexao_pratica_ifbaiano": "Notícia excelente para você pessoalmente, Pedro! Como graduado pela UNEB assumindo cargo Nível D (nível médio) na UFBA, sua graduação já garante **25%** de Incentivo à Qualificação logo após o ingresso, sem depender mais da antiga discussão sobre \"relação direta x indireta\", pois a Lei nº 15.141/2025 unificou tudo em percentual único!",
+        "pilula_fixacao": "PCCTAE (IQ): escolaridade FORMAL superior ao cargo -> Grad 25%, Esp 30%, Mest 52%, Dout 75% (NÃO acumula; sem corte indireto desde 2025)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-018",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "19. Lei nº 11.091/2005 (PCCTAE): Capacitação, Aceleração e Progressão por Mérito",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Diferenciação entre Incentivo à Qualificação, Capacitação e Mérito no PCCTAE",
+      "texto_apoio": null,
+      "enunciado": "Considerando as formas de desenvolvimento do servidor técnico-administrativo na carreira disciplinada pela Lei nº 11.091/2005 (PCCTAE, considerando suas atualizações vigentes em 2025/2026), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A Progressão por Mérito Profissional independe de avaliação de desempenho, bastando ao servidor completar 36 meses de exercício sem faltas injustificadas.",
+        "B": "Um mesmo certificado de curso de extensão de 40 horas utilizado para obter mudança de padrão por Aceleração da Progressão por Capacitação pode ser reutilizado sucessivas vezes nos quinquênios seguintes.",
+        "C": "Enquanto o Incentivo à Qualificação premia títulos de escolaridade formal superior à exigida pelo cargo (graduação/pós-graduação), o desenvolvimento por capacitação baseia-se em ações e programas de desenvolvimento/capacitação profissional compatíveis com o cargo e respeitado o interstício legal.",
+        "D": "O Plano de Desenvolvimento dos Integrantes do PCCTAE tem aplicação facultativa às universidades federais, abrangendo somente os institutos federais.",
+        "E": "As ações de capacitação profissional computadas no PCCTAE exigem obrigatoriamente que o curso tenha duração mínima de 360 horas e seja reconhecido como pós-graduação stricto sensu pela CAPES."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "No PCCTAE (Lei nº 11.091/2005), há clara separação conceitual: o Incentivo à Qualificação exige escolaridade formal (diploma de ensino médio, graduação, pós), enquanto a capacitação/aceleração exige ações de treinamento e desenvolvimento profissional com carga horária somável e compatibilidade com o cargo/ambiente.",
+        "fundamento_legal_ou_teorico": "Lei nº 11.091/2005 (Arts. 9º, 10, 10-A e 11): 1) Progressão por Mérito Profissional exige resultado favorável em programa de avaliação de desempenho + interstício (reduzido de 18 para 12 meses pela MP 1.286/2024 / Lei 15.141/2025); 2) Aceleração da Progressão por Capacitação (antiga progressão por capacitação) usa certificados de ações de desenvolvimento com carga horária do Anexo III-A e interstício de 5 anos — vedado o reaproveitamento do mesmo evento; 3) Aplica-se a todas as IFES vinculadas ao MEC (Universidades e Institutos Federais).",
+        "analise_alternativas": {
+          "A": "INCORRETA. A Progressão por Mérito exige expressamente avaliação de desempenho favorável e não tem interstício de 36 meses (era 18, passando a 12 meses na reforma 2024/2025).",
+          "B": "INCORRETA. Cada evento/certificado de capacitação é computado UMA ÚNICA VEZ, sendo vedada a reutilização.",
+          "C": "CORRETA. Distingue com precisão jurídica escolaridade formal (IQ) de ações de desenvolvimento/capacitação (Capacitação).",
+          "D": "INCORRETA. A Lei nº 11.091/2005 rege os TAE de todas as Instituições Federais de Ensino vinculadas ao MEC (tanto IFs quanto Universidades como a UFBA).",
+          "E": "INCORRETA. 360 horas é a exigência típica de especialização (lato sensu), e stricto sensu é mestrado/doutorado; ações de capacitação admitem cursos curtos com somatório de horas conforme anexo da lei."
+        },
+        "conexao_pratica_ifbaiano": "Como servidor de IFES você já conhece a rotina de juntar certificados da ENAP para capacitação: na prova do Avalia, lembre que a mesma lei do PCCTAE rege tanto seus colegas do IF Baiano quanto você na UFBA — e cada certificado só vale uma única vez!",
+        "pilula_fixacao": "Capacitação (ENAP/cursos curtos) != Qualificação (diploma formal). Certificado usado na capacitação NÃO se reaproveita!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-019",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "11. Decreto nº 9.830/2019 (LINDB): Erro Grosseiro e Responsabilização do Parecerista",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Limites à Responsabilização de Agentes e Pareceristas no Art. 12 do Decreto 9.830/2019",
+      "texto_apoio": null,
+      "enunciado": "Nos termos do art. 12 do Decreto nº 9.830/2019 (que regulamenta os arts. 20 a 30 da LINDB sobre segurança jurídica na gestão pública), assinale a alternativa CORRETA acerca da responsabilização de agentes públicos e pareceristas.",
+      "alternativas": {
+        "A": "O agente público responderá pessoalmente por suas decisões ou opiniões técnicas em qualquer hipótese de culpa leve ou divergência interpretativa razoável.",
+        "B": "Considera-se erro grosseiro aquele manifesto, evidente e inescusável praticado com culpa grave, caracterizado por ação ou omissão com elevado grau de negligência, imprudência ou imperícia.",
+        "C": "O montante expressivo e vultoso do dano ao erário, isoladamente considerado, é suficiente por si só para caracterizar a ocorrência de erro grosseiro do gestor.",
+        "D": "A responsabilização do autor da opinião técnica (parecerista) estende-se automática e objetivamente ao gestor decisor que nela se fundamentou, independentemente de conluio.",
+        "E": "O mero nexo de causalidade entre a conduta administrativa regular e o prejuízo eventual gera responsabilização civil pessoal imediata do servidor estatutário."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O art. 12, § 1º do Decreto nº 9.830/2019 define expressamente erro grosseiro como aquele manifesto, evidente e inescusável, praticado com culpa grave (elevado grau de negligência, imprudência ou imperícia).",
+        "fundamento_legal_ou_teorico": "Decreto nº 9.830/2019, Art. 12: caput exige DOLO ou ERRO GROSSEIRO; § 1º define erro grosseiro (culpa grave); § 4º afirma que o mero nexo de causalidade e o montante do dano, por si sós, não caracterizam erro grosseiro; § 6º determina que a responsabilidade do parecerista não se estende automaticamente ao decisor, salvo conluio ou se havia elementos para o decisor aferir o dolo/erro grosseiro.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Culpa leve ou divergência interpretativa razoável NÃO geram responsabilização pessoal — exige-se dolo ou erro grosseiro (culpa grave).",
+          "B": "CORRETA. Literalidade exata do art. 12, § 1º do Decreto nº 9.830/2019.",
+          "C": "INCORRETA. O § 4º veda que o montante do dano ao erário, ainda que expressivo, seja usado isoladamente para caracterizar erro grosseiro.",
+          "D": "INCORRETA. Conforme § 6º, a responsabilidade pela opinião técnica não se estende de forma automática ao decisor.",
+          "E": "INCORRETA. O art. 12, § 4º afasta a responsabilização por mero nexo causal sem comprovação de dolo ou culpa grave."
+        },
+        "conexao_pratica_ifbaiano": "Na Reitoria, gestores às vezes temem assinar despachos por medo do \"apagão das canetas\". A LINDB (Lei 13.655/18) e o Decreto 9.830/19 existem exatamente para blindar o gestor honesto contra culpa leve ou opinião divergente — só pune dolo ou erro grosseiro!",
+        "pilula_fixacao": "Decreto 9.830/19: Agente só responde por DOLO ou ERRO GROSSEIRO (culpa grave). Valor alto do dano NÃO prova erro sozinho!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-020",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "11. Decreto nº 9.830/2019 (LINDB): Motivação e Decisão Consequencialista",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Dever de Motivação Concreta e Análise das Consequências (Arts. 2º a 4º)",
+      "texto_apoio": null,
+      "enunciado": "Considerando o dever de motivação e segurança jurídica disciplinado pelo Decreto nº 9.830/2019 para as decisões nas esferas administrativa, controladora e judicial, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A decisão administrativa poderá fundamentar-se exclusivamente em valores jurídicos abstratos, como \"interesse público genérico\", dispensando a indicação das consequências práticas.",
+        "B": "A motivação deverá conter os seus fundamentos de fato e de direito e contextualizar os fatos que geraram a decisão, considerando as consequências práticas e eventuais obstáculos e dificuldades reais enfrentados pelo gestor.",
+        "C": "Quando invalidar ato ou contrato administrativo, a autoridade está proibida de indicar condições de regularização proporcional, devendo sempre anular com efeito retroativo imediato.",
+        "D": "O gestor que decide afastar-se de parecer técnico ou jurídico prévio está desobrigado de motivar as razões dessa divergência nos autos do processo.",
+        "E": "As novas orientações gerais adotadas pela Administração Pública retroagem obrigatoriamente para desconstituir situações consolidadas segundo interpretação anterior vigente à época dos fatos."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Nos termos dos arts. 2º, 3º e 8º do Decreto nº 9.830/2019, a decisão não pode basear-se apenas em valores jurídicos abstratos; deve explicitar fatos, fundamentos jurídicos e suas consequências práticas, considerando dificuldades reais do gestor.",
+        "fundamento_legal_ou_teorico": "Decreto nº 9.830/2019: Art. 2º e 3º (motivação contextualizada + vedação à decisão com base exclusiva em valores abstratos sem demonstrar consequências práticas); Art. 4º (invalidação exige indicar consequências jurídicas/administrativas e condições de regularização proporcional); Art. 5º/24 LINDB (orientação nova não retroage para invalidar situações consolidadas na orientação antiga).",
+        "analise_alternativas": {
+          "A": "INCORRETA. O art. 3º proíbe expressamente decidir com base apenas em valores jurídicos abstratos sem examinar as consequências práticas.",
+          "B": "CORRETA. Consolida o núcleo consequencialista e contextual dos arts. 2º, 3º e 8º do Decreto nº 9.830/2019.",
+          "C": "INCORRETA. O art. 4º impõe, ao invalidar ato/contrato, demonstrar consequências e indicar condições de regularização proporcional e equânime.",
+          "D": "INCORRETA. Afastar parecer técnico sem fundamentação consistente viola o dever qualificado de motivação (Art. 50 da Lei 9.784/99 e Decreto 9.830/19).",
+          "E": "INCORRETA. Pelo art. 24 da LINDB e art. 5º do Decreto 9.830/19, é vedado revisar atos perfeitos com base em mudança posterior de orientação geral."
+        },
+        "conexao_pratica_ifbaiano": "Na elaboração de despachos decisórios no SEI, evite justificativas vazias do tipo \"indefiro por conveniência administrativa\". O Decreto 9.830/19 exige amarrar fato + lei + consequência prática realista!",
+        "pilula_fixacao": "Decreto 9.830/19: Proibido decidir só por princípio abstrato (\"interesse público\") — motive fatos + consequências práticas!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-021",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "12. Lei nº 14.129/2021 (Governo Digital): CPF/CNPJ, Bases e Autoatendimento",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Princípios, Identificação Única (Art. 28) e Plataforma Digital Única",
+      "texto_apoio": null,
+      "enunciado": "À luz da Lei nº 14.129/2021 (Lei do Governo Digital), que dispõe sobre princípios, regras e instrumentos para o aumento da eficiência da Administração Pública por meio da desburocratização e da transformação digital, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Fica estabelecido o número de inscrição no CPF ou no CNPJ como número suficiente para identificação do cidadão ou da pessoa jurídica nos bancos de dados de serviços públicos, garantida a gratuidade da inscrição no CPF.",
+        "B": "A implementação de plataformas digitais de governo eletrônico autoriza os órgãos públicos federais a extinguir totalmente qualquer canal de atendimento presencial, mesmo para pessoas sem acesso digital.",
+        "C": "Os órgãos públicos devem exigir do usuário que traga cópia impressa autenticada de dados já existentes em outros órgãos federais, diante da vedação absoluta de interoperabilidade entre sistemas.",
+        "D": "O autoatendimento por meios digitais aplica-se apenas a empresas privadas contratadas pelo Estado, sendo vedado o seu uso em universidades e autarquias federais.",
+        "E": "As bases de dados de acesso público em formato aberto devem ser publicadas exclusivamente em arquivos PDF digitalizados como imagem não pesquisável."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "O art. 28 da Lei nº 14.129/2021 consagrou o número de inscrição no CPF (para pessoas físicas) e no CNPJ (para pessoas jurídicas) como identificador único suficiente nos bancos de dados públicos.",
+        "fundamento_legal_ou_teorico": "Lei nº 14.129/2021: Art. 28 (CPF/CNPJ suficiente nas bases públicas); Art. 3º (desburocratização, interoperabilidade, estímulo ao autoatendimento digital sem prejuízo da inclusão e manutenção de atendimento presencial quando necessário - Art. 14); Art. 29 (dados abertos em formato legível por máquina, não PDF imagem!).",
+        "analise_alternativas": {
+          "A": "CORRETA. Literalidade do art. 28 da Lei do Governo Digital (inclusive base da simplificação do número único de identificação nacional).",
+          "B": "INCORRETA. A lei incentiva o digital e o autoatendimento, mas prevê inclusão digital e manutenção de canais presenciais acessíveis (Art. 14 e Art. 3º).",
+          "C": "INCORRETA. Oposto ao art. 3º e 25/26: o poder público deve interoperar bases e evitar exigir dados que já possui.",
+          "D": "INCORRETA. A Lei do Governo Digital aplica-se aos órgãos da Administração direta e indireta (incluindo autarquias como UFBA e IFs, conforme Art. 2º).",
+          "E": "INCORRETA. Dados abertos exigem formato aberto e legível por máquina (CSV, JSON, XML), jamais imagem estática não estruturada."
+        },
+        "conexao_pratica_ifbaiano": "Você já vê o art. 28 da Lei 14.129/21 funcionando na prática no login único **Gov.br** (que usa o CPF para acessar SUAP, SouGov, e-CAC e vestibular/matrícula). Para dados abertos no portal institucional, lembre: formato legível por máquina, nunca imagem!",
+        "pilula_fixacao": "Lei 14.129/21 (Art. 28): CPF ou CNPJ = número SUFICIENTE nas bases públicas; Dados abertos = formato legível por máquina."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-022",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "13. Lei nº 8.159/1991: Política Nacional de Arquivos Públicos e Privados",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Gestão Documental, Três Idades, CONARQ/SINAR e Eliminação na Lei de Arquivos",
+      "texto_apoio": null,
+      "enunciado": "Nos termos literais da Lei nº 8.159/1991 (Política Nacional de Arquivos Públicos e Privados), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Consideram-se documentos correntes aqueles que já cumpriram seu prazo administrativo e aguardam destinação definitiva na fase de guarda permanente.",
+        "B": "A eliminação de documentos produzidos por instituições públicas será realizada a critério exclusivo de cada servidor responsável pelo setor, dispensando autorização da instituição arquivística pública competente.",
+        "C": "Os documentos de valor permanente são inalienáveis e imprescritíveis, sendo dever do Poder Público a gestão documental e a proteção especial a documentos de arquivos.",
+        "D": "O Conselho Nacional de Arquivos (CONARQ) é órgão colegiado subordinado ao Poder Legislativo estadual, sem vinculação com o Arquivo Nacional.",
+        "E": "Considera-se gestão de documentos exclusivamente a conservação histórica dos arquivos permanentes após cem anos de sua produção."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "O art. 10 da Lei nº 8.159/1991 dispõe expressamente que os documentos de valor permanente são inalienáveis e imprescritíveis, e o art. 1º estabelece ser dever do Poder Público a gestão documental e proteção especial.",
+        "fundamento_legal_ou_teorico": "Lei nº 8.159/1991: Art. 1º (dever do Poder Público); Art. 3º (gestão de documentos = produção, tramitação, uso, avaliação e arquivamento em fase corrente e intermediária visando eliminação ou recolhimento); Art. 8º (correntes, intermediários e permanentes); Art. 9º (eliminação depende de autorização da instituição arquivística pública competente); Art. 10 (permanentes são inalienáveis e imprescritíveis); Art. 26 (CONARQ vinculado ao Arquivo Nacional define política e exerce orientação normativa do SINAR).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Quem aguarda eliminação ou recolhimento para guarda permanente são os documentos INTERMEDIÁRIOS (Art. 8º, § 2º). Correntes estão em curso ou são de consulta frequente (§ 1º).",
+          "B": "INCORRETA. Conforme Art. 9º, a eliminação de documentos públicos será realizada mediante autorização da instituição arquivística pública na sua específica esfera de competência.",
+          "C": "CORRETA. Literalidade exata dos arts. 1º e 10 da Lei nº 8.159/1991.",
+          "D": "INCORRETA. Conforme Art. 26, o CONARQ é órgão vinculado ao Arquivo Nacional, integrante da estrutura federal.",
+          "E": "INCORRETA. Pelo Art. 3º, a gestão de documentos atua justamente nas fases CORRENTE e INTERMEDIÁRIA!"
+        },
+        "conexao_pratica_ifbaiano": "Fique atento à pegadinha do Art. 3º da Lei 8.159/91: **gestão de documentos** não cuida só do arquivo \"morto\" — ela abrange as fases **corrente e intermediária**! E documento permanente não prescreve nem pode ser vendido/doado (inalienável e imprescritível).",
+        "pilula_fixacao": "Lei 8.159/91: Permanentes = INALIENÁVEIS e IMPRESCRITÍVEIS! Eliminação = só com autorização arquivística."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-023",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "4. Lei nº 8.112/1990: Hipóteses de Demissão vs. Advertência e Suspensão",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Enquadramento das Infrações Disciplinares nos Arts. 117, 129, 130 e 132",
+      "texto_apoio": null,
+      "enunciado": "Considerando o regime disciplinar da Lei nº 8.112/1990, assinale a alternativa que apresenta EXCLUSIVAMENTE conduta punível com a penalidade de DEMISSÃO (Art. 132) — e não apenas advertência ou suspensão.",
+      "alternativas": {
+        "A": "Ausentar-se do serviço durante o expediente, sem prévia autorização do chefe imediato.",
+        "B": "Recusar fé a documentos públicos ou opor resistência injustificada ao andamento de documento e processo.",
+        "C": "Configurar inassiduidade habitual, assim entendida a falta ao serviço, sem causa justificada, por sessenta dias, interpoladamente, durante o período de doze meses.",
+        "D": "Retirar, sem prévia anuência da autoridade competente, qualquer documento ou objeto da repartição.",
+        "E": "Promover manifestação de apreço ou desapreço no recinto da repartição."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A inassiduidade habitual (60 dias de falta injustificada, interpoladamente, em 12 meses) consta expressamente do art. 132, III, e § 1º (art. 139) como hipótese de **demissão**. As opções A, B, D e E são proibições dos incisos I a VIII do art. 117, punidas com **advertência** (ou suspensão na reincidência).",
+        "fundamento_legal_ou_teorico": "Lei nº 8.112/1990: Art. 129 (Advertência = violação do Art. 117, I a VIII e XIX, ou inobservância de dever funcional do Art. 116). Art. 130 (Suspensão até 90 dias = reincidência em advertência e violações que não justifiquem demissão). Art. 132 (Demissão = crime contra Adm., abandono >30 dias consecutivos, inassiduidade 60 dias interpolados em 12 meses, improbidade, incontinência pública, insubordinação grave, ofensa física, aplicação irregular de dinheiros, revelação de segredo, lesão aos cofres, corrupção, acumulação ilegal e Art. 117 IX a XVI).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Art. 117, I — punida inicialmente com ADVERTÊNCIA (Art. 129).",
+          "B": "INCORRETA. Art. 117, III e IV — ambas punidas inicialmente com ADVERTÊNCIA (Art. 129).",
+          "C": "CORRETA. Art. 132, III c/c art. 139: 60 dias interpolados em 12 meses = inassiduidade habitual -> DEMISSÃO.",
+          "D": "INCORRETA. Art. 117, II — punida inicialmente com ADVERTÊNCIA (Art. 129).",
+          "E": "INCORRETA. Art. 117, V — punida inicialmente com ADVERTÊNCIA (Art. 129)."
+        },
+        "conexao_pratica_ifbaiano": "Tabela mental imbatível para a Lei nº 8.112/90: **Art. 117, I a VIII + XIX** = Advertência (ex.: sair sem autorização, recusar fé a documento, retirar objeto sem anuência, manifestar apreço/desapreço). Já **Art. 117, IX a XVI** (valer-se do cargo, propina, gerência de empresa, usura, atuação como procurador) e o **Art. 132** = Demissão direta!",
+        "pilula_fixacao": "Abandono = +30 dias CONSECUTIVOS; Inassiduidade habitual = 60 dias INTERPOLADOS em 12 meses -> AMBOS = DEMISSÃO!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-AP-024",
+      "area": "Administração Pública",
+      "peso": 1,
+      "topico_edital": "4. Lei nº 8.112/1990: Suspensão, Multa Disciplinar e Prazos Prescricionais",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Limites da Penalidade de Suspensão e Prazos de Prescrição (Arts. 130 e 142)",
+      "texto_apoio": null,
+      "enunciado": "Sobre a aplicação da penalidade de suspensão, sua conversão em multa e os prazos prescricionais da ação disciplinar previstos na Lei nº 8.112/1990, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A suspensão não poderá exceder 90 (noventa) dias, podendo ser convertida em multa na base de 50% (cinquenta por cento) por dia de vencimento ou remuneração quando houver conveniência para o serviço.",
+        "B": "Será punido com demissão sumária o servidor que, injustificadamente, recusar-se a ser submetido à inspeção médica determinada pela autoridade competente.",
+        "C": "O prazo de prescrição da ação disciplinar quanto às infrações puníveis com demissão e quanto às puníveis com advertência é uniforme de 5 (cinco) anos.",
+        "D": "O cancelamento dos registros das penalidades de advertência e suspensão nos assentamentos individuais do servidor ocorre após 1 ano e 2 anos, respectivamente, com efeitos retroativos financeiros.",
+        "E": "A abertura de sindicância ou instauração de processo disciplinar não interrompe o curso da prescrição até a decisão final."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "O art. 130, caput e § 2º, fixa que a suspensão não excede 90 dias e, havendo conveniência para o serviço, converte-se em multa de 50% por dia de remuneração, ficando o servidor obrigado a permanecer em serviço.",
+        "fundamento_legal_ou_teorico": "Lei nº 8.112/1990: Art. 130 (suspensão <= 90 dias; recusa a inspeção médica = suspensão de até 15 dias [§ 1º]; conversão em multa 50%/dia [§ 2º]). Art. 131 (cancelamento de registro após 3 anos [advertência] e 5 anos [suspensão], SEM efeitos retroativos). Art. 142 (prescrição: 5 anos demissão/cassação/destituição, 2 anos suspensão, 180 dias advertência; abertura de sindicância ou PAD interrompe a prescrição até decisão final por autoridade competente).",
+        "analise_alternativas": {
+          "A": "CORRETA. Literalidade exata do art. 130, caput e § 2º, da Lei nº 8.112/1990.",
+          "B": "INCORRETA. Recusa injustificada a inspeção médica gera suspensão de até 15 dias (cessando os efeitos tão logo cumprida a determinação — Art. 130, § 1º).",
+          "C": "INCORRETA. Conforme Art. 142: 5 anos para demissão/cassação; 2 anos para suspensão; e 180 dias para advertência!",
+          "D": "INCORRETA. Conforme Art. 131, os prazos de cancelamento são de 3 anos (advertência) e 5 anos (suspensão), SEM efeito retroativo.",
+          "E": "INCORRETA. Conforme Art. 142, § 3º, a abertura de sindicância ou instauração de PAD INTERROMPE a prescrição até a decisão final (prazo máximo de 140 dias de interrupção segundo Súmula 635 STJ / entendimento consolidado)."
+        },
+        "conexao_pratica_ifbaiano": "Guarde a escadinha da Lei 8.112 para nunca trocar prazos: Prescrição = **180 dias** (Adv) -> **2 anos** (Susp) -> **5 anos** (Dem). Cancelamento = **3 anos** (Adv) -> **5 anos** (Susp). Inspeção médica recusada = até **15 dias**.",
+        "pilula_fixacao": "Suspensão max 90d (ou multa 50% trabalhando); Recusa exame = até 15d. Prescrição: 180d (Adv) / 2a (Susp) / 5a (Dem)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-031",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Método Alfabético e Regras de Alfabetação (Nomes Próprios)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Aplicação das Regras de Alfabetação (Grau de Parentesco e Partículas de Ligação)",
+      "texto_apoio": "Em um arquivo de assentamentos funcionais da UFBA organizado pelo método alfabético, o Assistente em Administração precisa arquivar corretamente as pastas dos seguintes servidores:\n1. Pedro Araujo Fernandes\n2. João da Silva Neto\n3. Maria de Oliveira\n4. Heitor Villa-Lobos",
+      "enunciado": "Segundo as regras clássicas de alfabetação da Arquivologia (Marilena Leite Paes), a notação de entrada e a sequência alfabética CORRETA de arquivamento dessas quatro pastas são:",
+      "alternativas": {
+        "A": "FERNANDES, Pedro Araujo -> NETO, João da Silva -> OLIVEIRA, Maria de -> LOBOS, Heitor Villa-",
+        "B": "FERNANDES, Pedro Araujo -> OLIVEIRA, Maria de -> SILVA NETO, João da -> VILLA-LOBOS, Heitor",
+        "C": "ARAUJO FERNANDES, Pedro -> DE OLIVEIRA, Maria -> SILVA NETO, João da -> VILLA-LOBOS, Heitor",
+        "D": "FERNANDES, Pedro Araujo -> OLIVEIRA, Maria de -> NETO, João da Silva -> VILLA-LOBOS, Heitor",
+        "E": "PEDRO ARAUJO FERNANDES -> MARIA DE OLIVEIRA -> JOÃO DA SILVA NETO -> HEITOR VILLA-LOBOS"
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Pelas regras de alfabetação: nomes comuns entram pelo último sobrenome (`FERNANDES, Pedro Araujo`); partículas como \"de/da\" vão após o prenome e não interferem (`OLIVEIRA, Maria de`); sobrenomes com grau de parentesco (`Filho`, `Neto`, `Sobrinho`, `Júnior`) NÃO se separam do sobrenome anterior (`SILVA NETO, João da`); e sobrenomes compostos ligados por hífen NÃO se separam (`VILLA-LOBOS, Heitor`). Em ordem alfabética: F -> O -> S -> V.",
+        "fundamento_legal_ou_teorico": "Regras de Alfabetação (Paes): 1) Considera-se o último sobrenome primeiro, seguido de vírgula e prenome; 2) Partículas (`de`, `da`, `do`, `e`) acompanham o prenome após a vírgula; 3) Designativos de parentesco (`Filho`, `Neto`, `Sobrinho`, `Júnior`) consideram-se parte integrante do último sobrenome; 4) Sobrenomes hifenizados não se separam.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Separou indevidamente o grau de parentesco (`NETO`) e quebrou o sobrenome hifenizado (`VILLA-LOBOS`).",
+          "B": "CORRETA. Entrada e ordenação alfabética (FERNANDES -> OLIVEIRA -> SILVA NETO -> VILLA-LOBOS) perfeitas.",
+          "C": "INCORRETA. Trouxe o sobrenome intermediário (`ARAUJO`) e antepôs a partícula `DE` na alfabetação de `OLIVEIRA`.",
+          "D": "INCORRETA. Isolou `NETO` como palavra de ordenação.",
+          "E": "INCORRETA. Nomes de pessoas físicas sofrem inversão pelo último sobrenome; a ordem direta só se aplica a razões sociais/empresas e instituições."
+        },
+        "conexao_pratica_ifbaiano": "Na organização de pastas funcionais no arquivo de gestão de pessoas, a pegadinha favorita do Instituto Avalia é jogar \"Júnior\", \"Filho\" ou \"Neto\" para a frente! Guarde: parentesco gruda no sobrenome anterior; hífen também não larga a mão!",
+        "pilula_fixacao": "Parentesco (Filho/Neto/Júnior) e Hífen NUNCA se separam! Partícula (de/da/do) vai pro fim após o prenome."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-032",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Regras de Alfabetação (Estrangeiros, Compostos e Pessoas Jurídicas)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Sobrenomes com Santo/Santa, Estrangeiros (O’Brien/D’Almeida) e Nomes de Entidades",
+      "texto_apoio": null,
+      "enunciado": "Considerando ainda as regras técnicas de alfabetação aplicadas à classificação nominal em arquivos públicos, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Nomes de firmas, instituições e órgãos públicos devem ter suas palavras invertidas, arquivando-se \"Universidade Federal da Bahia\" sob a entrada \"BAHIA, Universidade Federal da\".",
+        "B": "Em sobrenomes iniciados por artigo ou apóstrofo em línguas estrangeiras ou consagrados como unidade lexical (como \"D’Almeida\", \"O’Brien\" ou \"La Salle\"), o prefixo faz parte integrante do sobrenome e ordena pela primeira letra desse prefixo.",
+        "C": "Os sobrenomes formados por substantivo + adjetivo ou com nomes de santos (como \"Monte Verde\", \"Santa Rita\", \"Castelo Branco\") devem ser desmembrados, arquivando-se apenas pela última palavra (\"Verde\", \"Rita\", \"Branco\").",
+        "D": "Títulos nobiliárquicos, militares ou acadêmicos (como \"Doutor\", \"Professor\" ou \"General\") precedem o sobrenome na ordenação alfabética principal.",
+        "E": "Nos nomes de congressos e eventos iniciados por algarismo romano (como \"IV Simpósio Baiano de Gestão\"), o arquivamento alfabético ordena obrigatoriamente pela palavra \"IV\" na letra I."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Nos sobrenomes com prefixo/apóstrofo consagrado (`D’Almeida`, `O’Brien`, `La Salle`, `Mac Arthur`), o elemento inicial incorpora-se ao sobrenome e entra na alfabetação exatamente pela primeira letra (`D`, `O`, `L`, `M`).",
+        "fundamento_legal_ou_teorico": "Regras de Alfabetação (Paes): 1) Instituições/Empresas entram na ordem direta, sem inversão (`Universidade Federal da Bahia`), desprezando-se apenas artigos iniciais (`A`, `O`, `Os`, `As`); 2) Títulos acadêmicos/militares não entram na notação principal (ficam entre parênteses ou após o nome); 3) Sobrenomes compostos formados por substantivo+adjetivo ou nomes de santos (`Castelo Branco`, `Monte Verde`, `Santa Rita`) não se separam; 4) Eventos com numeral inicial ordenam-se pela palavra que os segue (`Simpósio Baiano de Gestão (IV)`).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Razões sociais e instituições NÃO sofrem inversão — entram em ordem direta (`Universidade Federal da Bahia`).",
+          "B": "CORRETA. Regra fiel da alfabetação para prefixos ligados por apóstrofo ou artigos/prefixos estrangeiros inseparáveis.",
+          "C": "INCORRETA. Sobrenomes com nomes de santos (`Santa Rita`, `São Paulo`) e compostos consagrados (`Castelo Branco`, `Monte Alegre`) NÃO se separam!",
+          "D": "INCORRETA. Títulos (`Dr.`, `Prof.`, `Dom`) não integram a palavra de ordem.",
+          "E": "INCORRETA. Em congressos/eventos iniciados por numeral (`IV Simpósio...`), o numeral vai para o fim entre parênteses, alfabetando por `Simpósio`."
+        },
+        "conexao_pratica_ifbaiano": "Na catalogação de atas de reuniões e pastas de fornecedores no protocolo, nunca inverta nome de empresa (\"Construtora Salvador Ltda\" entra em C, não em \"LTDA, Construtora Salvador\") nem separe \"Santa\" ou \"Castelo Branco\".",
+        "pilula_fixacao": "Empresas/Órgãos = ordem DIRETA; Santo/Castelo Branco/D’Almeida = NÃO separa; Evento com numeral = numeral vai para o fim."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-033",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Métodos Numérico Simples e Numérico Cronológico",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Diferenciação entre Métodos Diretos e Indiretos (Índice Remissivo)",
+      "texto_apoio": null,
+      "enunciado": "Acerca dos métodos de arquivamento numérico simples e numérico cronológico empregados em setores de arquivo e protocolo, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O método numérico simples é classificado como sistema direto de busca, dispensando qualquer índice alfabético auxiliar para localizar uma pasta pelo nome do interessado.",
+        "B": "No método numérico cronológico, a ordenação dos dossiês é feita exclusivamente pela ordem alfabética do assunto principal, ignorando a data de produção.",
+        "C": "O método numérico simples caracteriza-se como um método indireto, pois atribui uma sequência numérica crescente aos documentos/dossiês e exige consulta prévia a um índice alfabético remissivo (ou sistema informatizado) para recuperação pelo nome ou assunto.",
+        "D": "Uma desvantagem do método numérico simples é a impossibilidade de reaproveitar números vagos ou exigir intercalação constante no meio das estantes já arquivadas.",
+        "E": "No método alfabético simples, diferentemente do numérico simples, a busca é indireta e depende obrigatoriamente de índice auxiliar."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "O método numérico simples é **indireto**: cada processo ou pasta recebe um número sequencial (1, 2, 3...) e, para localizá-lo a partir de um nome ou assunto, torna-se indispensável consultar um índice alfabético remissivo.",
+        "fundamento_legal_ou_teorico": "Métodos Diretos (consulta sem índice auxiliar: alfabético, geográfico, por assunto direto) vs. Métodos Indiretos (exigem índice alfabético remissivo: numérico simples, dígito-terminal, duplex, decimal de Dewey, unitermo). O método numérico cronológico ordena os documentos pela data (ano -> mês -> dia), frequentemente adotado em correspondências expedidas e prontuários temporais.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O numérico simples é o exemplo clássico de método INDIRETO (exige índice remissivo).",
+          "B": "INCORRETA. O numérico cronológico tem como eixo principal a DATA.",
+          "C": "CORRETA. Define precisamente o caráter indireto, a numeração sequencial e a dependência de índice auxiliar do método numérico simples.",
+          "D": "INCORRETA. A grande vantagem do numérico simples é justamente NÃO exigir intercalação no meio do acervo (novas pastas vão para o fim da fila numérica), além de oferecer maior sigilo.",
+          "E": "INCORRETA. Inversão conceitual: o alfabético é DIRETO; o numérico simples é INDIRETO."
+        },
+        "conexao_pratica_ifbaiano": "O número NUP do SEI/SUAP funciona exatamente sob lógica numérica sequencial + índice de pesquisa: você nunca abre pastas pelo nome alfabético na estante, e sim consulta o índice/sistema pelo nome para descobrir o número!",
+        "pilula_fixacao": "Alfabético = DIRETO (sem índice). Numérico Simples = INDIRETO (exige índice alfabético; novas pastas entram no fim)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-034",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Método Numérico Dígito-Terminal (Terminal-Digit)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Leitura em Grupos da Direita para a Esquerda e Vantagens Operacionais",
+      "texto_apoio": "Um arquivo central da área acadêmica possui grande volume de prontuários numerados com 6 dígitos e utiliza o método numérico dígito-terminal. Considere os prontuários abaixo:\nI. 82-15-40\nII. 19-30-40\nIII. 55-12-40\nIV. 10-99-39",
+      "enunciado": "Segundo a lógica de ordenação do método dígito-terminal (decomposições de dois em dois algarismos), assinale a alternativa CORRETA sobre a ordem de arquivamento e as características desse método.",
+      "alternativas": {
+        "A": "Na ordenação dígito-terminal, o número primário corresponde aos dois primeiros algarismos à esquerda (82, 19, 55, 10), de modo que o prontuário IV (10-99-39) será arquivado antes de todos os demais por começar por 10.",
+        "B": "A leitura divide o número em pares da direita para a esquerda: grupo primário (últimos dois dígitos), secundário (grupo do meio) e terciário (primeiros dois dígitos). Assim, a ordem correta dos quatro prontuários é IV (10-99-39) -> III (55-12-40) -> I (82-15-40) -> II (19-30-40).",
+        "C": "O método dígito-terminal é classificado como método direto e torna dispensável a consulta a qualquer índice alfabético remissivo.",
+        "D": "Sua principal desvantagem em arquivos volumosos é concentrar todos os novos documentos em uma única estante final, provocando superlotação desigual.",
+        "E": "Os prontuários I, II e III ficarão em seções primárias completamente diferentes porque possuem dígitos terciários distintos (82, 19 e 55)."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "No dígito-terminal, lê-se em pares da **direita para a esquerda**: primeiro o grupo final (39 < 40 -> IV vem primeiro), depois o grupo do meio entre os de final 40 (12 < 15 < 30 -> III, depois I, depois II). Ordem: IV -> III -> I -> II.",
+        "fundamento_legal_ou_teorico": "Método Dígito-Terminal: método numérico indireto criado para arquivos com grande massa documental (hospitais, bancos, universidades). Divide números longos em grupos de 2 dígitos da direita para a esquerda: Grupo Primário (dezenas finais), Secundário (meio) e Terciário (início). Vantagens: distribui uniformemente o crescimento físico pelas 100 seções (00 a 99) e reduz erros de leitura/arquivamento.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Leu da esquerda para a direita (lógica comum, não dígito-terminal); no dígito-terminal o primário está à DIREITA.",
+          "B": "CORRETA. Decomposição perfeita: Primário (39 -> IV; 40 -> III, I, II) e desempate pelo Secundário (12 -> III; 15 -> I; 30 -> II).",
+          "C": "INCORRETA. Como todo método numérico por código sequencial/prontuário, é método INDIRETO (exige índice remissivo).",
+          "D": "INCORRETA. Isso acontece no numérico simples! A grande vantagem do dígito-terminal é justamente distribuir igualmente os documentos novos entre todas as estantes (de 00 a 99).",
+          "E": "INCORRETA. I, II e III compartilham a MESMA seção primária (40), variando apenas na subdivisão secundária."
+        },
+        "conexao_pratica_ifbaiano": "Questão clássica de 2 pontos em Arquivologia! Memorize visualmente com a mão: no dígito-terminal você lê os pares **de trás para frente** (Direita -> Meio -> Esquerda). Assim as pastas crescem distribuídas pelas 100 divisórias (00–99) sem entupir o fim do arquivo!",
+        "pilula_fixacao": "Dígito-Terminal = lê pares da DIREITA para a ESQUERDA (Primário -> Secundário -> Terciário). Distribuição uniforme e menos erro!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-035",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Tabela de Temporalidade (TTD) e Avaliação Documental",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Composição da TTD, Papel da CPAD e Edital de Ciência de Eliminação",
+      "texto_apoio": null,
+      "enunciado": "No gerenciamento do ciclo de vida documental da Administração Pública Federal, acerca da avaliação de documentos e da Tabela de Temporalidade de Documentos (TTD), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A Tabela de Temporalidade determina apenas a data de compra de pastas e estantes novas para o arquivo permanente, não definindo prazos de guarda nas fases corrente e intermediária.",
+        "B": "A elaboração da Tabela de Temporalidade de Documentos relativos às atividades-meio da Administração Pública Federal cabe exclusivamente a cada departamento isolado, sem observância dos prazos definidos pelo CONARQ.",
+        "C": "A Comissão Permanente de Avaliação de Documentos (CPAD) orienta e realiza o processo de análise, avaliação e seleção documental, sendo a TTD o instrumento de destinação que define prazos de guarda corrente/intermediária e a destinação final (eliminação ou guarda permanente).",
+        "D": "Documentos com prazo de guarda expirado previstos para eliminação na TTD podem ser descartados sigilosamente no lixo comum sem publicação prévia de Edital de Ciência de Eliminação nem Termo de Eliminação.",
+        "E": "A eliminação de documentos avaliados como de guarda permanente passa a ser automática após 30 anos de armazenamento no arquivo intermediário."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "A TTD é o instrumento arquivístico resultante da avaliação documental que estabelece prazos de guarda (corrente e intermediária) e a destinação final (eliminação ou guarda permanente), conduzida tecnicamente pela CPAD.",
+        "fundamento_legal_ou_teorico": "Resoluções do CONARQ (nº 14/2001, nº 40/2014) e Decreto nº 10.148/2019: 1) Atividades-meio seguem o Código de Classificação e TTD do CONARQ/Arquivo Nacional; 2) CPAD analisa e propõe TTD das atividades-fim para aprovação do Arquivo Nacional; 3) Eliminação exige Listagem de Eliminação, aprovação da autoridade competente/instituição arquivística, Edital de Ciência de Eliminação de Documentos (DOU, aguardando prazo de ciência de terceiros — 30 a 45 dias conforme norma) e Termo de Eliminação com fragmentação sustentável (sem incineração poluente!).",
+        "analise_alternativas": {
+          "A": "INCORRETA. A TTD fixa precisamente os prazos de guarda corrente e intermediária e a destinação final.",
+          "B": "INCORRETA. Para atividades-meio na Administração Pública Federal há tabela padronizada obrigatória (CONARQ / Arquivo Nacional), sendo indevida criação isolada contrária.",
+          "C": "CORRETA. Define exatamente o papel da CPAD e a função estrutural da TTD.",
+          "D": "INCORRETA. Exige-se formalmente Listagem, aprovação, publicação de Edital de Ciência de Eliminação e Termo de Eliminação — jamais descarte informal.",
+          "E": "INCORRETA. Documentos de guarda permanente JAMAIS são eliminados (valor secundário histórico/probatório definitivo)."
+        },
+        "conexao_pratica_ifbaiano": "Na rotina administrativa das autarquias federais de ensino, processos de compras e pessoal acumulados há décadas não podem ir para a fragmentadora sem rito: passam pela **CPAD**, conferem a **TTD**, publicam **Edital de Ciência no DOU** e lavram **Termo de Eliminação**!",
+        "pilula_fixacao": "TTD = prazos (corrente + intermediário) + destinação final (eliminação OU guarda permanente). CPAD conduz; Permanente NUNCA elimina!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-036",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Rotinas e Limites das Atividades de Protocolo",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Diferenciação entre Atribuições do Protocolo e Atividades de Arquivo",
+      "texto_apoio": null,
+      "enunciado": "Nos serviços de protocolo e tramitação documental de órgãos públicos como a UFBA, assinale a alternativa que apresenta uma atribuição típica e CORRETA do setor de protocolo.",
+      "alternativas": {
+        "A": "Realizar a fragmentação física e eliminação definitiva de processos administrativos de valor histórico permanente sem tabela de temporalidade.",
+        "B": "Abrir indiscriminadamente toda correspondência recebida pelo órgão, inclusive aquelas endereçadas com indicação de \"Particular\", \"Confidencial\" ou \"Sigiloso\" ao destinatário.",
+        "C": "Receber, separar correspondência oficial (ostensiva) da particular/sigilosa, registrar, classificar quanto ao assunto/espécie, autuar processos, expedir e controlar a distribuição e movimentação (tramitação).",
+        "D": "Promover a restauração química aprofundada de documentos centenários destinados ao arquivo histórico permanente da Universidade.",
+        "E": "Substituir integralmente os atos decisórios do CONSUNI na alteração de normas regimentais de avaliação acadêmica."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "As rotinas clássicas de protocolo abrangem: recebimento e separação (oficial ostensiva vs. particular/sigilosa — esta última NÃO se abre!), registro, classificação, autuação/formação de processo, expedição e controle de tramitação/movimentação.",
+        "fundamento_legal_ou_teorico": "Manual de Arquivologia (Paes / CONARQ): Atividades de Protocolo = recebimento, classificação, registro, distribuição, controle da movimentação/tramitação e expedição de documentos em fase corrente. Atenção: correspondência particular ou com chancela de sigilo (\"Confidencial/Reservado\") é encaminhada fechada ao destinatário. Arquivamento físico de longo prazo, conservação permanente e eliminação cabem aos arquivos corrente/intermediário/permanente, não ao protocolo.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Protocolo não elimina documentos e documentos permanentes jamais são eliminados.",
+          "B": "INCORRETA. Correspondência particular ou com indicação de sigilo NÃO deve ser aberta no protocolo — apenas registrada pela parte externa e entregue fechada.",
+          "C": "CORRETA. Enumera com precisão todas as etapas operacionais clássicas do protocolo.",
+          "D": "INCORRETA. Restauração de acervo histórico centenário é atividade especializada de conservação/preservação no arquivo permanente.",
+          "E": "INCORRETA. Protocolo tem função operacional de registro e tramitação, jamais competência normativa colegiada."
+        },
+        "conexao_pratica_ifbaiano": "Mesmo com a autuação eletrônica no SEI/SUAP, quando chega um envelope físico marcado como \"Confidencial\" ou endereçado pessoalmente à Reitora/Pró-Reitor na recepção da Reitoria, o protocolo registra o recebimento externo e entrega LACRADO ao destinatário!",
+        "pilula_fixacao": "Protocolo = Recebe, Separa, Registra, Classifica, Autua, Distribui, Controla tramitação e Expede. Particular/Sigilosa vai FECHADA!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-037",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Arquivologia: Preservação, Conservação Preventiva e Princípios Arquivísticos",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Princípio da Proveniência/Respeito aos Fundos e Fatores de Degradação Documental",
+      "texto_apoio": null,
+      "enunciado": "Sobre os princípios arquivísticos fundamentais e as práticas de conservação preventiva em acervos documentais em suporte papel, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O Princípio da Proveniência recomenda misturar fisicamente os documentos da Reitoria da UFBA com documentos pessoais doados por sindicatos externos, ordenando-os apenas por tema ou cor da capa.",
+        "B": "Na conservação preventiva de arquivos em papel, a utilização de clipes metálicos oxidáveis (comuns) e fitas adesivas comuns (tipo durex) é recomendada para reparos definitivos por preservar a celulose intacta.",
+        "C": "Pelo Princípio da Proveniência (ou Respeito aos Fundos), o arquivo produzido por uma entidade/órgão não deve ser misturado aos de outras entidades produtoras; e na conservação preventiva recomenda-se controle estável de temperatura e umidade relativa (tipicamente ~20°C e 45% a 55%) e substituição de clipes metálicos por plásticos.",
+        "D": "A umidade relativa do ar elevada (acima de 80%) combinada com ausência de ventilação impede a proliferação de fungos e microrganismos nos depósitos de arquivo intermediário.",
+        "E": "O conceito de \"Restauração\" corresponde exclusivamente à adoção de medidas ambientais indiretas de limpeza e controle de pragas antes que o documento sofra qualquer dano."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "O Princípio da Proveniência (cardeal da Arquivologia) proíbe mesclar o fundo documental de um órgão produtor com o de outro; e a conservação preventiva do papel requer clima controlado (~20°C e 45–55% UR) e higienização livre de metais oxidáveis.",
+        "fundamento_legal_ou_teorico": "1) Princípio da Proveniência / Respeito aos Fundos: documentos de uma mesma origem/produtor permanecem agrupados sem mistura; Princípio da Organicidade reflete a estrutura e funções do produtor; Princípio da Ordem Original preserva o arranjo dado pelo produtor. 2) Preservação (amplo) engloba Conservação Preventiva (ambiente estável, troca de clipes metálicos por plásticos, filtragem UV) e Restauração (intervenção direta curativa no documento já danificado).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Descreve exatamente a violação ao Princípio da Proveniência!",
+          "B": "INCORRETA. Clipes metálicos oxidam (mancham com ferrugem) e fitas adesivas comuns acidificam e degradam irreversivelmente o papel.",
+          "C": "CORRETA. Reúne com precisão o princípio arquivístico mais cobrado do edital e os parâmetros clássicos de conservação preventiva.",
+          "D": "INCORRETA. Umidade elevada (>65–70%) e calor aceleram fungos, mofo e hidrólise ácida do papel.",
+          "E": "INCORRETA. Esse é o conceito de Conservação Preventiva! Restauração é intervenção corretiva direta sobre o suporte já deteriorado."
+        },
+        "conexao_pratica_ifbaiano": "Na preparação física de processos antigos para digitalização no SEI, sempre orienta-se retirar grampos e clipes metálicos (higienização e desencadernação) — cuidado que também cai direto como questão de conservação preventiva!",
+        "pilula_fixacao": "Proveniência = NÃO misturar fundos de produtores distintos! Clipe metálico e fita durex = vilões do papel."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-038",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais: Cálculo de Giro de Estoque",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Aplicação Numérica da Fórmula de Rotatividade / Giro de Estoque",
+      "texto_apoio": "No almoxarifado central da UFBA, verificou-se que determinado item de material de expediente (papel A4) teve consumo anual total de 3.600 resmas ao longo do exercício de 2025. O estoque inicial no começo do ano era de 500 resmas e o estoque final em 31 de dezembro foi de 700 resmas.",
+      "enunciado": "Considerando o cálculo clássico de Administração de Materiais para o estoque médio simples e o **Giro de Estoque (Rotatividade)** anual desse item, o resultado encontrado será:",
+      "alternativas": {
+        "A": "5 giros por ano (Estoque médio = 600 resmas).",
+        "B": "6 giros por ano (Estoque médio = 600 resmas).",
+        "C": "12 giros por ano (Estoque médio = 300 resmas).",
+        "D": "3 giros por ano (Estoque médio = 1.200 resmas).",
+        "E": "0,16 giros por ano (Estoque médio = 600 resmas)."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "1º Passo — Estoque Médio: `(Estoque Inicial + Estoque Final) / 2 = (500 + 700) / 2 = 600` resmas. 2º Passo — Giro de Estoque: `Consumo no Período / Estoque Médio = 3.600 / 600 = 6 giros ao ano`.",
+        "fundamento_legal_ou_teorico": "Fórmulas clássicas de Materiais (Dias / Chiavenato): Estoque Médio = `(EI + EF) / 2`. Giro de Estoque (Índice de Rotatividade) = `Consumo no Período / Estoque Médio` (mede quantas vezes o estoque se renovou no período; quanto maior, menor capital imobilizado e menor risco de obsolescência).",
+        "analise_alternativas": {
+          "A": "INCORRETA. `3.600 / 600` resulta em `6`, não em `5` (erro aritmético ou divisão apenas pelo estoque final `700` arredondado).",
+          "B": "CORRETA. `(500 + 700) / 2 = 600`; `3.600 / 600 = 6 giros/ano`.",
+          "C": "INCORRETA. Errou o cálculo do estoque médio ao dividir `(500+700)` por 4.",
+          "D": "INCORRETA. Esqueceu de dividir `(500 + 700)` por 2 para obter o estoque médio (`1.200` é a soma, não a média).",
+          "E": "INCORRETA. `600 / 3.600 = 0,166...` é a razão inversa (`Antigiro / Cobertura` em anos = 2 meses!), não o giro!"
+        },
+        "conexao_pratica_ifbaiano": "Questão matemática garantida de Recursos Materiais no Instituto Avalia: na letra E a banca sempre coloca a fórmula INVERTIDA (`Estoque Médio / Consumo`) para pegar quem confunde **Giro** com **Cobertura**! Lembre: Giro = Consumo em cima; Cobertura = Estoque em cima.",
+        "pilula_fixacao": "Giro de Estoque = Consumo / Estoque Médio (medido em VEZES). Estoque Médio = (Inicial + Final) / 2."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-039",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais: Cálculo de Cobertura de Estoque",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Cálculo Numérico de Cobertura (Antigiro) em Dias e Meses",
+      "texto_apoio": "Em sequência à análise de almoxarifado, considere outro insumo de laboratório cuja demanda mensal média é de 150 unidades e o estoque médio mantido no depósito é de 450 unidades. Adote o mês comercial de 30 dias (ano comercial de 360 dias).",
+      "enunciado": "A **Cobertura de Estoque (ou Antigiro)** desse insumo expressa respectivamente em meses e em dias equivale a:",
+      "alternativas": {
+        "A": "0,33 mês e 10 dias.",
+        "B": "3 meses e 90 dias.",
+        "C": "4 meses e 120 dias.",
+        "D": "2 meses e 60 dias.",
+        "E": "1,5 mês e 45 dias."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Cobertura de Estoque = `Estoque Médio / Consumo Médio = 450 / 150 = 3 meses`. Convertendo para dias (mês comercial de 30 dias): `3 × 30 = 90 dias` (equivale também a calcular o giro anual `1.800 / 450 = 4 giros` e dividir `360 / 4 = 90 dias`).",
+        "fundamento_legal_ou_teorico": "Cobertura de Estoque (ou Taxa de Cobertura / Antigiro): indica por quanto tempo (dias, semanas ou meses) o estoque médio suporta o consumo sem novos suprimentos. Fórmula: `Cobertura = Estoque / Consumo Médio` OU `Cobertura = Período / Giro de Estoque`.",
+        "analise_alternativas": {
+          "A": "INCORRETA. `150 / 450 = 0,33` seria o GIRO mensal, e não a cobertura!",
+          "B": "CORRETA. `450 / 150 = 3 meses` (`3 × 30 = 90 dias`).",
+          "C": "INCORRETA. `4` é o giro anual (`1.800 / 450`), não a cobertura em meses.",
+          "D": "INCORRETA. Cálculo incorreto da divisão.",
+          "E": "INCORRETA. Cálculo incompatível com os dados (`450 / 150 = 3`)."
+        },
+        "conexao_pratica_ifbaiano": "Na gestão prática de compras, **Cobertura de Estoque** responde à pergunta concreta do almoxarife: *\"Se ninguém comprar nada hoje, quantos dias/meses o meu estoque aguenta?\"*. Com 450 unidades gastando 150/mês -> aguenta exatos **3 meses (90 dias)**!",
+        "pilula_fixacao": "Cobertura = Estoque / Consumo Médio (ou Dias do Período / Giro). Medida em TEMPO!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-040",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais e Compras: Cadastro de Fornecedores (SICAF)",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Funcionamento, Níveis Cadastrais e Uso do SICAF no Poder Executivo Federal",
+      "texto_apoio": null,
+      "enunciado": "Sobre o Sistema de Cadastramento Unificado de Fornecedores (SICAF), amplamente utilizado pela UFBA nas contratações realizadas no Portal de Compras do Governo Federal (Compras.gov.br), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O cadastro no SICAF destina-se exclusivamente a grandes construtoras de obras rodoviárias, sendo vedada a inscrição de microempresas e pessoas físicas prestadoras de serviços.",
+        "B": "No SICAF, uma vez concluído o credenciamento inicial, a regularidade fiscal e trabalhista do fornecedor passa a ter validade permanente e indeterminada, dispensando atualizações de certidões.",
+        "C": "O SICAF constitui o registro cadastral unificado do Poder Executivo Federal organizado em níveis progressivos (Credenciamento, Habilitação Jurídica, Regularidade Fiscal Federal/Trabalhista, Fiscal Estadual/Municipal, Qualificação Técnica e Econômico-Financeira), dispensando a reapresentação física de documentos válidos nele constantes.",
+        "D": "A simples inscrição no SICAF torna automática a declaração de vencedor de qualquer licitação da UFBA pelo critério de menor preço, dispensando proposta e lances.",
+        "E": "Na Lei nº 14.133/2021, o registro cadastral unificado previsto em lei foi proibido para autarquias federais, substituído por fichas de papel locais sem integração ao PNCP."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "O SICAF organiza-se em 6 níveis cadastrais (I-Credenciamento a VI-Qualificação Econômico-Financeira), integra dados via sistemas oficiais (Receita, FGTS, CNDT) e evita retrabalho ao comprovar habilitação válida em pregões e dispensas eletrônicas.",
+        "fundamento_legal_ou_teorico": "IN Seges/MPDG nº 3/2018 (SICAF 100% Digital) c/c Lei nº 14.133/2021, Art. 87 (Sistema de registro cadastral unificado disponível no Portal Nacional de Contratações Públicas - PNCP). Os 6 níveis do SICAF: I-Credenciamento; II-Habilitação Jurídica; III-Regularidade Fiscal Federal e Trabalhista; IV-Regularidade Fiscal Estadual/Distrital e Municipal; V-Qualificação Técnica; VI-Qualificação Econômico-Financeira.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Tanto pessoas jurídicas (inclusive ME/EPP) quanto pessoas físicas podem cadastrar-se no SICAF.",
+          "B": "INCORRETA. Certidões têm prazo de validade próprio; antes de contratar e antes de cada pagamento deve-se consultar a regularidade atualizada no SICAF.",
+          "C": "CORRETA. Descreve com rigor os seis níveis do SICAF e sua função racionalizadora nas compras federais.",
+          "D": "INCORRETA. O SICAF é instrumento de registro cadastral e consulta de habilitação/impedimentos, não substitui disputa nem julgamento de proposta.",
+          "E": "INCORRETA. O art. 87 da Lei nº 14.133/2021 expressamente prevê o registro cadastral unificado disponibilizado no PNCP (no plano federal operacionalizado via Compras.gov.br / SICAF)."
+        },
+        "conexao_pratica_ifbaiano": "Na conferência de processos de pagamento e dispensa eletrônica no SEI/SUAP, tirar o extrato do **SICAF** (além de CEIS/CNEP/TCU/CADIN) é rotina obrigatória antes de emitir empenho e liquidar a nota fiscal!",
+        "pilula_fixacao": "SICAF = 6 níveis (Credenciamento, Jurídica, Fiscal Fed/Trab, Fiscal Est/Mun, Técnica, Econ-Fin). Sempre checar validade das certidões!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-041",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais: Inventário Rotativo vs. Geral e Curva ABC",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Vantagens Operacionais do Inventário Rotativo e Classificação ABC",
+      "texto_apoio": null,
+      "enunciado": "Comparando os procedimentos de **inventário físico geral (periódico)** e **inventário rotativo (cíclico)** aplicados aos estoques da UFBA, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O inventário geral exige obrigatoriamente que o almoxarifado funcione em ritmo acelerado de recebimentos e expedições simultâneas durante a contagem anual para evitar divergências.",
+        "B": "O inventário rotativo consiste em contar os itens continuamente ao longo do ano segundo periodicidades programadas (frequentemente priorizando itens Classe A da Curva ABC), sem necessidade de paralisar totalmente as operações do almoxarifado.",
+        "C": "Na Curva ABC aplicada ao inventário de materiais, a Classe C reúne os poucos itens que respondem pela maior parte (cerca de 80%) do valor financeiro investido no estoque.",
+        "D": "O inventário rotativo serve apenas para contar bens imóveis (terrenos e prédios), sendo inaplicável a materiais de consumo de almoxarifado.",
+        "E": "Divergências detectadas entre o saldo físico apurado no inventário e o registro contábil devem ser corrigidas ajustando artificialmente apenas os relatórios impressos sem abertura de processo administrativo de apuração."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O **inventário rotativo (ou cíclico)** distribui a contagem ao longo de todo o exercício, aplicando maior frequência aos itens de maior relevância financeira (**Classe A da Curva ABC**) e mantendo o atendimento regular do almoxarifado sem fechamento geral prolongado.",
+        "fundamento_legal_ou_teorico": "Inventário Geral (Periódico/Anual): contagem integral de todos os itens em data determinada (ex.: fechamento do exercício fiscal), normalmente interrompendo movimentações durante a conferência. Inventário Rotativo (Cíclico): contagens contínuas/amostrais programadas o ano inteiro sem interromper operações. Curva ABC (Princípio de Pareto): Classe A (~20% itens = ~80% valor); Classe B (intermediários); Classe C (~50% itens = ~5% valor).",
+        "analise_alternativas": {
+          "A": "INCORRETA. No inventário geral recomenda-se PARALISAR entradas e saídas (\"corte\" de movimentação) durante a contagem para assegurar acuracidade.",
+          "B": "CORRETA. Resume exatamente o conceito, a continuidade operacional e o vínculo com a Curva ABC.",
+          "C": "INCORRETA. Inverteu Classe A (~80% do valor com menos itens) com Classe C (~50% dos itens com pequeno percentual do valor).",
+          "D": "INCORRETA. Inventário rotativo é clássico no gerenciamento de almoxarifados e materiais de consumo.",
+          "E": "INCORRETA. Divergências patrimoniais/almoxarifado exigem registro em processo administrativo e eventual sindicância para apuração de responsabilidade ou acerto contábil regular."
+        },
+        "conexao_pratica_ifbaiano": "Todo fim de ano nas autarquias federais o almoxarifado fecha alguns dias para o **Inventário Geral Anual** (prestação de contas ao TCU/SIAFI), enquanto durante o ano o **Inventário Rotativo** monitora semanal/mensalmente os itens caros (Classe A) sem parar a entrega de material aos setores.",
+        "pilula_fixacao": "Inventário Geral = fecha tudo e conta 100% (fim de ano). Rotativo = conta aos poucos o ano todo (foco Classe A), SEM parar!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-042",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais: Alienação e Desfazimento de Bens (Decreto nº 9.373/2018 e Lei 14.133/2021)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Classificação dos Bens Inservíveis e Modalidade Licitatória de Alienação",
+      "texto_apoio": "Uma comissão de desfazimento da UFBA vistoriou equipamentos de informática e mobiliários retirados de uso em um prédio administrativo, encontrando: (I) impressoras seminovas e perfeitas, sem aproveitamento naquela unidade específica; e (II) cadeiras avariadas cujo custo de recuperação atingiria 75% do valor de mercado de cadeiras novas.",
+      "enunciado": "Nos termos do Decreto nº 9.373/2018 (desfazimento de bens móveis na Administração Pública Federal) e da Lei nº 14.133/2021 sobre alienação de bens móveis inservíveis, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "As impressoras (I) classificam-se como bens IRRECUPERÁVEIS e as cadeiras (II) como bens OCIOSOS; caso haja venda a terceiros pela UFBA, a modalidade obrigatória será a Concorrência.",
+        "B": "As impressoras (I) classificam-se como bens OCIOSOS (em perfeitas condições de uso, mas sem aproveitamento na unidade) e as cadeiras (II) como bens IRRECUPERÁVEIS (cujo custo de recuperação supera 50% do valor de mercado); caso alienadas por venda, a modalidade licitatória prevista na Lei nº 14.133/2021 é o Leilão.",
+        "C": "O Decreto nº 9.373/2018 proíbe terminantemente a doação de bens móveis ociosos ou antieconômicos a instituições filantrópicas reconhecidas de utilidade pública ou associações de catadores.",
+        "D": "Bens classificados como recuperáveis na UFBA são obrigatoriamente aqueles cujo conserto custe exatamente entre 80% e 100% do valor de um bem novo.",
+        "E": "Para alienação onerosa de bens móveis inservíveis da Administração Pública Federal, a Lei nº 14.133/2021 extinguiu o Leilão e impôs a modalidade Pregão Eletrônico."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Pelo Decreto nº 9.373/2018 (Art. 3º): bem em perfeito estado mas sem uso na unidade = **Ocioso**; bem cujo reparo supera 50% do valor de mercado = **Irrecuperável**. Pela Lei nº 14.133/2021 (Art. 76, II), a alienação onerosa de bens móveis mediante licitação ocorre na modalidade **Leilão**.",
+        "fundamento_legal_ou_teorico": "Decreto nº 9.373/2018, Art. 3º (Bens inservíveis): I - Ocioso (perfeito, sem aproveitamento); II - Recuperável (recuperação possível e orçada até 50% do valor de mercado ou custo-benefício favorável); III - Antieconômico (manutenção onerosa ou rendimento precário por uso/obsolescência); IV - Irrecuperável (sem utilidade para o fim ou recuperação > 50% do valor de mercado). Lei nº 14.133/2021, Art. 76, II: alienação de bens móveis exige interesse público justificado, avaliação prévia e licitação na modalidade LEILÃO (salvo hipóteses de licitação dispensada como doação de interesse social).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Inverteu as classificações e indicou Concorrência em vez de Leilão.",
+          "B": "CORRETA. Alinhamento literal entre Decreto nº 9.373/2018 (corte objetivo de 50%) e Lei nº 14.133/2021 (Leilão para alienação de móveis).",
+          "C": "INCORRETA. O Decreto nº 9.373/2018 e a Lei 14.133/21 expressamente permitem doação/cessão para órgãos públicos, OSCIPs, filantrópicas e cooperativas/associações de catadores de materiais recicláveis.",
+          "D": "INCORRETA. Recuperável vai ATÉ 50% do valor de mercado (acima de 50% já vira irrecuperável!).",
+          "E": "INCORRETA. O Pregão serve para AQUISIÇÃO de bens e serviços comuns (quem dá o menor preço), enquanto a ALIENAÇÃO (venda pelo maior lance) exige **Leilão**!"
+        },
+        "conexao_pratica_ifbaiano": "Na rotina patrimonial de campi e reitorias, antes de fazer leilão de sucatas ou doação via edital de desfazimento, a comissão lavra o laudo classificando nos 4 tipos do Decreto 9.373/2018. Guarde o corte numérico que o Avalia ama: **50%**!",
+        "pilula_fixacao": "Ocioso = perfeito sem uso; Recuperável <= 50%; Irrecuperável > 50%; Antieconômico = manutenção cara. Venda = LEILÃO!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-043",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração de Recursos Materiais: Ponto de Pedido, Estoque de Segurança e LEC",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Cálculo do Ponto de Pedido (Ressuprimento) e Conceito de Lote Econômico",
+      "texto_apoio": "Um almoxarifado consome em média 40 caixas de luvas por dia. O tempo médio entre a emissão da requisição/empenho e a entrega efetiva pelo fornecedor (Tempo de Reposição / Lead Time) é de 10 dias. Por precaução contra atrasos logísticos, mantém-se um Estoque Mínimo (ou de Segurança) de 120 caixas.",
+      "enunciado": "De acordo com a fórmula clássica de gestão de estoques, quando o nível físico atingir o **Ponto de Pedido (PP)** — momento exato de disparar nova solicitação de compra —, o saldo será de:",
+      "alternativas": {
+        "A": "280 caixas.",
+        "B": "400 caixas.",
+        "C": "520 caixas.",
+        "D": "120 caixas.",
+        "E": "160 caixas."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Fórmula do Ponto de Pedido: `PP = (Consumo Médio Diário × Tempo de Reposição) + Estoque de Segurança`. Substituindo: `PP = (40 × 10) + 120 = 400 + 120 = 520` caixas.",
+        "fundamento_legal_ou_teorico": "Gestão de Estoques: `PP = (C × TR) + ES`, onde `C × TR` representa o consumo normal durante o tempo de entrega e `ES` (Estoque Mínimo/Segurança) absorve variações imprevistas de demanda ou atraso do fornecedor. Já o Lote Econômico de Compra (LEC) equilibra custo de pedido × custo de armazenagem.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Subtraiu o estoque de segurança (`400 - 120 = 280`) em vez de somar.",
+          "B": "INCORRETA. Calculou apenas `(40 × 10 = 400)`, esquecendo de adicionar o Estoque de Segurança (`+120`).",
+          "C": "CORRETA. `40 × 10 + 120 = 520 caixas`. Quando restarem 520 caixas, dispara o pedido para chegar justamente quando estiver encostando nas 120 de segurança!",
+          "D": "INCORRETA. `120` é apenas o Estoque de Segurança (se esperar cair até 120 para pedir, faltará material durante os 10 dias de entrega!).",
+          "E": "INCORRETA. Somou `40 + 120` sem multiplicar o consumo pelos 10 dias do Lead Time."
+        },
+        "conexao_pratica_ifbaiano": "Na preparação dos pedidos de compra anual ou adesão/ATA, entender que o Ponto de Pedido SOMA o estoque mínimo ao consumo durante o tempo de entrega evita o clássico erro de só pedir quando o almoxarifado zera — e na prova garante 2 pontos fáceis!",
+        "pilula_fixacao": "Ponto de Pedido = `(Consumo × Tempo de Reposição) + Estoque Mínimo`. SEMPRE soma o estoque mínimo!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-044",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021: Estudo Técnico Preliminar (ETP) e Fase Preparatória",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Elementos Obrigatórios Mínimos vs. Elementos Facultativos Mediante Justificativa (Art. 18, §§ 1º e 2º)",
+      "texto_apoio": null,
+      "enunciado": "Nos termos literais do art. 18, §§ 1º e 2º da Lei nº 14.133/2021, o Estudo Técnico Preliminar (ETP) deverá evidenciar o problema a ser resolvido e sua melhor solução, contemplando elementos obrigatórios e facultativos (mediante justificativa quando não incluídos). Assinale a alternativa que apresenta EXCLUSIVAMENTE elementos que a lei exige **OBRIGATORIAMENTE** em TODO ETP (que não podem ser dispensados por justificativa).",
+      "alternativas": {
+        "A": "Levantamento de mercado, requisitos da contratação e descrição de possíveis impactos ambientais.",
+        "B": "Descrição da necessidade da contratação, estimativa das quantidades, estimativa do valor da contratação, justificativas para o parcelamento ou não e posicionamento conclusivo sobre a adequação da contratação para o atendimento da necessidade.",
+        "C": "Demonstração da previsão no plano de contratações anual, contratações correlatas/interdependentes e matriz de alocação de riscos integral.",
+        "D": "Providências a serem adotadas pela Administração previamente à celebração do contrato, inclusive quanto à capacitação de fiscais e gestores.",
+        "E": "Análise jurídica vinculante emitida pela Procuradoria Federal e edital definitivo publicado no PNCP."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O art. 18, § 2º da Lei nº 14.133/2021 exige obrigatoriamente no ETP ao menos os incisos **I, IV, VI, VIII e XIII** do § 1º: (I) descrição da necessidade; (IV) estimativa das quantidades; (VI) estimativa do valor; (VIII) justificativas para parcelamento ou não; e (XIII) posicionamento conclusivo sobre a adequação da contratação.",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021, Art. 18, § 2º: \"O estudo técnico preliminar deverá conter ao menos os elementos previstos nos incisos I, IV, VI, VIII e XIII do § 1º deste artigo e, quando não contemplar os demais elementos previstos no referido parágrafo, apresentar as devidas justificativas.\" Todos os outros incisos (II, III, V, VII, IX, X, XI, XII) podem deixar de constar se justificados!",
+        "analise_alternativas": {
+          "A": "INCORRETA. Incisos III (requisitos), V (levantamento de mercado) e XII (impactos ambientais) admitem não inclusão mediante justificativa (§ 2º).",
+          "B": "CORRETA. Lista os exatos 5 incisos obrigatórios previstos no art. 18, § 2º (I, IV, VI, VIII e XIII)!",
+          "C": "INCORRETA. Incisos II (PCA) e XI (contratações correlatas) não pertencem ao núcleo mínimo irrenunciável do § 2º.",
+          "D": "INCORRETA. Providências prévias/capacitação de fiscais (inciso X) também admitem justificativa caso não aplicáveis.",
+          "E": "INCORRETA. Parecer jurídico e edital ocorrem posteriormente ao ETP na fase preparatória/externa."
+        },
+        "conexao_pratica_ifbaiano": "Na instrução de processos de compras no sistema Compras.gov.br (Artefatos Digitais / ETP Digital), o sistema já destaca exatamente esses 5 campos obrigatórios! Memorize o mnemônico dos **5 irrenunciáveis do ETP (I, IV, VI, VIII, XIII)**: Necessidade, Quantidades, Valor, Parcelamento e Conclusão.",
+        "pilula_fixacao": "ETP obrigatório (Art. 18 § 2º - 5 itens): 1-Necessidade, 4-Quantidades, 6-Valor, 8-Parcelamento, 13-Conclusão. Os outros 8 podem ser justificados!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-045",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021: Termo de Referência (TR), Projeto Básico e Indicação de Marca",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Diferenciação TR x Projeto Básico e Exceções de Indicação de Marca (Art. 41)",
+      "texto_apoio": null,
+      "enunciado": "Considerando a disciplina da Lei nº 14.133/2021 quanto ao Termo de Referência (Art. 6º, XXIII) e à especificação do objeto com eventual indicação de marca ou modelo (Art. 41), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A Administração Pública pode indicar livremente qualquer marca comercial preferida da equipe técnica no Termo de Referência, mesmo sem justificativa formal, vedada a aceitação de produto similar.",
+        "B": "O Termo de Referência é o documento obrigatório exclusivamente para obras de engenharia de grande vulto, enquanto o Projeto Básico destina-se às compras rotineiras de papel e café.",
+        "C": "No caso de licitação que envolva o fornecimento de bens, a Administração poderá excepcionalmente indicar uma ou mais marcas ou modelos, desde que formalmente justificada (ex.: padronização do objeto, compatibilidade com plataformas/padrões já adotados, marca única apta ou melhor descrição seguida da expressão \"ou equivalente\"/\"ou similar\").",
+        "D": "O Termo de Referência dispensa definição de critérios de medição e de pagamento, os quais somente podem ser escolhidos livremente pelo licitante vencedor após a assinatura do contrato.",
+        "E": "É permitido que a Administração exija carta de solidariedade emitida pelo fabricante para todo e qualquer fornecimento de material de consumo comum, visando restringir competidores."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Embora a regra geral seja a impessoalidade sem direcionamento de marca, o art. 41, I da Lei nº 14.133/2021 permite excepcional e justificadamente a indicação de marca/modelo nas hipóteses taxativas de padronização, compatibilidade técnica, exclusividade ou melhor compreensão seguida de \"ou equivalente/similar/de melhor qualidade\".",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021: Art. 6º, XXIII (Termo de Referência = documento necessário para contratação de bens e serviços; Obras e serviços de engenharia utilizam Projeto Básico/Executivo); Art. 41, I (indicação excepcional e formalmente justificada de marca/modelo em 4 alíneas: a) padronização; b) manter compatibilidade com plataformas/padrões já adotados; c) determinada marca/modelo comercializada por mais de um fornecedor for a única capaz de atender; d) descrição mais bem compreendida pela indicação seguida de \"ou equivalente\", \"ou similar\" ou \"ou de melhor qualidade\"). Art. 41, IV: exigência de carta de solidariedade do fabricante só em casos excepcionais motivados para execução do objeto!",
+        "analise_alternativas": {
+          "A": "INCORRETA. Direcionamento gratuito de marca viola competitividade e isonomia; exige motivação estrita em uma das 4 hipóteses do art. 41, I.",
+          "B": "INCORRETA. Inverteu: TR = bens e serviços; Projeto Básico = obras e serviços de engenharia.",
+          "C": "CORRETA. Sintetiza com perfeição as quatro alíneas excepcionais do art. 41, inciso I da Lei nº 14.133/2021.",
+          "D": "INCORRETA. Critérios de medição e de pagamento são parâmetros essenciais do Termo de Referência (Art. 6º, XXIII, \"g\").",
+          "E": "INCORRETA. Conforme Art. 41, IV, carta de solidariedade do fabricante é EXCEPCIONAL (apenas quando necessária à garantia/execução e devidamente motivada), jamais regra geral para material comum."
+        },
+        "conexao_pratica_ifbaiano": "Na Reitoria, quando a TI ou Comunicação pede toner original específico para impressora em garantia ou peça compatível com parque já instalado, o Termo de Referência fundamenta exatamente no **Art. 41, I, \"b\" ou \"d\"** (sempre com \"ou equivalente\" quando meramente referencial!).",
+        "pilula_fixacao": "TR = Bens/Serviços; Projeto Básico = Obras. Marca só com justificativa (Art. 41): Padronização, Compatibilidade, Única apta ou \"+ ou equivalente\"."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-046",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021: Sanções Administrativas — Advertência e Multa (Art. 156)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Limites Percentuais da Multa (0,5% a 30%) e Cabimento da Advertência",
+      "texto_apoio": null,
+      "enunciado": "Considerando o regime sancionatório previsto no art. 156 da Lei nº 14.133/2021 para infrações cometidas por licitantes ou contratados, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "A sanção de advertência pode ser aplicada a qualquer infração, inclusive fraude na licitação e apresentação de declaração falsa, desde que o licitante seja primário.",
+        "B": "A multa calculada na forma do edital ou do contrato não poderá ser inferior a 0,5% (cinco décimos por cento) nem superior a 30% (trinta por cento) do valor do contrato licitado ou celebrado com contratação direta, podendo ser cumulada com advertência, impedimento ou declaração de inidoneidade.",
+        "C": "A penalidade de multa é incompatível com as demais sanções administrativas previstas na Lei nº 14.133/2021, sendo vedada expressamente qualquer cumulação.",
+        "D": "O valor da multa aplicada poderá atingir até 100% (cem por cento) do valor global do contrato como regra ordinária.",
+        "E": "A aplicação de multa dispensa integralmente a defesa prévia do contratado, diferentemente da declaração de inidoneidade."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O art. 156, § 3º e § 7º da Lei nº 14.133/2021 fixa que a multa varia entre **0,5% e 30%** do valor do contrato (aplicável ao responsável por qualquer das infrações do art. 155) e **pode ser aplicada cumulativamente** com todas as demais sanções (advertência, impedimento ou inidoneidade).",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021, Art. 156: § 2º (Advertência aplica-se EXCLUSIVAMENTE pela inexecução parcial do contrato do Art. 155, I, quando não se justificar penalidade mais grave); § 3º (Multa: mínimo 0,5% e máximo 30% do valor do contrato, aplicada a qualquer infração do Art. 155); § 7º (Multa pode cumular com os incisos I, III e IV); Art. 157 (multa e advertência exigem intimação com prazo de **15 dias úteis** para defesa do interessado!).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Advertência aplica-se EXCLUSIVAMENTE à inexecução parcial do contrato (Art. 155, I), jamais a fraude ou documento falso.",
+          "B": "CORRETA. Reproduz com exatidão os limites da multa (0,5% a 30%) e a possibilidade de cumulação prevista no § 7º.",
+          "C": "INCORRETA. A multa é justamente a única sanção cumulável com qualquer outra do rol (§ 7º).",
+          "D": "INCORRETA. O teto legal da multa compensatória/sancionatória no Art. 156, § 3º é de 30%.",
+          "E": "INCORRETA. Pelo Art. 157, exige-se defesa prévia no prazo de **15 dias úteis** contado da intimação!"
+        },
+        "conexao_pratica_ifbaiano": "Fique atento ao prazo que a Lei nº 14.133/2021 unificou nos processos sancionatórios de fornecedores que você acompanha como fiscal administrativo: defesa prévia de **15 dias úteis** e faixa legal obrigatória da multa no edital entre **0,5% e 30%**!",
+        "pilula_fixacao": "Advertência = SÓ inexecução parcial! Multa = 0,5% a 30%, cabe em TODAS e CUMULA com todas!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-047",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021: Impedimento de Licitar vs. Declaração de Inidoneidade",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Abrangência Federativa, Prazos e Autoridade Competente (Art. 156, §§ 4º–6º)",
+      "texto_apoio": null,
+      "enunciado": "No tocante às sanções restritivas do direito de licitar e contratar previstas nos incisos III e IV do art. 156 da Lei nº 14.133/2021, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O impedimento de licitar e contratar impede o sancionado de contratar com todos os entes federativos do país (União, Estados, DF e Municípios) pelo prazo de 3 a 6 anos.",
+        "B": "A declaração de inidoneidade restringe-se apenas ao órgão universitário que aplicou a penalidade, vigorando pelo prazo máximo de 2 anos.",
+        "C": "O impedimento de licitar e contratar produz efeitos no âmbito da Administração Pública direta e indireta do ente federativo que aplicou a sanção, pelo prazo máximo de 3 anos; já a declaração de inidoneidade abrange todos os entes federativos, pelo prazo mínimo de 3 anos e máximo de 6 anos, exigindo análise jurídica prévia.",
+        "D": "Tanto o impedimento quanto a declaração de inidoneidade podem ser aplicados por simples decisão verbal do pregoeiro durante a sessão pública, dispensando comissão processante e contraditório.",
+        "E": "Na Lei nº 14.133/2021, a declaração de inidoneidade voltou a ter duração perpétua e indeterminada, vedada qualquer possibilidade de reabilitação do sancionado."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "O **Impedimento** (Art. 156, § 4º) vale no âmbito do **ente federativo sancionador** por até **3 anos**. A **Declaração de Inidoneidade** (Art. 156, § 5º e § 6º) vale em **todos os entes federativos** (União, Estados, DF e Municípios), pelo prazo de **3 a 6 anos**, exigindo **análise jurídica prévia** e competência de autoridade máxima (no caso de autarquias, autoridade máxima da entidade!).",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021: Art. 156, § 4º (Impedimento: ente federativo sancionador, até 3 anos); § 5º (Inidoneidade: todos os entes federativos, de 3 a 6 anos); § 6º (Inidoneidade precedida de análise jurídica e aplicada por Ministro/Secretário ou, nas autarquias/fundações, pela autoridade máxima da entidade — ex.: Reitor na UFBA!); Art. 158 (exige processo de responsabilização por comissão de >= 2 servidores estáveis para ambas!). Art. 163 (reabilitação após prazos mínimos: 1 ano para impedimento / 3 anos para inidoneidade + reparação integral do dano).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Trocou o alcance e o prazo do Impedimento pelos da Declaração de Inidoneidade.",
+          "B": "INCORRETA. Inidoneidade alcança TODOS os entes federativos e dura de 3 a 6 anos (2 anos era o prazo da suspensão na revogada Lei 8.666!).",
+          "C": "CORRETA. Literalidade perfeita dos §§ 4º, 5º e 6º do art. 156 da Lei nº 14.133/2021.",
+          "D": "INCORRETA. O art. 158 exige processo administrativo conduzido por comissão composta por 2 ou mais servidores estáveis, com 15 dias úteis para defesa.",
+          "E": "INCORRETA. A Lei 14.133/21 acabou com o prazo indeterminado da inidoneidade (antes \"enquanto perdurarem os motivos\"), fixando de 3 a 6 anos + previsão de reabilitação (Art. 163)."
+        },
+        "conexao_pratica_ifbaiano": "Cuidado para não misturar com a antiga Lei nº 8.666/93 ou Lei do Pregão (5 anos)! Na Nova Lei nº 14.133/2021 os números são redondinhos: **Impedimento = 1 ente / até 3 anos**; **Inidoneidade = todos os entes / 3 a 6 anos**!",
+        "pilula_fixacao": "14.133/21: Impedimento = MESMO ente, até 3 anos. Inidoneidade = TODOS os entes, 3 a 6 anos + análise jurídica!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-048",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021: Garantias Contratuais (Arts. 96 a 102)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Escolha da Modalidade pelo Contratado e Tetos de 5%, 10% e 30%",
+      "texto_apoio": null,
+      "enunciado": "Acerca das garantias nas contratações de obras, serviços e fornecimentos previstas nos arts. 96 a 102 da Lei nº 14.133/2021, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Quando o edital exigir garantia contratual, cabe exclusivamente à autoridade administrativa da UFBA impor ao contratado a modalidade específica (ex.: obrigando caução em dinheiro), sem opção ao particular.",
+        "B": "Como regra geral, a garantia poderá ser de até 5% (cinco por cento) do valor inicial do contrato, admitida majoração para até 10% (dez por cento) desde que justificada pela análise da complexidade técnica e dos riscos envolvidos.",
+        "C": "Nas obras e serviços de engenharia de grande vulto em que o edital exigir seguro-garantia com cláusula de retomada, o percentual máximo da garantia limita-se rigidamente a 5% do contrato.",
+        "D": "O contrato deve obrigatoriamente prever garantia financeira mínima de 20% para toda e qualquer compra de material de expediente acima de R$ 10.000,00.",
+        "E": "A garantia prestada pelo contratado em dinheiro não pode ser atualizada monetariamente por ocasião de sua devolução após a fiel execução do contrato."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O art. 98 da Lei nº 14.133/2021 estabelece o limite ordinário de **até 5%** do valor inicial do contrato, autorizando a majoração para **até 10%** mediante justificativa de complexidade técnica e riscos.",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021: Art. 96 (exigência é faculdade da autoridade competente prevista em edital; **caberá ao CONTRATADO optar** por uma das modalidades: caução em dinheiro/títulos da dívida pública, seguro-garantia, fiança bancária ou título de capitalização custeado por pagamento único — incluído pela Lei 14.770/2023!); Art. 98 (até 5%, majorável até 10% justificadamente); Art. 99 (obras/serviços de engenharia de grande vulto: seguro-garantia com cláusula de retomada de até **30%**!); Art. 100 (caução em dinheiro é restituída atualizada monetariamente após execução/recebimento definitivo).",
+        "analise_alternativas": {
+          "A": "INCORRETA. O art. 96, § 1º assegura expressamente que cabe ao CONTRATADO escolher a modalidade de garantia entre as previstas em lei!",
+          "B": "CORRETA. Literalidade exata do art. 98, caput da Lei nº 14.133/2021.",
+          "C": "INCORRETA. Para obras e serviços de engenharia de grande vulto (valor estimado > R$ 200 milhões atualizados por decreto), o art. 99 permite exigir garantia de **até 30%**!",
+          "D": "INCORRETA. Exigir garantia contratual é sempre decisão discricionária motivada prevista em edital, jamais obrigatória de 20% para compras simples.",
+          "E": "INCORRETA. Conforme Art. 100, a garantia em dinheiro deve ser atualizada monetariamente quando devolvida."
+        },
+        "conexao_pratica_ifbaiano": "Na conferência de contratos terceirizados de limpeza/vigilância (serviços contínuos com dedicação exclusiva de mão de obra), sempre conferimos a apólice dentro do prazo legal após assinatura — e nunca o órgão impõe se a empresa traz seguro-garantia, fiança ou caução: a escolha é do **contratado**!",
+        "pilula_fixacao": "Garantia (Art. 96-100): CONTRATADO escolhe modalidade; regra = até 5% (justificada = até 10%; engenharia grande vulto = até 30%)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-049",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021: Extinção dos Contratos Administrativos (Arts. 137 a 139)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Atraso da Administração (2 Meses vs. Antigos 90 Dias) e Hipóteses de Extinção",
+      "texto_apoio": null,
+      "enunciado": "À luz dos arts. 137 a 139 da Lei nº 14.133/2021 sobre a extinção dos contratos administrativos, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O contratado terá direito à extinção do contrato na hipótese de atraso superior a 2 (dois) meses, contado da emissão da nota fiscal, dos pagamentos ou de parcelas de pagamentos devidos pela Administração por despesas de obras, serviços ou fornecimentos.",
+        "B": "Somente após ultrapassar 180 (cento e oitenta) dias de atraso nos pagamentos devidos pela Administração é que o contratado adquire o direito de pleitear a extinção ou suspensão contratual.",
+        "C": "O contratado nunca tem direito à extinção contratual, mesmo quando a Administração ordena supressão de obras/serviços que acarrete modificação do valor inicial além do limite legal do art. 125.",
+        "D": "A extinção do contrato por interesse público (determinada por ato unilateral da Administração) dispensa qualquer justificativa escrita ou ressarcimento ao contratado por prejuízos regularmente comprovados.",
+        "E": "A extinção contratual na Lei nº 14.133/2021 somente pode ocorrer mediante acordo bilateral consensual, sendo vedada a rescisão unilateral por inexecução culposa do contratado."
+      },
+      "gabarito": "A",
+      "correcao_comentada": {
+        "resumo_direto": "O art. 137, § 2º, inciso IV da Lei nº 14.133/2021 reduziu o antigo prazo de 90 dias (da Lei 8.666) para **2 (dois) meses**, contado da emissão da nota fiscal, conferindo ao contratado o direito à extinção (ou suspensão conforme § 3º).",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021, Art. 137, § 2º (Direito do contratado à extinção): I - supressão pela Administração além do limite do art. 125 (25%); II - suspensão de execução por ordem escrita da Administração por prazo > 3 meses; III - repetidas suspensões que totalizem 90 dias úteis; IV - **atraso superior a 2 meses** nos pagamentos devidos, contado da emissão da nota fiscal (salvo calamidade pública, grave perturbação ou guerra — § 3º, II); V - não liberação pela Administração de área/local/objeto para execução.",
+        "analise_alternativas": {
+          "A": "CORRETA. Reproduz textualmente o art. 137, § 2º, inciso IV da Nova Lei de Licitações.",
+          "B": "INCORRETA. Eram 90 dias na revogada Lei nº 8.666/93; na Lei nº 14.133/21 passou a ser **2 meses** (não 180 dias)!",
+          "C": "INCORRETA. Supressão unilateral acima do limite do art. 125 dá direito expresso à extinção pelo contratado (Art. 137, § 2º, I).",
+          "D": "INCORRETA. Extinção unilateral por razões de interesse público de alta relevância exige motivação formal em processo, autorização pela autoridade máxima (Art. 137, VIII) e ressarcimento dos prejuízos comprovados + devolução da garantia + pagamentos devidos (Art. 138, § 2º).",
+          "E": "INCORRETA. Conforme Art. 138, a extinção pode ser unilateral por ato escrito da Administração, consensual (acordo) ou determinada por decisão arbitral/judicial."
+        },
+        "conexao_pratica_ifbaiano": "Na liquidação e pagamento de notas fiscais de contratos continuados da Reitoria, essa mudança da Lei 14.133/21 (de 90 dias para **2 meses da emissão da NF**) torna o controle de prazos de pagamento ainda mais crítico para não gerar pedido de suspensão/extinção pela terceirizada!",
+        "pilula_fixacao": "Extinção pelo contratado (14.133/21): atraso pagamento > 2 MESES da NF; suspensão > 3 MESES ou 90 dias úteis!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-050",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021: Nulidades Contratuais, Interesse Público e Modulação de Efeitos (Arts. 147 e 148)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Consequencialismo nos Contratos Públicos e Prazo de Modulação Futura (6 Meses)",
+      "texto_apoio": null,
+      "enunciado": "Constatada irregularidade insanável no procedimento licitatório ou na execução de contrato vigente na UFBA sob a Lei nº 14.133/2021 (Arts. 147 e 148), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Qualquer vício formal ou insanável obriga a anulação sumária e imediata do contrato em 24 horas, independentemente dos prejuízos sociais ou paralisação de serviços essenciais.",
+        "B": "Caso a paralisação ou anulação não se revele medida de interesse público (após avaliação de impactos econômicos, sociais e estágio de execução), o poder público deverá optar pela continuidade do contrato e pela solução da irregularidade por meio de indenização por perdas e danos, sem prejuízo de apuração de responsabilidade.",
+        "C": "Ao declarar a nulidade de um contrato essencial, é terminantemente proibido à autoridade competente modular os efeitos temporais da decisão para momento futuro visando viabilizar nova contratação.",
+        "D": "Caso seja adotada modulação para eficácia futura da declaração de nulidade, o prazo máximo admitido na Lei nº 14.133/2021 é de 5 anos improrrogáveis.",
+        "E": "A nulidade contratual exonera o Poder Público do dever de indenizar o contratado de boa-fé pelas parcelas do objeto já regularmente executadas até a data da declaração."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "O art. 147 e seu parágrafo único incorporaram a visão consequencialista: anular ou suspender exige avaliar o interesse público concreto; se a anulação for pior que a continuidade, mantém-se o contrato resolvendo o vício via perdas e danos e responsabilização dos culpados.",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021: Art. 147 (ponderação de impactos antes de suspender ou anular; parágrafo único impõe continuidade quando anulação contraria interesse público); Art. 148, § 1º (contratado de boa-fé recebe pelo executado até a declaração de nulidade e prejuízos comprovados); Art. 148, § 2º (modulação de efeitos futuros por prazo de **até 6 meses, prorrogável uma única vez**, para realização de nova contratação).",
+        "analise_alternativas": {
+          "A": "INCORRETA. A anulação automática cega era falha corrigida expressamente pelo art. 147 da Lei nº 14.133/2021.",
+          "B": "CORRETA. Reproduz com exatidão o parágrafo único do art. 147.",
+          "C": "INCORRETA. O art. 148, § 2º prevê expressamente a modulação de efeitos para garantir continuidade administrativa.",
+          "D": "INCORRETA. O prazo máximo de modulação do art. 148, § 2º é de **até 6 meses, prorrogável 1 vez**, e não 5 anos.",
+          "E": "INCORRETA. Conforme Art. 149 (e Art. 148, § 1º), a nulidade não exonera a Administração do dever de indenizar o contratado pelo que houver executado até a data da nulidade (desde que não lhe seja imputável), sob pena de enriquecimento ilícito do Estado."
+        },
+        "conexao_pratica_ifbaiano": "Imagine um contrato de vigilância ou limpeza dos campi em que o TCU ou auditoria descobre vício no edital depois de 8 meses de execução: pela Lei 14.133/21 (Art. 148, § 2º), em vez de deixar os prédios sem vigilância amanhã, a Reitoria modula os efeitos da nulidade por até **6 meses (+1 prorrogação)** enquanto conclui o novo pregão!",
+        "pilula_fixacao": "Nulidades 14.133 (Arts. 147-149): avalia interesse público antes; pode manter c/ perdas e danos; modulação = até 6 meses (prorrogável 1x)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-051",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "7. Lei nº 14.133/2021: Alterações Contratuais Unilaterais (Limites de 25% e 50%)",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Limites Quantitativos de Acréscimo e Supressão (Art. 125) em Caso Prático",
+      "texto_apoio": "A UFBA celebrou dois contratos administrativos regidos pela Lei nº 14.133/2021:\n- Contrato A: aquisição contínua de material laboratorial no valor inicial atualizado de R$ 200.000,00.\n- Contrato B: reforma predial de um bloco acadêmico no valor inicial atualizado de R$ 1.000.000,00.",
+      "enunciado": "Nos termos do art. 125 da Lei nº 14.133/2021, sobre o dever de o contratado aceitar nas mesmas condições contratuais os acréscimos ou supressões unilaterais impostos pela Administração, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "No Contrato A (compras), o contratado é obrigado a aceitar acréscimos unilaterais de até 50% (R$ 100.000,00), enquanto no Contrato B (reforma de edifício), o limite de acréscimo é de até 25%.",
+        "B": "No Contrato A (compras), o contratado fica obrigado a aceitar acréscimos OU supressões unilaterais até 25% do valor inicial atualizado (R$ 50.000,00); no Contrato B (reforma de edifício), o limite obrigatório para ACRÉSCIMOS vai até 50% (R$ 500.000,00).",
+        "C": "No Contrato B (reforma de edifício), o contratado é obrigado a suportar supressões unilaterais de até 50% impostas sem sua concordância.",
+        "D": "Os percentuais de acréscimo (25%) e supressão (25%) compensam-se entre si livremente, podendo a Administração suprimir 60% de um item e acrescer 60% de outro para zerar o saldo.",
+        "E": "A alteração unilateral prevista no art. 124 autoriza a Administração a transfigurar totalmente o objeto contratado (ex.: transformar compra de luvas em obra de construção)."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Pelo art. 125 da Lei nº 14.133/2021: compras, serviços e obras têm limite unilateral obrigatório de até **25%** para acréscimos ou supressões; apenas no caso específico de **reforma de edifício ou de equipamento**, o limite de **acréscimos** sobe para até **50%** (supressão continua 25%!).",
+        "fundamento_legal_ou_teorico": "Lei nº 14.133/2021: Art. 125 (acréscimos/supressões de até 25% do valor inicial atualizado do contrato em obras/serviços/compras; e até 50% para acréscimos em reforma de edifício ou equipamento); Art. 126 (vedação a transfigurar o objeto da contratação); Jurisprudência consolidada do TCU (vedada compensação entre acréscimos e supressões para burlar os tetos de 25%/50%).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Inverteu exatamente os limites: compras = 25%; acréscimo em reforma = 50%.",
+          "B": "CORRETA. Aplicou precisamente o art. 125 aos valores concretos de R$ 200 mil (25% = R$ 50 mil) e R$ 1 milhão (50% = R$ 500 mil).",
+          "C": "INCORRETA. Pegadinha clássica: na reforma de edifício/equipamento, os **50%** aplicam-se EXCLUSIVAMENTE a **acréscimos**! Para supressões o teto unilateral continua **25%**.",
+          "D": "INCORRETA. O TCU e o princípio da vinculação vedam a compensação entre acréscimos e supressões — cada bloco calcula-se separadamente sobre o valor inicial atualizado.",
+          "E": "INCORRETA. O art. 126 proíbe expressamente alterações que transfigurem o objeto da contratação."
+        },
+        "conexao_pratica_ifbaiano": "Na instrução de termos aditivos de acréscimo de postos de vigilância ou reforma de campus no SEI, lembre duas regras de ouro exigidas pela Procuradoria Federal (PGF/AGU): (1) não compensar supressão com acréscimo na planilha e (2) reforma só chega a 50% no ACRÉSCIMO!",
+        "pilula_fixacao": "Art. 125: Regra = ±25%; Reforma (edifício/equipamento) = +50% (só ACRÉSCIMO!). Vedado compensar e transfigurar objeto!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-052",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Gestão de Pessoas: Teorias X e Y de Douglas McGregor",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 105,
+      "perfil_cobranca": "Diferenciação entre Pressupostos Tradicionais (X) e Participativos (Y)",
+      "texto_apoio": null,
+      "enunciado": "Na Administração Pública contemporânea e no comportamento organizacional, considerando os postulados das **Teorias X e Y de Douglas McGregor**, assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "Na Teoria X, parte-se do pressuposto de que o esforço físico e mental no trabalho é tão natural quanto o descanso e o lazer, não havendo aversão intrínseca do servidor às atividades.",
+        "B": "A Teoria Y sustenta que as pessoas são naturalmente preguiçosas, evitam responsabilidades e somente produzem mediante coação, controle rígido e ameaça permanente de punição.",
+        "C": "Sob a ótica da Teoria Y, o gestor acredita que os indivíduos exercem autodireção e autocontrole quando comprometidos com os objetivos institucionais, possuindo criatividade e potencial intelectual amplamente distribuídos na equipe.",
+        "D": "McGregor defendia que apenas a Teoria X deveria ser adotada em instituições universitárias por estimular maior autonomia docente e técnico-administrativa.",
+        "E": "As recompensas financeiras extrínsecas são consideradas pela Teoria Y como o único fator capaz de gerar algum envolvimento no trabalho."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "Para McGregor, a **Teoria Y** adota visão positiva e humanista: o trabalho pode ser fonte de satisfação, as pessoas exercem autodireção/autocontrole quando comprometidas, aceitam responsabilidades e possuem capacidade criativa difundida.",
+        "fundamento_legal_ou_teorico": "Douglas McGregor (\"O Lado Humano da Empresa\"): Teoria X (concepção mecanicista/autocrática: homem avesso ao trabalho, precisa ser coagido/controlado, evita responsabilidade, busca apenas segurança). Teoria Y (concepção democrática/participativa: trabalho é natural, comprometimento gera autodireção e autocontrole, busca responsabilidade, imaginação/criatividade amplamente distribuídas).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Esse pressuposto positivo pertence à Teoria Y.",
+          "B": "INCORRETA. Essa visão negativa e controladora pertence à Teoria X.",
+          "C": "CORRETA. Descreve com fidelidade os pressupostos fundamentais da Teoria Y.",
+          "D": "INCORRETA. McGregor criticava o paradigma da Teoria X e propunha a evolução gerencial para a Teoria Y.",
+          "E": "INCORRETA. Foco restrito a punições e dinheiro extrínseco caracteriza a Teoria X; a Y valoriza autorrealização, autonomia e participação."
+        },
+        "conexao_pratica_ifbaiano": "Fácil de fixar pela simbologia visual de designer: **X** lembra \"bloqueio/controle fechado/checagem rígida\"; **Y** lembra \"braços abertos para cima / delegação / autonomia\". Não tem como inverter na prova!",
+        "pilula_fixacao": "Teoria X = controle rígido, aversão ao trabalho. Teoria Y = autodireção, comprometimento, criatividade."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-053",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Gestão de Pessoas: Teoria da Expectativa de Victor Vroom",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Modelo Multiplicativo (Expectância × Instrumentalidade × Valência)",
+      "texto_apoio": "Em uma pró-reitoria, a chefia anunciou que os servidores que atingissem metas de redução de tempo de processos ganhariam apenas um ingresso para um evento de golfe — atividade pela qual nenhum integrante da equipe demonstrou qualquer interesse ou valor pessoal.",
+      "enunciado": "Analisando o caso à luz da **Teoria da Expectativa (ou Expectância) de Victor Vroom**, qual dos três componentes motivacionais teve valor nulo e comprometeu a motivação resultante da equipe?",
+      "alternativas": {
+        "A": "Fator Higiênico (Herzberg), pois o salário-base dos técnico-administrativos foi reduzido.",
+        "B": "Valência, uma vez que representa o valor, a atratividade ou a preferência subjetiva que o indivíduo atribui à recompensa oferecida (como a fórmula é multiplicativa, valência zero leva a motivação a zero).",
+        "C": "Expectância, pois os servidores já sabiam exatamente o caminho técnico para reduzir o prazo dos processos.",
+        "D": "Equidade Externa, visto que a comparação com empresas privadas determinou aumento imediato de esforço.",
+        "E": "Instrumentalidade negativa, porque quanto maior a valência, menor o interesse na premiação."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Na Teoria da Expectativa de Vroom (`Motivação = Expectância × Instrumentalidade × Valência`), **Valência** é o quanto a recompensa final importa/atrai o servidor. Como ninguém queria o prêmio oferecido, a Valência foi zero — zerando a motivação pelo caráter multiplicativo do modelo.",
+        "fundamento_legal_ou_teorico": "Victor Vroom (Teoria da Expectativa — teoria de processo motivacional): 1) **Expectância (E -> D)**: crença de que o esforço levará ao bom desempenho (\"se eu me esforçar, consigo bater a meta?\"); 2) **Instrumentalidade (D -> R)**: crença de que o bom desempenho trará a recompensa prometida (\"se eu bater a meta, a chefia entrega mesmo o prêmio?\"); 3) **Valência (V)**: valor subjetivo atribuído pelo indivíduo à recompensa (\"eu quero esse prêmio?\"). Fórmula multiplicativa: `M = E × I × V`.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Fatores higiênicos são da Teoria dos Dois Fatores de Herzberg, não da Teoria da Expectativa de Vroom.",
+          "B": "CORRETA. Identifica corretamente a **Valência** e o efeito multiplicativo da equação de Vroom.",
+          "C": "INCORRETA. A Expectância mede a relação Esforço -> Desempenho (\"consigo atingir?\"), que aqui não foi o ponto nulo descrito.",
+          "D": "INCORRETA. Teoria da Equidade é de J. Stacy Adams.",
+          "E": "INCORRETA. Instrumentalidade refere-se à confiança de que o desempenho entregará a recompensa prometida (relação Desempenho -> Recompensa)."
+        },
+        "conexao_pratica_ifbaiano": "Na gestão pública, onde o gestor não pode criar bônus salariais livres, entender Vroom explica por que \"recompensas\" sem **Valência** (o que o servidor realmente valoriza: folga compensatória legal, capacitação desejada, reconhecimento real, teletrabalho nas regras) não geram engajamento algum!",
+        "pilula_fixacao": "Vroom: `M = Expectância (Esforço->Desempenho) × Instrumentalidade (Desempenho->Prêmio) × Valência (Valor do Prêmio)`."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-054",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Gestão de Pessoas: Teoria da Equidade de J. Stacy Adams",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Relação Outputs/Inputs e Respostas Comportamentais à Iniquidade",
+      "texto_apoio": null,
+      "enunciado": "Segundo a **Teoria da Equidade de J. Stacy Adams**, quando um servidor percebe uma situação de **iniquidade negativa (sub-recompensa)** — isto é, sente que entrega o mesmo ou maior esforço/contribuição (`inputs`) do que um colega comparável, mas recebe menos reconhecimento, vantagens ou recompensas (`outputs`) —, tende a ocorrer:",
+      "alternativas": {
+        "A": "Aumento automático da satisfação no trabalho, já que o servidor não realiza comparações sociais com colegas de outros setores.",
+        "B": "Tensão motivacional que pode levar o servidor a reduzir suas entregas/esforços (`inputs`), pleitear maiores recompensas (`outputs`), distorcer percepções ou buscar remoção/saída da equipe para restaurar o equilíbrio.",
+        "C": "Impossibilidade de qualquer impacto no comportamento organizacional, pois apenas o salário absoluto (sem referência a pares) influencia a percepção de justiça.",
+        "D": "Motivação exclusiva pelo atingimento da autorrealização no topo da Pirâmide de Maslow, independentemente das regras de justiça organizacional.",
+        "E": "Adoção imediata de práticas da Teoria X pelo servidor para compensar a sobrecarga de outro departamento."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Na Teoria da Equidade (Adams), os indivíduos comparam sua razão **Resultados/Entradas (Outputs/Inputs)** com a de referentes sociais. A percepção de injustiça gera tensão e impulsiona ajustes como redução de esforço, reivindicação de recompensas ou mudança de setor/referente.",
+        "fundamento_legal_ou_teorico": "Teoria da Equidade (J. Stacy Adams — teoria de processo motivacional): `Outcomes(Eu) / Inputs(Eu)` vs `Outcomes(Outro) / Inputs(Outro)`. Quando desigual -> Iniquidade (Negativa = sub-recompensa -> raiva/desestímulo; Positiva = super-recompensa -> culpa/compensação). As 6 reações clássicas incluem mudar entradas (reduzir empenho), mudar resultados, distorcer percepção de si ou do outro, escolher outro referente ou sair do campo (remoção/demissão).",
+        "analise_alternativas": {
+          "A": "INCORRETA. O cerne da teoria de Adams é exatamente a comparação social interpessoal e intra/extraorganizacional.",
+          "B": "CORRETA. Sintetiza precisamente o mecanismo cognitivo de comparação e as estratégias de restauração da equidade descritas por Adams.",
+          "C": "INCORRETA. Justiça relativa (proporção entre esforço e retorno comparado aos pares) impacta diretamente motivação e clima.",
+          "D": "INCORRETA. A Pirâmide de Maslow é uma teoria de conteúdo focada em necessidades hierárquicas individuais, não em comparação social de equidade.",
+          "E": "INCORRETA. Mistura conceitos sem nexo teórico com o modelo de McGregor."
+        },
+        "conexao_pratica_ifbaiano": "Você já viu isso em qualquer repartição pública: quando dois servidores têm a mesma carga, mas um é sistematicamente sobrecarregado com demandas extras sem reconhecimento enquanto o outro fica ocioso, instala-se a **iniquidade negativa** de Adams — corroendo o clima e levando o servidor produtivo a \"desacelerar\" ou pedir remoção!",
+        "pilula_fixacao": "Equidade (Adams) = comparação `Retorno / Esforço` vs. pares. Sub-recompensa gera tensão -> reduz esforço, reclama ou sai!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-055",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Gestão de Pessoas: Competências (CHA), Cultura (Schein) e Clima Organizacional",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Diferenciação entre Clima e Cultura (3 Níveis de Schein) e Tríade CHA",
+      "texto_apoio": null,
+      "enunciado": "Considerando os conceitos modernos de Gestão de Pessoas sobre Cultura Organizacional (Edgar Schein), Clima Organizacional e Gestão por Competências (Decreto nº 9.991/2019 e PNDP), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O clima organizacional representa os pressupostos inconscientes profundos e imutáveis formados ao longo de décadas na instituição, enquanto a cultura corresponde ao humor passageiro de uma semana.",
+        "B": "No modelo de Edgar Schein, os **artefatos** constituem o nível mais visível e superficial da cultura organizacional (como layout dos prédios, vestimenta, rituais e jargões), abaixo do qual residem os valores compartilhados e, mais profundamente, os pressupostos básicos.",
+        "C": "Na tríade de competências (CHA), \"Atitude\" refere-se exclusivamente ao domínio teórico das leis aprendidas em manuais impressos (saber), sem relação com querer fazer ou iniciativa.",
+        "D": "O Plano de Desenvolvimento de Pessoas (PDP) previsto pelo Decreto nº 9.991/2019 dispensa diagnóstico prévio de necessidades de desenvolvimento institucional.",
+        "E": "Clima organizacional ruim pode ser eliminado de forma definitiva apenas trocando o logotipo visual da instituição sem atuar em liderança, comunicação e condições de trabalho."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "Edgar Schein estrutura a Cultura Organizacional em 3 níveis (do visível ao oculto): (1) **Artefatos** (visíveis: arquitetura, normas escritas, rituais, vestuário); (2) **Valores compartilhados/expostos** (normas, justificativas conscientes); (3) **Pressupostos básicos** (crenças inconscientes e tácitas profundamente arraigadas).",
+        "fundamento_legal_ou_teorico": "1) Cultura (Schein): duradoura, profunda (Artefatos -> Valores -> Pressupostos Básicos). 2) Clima Organizacional: percepção compartilhada e mais temporal/conjuntural sobre o ambiente de trabalho (\"atmosfera psicológica\"). 3) CHA: Conhecimento (\"saber\" teórico), Habilidade (\"saber fazer\" prático), Atitude (\"querer fazer\"/comportamento). 4) PNDP (Decreto nº 9.991/2019): cada órgão federal elabora anualmente seu PDP após levantamento de necessidades de desenvolvimento.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Inverteu completamente Clima (percepção conjuntural/superficial) com Cultura (profunda e duradoura).",
+          "B": "CORRETA. Descreve perfeitamente a pirâmide clássica dos 3 níveis da cultura organizacional segundo Edgar Schein.",
+          "C": "INCORRETA. Saber teórico é CONHECIMENTO (\"C\"); Atitude (\"A\") é o \"querer fazer\" (comportamento proativo e postura).",
+          "D": "INCORRETA. O PDP no Decreto nº 9.991/2019 exige planejamento anual baseado no diagnóstico de lacunas e necessidades de competências.",
+          "E": "INCORRETA. Mudança apenas de símbolo/artefato visual sem alterar liderança, processos e valores não resolve clima organizacional deteriorado."
+        },
+        "conexao_pratica_ifbaiano": "Como Designer Industrial atuando na Comunicação da Reitoria, você lida diretamente com os **artefatos** (identidade visual, sinalização, manuais, comunicação interna) de Edgar Schein! Na prova, lembre que identidade visual e layout são só a ponta visível (artefatos); mudar cultura mesmo exige atingir **valores** e **pressupostos básicos**.",
+        "pilula_fixacao": "Schein (do visível ao profundo): Artefatos -> Valores -> Pressupostos Básicos! CHA: Saber (C), Saber Fazer (H), Querer Fazer (A)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-056",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Notação BPMN (Gestão de Processos)",
+      "dificuldade": "Média-Alta",
+      "tempo_estimado_segundos": 120,
+      "perfil_cobranca": "Simbologia Básica do BPMN (Eventos, Atividades, Gateways e Raias)",
+      "texto_apoio": null,
+      "enunciado": "Na modelagem de processos administrativos com a notação padrão internacional **BPMN (Business Process Model and Notation)** adotada no Guia BPM CBOK e em sistemas eletrônicos de gestão de processos, assinale a alternativa CORRETA sobre os elementos gráficos.",
+      "alternativas": {
+        "A": "As **Atividades (Tarefas)** são representadas por círculos com borda grossa, enquanto os **Eventos de Fim** são representados por losangos com um sinal de \"X\" no centro.",
+        "B": "Um **Gateway Exclusivo (XOR — losango vazio ou com \"X\")** indica divergência na qual o fluxo segue por TODOS os caminhos simultaneamente em paralelo, sendo proibido escolher apenas uma rota.",
+        "C": "Na simbologia BPMN: **Eventos** são representados por círculos; **Atividades/Tarefas** por retângulos de cantos arredondados; **Gateways (decisões/ramificações)** por losangos; e **Piscinas (Pools) e Raias (Lanes)** organizam respectivamente os participantes/entidades e os setores/papéis responsáveis.",
+        "D": "O **Gateway Paralelo (AND — losango com \"+\")** determina que somente o caminho de menor custo financeiro deve ser executado no processo, descartando os demais.",
+        "E": "As **Lanes (Raias)** representam obrigatoriamente documentos impressos em PDF anexados ao processo, sem qualquer relação com responsabilidades funcionais."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "No BPMN (OMG / BPM CBOK): **Círculos** = Eventos (Início borda fina, Intermediário borda dupla, Fim borda grossa); **Retângulos arredondados** = Atividades/Tarefas; **Losangos** = Gateways; **Pools/Lanes** = Participantes e Papéis/Setores.",
+        "fundamento_legal_ou_teorico": "BPMN 2.0 (Object Management Group / ABPMP BPM CBOK): 1) Eventos (círculos: início, intermediário, fim); 2) Atividades (retângulos cantos arredondados — ações realizadas); 3) Gateways (losangos): Exclusivo (`X` ou vazio = apenas UM caminho é seguido), Paralelo (`+` = TODOS os caminhos simultaneamente sem condição), Inclusivo (`O` = um OU mais caminhos conforme condição); 4) Swimlanes: Pool (organização/processo) subdividido em Lanes (setores/cargos executores).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Círculo com borda grossa é Evento de FIM; losango com X é Gateway Exclusivo (decisão de rota única); Atividade é retângulo arredondado.",
+          "B": "INCORRETA. Trocou Gateway Exclusivo (XOR — apenas UM caminho) com Gateway Paralelo (AND `+` — todos em paralelo).",
+          "C": "CORRETA. Mapeia perfeitamente os quatro pilares visuais da notação BPMN.",
+          "D": "INCORRETA. Gateway Paralelo (`+`) dispara ou sincroniza TODOS os fluxos paralelos simultaneamente.",
+          "E": "INCORRETA. Lanes (Raias) delimitam os responsáveis/setores (ex.: Protocolo, PROAD, Procuradoria) dentro de uma Pool; documentos são Objetos de Dados (folha com dobra no canto)."
+        },
+        "conexao_pratica_ifbaiano": "Como designer de formação e servidor habituado a diagramas de fluxo na Reitoria, o BPMN cai como luva! Lembre do trio visual: **Bola = Evento**, **Caixa Arredondada = Tarefa**, **Losango = Decisão (X = um só; + = todos juntos)**, **Raia de piscina = quem faz**.",
+        "pilula_fixacao": "BPMN: Círculo = Evento; Retângulo arredondado = Tarefa; Losango = Gateway (`X` = 1 rota; `+` = paralelo); Raia = Setor!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-057",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Mapeamento AS-IS e Modelagem TO-BE (Gestão de Processos)",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 110,
+      "perfil_cobranca": "Diferenciação e Sequência Lógica entre AS-IS e TO-BE no BPM",
+      "texto_apoio": "A Pró-Reitoria de Administração da UFBA decidiu revisar o fluxo de concessão de suprimento de fundos antes de configurá-lo definitivamente no sistema eletrônico. Na primeira fase, a equipe levantou e documentou passo a passo exatamente como o trâmite acontece hoje, revelando assinaturas redundantes e idas e vindas desnecessárias. Na segunda fase, eliminou os gargalos e desenhou o novo fluxo otimizado a ser implantado.",
+      "enunciado": "Na terminologia de Gerenciamento de Processos de Negócio (BPM CBOK), as primeira e segunda fases descritas correspondem, RESPECTIVAMENTE, a:",
+      "alternativas": {
+        "A": "Modelagem **TO-BE** e Mapeamento **AS-IS**.",
+        "B": "Análise **Benchmarking** e **Downsizing** estrutural.",
+        "C": "Mapeamento **AS-IS** (\"como é hoje\") e Modelagem **TO-BE** (\"como será/estado futuro otimizado\").",
+        "D": "Ciclo **FIFO** e Matriz **GUT**.",
+        "E": "Fase **DO** do PDCA e **Inspeção Post-Mortem**."
+      },
+      "gabarito": "C",
+      "correcao_comentada": {
+        "resumo_direto": "**AS-IS** (\"como está\") documenta o processo atual com suas falhas, gargalos e retrabalhos reais; **TO-BE** (\"como deve ser\") redesenha o fluxo futuro otimizado que passará a ser executado e automatizado.",
+        "fundamento_legal_ou_teorico": "Ciclo de vida BPM (BPM CBOK): Planejamento -> Análise (**Mapeamento AS-IS** = entendimento da situação atual e causas-raiz de problemas) -> Desenho (**Modelagem TO-BE** = eliminação de etapas sem valor agregado, definição de novos papéis/SLAs) -> Implementação -> Monitoramento/Refinamento.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Inverteu a ordem cronológica (primeiro mapeia o AS-IS para só depois desenhar o TO-BE).",
+          "B": "INCORRETA. Benchmarking compara práticas externas e Downsizing enxuga níveis hierárquicos.",
+          "C": "CORRETA. Correspondência exata entre AS-IS (diagnóstico atual) e TO-BE (fluxo futuro redesenhado).",
+          "D": "INCORRETA. FIFO é regra de estoque/fila (First In, First Out) e GUT prioriza problemas por Gravidade, Urgência e Tendência.",
+          "E": "INCORRETA. No texto trata-se especificamente das etapas de análise e desenho de processos BPM (AS-IS -> TO-BE)."
+        },
+        "conexao_pratica_ifbaiano": "Digitalizar o processo errado no SEI/SUAP sem fazer **AS-IS -> TO-BE** só cria \"burocracia eletrônica\" mais rápida! O Escritório de Processos primeiro desenha o **AS-IS** com o pessoal da ponta para achar os gargalos e depois cria o **TO-BE** enxuto antes de configurar os blocos no SEI.",
+        "pilula_fixacao": "AS-IS = fotografia REAL do processo HOJE (acha gargalos). TO-BE = desenho OTIMIZADO para o FUTURO!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-058",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Benchmarking como Ferramenta de Gestão",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 105,
+      "perfil_cobranca": "Conceito e Tipologias de Benchmarking (Interno, Competitivo, Funcional/Genérico)",
+      "texto_apoio": null,
+      "enunciado": "Uma universidade federal deseja reduzir o tempo médio de emissão de diplomas digitais e, para isso, estuda sistematicamente os indicadores, fluxos de trabalho e boas práticas de uma instituição pública referência nacional e até de uma empresa privada de tecnologia logística reconhecida por excelência em certificação digital, adaptando essas lições à sua realidade normativa.",
+      "alternativas": {
+        "A": "Essa técnica denomina-se **Reengenharia radical**, caracterizada pela demissão imediata de todos os servidores de protocolo.",
+        "B": "Trata-se de **Benchmarking**, processo sistemático e contínuo de busca, comparação e adaptação de melhores práticas e indicadores de desempenho de organizações de referência (mesmo de outros setores, no chamado benchmarking genérico/funcional).",
+        "C": "O procedimento descrito caracteriza **espionagem industrial ilícita**, uma vez que o benchmarking no setor público somente pode comparar setores dentro do mesmo corredor do prédio.",
+        "D": "Configura **Downsizing**, ferramenta que consiste exclusivamente em comparar salários para reduzi-los abaixo do piso legal.",
+        "E": "Denomina-se **Curva ABC**, pois classifica organizações externas conforme o peso financeiro de suas faturas de energia."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "**Benchmarking** é a ferramenta contínua e sistemática de avaliação de processos, produtos e serviços em relação a organizações reconhecidas como referência (\"melhores práticas\"), visando aprendizado e adaptação à realidade própria — podendo inclusive cruzar setores distintos (Benchmarking Genérico ou Funcional).",
+        "fundamento_legal_ou_teorico": "Tipos clássicos de Benchmarking: 1) **Interno**: compara setores/campi da própria organização (ex.: Campus Ondina vs. Campus Vitória da Conquista); 2) **Competitivo**: compara concorrentes diretos do mesmo ramo; 3) **Funcional**: compara função similar em organizações não concorrentes (ex.: logística de compras de outra autarquia); 4) **Genérico**: compara processos similares em empresas de ramos totalmente distintos.",
+        "analise_alternativas": {
+          "A": "INCORRETA. Reengenharia redesenha processos radicalmente partindo de uma folha em branco, não sendo sinônimo de comparação sistemática com referências.",
+          "B": "CORRETA. Define precisamente o benchmarking e suas modalidades funcional/genérica.",
+          "C": "INCORRETA. Benchmarking é técnica ética, cooperativa/transparente e amplamente recomendada na Administração Pública (ex.: Rede de Governança / ENAP).",
+          "D": "INCORRETA. Downsizing refere-se ao enxugamento planejado de níveis hierárquicos e estrutura.",
+          "E": "INCORRETA. Curva ABC classifica itens de estoque/materiais por valor de demanda ou consumo."
+        },
+        "conexao_pratica_ifbaiano": "Na rede federal (IFs e Universidades), trocar modelos de regulamento de teletrabalho ou fluxos de SEI com outras IFES como UFMG, UFSC ou IFSC é **Benchmarking Funcional** puro — você aprende com quem já resolveu o gargalo sem violar nenhuma regra!",
+        "pilula_fixacao": "Benchmarking = comparar sistematicamente com quem é referência e ADAPTAR (nunca copiar cegamente nem espionar!)."
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-059",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Downsizing e Reengenharia Organizacional",
+      "dificuldade": "Média",
+      "tempo_estimado_segundos": 115,
+      "perfil_cobranca": "Diferenciação entre Downsizing (Achatamento Estrutural) e Reengenharia",
+      "texto_apoio": null,
+      "enunciado": "Na evolução das técnicas de racionalização administrativa e redesenho organizacional, assinale a alternativa que distingue CORRETAMENTE **Downsizing** e **Reengenharia**.",
+      "alternativas": {
+        "A": "O Downsizing caracteriza-se pela criação de dez novos níveis de gerência intermediária para aumentar a burocracia vertical, enquanto a Reengenharia proíbe o uso de qualquer tecnologia da informação.",
+        "B": "Enquanto o **Downsizing** visa ao enxugamento planejado da estrutura organizacional — frequentemente reduzindo níveis hierárquicos (achatamento) e custos fixos para ganhar agilidade —, a **Reengenharia** (Hammer e Champy) propõe o repensar fundamental e o redesenho radical dos processos desde a estaca zero visando saltos expressivos de desempenho.",
+        "C": "Tanto o Downsizing quanto a Reengenharia significam exclusivamente pequenas melhorias incrementais diárias e lentas que mantêm intacta toda a estrutura burocrática anterior.",
+        "D": "O Downsizing busca sempre ampliar o número de órgãos supervisores e chefias intermediárias sem alterar as rotinas de decisão.",
+        "E": "Na Reengenharia, exige-se por definição que nenhuma etapa atual do processo seja eliminada ou questionada, preservando todas as tradições informais do setor."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "**Downsizing** atua sobre o **tamanho e hierarquia da estrutura** (achatamento de níveis intermediários e redução planejada para tornar a instituição mais leve e ágil), ao passo que **Reengenharia** propõe repensar e redesenhar processos de forma **fundamental e radical** (tábula rasa / do zero) buscando saltos dramáticos em custo, qualidade e tempo.",
+        "fundamento_legal_ou_teorico": "Técnicas de Transformação Organizacional: 1) Downsizing = redução planejada de dimensões/níveis hierárquicos (\"enxugamento\" e achatamento organizacional); 2) Reengenharia (Michael Hammer & James Champy) = repensar fundamental + redesenho radical de processos para obter melhorias dramáticas (\"se começássemos esta organização hoje do zero, como faríamos?\"); 3) Kaizen = melhoria contínua e incremental.",
+        "analise_alternativas": {
+          "A": "INCORRETA. O Downsizing REDUZ níveis hierárquicos (achata), nunca os multiplica; e a Reengenharia apoia-se fortemente na TI como viabilizadora do novo fluxo.",
+          "B": "CORRETA. Distingue com rigor conceitual o foco estrutural do Downsizing e o foco radical em processos da Reengenharia.",
+          "C": "INCORRETA. Melhorias contínuas incrementais diárias correspondem ao **Kaizen**, oposto à radicalidade da Reengenharia!",
+          "D": "INCORRETA. \"Down-sizing\" significa literalmente diminuir tamanho/camadas, nunca aumentar chefias.",
+          "E": "INCORRETA. A pergunta central da Reengenharia é questionar tudo desde a raiz (\"por que fazemos isso?\")."
+        },
+        "conexao_pratica_ifbaiano": "Tríade clássica que o Instituto Avalia gosta de embaralhar numa mesma questão: **Kaizen** (passo a passo contínuo), **Reengenharia** (quebra radical / folha em branco nos processos) e **Downsizing** (enxugamento/achatamento da estrutura e hierarquia)!",
+        "pilula_fixacao": "Downsizing = enxuga estrutura/hierarquia; Reengenharia = redesenho RADICAL do processo do zero; Kaizen = melhoria contínua gradual!"
+      }
+    },
+    {
+      "id": "AVALIA-UFBA2026-CE-060",
+      "area": "Conhecimentos Específicos",
+      "peso": 2,
+      "topico_edital": "Noções de Administração Pública: Filosofia Kaizen e Ciclo PDCA na Qualidade",
+      "dificuldade": "Fácil-Média",
+      "tempo_estimado_segundos": 100,
+      "perfil_cobranca": "Princípios do Kaizen (Melhoria Contínua Incremental) e Integração com PDCA",
+      "texto_apoio": null,
+      "enunciado": "Sobre a filosofia **Kaizen** aplicada à gestão da qualidade no serviço público e sua relação com o ciclo **PDCA** (Plan-Do-Check-Act), assinale a alternativa CORRETA.",
+      "alternativas": {
+        "A": "O Kaizen baseia-se em rupturas traumáticas raras feitas a cada 20 anos exclusivamente por consultores externos, sem envolvimento dos servidores técnicos da ponta.",
+        "B": "A abordagem Kaizen preconiza a **melhoria contínua, gradual e constante**, envolvendo todos os níveis da organização (desde a alta direção até o atendimento e execução operacional) na eliminação diária de desperdícios e gargalos, em sintonia permanente com o giro do ciclo PDCA.",
+        "C": "No ciclo PDCA aplicado ao Kaizen, a etapa **Check (Verificar)** antecede o planejamento (**Plan**) e dispensa qualquer medição por indicadores numéricos.",
+        "D": "O Kaizen rejeita a padronização de boas práticas após uma melhoria bem-sucedida, defendendo que cada servidor execute o mesmo procedimento de maneira totalmente improvisada todos os dias.",
+        "E": "Uma vez atingido um patamar satisfatório na etapa **Act (Agir)** do PDCA, o Kaizen determina o encerramento definitivo de novos esforços de aperfeiçoamento."
+      },
+      "gabarito": "B",
+      "correcao_comentada": {
+        "resumo_direto": "**Kaizen** (*Kai* = mudar, *Zen* = para melhor) representa a cultura japonesa de **melhoria contínua e incremental** com participação de toda a equipe na eliminação de desperdícios (*muda*), girando continuamente sobre o ciclo **PDCA** e consolidando ganhos em padrões (*SDCA*).",
+        "fundamento_legal_ou_teorico": "Gestão da Qualidade Total (Masaaki Imai / Deming): 1) Kaizen = melhoria contínua incremental, foco em pessoas e processos, baixo custo, sem fim; 2) PDCA: Plan (planejar metas/métodos), Do (executar/treinar), Check (verificar resultados vs. planejado com indicadores), Act (agir corretivamente nos desvios ou padronizar o sucesso e girar novo ciclo!).",
+        "analise_alternativas": {
+          "A": "INCORRETA. Ruptura radical pontual de cima para baixo define a Reengenharia, jamais o Kaizen participativo diário.",
+          "B": "CORRETA. Reproduz integralmente o espírito do Kaizen e sua integração dinâmica com o ciclo PDCA.",
+          "C": "INCORRETA. A sequência é Plan -> Do -> Check -> Act, e a etapa Check exige objetivamente medir e comparar dados/indicadores.",
+          "D": "INCORRETA. Sem padronização não há sustentação da melhoria — no Kaizen, toda melhoria validada vira novo padrão operacional (SOP/POP) antes do próximo passo!",
+          "E": "INCORRETA. \"Contínua\" significa exatamente que o ciclo nunca encerra (\"hoje melhor do que ontem, amanhã melhor do que hoje\")."
+        },
+        "conexao_pratica_ifbaiano": "Quando você e sua equipe criam pequenos checklists de conferência no setor, revisam modelos de memorando/ofício no SEI ou ajustam etiquetas visuais para evitar devolução de processo, vocês estão praticando **Kaizen** puro — e garantindo +2 pontos na prova de Conhecimentos Específicos!",
+        "pilula_fixacao": "Kaizen = melhoria CONTÍNUA e GRADUAL com TODOS da equipe + padronização + giro infinito do PDCA!"
+      }
+    }
+  ]
+};

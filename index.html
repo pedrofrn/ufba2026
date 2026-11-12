@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caderno Tático UFBA 2026 • Cargo 201 — Assistente em Administração | Instituto Avalia</title>
+  <meta name="description" content="Simulador tático de provas e telemetria de aprovação para o concurso UFBA Edital nº 007/2026 - Cargo 201 Assistente em Administração (Instituto Avalia)." />
+
+  <!-- Fontes Editoriais (com fallback nativo em styles.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+
+  <!-- Folha de Estilo Editorial Customizada -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Prevenção de FOUC no Modo Noturno -->
+  <script>
+    (function () {
+      try {
+        var raw = window.localStorage.getItem('ufba2026_pedro_progress_v1');
+        if (raw) {
+          var parsed = JSON.parse(raw);
+          if (parsed && parsed.theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          }
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Módulos ES6+ Autocontidos (compatível com file:// e servidor HTTP) -->
+  <script defer src="js/default-questions.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/engine.js"></script>
+  <script defer src="js/essay-guide.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body data-theme="light" class="min-h-screen flex flex-col">
+
+  <!-- =======================================================================
+       CABEÇALHO INSTITUCIONAL — FOLHA DE ROSTO DO CADERNO DE PROVAS
+       ======================================================================= -->
+  <header class="border-b hairline-divider paper-card sticky top-0 z-30">
+    <!-- Faixa Superior Sóbria (Institucional UFBA / Avalia) -->
+    <div class="border-b hairline-divider subtle-surface">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-2 flex flex-wrap items-center justify-between gap-2 text-[11px] sm:text-xs">
+        <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span class="font-bold uppercase tracking-wider text-teal-800 dark:text-teal-300">UFBA • Edital nº 007/2026</span>
+          <span class="opacity-40 hidden sm:inline">|</span>
+          <span class="font-semibold">Banca: Instituto Avalia</span>
+          <span class="opacity-40 hidden sm:inline">|</span>
+          <span class="opacity-80">Cargo <strong>201 — Assistente em Administração</strong> (Salvador • Turno Manhã)</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="opacity-80">Candidato: <strong>Pedro Araujo Fernandes</strong></span>
+          <span id="header-bank-badge" class="hidden md:inline-block font-mono-tabular px-2 py-0.5 rounded border hairline-divider bg-white/60 dark:bg-slate-900/50">
+            120 questões oficiais
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra Principal: Título do Caderno, Countdown Regressivo e Ferramentas -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-slate-900 dark:bg-teal-600 text-white flex items-center justify-center font-exam-serif font-bold text-base shadow-sm shrink-0" aria-hidden="true">
+          UA
+        </div>
+        <div>
+          <h1 class="text-sm sm:text-base font-extrabold tracking-tight leading-tight">
+            Caderno de Provas &amp; Telemetria Tática
+          </h1>
+          <p class="text-[11px] opacity-70">
+            Prova Objetiva (90 pts) + Redação (60 pts) • Corte Top 338 AC calibrado em ≥ 74,00 pts
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2 sm:gap-2.5">
+        <!-- Contador Regressivo 20/12/2026 08:00:00 -->
+        <div id="exam-countdown" aria-live="off"></div>
+
+        <!-- Botão Tema Papel de Prova / Modo Noturno -->
+        <button
+          id="btn-theme-toggle"
+          type="button"
+          title="Alternar tema de leitura (Atalho: T)"
+          class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+          <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 hidden text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+          <span id="theme-label" class="hidden sm:inline">Modo Noturno</span>
+        </button>
+
+        <!-- Botão Importar Lote JSON -->
+        <button
+          type="button"
+          data-open-modal="modal-import-json"
+          class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-teal-600 dark:text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>
+          </svg>
+          <span>Importar Lote JSON</span>
+        </button>
+
+        <!-- Botão Backup & Progresso -->
+        <button
+          type="button"
+          data-open-modal="modal-backup"
+          class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-semibold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
+          </svg>
+          <span class="hidden sm:inline">Backup</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navegação Principal por Abas -->
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center gap-1 overflow-x-auto border-t hairline-divider" role="tablist" aria-label="Áreas do simulador">
+      <button
+        type="button"
+        role="tab"
+        aria-selected="true"
+        data-tab-target="exam"
+        class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">
+        Caderno de Questões
+      </button>
+      <button
+        type="button"
+        role="tab"
+        aria-selected="false"
+        data-tab-target="telemetry"
+        class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">
+        Telemetria &amp; Linha de Corte (90 pts)
+      </button>
+      <button
+        type="button"
+        role="tab"
+        aria-selected="false"
+        data-tab-target="errors"
+        class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition inline-flex items-center gap-1.5">
+        <span>Caderno de Erros &amp; Revisão</span>
+        <span id="tab-errors-badge" class="hidden font-mono-tabular text-[11px] px-1.5 py-0.5 rounded-full bg-rose-600 text-white">0</span>
+      </button>
+      <button
+        type="button"
+        role="tab"
+        aria-selected="false"
+        data-tab-target="essay"
+        class="px-4 py-2.5 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition">
+        Guia de Redação Nota 60 (Tabela 13.2)
+      </button>
+    </nav>
+  </header>
+
+  <!-- =======================================================================
+       WORKSPACE PRINCIPAL
+       ======================================================================= -->
+  <main id="main-workspace" class="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-6"></main>
+
+  <!-- Rodapé Discreto -->
+  <footer class="border-t hairline-divider py-4 mt-8 text-center text-[11px] opacity-65">
+    <div class="max-w-6xl mx-auto px-4">
+      Simulador Tático UFBA nº 007/2026 • Cargo 201 (Assistente em Administração) • Persistência local automática via <code>localStorage</code>
+    </div>
+  </footer>
+
+  <!-- Container de Notificações Toast -->
+  <div id="toast-container" class="fixed bottom-4 right-4 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+  <!-- =======================================================================
+       MODAL: IMPORTAR LOTE JSON (MERGE INTELIGENTE SEM DUPLICAR IDs)
+       ======================================================================= -->
+  <div id="modal-import-json" class="hidden fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-import-title">
+    <div class="paper-card rounded-2xl w-full max-w-3xl max-h-[90vh] flex flex-col overflow-hidden">
+      <div class="px-5 py-4 border-b hairline-divider flex items-center justify-between gap-3">
+        <div>
+          <h2 id="modal-import-title" class="text-base font-bold">Importar Lote de Questões JSON</h2>
+          <p class="text-xs opacity-75">Aceita objeto completo <code>{"metadata", "questoes": [...]}</code> ou array direto <code>[...]</code>. Merge automático sem duplicar <code>id</code>.</p>
+        </div>
+        <button type="button" data-close-modal class="p-1.5 rounded-lg border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-bold">Fechar ✕</button>
+      </div>
+
+      <div class="p-5 overflow-y-auto space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3 subtle-surface rounded-xl p-3">
+          <div class="flex flex-wrap items-center gap-3">
+            <label class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-900 text-white dark:bg-teal-600 cursor-pointer hover:opacity-90 transition">
+              <span>Carregar Arquivo .json</span>
+              <input id="import-file-input" type="file" accept=".json,application/json" class="hidden" />
+            </label>
+            <button id="btn-copy-schema" type="button" class="px-3 py-1.5 rounded-lg text-xs font-semibold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+              Copiar Schema JSON
+            </button>
+            <button id="btn-fill-schema" type="button" class="px-3 py-1.5 rounded-lg text-xs font-semibold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+              Ver Exemplo no Editor
+            </button>
+          </div>
+          <div class="text-xs">
+            Importadas salvas: <strong id="custom-count-badge" class="font-mono-tabular">0</strong>
+          </div>
+        </div>
+
+        <div>
+          <label for="import-json-textarea" class="block text-xs font-bold uppercase tracking-wider opacity-75 mb-1.5">
+            Cole o JSON do novo lote abaixo:
+          </label>
+          <textarea
+            id="import-json-textarea"
+            rows="10"
+            placeholder='{"metadata": {"concurso": "UFBA - Edital nº 007/2026"}, "questoes": [ ... ]}'
+            class="themed-input w-full rounded-xl p-3 text-xs font-mono-tabular resize-y"></textarea>
+        </div>
+
+        <label class="flex items-center gap-2 text-xs cursor-pointer select-none">
+          <input id="import-overwrite-checkbox" type="checkbox" class="rounded accent-teal-600" />
+          <span>Sobrescrever questões já existentes no banco caso o <code>id</code> coincida (se desmarcado, IDs repetidos são ignorados).</span>
+        </label>
+
+        <div id="import-feedback-box" class="hidden"></div>
+      </div>
+
+      <div class="px-5 py-3.5 border-t hairline-divider subtle-surface flex flex-wrap items-center justify-between gap-3">
+        <button id="btn-clear-custom" type="button" class="px-3 py-2 rounded-lg text-xs font-semibold text-rose-700 dark:text-rose-300 border border-rose-300 dark:border-rose-700 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition">
+          Remover Questões Importadas
+        </button>
+        <div class="flex items-center gap-2">
+          <button type="button" data-close-modal class="px-4 py-2 rounded-lg text-xs font-semibold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+            Cancelar
+          </button>
+          <button id="btn-execute-import" type="button" class="px-5 py-2 rounded-lg text-xs font-bold bg-teal-700 text-white hover:bg-teal-800 shadow-sm transition">
+            Importar Lote Agora
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       MODAL: BACKUP & RESTAURAÇÃO DO PROGRESSO (progresso_pedro_ufba2026.json)
+       ======================================================================= -->
+  <div id="modal-backup" class="hidden fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-backup-title">
+    <div class="paper-card rounded-2xl w-full max-w-xl overflow-hidden">
+      <div class="px-5 py-4 border-b hairline-divider flex items-center justify-between gap-3">
+        <div>
+          <h2 id="modal-backup-title" class="text-base font-bold">Backup &amp; Restauração de Progresso</h2>
+          <p class="text-xs opacity-75">Exporte seu histórico para estudar em outro computador ou garantir cópia de segurança.</p>
+        </div>
+        <button type="button" data-close-modal class="p-1.5 rounded-lg border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-bold">Fechar ✕</button>
+      </div>
+
+      <div class="p-5 space-y-4">
+        <div id="backup-summary-box"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <button id="btn-export-progress" type="button" class="px-4 py-2.5 rounded-xl text-xs font-bold bg-teal-700 text-white hover:bg-teal-800 transition text-center">
+            Baixar progresso_pedro_ufba2026.json
+          </button>
+
+          <label class="px-4 py-2.5 rounded-xl text-xs font-bold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 transition text-center cursor-pointer flex items-center justify-center">
+            <span>Importar Backup (.json)</span>
+            <input id="backup-file-input" type="file" accept=".json,application/json" class="hidden" />
+          </label>
+        </div>
+
+        <div class="pt-3 border-t hairline-divider flex flex-wrap items-center justify-between gap-2">
+          <button id="btn-export-unified-bank" type="button" class="px-3.5 py-2 rounded-lg text-xs font-semibold border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+            Exportar Banco de Questões Unificado (.json)
+          </button>
+          <button id="btn-reset-progress" type="button" class="px-3.5 py-2 rounded-lg text-xs font-semibold text-rose-700 dark:text-rose-300 border border-rose-300 dark:border-rose-700 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition">
+            Zerar Histórico de Respostas
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =======================================================================
+       MODAL: ATALHOS DE TECLADO & DICAS DE PROVA
+       ======================================================================= -->
+  <div id="modal-shortcuts" class="hidden fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-shortcuts-title">
+    <div class="paper-card rounded-2xl w-full max-w-lg overflow-hidden">
+      <div class="px-5 py-4 border-b hairline-divider flex items-center justify-between">
+        <h2 id="modal-shortcuts-title" class="text-base font-bold">Atalhos de Teclado &amp; Ferramentas da Prova</h2>
+        <button type="button" data-close-modal class="p-1.5 rounded-lg border hairline-divider hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-bold">Fechar ✕</button>
+      </div>
+      <div class="p-5 space-y-3 text-xs">
+        <div class="grid grid-cols-2 gap-2.5">
+          <div class="subtle-surface rounded-lg p-2.5 flex items-center justify-between">
+            <span>Selecionar A–E</span>
+            <kbd class="font-mono-tabular font-bold px-2 py-0.5 rounded border hairline-divider">1</kbd> … <kbd class="font-mono-tabular font-bold px-2 py-0.5 rounded border hairline-divider">5</kbd>
+          </div>
+          <div class="subtle-surface rounded-lg p-2.5 flex items-center justify-between">
+            <span>Confirmar Resposta</span>
+            <kbd class="font-mono-tabular font-bold px-2 py-0.5 rounded border hairline-divider">Enter</kbd>
+          </div>
+          <div class="subtle-surface rounded-lg p-2.5 flex items-center justify-between">
+            <span>Questão Anterior / Próxima</span>
+            <span class="font-mono-tabular font-bold">← / →</span>
+          </div>
+          <div class="subtle-surface rounded-lg p-2.5 flex items-center justify-between">
+            <span>Raio-X da Banca</span>
+            <kbd class="font-mono-tabular font-bold px-2 py-0.5 rounded border hairline-divider">R</kbd>
+          </div>
+          <div class="subtle-surface rounded-lg p-2.5 flex items-center justify-between">
+            <span>Favoritar (Caderno Erros)</span>
+            <kbd class="font-mono-tabular font-bold px-2 py-0.5 rounded border hairline-divider">F</kbd>
+          </div>
+          <div class="subtle-surface rounded-lg p-2.5 flex items-center justify-between">
+            <span>Tema Claro / Noturno</span>
+            <kbd class="font-mono-tabular font-bold px-2 py-0.5 rounded border hairline-divider">T</kbd>
+          </div>
+          <div class="subtle-surface rounded-lg p-2.5 flex items-center justify-between col-span-2">
+            <span>Play / Pausar Modo Áudio-Estudo</span>
+            <kbd class="font-mono-tabular font-bold px-2 py-0.5 rounded border hairline-divider">A</kbd>
+          </div>
+        </div>
+        <div class="rounded-lg p-3 bg-teal-50 dark:bg-teal-950/35 border border-teal-200 dark:border-teal-800 text-teal-900 dark:text-teal-200">
+          <strong>Eliminação Tática:</strong> Clique no ícone de tesoura à direita de qualquer alternativa — ou clique com o <strong>botão direito</strong> sobre a alternativa — para riscar distratores descartados.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
